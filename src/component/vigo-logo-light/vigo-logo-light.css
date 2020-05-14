@@ -1,0 +1,27 @@
+div#logo {
+    left: 50px;
+    position: absolute;
+    top: 0;
+}
+
+div#logo a {
+    text-decoration: none;
+}
+
+div#logo h1 {
+    margin: 0;
+}
+
+div#logo a, div#logo span.image {
+    display: block;
+}
+
+div#logo span.image {
+    width: 180px;
+    height: 100px;
+    background: url(/logo_light.svg) top left no-repeat;
+}
+
+div#logo a span.text {
+    display: none;
+}
