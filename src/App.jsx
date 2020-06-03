@@ -21,9 +21,9 @@ function App() {
                     <MenuCard title="QlikView AccessPoint" body="Modeller og analyse"
                               href="https://qv.fintlabs.no"/>
                     <MenuCard title="NPrinting NewsStand" body="Rapporter"
-                              href="https://np.fintlabs.no"/>
+                              href="https://np.fintlabs.no/login/saml/sso/NPVIGOIKS"/>
                     <MenuCard title="NPrinting WebConsole" body="Utvikling av rapporter"
-                              href="https://np-admin.fintlabs.no"/>
+                              href="https://np-admin.fintlabs.no/login/saml/sso/npavigoiks"/>
                     <MenuCard title="Databasedokumentasjon" body="Dokumentasjon av Vigo Sentraldatabase"
                               href="/dbdoc/db/schemas/vigos/summary.html"/>
                 </MenuContainer>
