@@ -1,0 +1,168 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS View V_FAGOPPL_PROVE</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="V_FAGOPPL_PLASS.html" TITLE="V_FAGOPPL_PLASS">Prior View</A></TD>
+<TD Class="NavC"><A HREF="../views1.html#V_FAGOPPL_PROVE">View V_FAGOPPL_PROVE</A></TD>
+<TD Class="NavR"><A HREF="V_FPARAM.html" TITLE="V_FPARAM">Next View</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for View V_FAGOPPL_PROVE</CAPTION>
+<TR>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Nullable</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD>FNR</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Fødselsnr [ihht ELEV2]</TD>
+</TR>
+<TR>
+<TD>PROVENR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Prøvenr [ihht PROVE]</TD>
+</TR>
+<TR>
+<TD>KONTRNR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kontraktnr [Ihht PLASS]</TD>
+</TR>
+<TR>
+<TD>KURSKODE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdekode [Ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSNAVN</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdenavn</TD>
+</TR>
+<TR>
+<TD>PROVED</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Prøvedato</TD>
+</TR>
+<TR>
+<TD>PROVESTA</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Prøvestatus (resultat) [Ihht KARAKTER]</TD>
+</TR>
+<TR>
+<TD>PROVESTATEKST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Prøvestatus som tekst</TD>
+</TR>
+<TR>
+<TD>RESTEORI</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Resultat teoretisk prøve [Ihht KARAKTER]</TD>
+</TR>
+<TR>
+<TD>RESTEORITEKST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Resultat teoretisk prøve som tekst</TD>
+</TR>
+<TR>
+<TD>RESPRAKT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Resultat praktisk prøve [Ihht KARAKTER]</TD>
+</TR>
+<TR>
+<TD>RESPRAKTTEKST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Resultat praktisk prøve som tekst</TD>
+</TR>
+<TR>
+<TD>KANDTYPE</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kandidattype [L=Lærling,E=Elev i skole,P=Praksiskandidat,K=Lærekandidat]</TD>
+</TR>
+<TR>
+<TD>KANDTYPETEKST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Kandidattypetekst [Lærling,Elev i skole,Praksiskandidat,Lærekandidat]</TD>
+</TR>
+<TR>
+<TD>PROVETYPE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Prøvetype [V=Fag-/svenneprøve,K=Kompetanseprøve]</TD>
+</TR>
+<TR>
+<TD>PROVETYPETEKST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Prøvetypetekst [Fag-/svenneprøve,Kompetanseprøve]</TD>
+</TR>
+<TR>
+<TD>PROVE_ELEVKURSID</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>ID Prøve/Elevkurs</TD>
+</TR>
+<TR>
+<TD>PLASS_ELEVKURSID</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>ID Plass/Elevkurs</TD>
+</TR>
+<TR>
+<TD>S_OBJECTID</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>ID</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">View V_FAGOPPL_PROVE does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

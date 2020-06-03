@@ -1,0 +1,492 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS View VQT_KLASORDN</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="VQT_KARLINJE.html" TITLE="VQT_KARLINJE">Prior View</A></TD>
+<TD Class="NavC"><A HREF="../views1.html#VQT_KLASORDN">View VQT_KLASORDN</A></TD>
+<TD Class="NavR"><A HREF="VQT_KURS2.html" TITLE="VQT_KURS2">Next View</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for View VQT_KLASORDN</CAPTION>
+<TR>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Nullable</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD>FYLKESNR_EGET</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Eget fylkesnr</TD>
+</TR>
+<TR>
+<TD>ANTON</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ønsker</TD>
+</TR>
+<TR>
+<TD>ARSTILL</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Tilleggs-timeforbruk (tastes)</TD>
+</TR>
+<TR>
+<TD>EGETSKJE</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Eget skjema? [J,N]</TD>
+</TR>
+<TR>
+<TD>FBRUKRET</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Forbruk av rett? [X=Ingen overstyring,N=Aldri,J=Alltid]</TD>
+</TR>
+<TR>
+<TD>FILTER</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>WEB-filter [1=Internt,2=Vedtatt,3=Offentlig]</TD>
+</TR>
+<TR>
+<TD>FYLKESNR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>GRLID</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Grunnlagsid [ihht GRLHODE]</TD>
+</TR>
+<TR>
+<TD>INFLFMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt med fullføringsrett</TD>
+</TR>
+<TR>
+<TD>INFLFMR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INFREMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt fremmedspråklig med rett</TD>
+</TR>
+<TR>
+<TD>INFREMR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INFREUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt fremmedspråklig uten rett</TD>
+</TR>
+<TR>
+<TD>INFREUR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INNTAKNR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Inntaksnr [0=Utenom fellesinntaket,1=Hovedinntaket,2=Halvårsinntaket,11=Prøveinntaket,&gt;100=Statistikkgrunnlag]</TD>
+</TR>
+<TR>
+<TD>INORDMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt ordinært med rett</TD>
+</TR>
+<TR>
+<TD>INORDMR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INORDUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt ordinært uten rett</TD>
+</TR>
+<TR>
+<TD>INORDUR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INSERMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt særskilt med rett</TD>
+</TR>
+<TR>
+<TD>INSERMR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INSERUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt særskilt uten rett</TD>
+</TR>
+<TR>
+<TD>INSERUR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INSUMMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt med rett</TD>
+</TR>
+<TR>
+<TD>INSUMMR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INSUMUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt uten rett</TD>
+</TR>
+<TR>
+<TD>INSUMUR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INTOTAL</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt</TD>
+</TR>
+<TR>
+<TD>INTOTAL2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>INVOKMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall inntatt med voksenrett</TD>
+</TR>
+<TR>
+<TD>INVOKMR2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>KLASSER</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Helårsklasser</TD>
+</TR>
+<TR>
+<TD>KURSKODE</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Programområdekode [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>LANDSDEK</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Landsdekkende tilbud? [K=Som programområdet,J=Ja,N=Nei]</TD>
+</TR>
+<TR>
+<TD>LANDSLIN</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Landslinje? [K=Som programområdet,J=Ja,N=Nei]</TD>
+</TR>
+<TR>
+<TD>LEDIG</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ledige plasser</TD>
+</TR>
+<TR>
+<TD>LEDIGF</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ledige plasser fullføringsrett</TD>
+</TR>
+<TR>
+<TD>LEDIGI</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ledige plasser ikke rett</TD>
+</TR>
+<TR>
+<TD>LEDIGU</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ledige plasser ungdomsrett</TD>
+</TR>
+<TR>
+<TD>LEDIGV</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ledige plasser voksenrett</TD>
+</TR>
+<TR>
+<TD>OPPTPROV</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Opptaksprøve? [J,N]</TD>
+</TR>
+<TR>
+<TD>PEKSTRA</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ekstra plasser (for overbooking)</TD>
+</TR>
+<TR>
+<TD>PFLFMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall plasser for fullføringsrett</TD>
+</TR>
+<TR>
+<TD>PFREMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Plasser for minoritetsspråklige med rett</TD>
+</TR>
+<TR>
+<TD>PFREUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Plasser for minoritetsspråklige uten rett</TD>
+</TR>
+<TR>
+<TD>PLASSER</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Helårsplasser</TD>
+</TR>
+<TR>
+<TD>PORDMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Plasser for ordinære med rett</TD>
+</TR>
+<TR>
+<TD>PORDUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Plasser for ordinære uten rett</TD>
+</TR>
+<TR>
+<TD>PRES</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Plasser reservert</TD>
+</TR>
+<TR>
+<TD>PSERMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall plasser for særskilte med rett</TD>
+</TR>
+<TR>
+<TD>PSERUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall plasser for særskilte uten rett</TD>
+</TR>
+<TR>
+<TD>PSUMMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall plasser med rett</TD>
+</TR>
+<TR>
+<TD>PSUMUR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall plasser uten rett</TD>
+</TR>
+<TR>
+<TD>PTOTAL</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall plasser</TD>
+</TR>
+<TR>
+<TD>PVOKMR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall plasser for voksenrett</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_BY</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_TS</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD>SKOLEAR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Skoleår[Ihht ARSKOLE]</TD>
+</TR>
+<TR>
+<TD>SKOLENR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Skolenr [Ihht ARSKOLE]</TD>
+</TR>
+<TR>
+<TD>SLUTTDAT</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Sluttdato</TD>
+</TR>
+<TR>
+<TD>S_OBJECTID</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD>S_STATUS</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD>STARTDAT</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Skolestart</TD>
+</TR>
+<TR>
+<TD>STOPKODE</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Stoppkode [0=Som normalt,I=Stopp inntak,N=Stopp nullstilling,B=Stopp brev,X=I+N+B]</TD>
+</TR>
+<TR>
+<TD>SUMPSALG</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall solgte plasser</TD>
+</TR>
+<TR>
+<TD>SUMPSAL2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_BY</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_TS</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD>VILBLINO</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Overføres til vilbli.no? [J,N]</TD>
+</TR>
+<TR>
+<TD>WSOKLIST</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Vise søkerliste på Vigo Skole [J,N]</TD>
+</TR>
+<TR>
+<TD>WSOKLISTONR</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Utvalg på ønskenr [J/N]</TD>
+</TR>
+<TR>
+<TD>WSOKLISTRETT</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Utvalg på søker-rett [J/N]</TD>
+</TR>
+<TR>
+<TD>WSOKLISTSNR</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Utvalg på statusnr [J/N]</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">View VQT_KLASORDN does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

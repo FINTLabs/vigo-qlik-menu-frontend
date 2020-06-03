@@ -1,0 +1,468 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS View VQT_PLASS</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="VQT_P_ELEV.html" TITLE="VQT_P_ELEV">Prior View</A></TD>
+<TD Class="NavC"><A HREF="../views1.html#VQT_PLASS">View VQT_PLASS</A></TD>
+<TD Class="NavR"><A HREF="VQT_PLASSALG.html" TITLE="VQT_PLASSALG">Next View</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for View VQT_PLASS</CAPTION>
+<TR>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Nullable</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD>FYLKESNR_EGET</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Eget fylkesnr</TD>
+</TR>
+<TR>
+<TD>ALTVURDFORM</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Alternativ vurderingsform [J,N]</TD>
+</TR>
+<TR>
+<TD>ANNFYLKE</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Annet fylke [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>ARKIVNR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Arkivnr</TD>
+</TR>
+<TR>
+<TD>AVSLKODE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Kontrakt avsluttet kode [Ihht ARSAK]</TD>
+</TR>
+<TR>
+<TD>AVTALEDATO</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Avtaledato</TD>
+</TR>
+<TR>
+<TD>AVTALEVEDLAGT</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Avtale vedlagt? [J,N]</TD>
+</TR>
+<TR>
+<TD>BNR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Bedriftsnr [Ihht BEDRIFT]</TD>
+</TR>
+<TR>
+<TD>BRUKERID</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>BrukerId</TD>
+</TR>
+<TR>
+<TD>DAGLEDFNR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Daglig leder [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD>ELEVKURSID</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Knytning mot elevkurset [Ihht s_objectid på elevkurs]</TD>
+</TR>
+<TR>
+<TD>FAGLEDFNR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Faglig leder [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD>FNR</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Fødselsnr [Ihht ELEV]</TD>
+</TR>
+<TR>
+<TD>FYLKESNR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>GODKJREF</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Godkjent refusjon [J,N]</TD>
+</TR>
+<TR>
+<TD>HEVETAV</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Hevet av [L= lærlingens ønske,LB= lærlig og bedrift,B= bedriftens ønske]</TD>
+</TR>
+<TR>
+<TD>HJEMFYLKEKOPI</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Kontraktskopi [N,J=lesetilgang]</TD>
+</TR>
+<TR>
+<TD>HJEMMEL</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Hjemmel</TD>
+</TR>
+<TR>
+<TD>KONAVSLD</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Kontrakt avsluttet dato</TD>
+</TR>
+<TR>
+<TD>KONGODKD</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Kontrakt godkjent dato</TD>
+</TR>
+<TR>
+<TD>KONMOTTD</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Kontrakt mottatt dato</TD>
+</TR>
+<TR>
+<TD>KONREGAD</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Registreringsdato for kontrakt avsluttet</TD>
+</TR>
+<TR>
+<TD>KONTLOP</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kontraktsløp [N=Normalløp,A=Avvikende løp,S=Særløp]</TD>
+</TR>
+<TR>
+<TD>KONTRNR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Kontraktnr (systemfelt)</TD>
+</TR>
+<TR>
+<TD>KONTRTYPE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Kontraktstype [Ihht KONTRTYPE]</TD>
+</TR>
+<TR>
+<TD>KURSKODE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdekode [Ihht KURS]</TD>
+</TR>
+<TR>
+<TD>LERLPROS</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Lærlingprosent</TD>
+</TR>
+<TR>
+<TD>LTIDFRAD</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Læretid startdato</TD>
+</TR>
+<TR>
+<TD>LTIDTILD</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Læretid sluttdato</TD>
+</TR>
+<TR>
+<TD>MEDLBNR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Medlemsbedrift orgnr [Ihht BEDRIFT2]</TD>
+</TR>
+<TR>
+<TD>NORMLTID</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Normaltid</TD>
+</TR>
+<TR>
+<TD>NTOLTID</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Netto læretid</TD>
+</TR>
+<TR>
+<TD>NVSKAPTID</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Netto verdiskapningstid</TD>
+</TR>
+<TR>
+<TD>OFORSLAGOBJECTID</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Systemkolonne, kobling til OFORSLAG</TD>
+</TR>
+<TR>
+<TD>OPPLBESTILLING</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Opplæringsbestilling</TD>
+</TR>
+<TR>
+<TD>OPRINR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Opplæringsring nr [Ihht OPPLRING]</TD>
+</TR>
+<TR>
+<TD>ORDNINGID</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Ordningid [Ihht TS_ORDNING]</TD>
+</TR>
+<TR>
+<TD>PBREVKAND</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Praksisbrevkandidat</TD>
+</TR>
+<TR>
+<TD>PBREVPLANKURS</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Praksisbrev programområde [ihht PBREVPLANMAAL]</TD>
+</TR>
+<TR>
+<TD>PBREVPLANNR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Praksisbrev plannr [ihht PBREVPLANMAAL]</TD>
+</TR>
+<TR>
+<TD>REGION</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Region</TD>
+</TR>
+<TR>
+<TD>RETT</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Rettstype [U=Ungdomsrett,F=Fullføringsrett,V=Voksenrett]</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_BY</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_TS</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD>SKOLENR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Skolenummer [Ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD>SKOLENRTEORI</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Skolenr, Kjøp av teori [Ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD>S_OBJECTID</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD>S_OBJECTID_LOK</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>SSBDATO</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Dato for overført til SSB</TD>
+</TR>
+<TR>
+<TD>S_STATUS</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD>STATUSID</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Hvor langt i prosessen den er kommet</TD>
+</TR>
+<TR>
+<TD>SUMFRADR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Fradrag</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_BY</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_TS</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD>TEOAVSLD</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Kjøp av teori, registrert dato avsluttet</TD>
+</TR>
+<TR>
+<TD>TEORI</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kjøp av teori? [J,N]</TD>
+</TR>
+<TR>
+<TD>TILANNFYLKE</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Til annet fylke [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>TILHORIGHET</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Fylkestilhørighet [Ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>TILSREPRFNR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Tilsynsrepresentant [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD>TYPE</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Type [L=Lærekontrakt,E= Fagopplæring i skole,O=Opplæringskontrakt,A=Annet fylke]</TD>
+</TR>
+<TR>
+<TD>UTSKRWEB</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Utskrift web? [J,N]</TD>
+</TR>
+<TR>
+<TD>VEKSLMOD</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Vekslingsmodell [J,N]</TD>
+</TR>
+<TR>
+<TD>VERNEVERDIG</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Små og verneverdige fag? [J,N]</TD>
+</TR>
+<TR>
+<TD>VG1FELLES</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kjøp av teori VG1 fellesfag</TD>
+</TR>
+<TR>
+<TD>VG1PROGRAM</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kjøp av teori VG1 programfag</TD>
+</TR>
+<TR>
+<TD>VG2FELLES</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kjøp av teori VG2 fellesfag</TD>
+</TR>
+<TR>
+<TD>VG2PROGRAM</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kjøp av teori VG2 programfag</TD>
+</TR>
+<TR>
+<TD>VG3PROGRAM</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Kjøp av teori VG3 programfag</TD>
+</TR>
+<TR>
+<TD>VSKAPTID</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Verdiskapningstid</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">View VQT_PLASS does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,198 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS View V_PROVEEKSPORT</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="V_PBREVPLANMAAL.html" TITLE="V_PBREVPLANMAAL">Prior View</A></TD>
+<TD Class="NavC"><A HREF="../views1.html#V_PROVEEKSPORT">View V_PROVEEKSPORT</A></TD>
+<TD Class="NavR"><A HREF="V_PROVEEKSPORT_FORMAT.html" TITLE="V_PROVEEKSPORT_FORMAT">Next View</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for View V_PROVEEKSPORT</CAPTION>
+<TR>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Nullable</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD>S_OBJECTID</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>ID</TD>
+</TR>
+<TR>
+<TD>BNR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Bedriftsnr [ihht BEDRIFT2]</TD>
+</TR>
+<TR>
+<TD>FYLKESNR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>FNR</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Fødselsnr [ihht ELEV2]</TD>
+</TR>
+<TR>
+<TD>ELEVNAVN</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Elevnavn</TD>
+</TR>
+<TR>
+<TD>MOBILTELEFON</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Mobiltelefon</TD>
+</TR>
+<TR>
+<TD>EPOST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>E-post</TD>
+</TR>
+<TR>
+<TD>KURSKODE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdekode [Ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSNAVN</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdenavn</TD>
+</TR>
+<TR>
+<TD>KANDTYPE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Kandidattype [L=Lærling,E=Elev i skole,P=Praksiskandidat,K=Lærekandidat]</TD>
+</TR>
+<TR>
+<TD>PROVETYPE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Prøvetype [V=Fag-/svenneprøve,K=Kompetanseprøve]</TD>
+</TR>
+<TR>
+<TD>KONTRNR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kontraktnr [Ihht PLASS]</TD>
+</TR>
+<TR>
+<TD>PROVENR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Prøvenr [ihht PROVE]</TD>
+</TR>
+<TR>
+<TD>TILRLPROVE</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Tilrettelagt prøve</TD>
+</TR>
+<TR>
+<TD>RESTEORI</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Resultat teoretisk prøve [Ihht KARAKTER]</TD>
+</TR>
+<TR>
+<TD>RESPRAKT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Resultat praktisk prøve [Ihht KARAKTER]</TD>
+</TR>
+<TR>
+<TD>PROVESTA</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Prøvestatus</TD>
+</TR>
+<TR>
+<TD>PROVED</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Prøvedato</TD>
+</TR>
+<TR>
+<TD>ADRESSE1</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Adresse 1</TD>
+</TR>
+<TR>
+<TD>ADRESSE2</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Adresse 2</TD>
+</TR>
+<TR>
+<TD>POSTNR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Postnr [ihht POSTSTED]</TD>
+</TR>
+<TR>
+<TD>POSTSTED</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Poststed</TD>
+</TR>
+<TR>
+<TD>KOMMNR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kommunenr [ihht KOMMUNE]</TD>
+</TR>
+<TR>
+<TD>KOMMUNE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Kommunenavn</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">View V_PROVEEKSPORT does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

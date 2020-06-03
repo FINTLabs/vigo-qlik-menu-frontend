@@ -1,0 +1,468 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS View V_SOKER</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="V_SIGNATUR.html" TITLE="V_SIGNATUR">Prior View</A></TD>
+<TD Class="NavC"><A HREF="../views2.html#V_SOKER">View V_SOKER</A></TD>
+<TD Class="NavR"><A HREF="V_SOKEREFORMIDLET.html" TITLE="V_SOKEREFORMIDLET">Next View</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for View V_SOKER</CAPTION>
+<TR>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Nullable</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD>FYLKESNR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>FNR</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Fødselsnr [ihht ELEV2]</TD>
+</TR>
+<TR>
+<TD>REFNR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Refnr</TD>
+</TR>
+<TR>
+<TD>KJONN</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Kjønn [K,M]</TD>
+</TR>
+<TR>
+<TD>FODSELSDATO</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Fødselsdato</TD>
+</TR>
+<TR>
+<TD>FODSELSAR</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Fødselsår</TD>
+</TR>
+<TR>
+<TD>ALDER</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Alder</TD>
+</TR>
+<TR>
+<TD>ALDERSGRUPPE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Aldersgruppe [1=Under 17,2=17,3=18,4=19,5=20,6=21-25,7=Over 25]</TD>
+</TR>
+<TR>
+<TD>ER_FRA_EGET_FYLKE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er fra eget fylke [J,N]</TD>
+</TR>
+<TR>
+<TD>RETT_JN</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Rett [J,N]</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_01</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 1</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_02</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 2</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_03</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 3</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_04</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 4</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_05</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 5</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_06</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 6</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_07</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 7</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_08</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 8</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_09</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 9</TD>
+</TR>
+<TR>
+<TD>INTERNKODE_10</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Internkode 10</TD>
+</TR>
+<TR>
+<TD>HAR_FRITEKST_VEDTAK</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har fritekst om vedtak [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_FRITEKST_SAK</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har fritekst om saksbehandling [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_FRITEKST_REALKOMP</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har fritekst om relakompetanse [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_FRITEKST_MELDSOK</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har fritekst om melding til søker [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_FRITEKST_MELDSKOL</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har fritekst om melding til skolen [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_FRITEKST_GENERELT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har generell fritekst [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_AVSLUTTENDE_KOMPETANSE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har avsluttende kompetanse [J,N]</TD>
+</TR>
+<TR>
+<TD>SOKERTYPE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Søkertype [O,S,M,OS,OM,SO,MO,BL=Ikke satt]</TD>
+</TR>
+<TR>
+<TD>ANT_ONSKER</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall ønsker</TD>
+</TR>
+<TR>
+<TD>ANT_KURSONSKER</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Antall programområdeønsker</TD>
+</TR>
+<TR>
+<TD>HAR_SOKT_VG1</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har søkt vg1 [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SOKT_VG2</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har søkt vg2 [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SOKT_VG3</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har søkt vg3 [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SOKT_SKOLE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har søkt skole [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SOKT_BEDRIFT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har søkt bedrift [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SOKT_KUN_BEDRIFT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har kun søkt bedrift [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_ONSKER_MU_FULLFORINGSRETT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har ønsker med fullføringsrett [J,N]</TD>
+</TR>
+<TR>
+<TD>ER_INNTATT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er inntatt [J,N]</TD>
+</TR>
+<TR>
+<TD>ER_INNTATT_1027</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er inntatt (status mellom 10 og 27 [J,N]</TD>
+</TR>
+<TR>
+<TD>ER_INNTATT_SISTE_INNTAK</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er inntatt i siste inntak [J,N]</TD>
+</TR>
+<TR>
+<TD>ER_INNTATT_SERSKILT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er inntatt individuelt/fortrinn [J,N]</TD>
+</TR>
+<TR>
+<TD>INNTATT_SKOLENR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Inntatt skolenr [Ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD>INNTATT_ONSKENR</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Inntatt ønskenr</TD>
+</TR>
+<TR>
+<TD>INNTATT_KURSKODE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Inntatt programområdekode [Ihht KURS]</TD>
+</TR>
+<TR>
+<TD>ER_VENTENDE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er på venteplass [J,N]</TD>
+</TR>
+<TR>
+<TD>ER_VENTENDE_SERSKILT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er på venteplass individuelt/fortrinn [J,N]</TD>
+</TR>
+<TR>
+<TD>ER_VENTENDE_ORDINERT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er på ordinær venteplass [J,N]</TD>
+</TR>
+<TR>
+<TD>UTEN_TILBUD</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er uten tilbud [J,N]</TD>
+</TR>
+<TR>
+<TD>UTEN_PLASS</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er uten plass [J,N]</TD>
+</TR>
+<TR>
+<TD>NEI_TIL_TILBUD</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har svart nei til tilbud [J,N]</TD>
+</TR>
+<TR>
+<TD>ER_UKVAL_ALLE_ONSKER</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er ukvalifisert på alle ønsker [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_AKTIVE_ONSKER</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har aktive ønsker [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_IKKE_AKTIVE_ONSKER</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har ikke aktive ønsker [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SVART_NEI_TIL_VENT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har svart nei til venteplass [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SVART_NEI_TIL_PLASS</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har svart nei til plass [J,N]</TD>
+</TR>
+<TR>
+<TD>PRIM_ONSKE</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Primærønske</TD>
+</TR>
+<TR>
+<TD>PRIM_ONSKE_AKTIVT</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Aktivt primærønske</TD>
+</TR>
+<TR>
+<TD>PRIM_FYLKE</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Primært fylke</TD>
+</TR>
+<TR>
+<TD>ER_OTELEV</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Er OT-elev [J,N]</TD>
+</TR>
+<TR>
+<TD>HAR_SOKT_LANDSLINJE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Har søkt landslinje [J,N]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_1</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 1 [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_2</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 2 [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_3</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 3 [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_4</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 4 [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>FNR_STATUS</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Status på fnrsjekk [0,1]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_5</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 5 [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_6</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 6 [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_7</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 7 [ihht KURS]</TD>
+</TR>
+<TR>
+<TD>KURSONSKE_8</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Programområdeønske 8 [ihht KURS]</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">View V_SOKER does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,2350 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table ELEV2</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="ELEVVMM.html" TITLE="ELEVVMM">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#ELEV2">Table ELEV2</A></TD>
+<TD Class="NavR"><A HREF="ENDRET.html" TITLE="ENDRET">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table ELEV2</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Elever per fylke</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table ELEV2</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FYLKESNR</B><SUB>1</SUB></TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>FNR</B><SUB>2</SUB></TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>ARKIVNR</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Arkivnr</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>AVSLAGBS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Avslagsbrev sendt? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>AVVFRDOK</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Avvist pga frist/dok [N=Nei,F=Pga frist,D=Pga dokumentasjon]</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>BREVDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Brev sendt dato</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>BREVFLAG</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Skal søkeren motta brev? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>BREVTYPE</TD>
+<TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Brevtype sendt</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DATAVBR</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for avbrudd av planlagt opplæringsløp</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>DATBTEOR</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bestått teoriopplæring (dato)</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>DATDRKMP</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Realkompetanse-vurdert (dato)</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>DATESKMP</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Endret ønsket sluttkompetanse (dato)</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>DATFHV</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for første henvendelse</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>DATFULFP</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for planlagt fullføring</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>DATSOKT</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for første søknad</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>DATSOKTN</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for trukket søknad</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>DATSOKTR</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Søkt om realkompetansevurdering (dato)</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>DATSTART</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for start av opplæringsløpet</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>DATTILB</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for tilbud</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>DATTILBN</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for takket nei til tilbud</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>DELTINNT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Deltar søkeren i inntaket? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>EGETSKJE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Eget skjema? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>ENGOPL</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har hatt opplæring i engelsk? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>FINNTONS</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige ¿inntatt ønskenr¿</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>FKTILBEF</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fått fylkeskommunalt tilbud i eget fylke? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>FREAKTIV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Aktiv minoritetsspråklig søker? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>FSVARPLA</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige svar på tilbud om plass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)]</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>FSVARVEN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige svar på tilbud om venteplass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)]</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>FULFGHJ</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fullført 9-årig grunnskole i utlandet? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>FULFGMAN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fullført grunnskolen? Manuelt satt. [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>FULFGNO</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fullført 10. trinn i norsk grunnskole? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>FULFVMAN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fullført vidg. skole? Manuelt satt. [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>FULLOPLB</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Full opplæring i bedrift? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>GJESTAVT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har søkeren gjesteelevsavtale? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>HELSEOPL</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Foreligger det helseopplysninger? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>HPL</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Holdeplassnr [ihht HPL]</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>HVILTEXT</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Hviletekst (OT forklaring)</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>IKKESOKT</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Årsak for ikke søkt [ihht ARSAK]</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>INNSKODE</TD>
+<TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Inns. instans - kode [Ihht INSTANS]</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>INNSNAVN</TD>
+<TD nowrap>VARCHAR2(60)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Inns. instans - kontaktperson</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>INNSTITT</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Inns. instans - kontaktpersonens tittel</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>INNSTLF</TD>
+<TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Inns. instans - telefon</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>KORTOPPL</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Avkortet opplæring [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>LERL1112</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Lærling ihht. pgr 11-12 første ledd? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>MANAVREG</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiver-region (manuell)</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>MERKNAD</TD>
+<TD nowrap>VARCHAR2(250)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Merknad</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>NOROPL2</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har fått opplæring etter Læreplan i grunnleggende norsk for språklige minoriteter? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>NOROPLN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har fått opplæring etter Læreplan i norsk (ordinær)? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">49</TD>
+<TD>NOROPLX</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har fått annen norsk-opplæring? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">50</TD>
+<TD>NORPROV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har bestått Norskprøve 3 både skriftlig og muntlig? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>NORSKKAM</TD>
+<TD nowrap>VARCHAR2(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Norskkarakter muntlig (minspr)</TD>
+</TR>
+<TR>
+<TD Class="Num">52</TD>
+<TD>NORSKKAS</TD>
+<TD nowrap>VARCHAR2(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Norskkarakter skriftlig (minspr)</TD>
+</TR>
+<TR>
+<TD Class="Num">53</TD>
+<TD>NORSKKAT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Norskkarakter type (minspr)</TD>
+</TR>
+<TR>
+<TD Class="Num">54</TD>
+<TD>NORSKPRM</TD>
+<TD nowrap>VARCHAR2(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Norskprøveresultat muntlig (minspr)</TD>
+</TR>
+<TR>
+<TD Class="Num">55</TD>
+<TD>NORSKPRS</TD>
+<TD nowrap>VARCHAR2(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Norskprøveresultat skriftlig (minspr)</TD>
+</TR>
+<TR>
+<TD Class="Num">56</TD>
+<TD>NORSKPRT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Norskprøveresultat-type (minspr) [I=Ikke satt,K=Karakter,P=Poeng]</TD>
+</TR>
+<TR>
+<TD Class="Num">57</TD>
+<TD>ONSLKOMP</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Ønsker lavere kompetanse? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">58</TD>
+<TD>ONSSKOMP</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Ønsket sluttkompetanse [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">59</TD>
+<TD>OPPTPROV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opptaksprøve? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">60</TD>
+<TD>OTMERK</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>OT-merknad</TD>
+</TR>
+<TR>
+<TD Class="Num">61</TD>
+<TD>OTSTATUS</TD>
+<TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>OT-status - manuelt satt [ihht OTSTATUS]</TD>
+</TR>
+<TR>
+<TD Class="Num">62</TD>
+<TD>PASSIV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Passiv søknad? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">63</TD>
+<TD>PASSORD</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Passord</TD>
+</TR>
+<TR>
+<TD Class="Num">64</TD>
+<TD>PRAKAND1</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Får teorioppl. for praksiskandidater? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">65</TD>
+<TD>PRAKAND2</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fullført teorioppl. for praksiskandidater? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">66</TD>
+<TD>PRAKPRIV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Praksiskandidat/privatist? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">67</TD>
+<TD>REFNR</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Referansenr</TD>
+</TR>
+<TR>
+<TD Class="Num">68</TD>
+<TD>REFUSJON</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Refusjon? [I=Ikke satt,N=Nei,J=Ja]</TD>
+</TR>
+<TR>
+<TD Class="Num">69</TD>
+<TD>RESARSAK</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Reservasjonsårsak [Ihht ARSAK]</TD>
+</TR>
+<TR>
+<TD Class="Num">70</TD>
+<TD>RESARSAK2</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Reservasjonsårsak 2 [Ihht ARSAK]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">71</TD>
+<TD>RETT1</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rettstype i år [U=Ungdomsrett,V=Voksenrett,F= Fullføringsrett,I=Ikke rett]</TD>
+</TR>
+<TR>
+<TD Class="Num">72</TD>
+<TD>RETT3</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Rettstype (opprinnelig) [U=Ungdomsrett,V=Voksenrett,F= Fullføringsrett,I=Ikke rett]</TD>
+</TR>
+<TR>
+<TD Class="Num">73</TD>
+<TD>SAM123</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Samisk som 1., 2. eller 3. språk? [1,2,3]</TD>
+</TR>
+<TR>
+<TD Class="Num">74</TD>
+<TD>SAMDKODE</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Samisk dialektkode</TD>
+</TR>
+<TR>
+<TD Class="Num">75</TD>
+<TD>SAMGAAR</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall år samisk i grunnskolen</TD>
+</TR>
+<TR>
+<TD Class="Num">76</TD>
+<TD>SAMVAAR</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall år samisk i videregående skole</TD>
+</TR>
+<TR>
+<TD Class="Num">77</TD>
+<TD>SAMVTIM</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall timer samisk i videregående skole</TD>
+</TR>
+<TR>
+<TD Class="Num">78</TD>
+<TD>SERAKTIV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Aktiv fortrinnssøker [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">79</TD>
+<TD>SFORSENT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Søknad levert for seint? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">80</TD>
+<TD>SKYSS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>WEB Har bedt om skoleskyss? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">81</TD>
+<TD>SOKNKAT</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Behandlingskategori Søknad [ihht BEHANKAT]</TD>
+</TR>
+<TR>
+<TD Class="Num">82</TD>
+<TD>SREDSOK</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Siste redigering av søker på web</TD>
+</TR>
+<TR>
+<TD Class="Num">83</TD>
+<TD>STUDKODE</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Studieretning [ihht STUDRETN]</TD>
+</TR>
+<TR>
+<TD Class="Num">84</TD>
+<TD>SVARPLAS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Svar på tilbud om plass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)]</TD>
+</TR>
+<TR>
+<TD Class="Num">85</TD>
+<TD>SVARVENT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Svar på tilbud om venteplass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)</TD>
+</TR>
+<TR>
+<TD Class="Num">86</TD>
+<TD>VEDTKAT</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Behandlingskategori Vedtak [ihht BEHANKAT]</TD>
+</TR>
+<TR>
+<TD Class="Num">87</TD>
+<TD>WFRSOKN</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Web-frist søknad</TD>
+</TR>
+<TR>
+<TD Class="Num">88</TD>
+<TD>WTSFASTE</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Web-dato siste red. av faste opplysninger</TD>
+</TR>
+<TR>
+<TD Class="Num">89</TD>
+<TD>WTSSVAR</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Web-dato siste redigert av svar</TD>
+</TR>
+<TR>
+<TD Class="Num">90</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">91</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">92</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">93</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">94</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">95</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">96</TD>
+<TD>SKOMPKOD</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bestått sluttkompetanse - kode [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">97</TD>
+<TD>BTEORKOD</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bestått teoriopplæring - kode [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">98</TD>
+<TD>KOMMNR</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kommunenr [Ihht KOMMUNE]</TD>
+</TR>
+<TR>
+<TD Class="Num">99</TD>
+<TD>POSTNR</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Postnr (inntak) [Ihht POSTSTED]</TD>
+</TR>
+<TR>
+<TD Class="Num">100</TD>
+<TD>GATE</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Gateadresse</TD>
+</TR>
+<TR>
+<TD Class="Num">101</TD>
+<TD>DSFSPERR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylket eier gate og postnr [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">102</TD>
+<TD>DSFSPERR2</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylket eier kommnr [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">103</TD>
+<TD>MLDTILBED</TD>
+<TD nowrap>VARCHAR2(250)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Melding til bedrift fra søker</TD>
+</TR>
+<TR>
+<TD Class="Num">104</TD>
+<TD>LKAND</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Lærekandidat? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">105</TD>
+<TD>REFUKODE</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Refusjonskode barnevern</TD>
+</TR>
+<TR>
+<TD Class="Num">106</TD>
+<TD>DATFORMVGO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato formidlet vgo (voksen)</TD>
+</TR>
+<TR>
+<TD Class="Num">107</TD>
+<TD>GATEX</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Gateadresse, hemmelig</TD>
+</TR>
+<TR>
+<TD Class="Num">108</TD>
+<TD>POSTNRX</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Postnr (inntak), hemmelig [Ihht POSTSTED]</TD>
+</TR>
+<TR>
+<TD Class="Num">109</TD>
+<TD>RETTMAN</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rettstype (manuelt satt) [U=Ungdomsrett,V=Voksenrett,F=Fullføringsrett,I=Ikke rett]</TD>
+</TR>
+<TR>
+<TD Class="Num">110</TD>
+<TD>NYGIV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Med i ny giv [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">111</TD>
+<TD>WFRSVAR</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Web-frisr svar</TD>
+</TR>
+<TR>
+<TD Class="Num">112</TD>
+<TD>SENDT_ARKIV</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for sendt til arkiv</TD>
+</TR>
+<TR>
+<TD Class="Num">113</TD>
+<TD>DATSOKTV</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato søkt voksenopplæring</TD>
+</TR>
+<TR>
+<TD Class="Num">114</TD>
+<TD>GODKJUTD</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Godkjent registrert utdannelse [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">115</TD>
+<TD>GODKJFAGB</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Godkjent registrerte fagbrev [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">116</TD>
+<TD>FULFGVO</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fullført grunnskoleopplæring for voksne? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">117</TD>
+<TD>OPPLNSVO</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har fått opplæring etter Læreplan i norsk og samfunnsfag for voksne innvandrere? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">118</TD>
+<TD>ORDSOKER</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Ordinær søker [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">119</TD>
+<TD>INDISOKB</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Individuell søknadsbehandling [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">120</TD>
+<TD>BUNKENR</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bunkenr</TD>
+</TR>
+<TR>
+<TD Class="Num">121</TD>
+<TD>FGRUPPE</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Oppholdsstatus (f-gruppe) [ihht FGRUPPE]</TD>
+</TR>
+<TR>
+<TD Class="Num">122</TD>
+<TD>BEGRENS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Begrens? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">123</TD>
+<TD>GENAVST</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for generering av avstander</TD>
+</TR>
+<TR>
+<TD Class="Num">124</TD>
+<TD>INSPLASSERT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Institusjonsplassert</TD>
+</TR>
+<TR>
+<TD Class="Num">125</TD>
+<TD>KAROVERS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oversettbare karakterer? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">126</TD>
+<TD>KLAGKART</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Klagekarakter type (minspr) [I=Ikke satt,K=Karakter,P=Poeng]</TD>
+</TR>
+<TR>
+<TD Class="Num">127</TD>
+<TD>KLAGKARM</TD>
+<TD nowrap>VARCHAR2(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Klagekarakter muntlig (minspr)</TD>
+</TR>
+<TR>
+<TD Class="Num">128</TD>
+<TD>KLAGKARS</TD>
+<TD nowrap>VARCHAR2(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Klagekarakter skriftlig (minspr)</TD>
+</TR>
+<TR>
+<TD Class="Num">129</TD>
+<TD>KLIKODE</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Klageinstanskode</TD>
+</TR>
+<TR>
+<TD Class="Num">130</TD>
+<TD>ONSKE2DT</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for arkivering av ønsker</TD>
+</TR>
+<TR>
+<TD Class="Num">131</TD>
+<TD>OPPHEV24</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opphev 24-årsgrensen [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">132</TD>
+<TD>PASSDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for brev om passord</TD>
+</TR>
+<TR>
+<TD Class="NumRed">133</TD>
+<TD>SASID</TD>
+<TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Id SAS</TD>
+</TR>
+<TR>
+<TD Class="Num">134</TD>
+<TD>SYSID</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>ID</TD>
+</TR>
+<TR>
+<TD Class="Num">135</TD>
+<TD>VGDOKNR3</TD>
+<TD nowrap>VARCHAR2(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Vitnemålsdokument nummer</TD>
+</TR>
+<TR>
+<TD Class="Num">136</TD>
+<TD>AKSEPT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Aksept av søknad</TD>
+</TR>
+<TR>
+<TD Class="Num">137</TD>
+<TD>RETTPB</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rett til påbygging [0=blank,1=Har påbyggingsrett etter §3-1,2=Har påbyggingsrett etter §4A-3,3=Har ikke påbyggingsrett,4=Uavklart]</TD>
+</TR>
+<TR>
+<TD Class="Num">138</TD>
+<TD>AVSLKOMP</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Avsluttende kompetanse? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">139</TD>
+<TD>ELEVID</TD>
+<TD nowrap>VARCHAR2(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>ID Elev</TD>
+</TR>
+<TR>
+<TD Class="Num">140</TD>
+<TD>FSPRKOD2</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Ønsket fremmedspråk Stud.forbr [Ihht FREMSPR]</TD>
+</TR>
+<TR>
+<TD Class="Num">141</TD>
+<TD>OTMERK2</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>OT-merknad 2 benyttes i OTTO</TD>
+</TR>
+<TR>
+<TD Class="Num">142</TD>
+<TD>PREINFO</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Preutfyllingsgrunnlag</TD>
+</TR>
+<TR>
+<TD Class="Num">143</TD>
+<TD>PREINFO2</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Preutfyllingsgrunnlag 2</TD>
+</TR>
+<TR>
+<TD Class="Num">144</TD>
+<TD>REFNR2</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Referansenr 2</TD>
+</TR>
+<TR>
+<TD Class="Num">145</TD>
+<TD>RESTRETT</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Rest ungdomsrett</TD>
+</TR>
+<TR>
+<TD Class="Num">146</TD>
+<TD>RETT2</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Rettstype neste år (beregnet) [U=Ungdomsrett,V=Voksenrett,F= Fullføringsrett,I=Ikke rett]</TD>
+</TR>
+<TR>
+<TD Class="Num">147</TD>
+<TD>RETTBRAR</TD>
+<TD nowrap>VARCHAR2(200)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skoleår det forbrukes rett</TD>
+</TR>
+<TR>
+<TD Class="Num">148</TD>
+<TD>RETTBRUK</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Forbruk av ungdomsrett</TD>
+</TR>
+<TR>
+<TD Class="Num">149</TD>
+<TD>RETTDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for beregning av rett</TD>
+</TR>
+<TR>
+<TD Class="Num">150</TD>
+<TD>RETTKVOT</TD>
+<TD nowrap>NUMBER(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Antall år rett</TD>
+</TR>
+<TR>
+<TD Class="Num">151</TD>
+<TD>SLUTBREV</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for sluttbrev (rett)</TD>
+</TR>
+<TR>
+<TD Class="Num">152</TD>
+<TD>UTVIDARS</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Årsak for utvidelse av rett [ihht ARSAK]</TD>
+</TR>
+<TR>
+<TD Class="Num">153</TD>
+<TD>UTVRETTA</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Utvidet rett pga "avviksfag"?</TD>
+</TR>
+<TR>
+<TD Class="Num">154</TD>
+<TD>UTVRETTO</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Utvidet rett pga "omvalg"?</TD>
+</TR>
+<TR>
+<TD Class="Num">155</TD>
+<TD>OTGKJOVF</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Godkjent at OT-Data skal vises for andre fylker [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">156</TD>
+<TD>OTENHET</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>OT-enhet [ihht OTENHET]</TD>
+</TR>
+<TR>
+<TD Class="Num">157</TD>
+<TD>JOURNALNR</TD>
+<TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Journalnr</TD>
+</TR>
+<TR>
+<TD Class="Num">158</TD>
+<TD>SAKSBID</TD>
+<TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>ID Saksbehandler</TD>
+</TR>
+<TR>
+<TD Class="Num">159</TD>
+<TD>DATO_FRA_INNTAK</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato fra inntak</TD>
+</TR>
+<TR>
+<TD Class="Num">160</TD>
+<TD>DATO_REG_OT</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Registrert OT</TD>
+</TR>
+<TR>
+<TD Class="Num">161</TD>
+<TD>DATO_TIL_INNTAK</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato til inntak</TD>
+</TR>
+<TR>
+<TD Class="Num">162</TD>
+<TD>OTGKJOVFDAT</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Godkjent dato (at OT-Data skal vises for andre fylker)</TD>
+</TR>
+<TR>
+<TD Class="Num">163</TD>
+<TD>OTGKJOVFAV</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Hvem har godkjent at OT-Data skal vises for andre fylker.</TD>
+</TR>
+<TR>
+<TD Class="Num">164</TD>
+<TD>FULFKMAN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fullføringsrettskrav innfridd? Manuelt satt. [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">165</TD>
+<TD>OPPHMOTT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har mottatt gyldig oppholdstillatelse [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">166</TD>
+<TD>NOROPLKB</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Har fått opplæring etter læreplan i norsk for språklige minoriteter med kort botid? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">167</TD>
+<TD>AVGISKNR</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiver-skolenr [Ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD Class="Num">168</TD>
+<TD>AVGIKURS</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiver-programområde [Ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">169</TD>
+<TD>AVGISKAR</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiver skole skoleår [Ihht SKOLEAR]</TD>
+</TR>
+<TR>
+<TD Class="Num">170</TD>
+<TD>OTINFO</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fins det OT-informasjon om eleven [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">171</TD>
+<TD>EPOST</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Epostadresse</TD>
+</TR>
+<TR>
+<TD Class="Num">172</TD>
+<TD>TELEFON</TD>
+<TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Telefonnr</TD>
+</TR>
+<TR>
+<TD Class="Num">173</TD>
+<TD>MATTETYP</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table ELEV2</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>SYS_C0020556</TD>
+<TD>NORMAL</TD>
+<TD>SASID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0ELEV2</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1ELEV2</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, REFNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE2ELEV2</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, RETT1, REFNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKELEV2</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table ELEV2</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>ARSAK_FOR_ELEV2_IKKESOKT</TD>
+<TD>IKKESOKT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ARSAK_FOR_ELEV2_RESARSAK</TD>
+<TD>RESARSAK</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ARSAK_FOR_ELEV2_RESARSAK2</TD>
+<TD>RESARSAK2</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ARSAK_FOR_ELEV2_UTVIDARS</TD>
+<TD>UTVIDARS</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEHANKAT_FOR_ELEV2_SOKNKAT</TD>
+<TD>SOKNKAT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEHANKAT" HREF="BEHANKAT.html">BEHANKAT</A></TD>
+<TD>BKATKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEHANKAT_FOR_ELEV2_VEDTKAT</TD>
+<TD>VEDTKAT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEHANKAT" HREF="BEHANKAT.html">BEHANKAT</A></TD>
+<TD>BKATKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEHANKAT2_FOR_ELEV2_SOKNKAT</TD>
+<TD>FYLKESNR, SOKNKAT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEHANKAT2" HREF="BEHANKAT2.html">BEHANKAT2</A></TD>
+<TD>FYLKESNR, BKATKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEHANKAT2_FOR_ELEV2_VEDTKAT</TD>
+<TD>FYLKESNR, VEDTKAT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEHANKAT2" HREF="BEHANKAT2.html">BEHANKAT2</A></TD>
+<TD>FYLKESNR, BKATKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ELEV_FOR_ELEV2</TD>
+<TD>FNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ELEV" HREF="ELEV.html">ELEV</A></TD>
+<TD>FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FGRUPPE_FOR_ELEV2</TD>
+<TD>FGRUPPE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FGRUPPE" HREF="FGRUPPE.html">FGRUPPE</A></TD>
+<TD>FGRPKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FREMSPR_FOR_ELEV2_FSPRKOD2</TD>
+<TD>FSPRKOD2</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FREMSPR" HREF="FREMSPR.html">FREMSPR</A></TD>
+<TD>FSPRKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_ELEV2</TD>
+<TD>FYLKESNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>HPL_FOR_ELEV2</TD>
+<TD>FYLKESNR, HPL</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="HPL" HREF="HPL.html">HPL</A></TD>
+<TD>FYLKESNR, HPL</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>INSTANS_FOR_ELEV2</TD>
+<TD>FYLKESNR, INNSKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="INSTANS" HREF="INSTANS.html">INSTANS</A></TD>
+<TD>FYLKESNR, INNSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KOMMUNE_FOR_ELEV2</TD>
+<TD>KOMMNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KOMMUNE" HREF="KOMMUNE.html">KOMMUNE</A></TD>
+<TD>KOMMNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_ELEV2_AVGIKURS</TD>
+<TD>AVGIKURS</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_ELEV2_BTEORKOD</TD>
+<TD>BTEORKOD</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_ELEV2_ONSSKOMP</TD>
+<TD>ONSSKOMP</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_ELEV2_SKOMPKOD</TD>
+<TD>SKOMPKOD</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>OTENHET_FOR_ELEV2</TD>
+<TD>OTENHET</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="OTENHET" HREF="OTENHET.html">OTENHET</A></TD>
+<TD>OTENHET</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>OTSTATUS_FOR_ELEV2</TD>
+<TD>OTSTATUS</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="OTSTATUS" HREF="OTSTATUS.html">OTSTATUS</A></TD>
+<TD>OTSTATUS</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>POSTSTED_FOR_ELEV2</TD>
+<TD>POSTNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="POSTSTED" HREF="POSTSTED.html">POSTSTED</A></TD>
+<TD>POSTNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>POSTSTED_FOR_ELEV2_POSTNRX</TD>
+<TD>POSTNRX</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="POSTSTED" HREF="POSTSTED.html">POSTSTED</A></TD>
+<TD>POSTNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>REFUSATS_FOR_ELEV2</TD>
+<TD>REFUKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="REFUSATS" HREF="REFUSATS.html">REFUSATS</A></TD>
+<TD>REFUKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>SKOLE_FOR_ELEV2_AVGISKNR</TD>
+<TD>AVGISKNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="SKOLE" HREF="SKOLE.html">SKOLE</A></TD>
+<TD>SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table ELEV2</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0012793</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0012794</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0012795</TD>
+<TD>Check</TD>
+<TD>"AVSLAGBS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVSLAGBS</TD>
+</TR>
+<TR>
+<TD>SYS_C0012796</TD>
+<TD>Check</TD>
+<TD>"AVVFRDOK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVVFRDOK</TD>
+</TR>
+<TR>
+<TD>SYS_C0012797</TD>
+<TD>Check</TD>
+<TD>"BREVFLAG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BREVFLAG</TD>
+</TR>
+<TR>
+<TD>SYS_C0012798</TD>
+<TD>Check</TD>
+<TD>"DELTINNT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DELTINNT</TD>
+</TR>
+<TR>
+<TD>SYS_C0012799</TD>
+<TD>Check</TD>
+<TD>"EGETSKJE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>EGETSKJE</TD>
+</TR>
+<TR>
+<TD>SYS_C0012800</TD>
+<TD>Check</TD>
+<TD>"ENGOPL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ENGOPL</TD>
+</TR>
+<TR>
+<TD>SYS_C0012801</TD>
+<TD>Check</TD>
+<TD>"FKTILBEF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FKTILBEF</TD>
+</TR>
+<TR>
+<TD>SYS_C0012802</TD>
+<TD>Check</TD>
+<TD>"FREAKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FREAKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0012803</TD>
+<TD>Check</TD>
+<TD>"FSVARPLA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FSVARPLA</TD>
+</TR>
+<TR>
+<TD>SYS_C0012804</TD>
+<TD>Check</TD>
+<TD>"FSVARVEN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FSVARVEN</TD>
+</TR>
+<TR>
+<TD>SYS_C0012805</TD>
+<TD>Check</TD>
+<TD>"FULFGHJ" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FULFGHJ</TD>
+</TR>
+<TR>
+<TD>SYS_C0012806</TD>
+<TD>Check</TD>
+<TD>"FULFGMAN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FULFGMAN</TD>
+</TR>
+<TR>
+<TD>SYS_C0012807</TD>
+<TD>Check</TD>
+<TD>"FULFGNO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FULFGNO</TD>
+</TR>
+<TR>
+<TD>SYS_C0012808</TD>
+<TD>Check</TD>
+<TD>"FULFVMAN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FULFVMAN</TD>
+</TR>
+<TR>
+<TD>SYS_C0012809</TD>
+<TD>Check</TD>
+<TD>"FULLOPLB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FULLOPLB</TD>
+</TR>
+<TR>
+<TD>SYS_C0012810</TD>
+<TD>Check</TD>
+<TD>"GJESTAVT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>GJESTAVT</TD>
+</TR>
+<TR>
+<TD>SYS_C0012811</TD>
+<TD>Check</TD>
+<TD>"HELSEOPL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>HELSEOPL</TD>
+</TR>
+<TR>
+<TD>SYS_C0012813</TD>
+<TD>Check</TD>
+<TD>"KORTOPPL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KORTOPPL</TD>
+</TR>
+<TR>
+<TD>SYS_C0012814</TD>
+<TD>Check</TD>
+<TD>"LERL1112" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LERL1112</TD>
+</TR>
+<TR>
+<TD>SYS_C0012815</TD>
+<TD>Check</TD>
+<TD>"NOROPL2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NOROPL2</TD>
+</TR>
+<TR>
+<TD>SYS_C0012816</TD>
+<TD>Check</TD>
+<TD>"NOROPLN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NOROPLN</TD>
+</TR>
+<TR>
+<TD>SYS_C0012817</TD>
+<TD>Check</TD>
+<TD>"NOROPLX" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NOROPLX</TD>
+</TR>
+<TR>
+<TD>SYS_C0012818</TD>
+<TD>Check</TD>
+<TD>"NORPROV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NORPROV</TD>
+</TR>
+<TR>
+<TD>SYS_C0012819</TD>
+<TD>Check</TD>
+<TD>"NORSKKAT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NORSKKAT</TD>
+</TR>
+<TR>
+<TD>SYS_C0012821</TD>
+<TD>Check</TD>
+<TD>"NORSKPRT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NORSKPRT</TD>
+</TR>
+<TR>
+<TD>SYS_C0012822</TD>
+<TD>Check</TD>
+<TD>"ONSLKOMP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ONSLKOMP</TD>
+</TR>
+<TR>
+<TD>SYS_C0012823</TD>
+<TD>Check</TD>
+<TD>"OPPTPROV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPTPROV</TD>
+</TR>
+<TR>
+<TD>SYS_C0012825</TD>
+<TD>Check</TD>
+<TD>"PASSIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PASSIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0012826</TD>
+<TD>Check</TD>
+<TD>"PRAKAND1" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PRAKAND1</TD>
+</TR>
+<TR>
+<TD>SYS_C0012827</TD>
+<TD>Check</TD>
+<TD>"PRAKAND2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PRAKAND2</TD>
+</TR>
+<TR>
+<TD>SYS_C0012828</TD>
+<TD>Check</TD>
+<TD>"PRAKPRIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PRAKPRIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0012829</TD>
+<TD>Check</TD>
+<TD>"REFUSJON" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REFUSJON</TD>
+</TR>
+<TR>
+<TD>SYS_C0012830</TD>
+<TD>Check</TD>
+<TD>"RETT1" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RETT1</TD>
+</TR>
+<TR>
+<TD>SYS_C0012831</TD>
+<TD>Check</TD>
+<TD>"SERAKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SERAKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0012832</TD>
+<TD>Check</TD>
+<TD>"SFORSENT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SFORSENT</TD>
+</TR>
+<TR>
+<TD>SYS_C0012833</TD>
+<TD>Check</TD>
+<TD>"SVARPLAS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SVARPLAS</TD>
+</TR>
+<TR>
+<TD>SYS_C0012834</TD>
+<TD>Check</TD>
+<TD>"SVARVENT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SVARVENT</TD>
+</TR>
+<TR>
+<TD>SYS_C0012838</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0012839</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0012840</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0012841</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0012842</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0012843</TD>
+<TD>Check</TD>
+<TD>"KOMMNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KOMMNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0012844</TD>
+<TD>Check</TD>
+<TD>"POSTNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>POSTNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0012845</TD>
+<TD>Check</TD>
+<TD>"DSFSPERR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DSFSPERR</TD>
+</TR>
+<TR>
+<TD>SYS_C0012846</TD>
+<TD>Check</TD>
+<TD>"DSFSPERR2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DSFSPERR2</TD>
+</TR>
+<TR>
+<TD>SYS_C0012847</TD>
+<TD>Check</TD>
+<TD>"LKAND" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LKAND</TD>
+</TR>
+<TR>
+<TD>SYS_C0012848</TD>
+<TD>Check</TD>
+<TD>"RETTMAN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RETTMAN</TD>
+</TR>
+<TR>
+<TD>SYS_C0012849</TD>
+<TD>Check</TD>
+<TD>"NYGIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NYGIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0012853</TD>
+<TD>Check</TD>
+<TD>"FULFGVO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FULFGVO</TD>
+</TR>
+<TR>
+<TD>SYS_C0012854</TD>
+<TD>Check</TD>
+<TD>"OPPLNSVO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPLNSVO</TD>
+</TR>
+<TR>
+<TD>SYS_C0012855</TD>
+<TD>Check</TD>
+<TD>"ORDSOKER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ORDSOKER</TD>
+</TR>
+<TR>
+<TD>SYS_C0012856</TD>
+<TD>Check</TD>
+<TD>"INDISOKB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INDISOKB</TD>
+</TR>
+<TR>
+<TD>SYS_C0012857</TD>
+<TD>Check</TD>
+<TD>"BEGRENS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BEGRENS</TD>
+</TR>
+<TR>
+<TD>SYS_C0012858</TD>
+<TD>Check</TD>
+<TD>"INSPLASSERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INSPLASSERT</TD>
+</TR>
+<TR>
+<TD>SYS_C0012859</TD>
+<TD>Check</TD>
+<TD>"KAROVERS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KAROVERS</TD>
+</TR>
+<TR>
+<TD>SYS_C0012860</TD>
+<TD>Check</TD>
+<TD>"KLAGKART" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KLAGKART</TD>
+</TR>
+<TR>
+<TD>SYS_C0012861</TD>
+<TD>Check</TD>
+<TD>"OPPHEV24" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPHEV24</TD>
+</TR>
+<TR>
+<TD>SYS_C0012862</TD>
+<TD>Check</TD>
+<TD>"SYSID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SYSID</TD>
+</TR>
+<TR>
+<TD>SYS_C0012863</TD>
+<TD>Check</TD>
+<TD>"RETTPB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RETTPB</TD>
+</TR>
+<TR>
+<TD>SYS_C0021572</TD>
+<TD>Check</TD>
+<TD>"AVSLKOMP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVSLKOMP</TD>
+</TR>
+<TR>
+<TD>SYS_C0021719</TD>
+<TD>Check</TD>
+<TD>"RETTKVOT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RETTKVOT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021726</TD>
+<TD>Check</TD>
+<TD>"UTVRETTA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTVRETTA</TD>
+</TR>
+<TR>
+<TD>SYS_C0021727</TD>
+<TD>Check</TD>
+<TD>"UTVRETTO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTVRETTO</TD>
+</TR>
+<TR>
+<TD>SYS_C0021741</TD>
+<TD>Check</TD>
+<TD>"OTGKJOVF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OTGKJOVF</TD>
+</TR>
+<TR>
+<TD>SYS_C0030886</TD>
+<TD>Check</TD>
+<TD>"FULFKMAN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FULFKMAN</TD>
+</TR>
+<TR>
+<TD>SYS_C0048609</TD>
+<TD>Check</TD>
+<TD>"OPPHMOTT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPHMOTT</TD>
+</TR>
+<TR>
+<TD>SYS_C0048610</TD>
+<TD>Check</TD>
+<TD>"NOROPLKB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NOROPLKB</TD>
+</TR>
+<TR>
+<TD>SYS_C0063024</TD>
+<TD>Check</TD>
+<TD>"OTINFO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OTINFO</TD>
+</TR>
+<TR>
+<TD>XPKELEV2</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, FNR</TD>
+</TR>
+<TR>
+<TD>S_OBJECTID_UNIQUE</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020556</TD>
+<TD>Unique</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SASID</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table ELEV2 does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

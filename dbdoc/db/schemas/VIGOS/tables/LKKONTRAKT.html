@@ -1,0 +1,527 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table LKKONTRAKT</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="LKKARLINJE.html" TITLE="LKKARLINJE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#LKKONTRAKT">Table LKKONTRAKT</A></TD>
+<TD Class="NavR"><A HREF="LKLERLPROS.html" TITLE="LKLERLPROS">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table LKKONTRAKT</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Lånekassen: Kontrakt</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table LKKONTRAKT</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>RESULTID</B><SUB>1</SUB></TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Resultat ID</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>RADNR</B><SUB>2</SUB></TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Radnr</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>LKPID</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>LKP ID</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>ENDRING</TD>
+<TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Endring</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>ENDRINGSTYPE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD> Endringstype</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>HENTET</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Hentet</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>MOTTATT</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Mottatt</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>FNR</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr [ihht PLASS]</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>KONTRNR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontraktsnr [ihht PLASS]</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>FYLKESNR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>ANNFYLKE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Annet fylke [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>SKOLENR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skolenr [ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>RETT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Rett</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>TYPE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Type</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>KONGODKD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrakt godkjent dato</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>LTIDFRAD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Læretid fra dato</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>LTIDTILD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Læretid tildato</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>STATUSID</TD>
+<TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status ID</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>KONAVSLD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrakt avsluttet dato</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>HEVETAV</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Hevet av</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>AVSLKODE</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avsluttningskode</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>OPPLKONTOR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Opplæringskontor</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>SUMFRADR</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sum fradrag</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>KURSKODE</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdekode [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>KURSNAVN</TD>
+<TD nowrap>VARCHAR2(47)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdenavn</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>FAGKODE</TD>
+<TD nowrap>VARCHAR2(7)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fagkode [ihht FAG]</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>FAGNAVN</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fagnavn</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>NUSKODE</TD>
+<TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>NUS-kode</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>BNR</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftsnr [ihht BEDRIFT2]</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>BEDRNAVN</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftsnavn</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>BEDRPOSTNR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftens postnr [ihht POSTSTED]</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>BEDRPOSTSTED</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftens poststed</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>BEDRKOMMNR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftens kommunenr [ihht KOMMUNE]</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>RESULTAT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Resultat</TD>
+</TR>
+<TR>
+<TD Class="NumRed">35</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table LKKONTRAKT</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0LKKONTRAKT</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKLKKONTRAKT</TD>
+<TD>NORMAL</TD>
+<TD>RESULTID, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table LKKONTRAKT</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>LKRESULT_FOR_LKKONTRAKT</TD>
+<TD>RESULTID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="LKRESULT" HREF="LKRESULT.html">LKRESULT</A></TD>
+<TD>S_OBJECTID</TD>
+<TD>CASCADE</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table LKKONTRAKT</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0017174</TD>
+<TD>Check</TD>
+<TD>"RESULTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RESULTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0017175</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0017176</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0017177</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0017178</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0017179</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0017180</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKLKKONTRAKT</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>RESULTID, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table LKKONTRAKT does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

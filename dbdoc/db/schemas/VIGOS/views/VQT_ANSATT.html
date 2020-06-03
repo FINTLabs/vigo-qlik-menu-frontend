@@ -1,0 +1,318 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS View VQT_ANSATT</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="VQT_AJOURHOL.html" TITLE="VQT_AJOURHOL">Prior View</A></TD>
+<TD Class="NavC"><A HREF="../views1.html#VQT_ANSATT">View VQT_ANSATT</A></TD>
+<TD Class="NavR"><A HREF="VQT_ANSIROLL.html" TITLE="VQT_ANSIROLL">Next View</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for View VQT_ANSATT</CAPTION>
+<TR>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Nullable</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD>FYLKESNR_EGET</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Eget fylkesnr</TD>
+</TR>
+<TR>
+<TD>BRUKERID</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Bruker ID</TD>
+</TR>
+<TR>
+<TD>DSPPRK</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>DSP personstatus kode</TD>
+</TR>
+<TR>
+<TD>DSPPRTEKS</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>DSP personstatus navn</TD>
+</TR>
+<TR>
+<TD>DSPSRSK</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>DSP spesiell status kode</TD>
+</TR>
+<TR>
+<TD>DSPSRST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>DSP spesiell status navn</TD>
+</TR>
+<TR>
+<TD>EPOST</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>e-postadresse</TD>
+</TR>
+<TR>
+<TD>FNR_A</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Fødselsnr ansatt</TD>
+</TR>
+<TR>
+<TD>FNRNYTT</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Nytt fnr</TD>
+</TR>
+<TR>
+<TD>FNRNYTTDATO</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Dato nytt fnr</TD>
+</TR>
+<TR>
+<TD>FNRTIDL</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Tidligere fnr</TD>
+</TR>
+<TR>
+<TD>FNRTIDLDATO</TD>
+<TD>DATE</TD>
+<TD>Yes</TD>
+<TD>Dato tidligere fnr</TD>
+</TR>
+<TR>
+<TD>GATE1H</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Gate hjemsted</TD>
+</TR>
+<TR>
+<TD>GATE1J_A</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Gateadresse1 jobb (ansatt)</TD>
+</TR>
+<TR>
+<TD>GATE2H</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Gate hjemsted</TD>
+</TR>
+<TR>
+<TD>GATE2J_A</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Gateadresse2 jobb (ansatt)</TD>
+</TR>
+<TR>
+<TD>KOMMNRH</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kommunenr hjemsted [ihht KOMMUNE]</TD>
+</TR>
+<TR>
+<TD>KOMMNRJ_A</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kommunenr jobb (ansatt) [ihht KOMMUNE]</TD>
+</TR>
+<TR>
+<TD>LANDKODE</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Landkode [ihht LAND]</TD>
+</TR>
+<TR>
+<TD>NAVN</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Navn</TD>
+</TR>
+<TR>
+<TD>PASSORD</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Passord</TD>
+</TR>
+<TR>
+<TD>POSTNRH</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Postnr hjemsted [ihht POSTSTED]</TD>
+</TR>
+<TR>
+<TD>POSTNRJ_A</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Postnr jobb (ansatt) [ihht POSTSTED]</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_BY_A</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Opprettet av (systemfelt) (ansatt)</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_TS_A</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Opprettet når (systemfelt) (ansatt)</TD>
+</TR>
+<TR>
+<TD>S_OBJECTID_A</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Objectid (systemfelt) (ansatt)</TD>
+</TR>
+<TR>
+<TD>S_STATUS_A</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Status (systemfelt) (ansatt)</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_BY_A</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Oppdatert av (systemfelt) (ansatt)</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_TS_A</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Oppdatert når (systemfelt) (ansatt)</TD>
+</TR>
+<TR>
+<TD>TELEFON</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Telefon jobb</TD>
+</TR>
+<TR>
+<TD>TELEFON2</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Telefon mobil</TD>
+</TR>
+<TR>
+<TD>FNR_A2</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Fødselsnr ansatt-2</TD>
+</TR>
+<TR>
+<TD>FYLKESNR</TD>
+<TD>NUMBER</TD>
+<TD>No</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD>GATE1J_A2</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Gateadresse1 jobb (ansatt-2)</TD>
+</TR>
+<TR>
+<TD>GATE2J_A2</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Gateadresse2 jobb (ansatt-2)</TD>
+</TR>
+<TR>
+<TD>KOMMNRJ_A2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Kommunenr jobb (ansatt-2) [ihht KOMMUNE]</TD>
+</TR>
+<TR>
+<TD>POSTNRJ_A2</TD>
+<TD>NUMBER</TD>
+<TD>Yes</TD>
+<TD>Postnr jobb (ansatt-2) [ihht POSTSTED]</TD>
+</TR>
+<TR>
+<TD>REGION</TD>
+<TD>VARCHAR2</TD>
+<TD>Yes</TD>
+<TD>Region</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_BY_A2</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Opprettet av (systemfelt) (ansatt-2)</TD>
+</TR>
+<TR>
+<TD>S_INSERTED_TS_A2</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Opprettet når (systemfelt) (ansatt-2)</TD>
+</TR>
+<TR>
+<TD>S_OBJECTID_A2</TD>
+<TD>CHAR</TD>
+<TD>No</TD>
+<TD>Objectid (systemfelt) (ansatt-2)</TD>
+</TR>
+<TR>
+<TD>S_STATUS_A2</TD>
+<TD>CHAR</TD>
+<TD>Yes</TD>
+<TD>Status (systemfelt) (ansatt-2)</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_BY_A2</TD>
+<TD>VARCHAR2</TD>
+<TD>No</TD>
+<TD>Oppdatert av (systemfelt) (ansatt-2)</TD>
+</TR>
+<TR>
+<TD>S_UPDATED_TS_A2</TD>
+<TD>DATE</TD>
+<TD>No</TD>
+<TD>Oppdatert når (systemfelt) (ansatt-2)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">View VQT_ANSATT does not have...</CAPTION>
+<TR>
+<TD>Comments</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

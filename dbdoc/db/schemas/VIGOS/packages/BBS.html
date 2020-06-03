@@ -1,0 +1,535 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Package BBS</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavLSilver"><A>Prior Package</A></TD>
+<TD Class="NavC">Package BBS</TD>
+<TD Class="NavR"><A HREF="BEDEXP.html" TITLE="BEDEXP">Next Package</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Objects and Arguments for Package BBS</CAPTION>
+<TR>
+<TH>Object Name</TH>
+<TH>Overload</TH>
+<TH>Argument Name</TH>
+<TH>Position</TH>
+<TH>Datatype</TH>
+<TH>Direction</TH>
+</TR>
+<TR>
+<TD>GENERER</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER</TD>
+<TD>&nbsp;</TD>
+<TD>P_TELLEDATO</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>GENERER_FORSENDELSE_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSTAB</TD>
+<TD Class="Num">2</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_ANTALL_RECORD</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_ANTALL_TRANS</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_SUM_BELOP</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_FORSTE_UTB_DATO</TD>
+<TD Class="Num">6</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>GENERER_FORSENDELSE_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSTAB</TD>
+<TD Class="Num">2</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_DATAAVSENDER</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_FORSNR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_DATAMOTTAKER</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_FORSENDELSE_START</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSTAB</TD>
+<TD Class="Num">2</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_ANTALL_RECORD</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_ANTALL_TRANS</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_SUM_BELOP</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_FORSTE_UTB_DATO</TD>
+<TD Class="Num">6</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>P_SISTE_UTB_DATO</TD>
+<TD Class="Num">7</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_SLUTT</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>GENERER_OPPDRAG_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSTAB</TD>
+<TD Class="Num">2</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_AVTALEID</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_OPPDRNR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_START</TD>
+<TD>&nbsp;</TD>
+<TD>P_OPPDRKONTO</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_OPPDRAG_START</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSTAB</TD>
+<TD Class="Num">2</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>P_ANTALL_RECORD</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>P_ANTALL_TRANS</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>P_TELLEDATO</TD>
+<TD Class="Num">5</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>P_UTBETALINGSDATO</TD>
+<TD Class="Num">6</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>P_SUM_BELOP</TD>
+<TD Class="Num">7</TD>
+<TD>NUMBER</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD Class="Silver">GENERER_TRANSAKSJONER</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>LAGRE_LINJER</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LAGRE_LINJER</TD>
+<TD>&nbsp;</TD>
+<TD>P_TELLEDATO</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LAGRE_LINJER</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSTAB</TD>
+<TD Class="Num">3</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>IN/OUT</TD>
+</TR>
+<TR>
+<TD>LAGRE_LOGG</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LAGRE_LOGG</TD>
+<TD>&nbsp;</TD>
+<TD>P_TELLEDATO</TD>
+<TD Class="Num">2</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>LEGGTIL_LINJE</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_LINJE</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSTAB</TD>
+<TD Class="Num">2</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_LINJE</TD>
+<TD>&nbsp;</TD>
+<TD>P_BBSREC</TD>
+<TD Class="Num">3</TD>
+<TD>PL/SQL RECORD</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_LINJE</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL TABLE</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>LEGGTIL_MELDING</TD>
+<TD>&nbsp;</TD>
+<TD>P_FYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_MELDING</TD>
+<TD>&nbsp;</TD>
+<TD>P_MELDING</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_MELDING</TD>
+<TD>&nbsp;</TD>
+<TD>P_TYPE</TD>
+<TD Class="Num">3</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_MELDING</TD>
+<TD>&nbsp;</TD>
+<TD>P_BNR</TD>
+<TD Class="Num">4</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_MELDING</TD>
+<TD>&nbsp;</TD>
+<TD>P_FNR</TD>
+<TD Class="Num">5</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">LEGGTIL_MELDING</TD>
+<TD>&nbsp;</TD>
+<TD>P_KONTRNR</TD>
+<TD Class="Num">6</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>PAD_LEFT</TD>
+<TD>&nbsp;</TD>
+<TD>P_STR1</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">PAD_LEFT</TD>
+<TD>&nbsp;</TD>
+<TD>P_LEN</TD>
+<TD Class="Num">2</TD>
+<TD>BINARY_INTEGER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">PAD_LEFT</TD>
+<TD>&nbsp;</TD>
+<TD>P_PAD</TD>
+<TD Class="Num">3</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">PAD_LEFT</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>VARCHAR2</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>PAD_RIGHT</TD>
+<TD>&nbsp;</TD>
+<TD>P_STR1</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">PAD_RIGHT</TD>
+<TD>&nbsp;</TD>
+<TD>P_LEN</TD>
+<TD Class="Num">2</TD>
+<TD>BINARY_INTEGER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">PAD_RIGHT</TD>
+<TD>&nbsp;</TD>
+<TD>P_PAD</TD>
+<TD Class="Num">3</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">PAD_RIGHT</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>VARCHAR2</TD>
+<TD>OUT</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

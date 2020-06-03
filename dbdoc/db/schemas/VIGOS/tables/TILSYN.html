@@ -1,0 +1,457 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table TILSYN</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="TILSTEDETYPE.html" TITLE="TILSTEDETYPE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#TILSYN">Table TILSYN</A></TD>
+<TD Class="NavR"><A HREF="TILSYNFORM.html" TITLE="TILSYNFORM">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table TILSYN</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Tilsyn</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table TILSYN</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FNR</B><SUB>1</SUB></TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr elev [ihht PLASS]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>KONTRNR</B><SUB>2</SUB></TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrakt nr [ihht PLASS]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">3</TD>
+<TD><B>RADNR</B><SUB>3</SUB></TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Radnr</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>BNR</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftsnr [Ihht BEDRIFT2]</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>FNRANSATT</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr ansatt [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>TILSYNTYPE</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilsynmøtetype [Ihht TILSYNTYPE]</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>MOTEDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilsynmøtedato</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>TILSYNSTATUS</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status [Ihht TILSYNSTATUS]</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>BESKRIV</TD>
+<TD nowrap>VARCHAR2(2048)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Beskrivelse</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>TILSYNFORM</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilsynsform [Ihht TILSYNFORM]</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>FNRANSATT2</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr ansatt 2 [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>FNRANSATT3</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr ansatt 3 [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>FYLKESNR</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="NumRed">14</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TILSYN</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0TILSYN</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKTILSYN</TD>
+<TD>NORMAL</TD>
+<TD>FNR, KONTRNR, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table TILSYN</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_TILSYN_FNRANSATT</TD>
+<TD>FYLKESNR, FNRANSATT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_TILSYN_FNRANSATT2</TD>
+<TD>FYLKESNR, FNRANSATT2</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_TILSYN_FNRANSATT3</TD>
+<TD>FYLKESNR, FNRANSATT3</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEDRIFT2_FOR_TILSYN</TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEDRIFT2" HREF="BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>PLASS_FOR_TILSYN</TD>
+<TD>FNR, KONTRNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="PLASS" HREF="PLASS.html">PLASS</A></TD>
+<TD>FNR, KONTRNR</TD>
+<TD>CASCADE</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>TILSYNFORM_FOR_TILSYN</TD>
+<TD>TILSYNFORM</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TILSYNFORM" HREF="TILSYNFORM.html">TILSYNFORM</A></TD>
+<TD>TILSYNFORM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>TILSYNSTATUS_FOR_TILSYN</TD>
+<TD>TILSYNSTATUS</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TILSYNSTATUS" HREF="TILSYNSTATUS.html">TILSYNSTATUS</A></TD>
+<TD>TILSYNSTATUS</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>TILSYNTYPE_FOR_TILSYN</TD>
+<TD>TILSYNTYPE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TILSYNTYPE" HREF="TILSYNTYPE.html">TILSYNTYPE</A></TD>
+<TD>TILSYNTYPE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TILSYN</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020510</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020511</TD>
+<TD>Check</TD>
+<TD>"KONTRNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTRNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020512</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020513</TD>
+<TD>Check</TD>
+<TD>"BNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020514</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020515</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020516</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020517</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020518</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020519</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKTILSYN</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FNR, KONTRNR, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table TILSYN does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

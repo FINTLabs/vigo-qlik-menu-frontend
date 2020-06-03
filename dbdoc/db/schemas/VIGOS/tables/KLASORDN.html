@@ -1,0 +1,952 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table KLASORDN</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="KLAGE.html" TITLE="KLAGE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#KLASORDN">Table KLASORDN</A></TD>
+<TD Class="NavR"><A HREF="KLREGH.html" TITLE="KLREGH">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table KLASORDN</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Klasseordning</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table KLASORDN</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FYLKESNR</B><SUB>1</SUB></TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>SKOLEAR</B><SUB>2</SUB></TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Skoleår[Ihht ARSKOLE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">3</TD>
+<TD><B>SKOLENR</B><SUB>3</SUB></TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Skolenr [Ihht ARSKOLE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">4</TD>
+<TD><B>INNTAKNR</B><SUB>4</SUB></TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Inntaksnr [0=Utenom fellesinntaket,1=Hovedinntaket,2=Halvårsinntaket,11=Prøveinntaket,>100=Statistikkgrunnlag]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">5</TD>
+<TD><B>KURSKODE</B><SUB>5</SUB></TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdekode [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>ANTON</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall ønsker</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>ARSTILL</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilleggs-timeforbruk (tastes)</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>FBRUKRET</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Forbruk av rett? [X=Ingen overstyring,N=Aldri,J=Alltid]</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>FILTER</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>WEB-filter [1=Internt,2=Vedtatt,3=Offentlig]</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>GRLID</TD>
+<TD nowrap>VARCHAR2(24)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Grunnlagsid [ihht GRLHODE]</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>INFLFMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt med fullføringsrett</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>INFREMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt fremmedspråklig med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>INFREUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt fremmedspråklig uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>INORDMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt ordinært med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>INORDUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt ordinært uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>INSERMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt særskilt med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>INSERUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt særskilt uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>INSUMMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>INSUMUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>INTOTAL</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>INVOKMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall inntatt med voksenrett</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>KLASSER</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Helårsklasser</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>LANDSLIN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Landslinje? [K=Som programområdet,J=Ja,N=Nei]</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>LEDIG</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall ledige plasser</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>LEDIGF</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall ledige plasser fullføringsrett</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>LEDIGI</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall ledige plasser ikke rett</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>LEDIGU</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall ledige plasser ungdomsrett</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>LEDIGV</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall ledige plasser voksenrett</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>PEKSTRA</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall ekstra plasser (for overbooking)</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>PFLFMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall plasser for fullføringsrett</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>PFREMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Plasser for minoritetsspråklige med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>PFREUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Plasser for minoritetsspråklige uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>PLASSER</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Helårsplasser</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>PORDMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Plasser for ordinære med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>PORDUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Plasser for ordinære uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>PRES</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Plasser reservert</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>PSERMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall plasser for særskilte med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>PSERUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall plasser for særskilte uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>PSUMMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall plasser med rett</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>PSUMUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall plasser uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>PTOTAL</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall plasser</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>PVOKMR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall plasser for voksenrett</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>STARTDAT</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skolestart</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>STOPKODE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Stoppkode [0=Som normalt,I=Stopp inntak,N=Stopp nullstilling,B=Stopp brev,X=I+N+B]</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>SUMPSALG</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall solgte plasser</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>VILBLINO</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Overføres til vilbli.no? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">49</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">50</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">52</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">53</TD>
+<TD>LANDSDEK</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Landsdekkende tilbud? [K=Som programområdet,J=Ja,N=Nei]</TD>
+</TR>
+<TR>
+<TD Class="Num">54</TD>
+<TD>OPPTPROV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opptaksprøve? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">55</TD>
+<TD>EGETSKJE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Eget skjema? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">56</TD>
+<TD>SLUTTDAT</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sluttdato</TD>
+</TR>
+<TR>
+<TD Class="Num">57</TD>
+<TD>WSOKLIST</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Vise søkerliste på Vigo Skole [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">58</TD>
+<TD>INFLFMR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">59</TD>
+<TD>INFREMR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">60</TD>
+<TD>INFREUR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">61</TD>
+<TD>INORDMR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">62</TD>
+<TD>INORDUR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">63</TD>
+<TD>INSERMR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">64</TD>
+<TD>INSERUR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">65</TD>
+<TD>INSUMMR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">66</TD>
+<TD>INSUMUR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">67</TD>
+<TD>INTOTAL2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">68</TD>
+<TD>INVOKMR2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">69</TD>
+<TD>SUMPSAL2</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kopi</TD>
+</TR>
+<TR>
+<TD Class="Num">70</TD>
+<TD>WSOKLISTRETT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Utvalg på søker-rett [J/N]</TD>
+</TR>
+<TR>
+<TD Class="Num">71</TD>
+<TD>WSOKLISTONR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Utvalg på ønskenr [J/N]</TD>
+</TR>
+<TR>
+<TD Class="Num">72</TD>
+<TD>WSOKLISTSNR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Utvalg på statusnr [J/N]</TD>
+</TR>
+<TR>
+<TD Class="Num">73</TD>
+<TD>ANTON1</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall primærønsker</TD>
+</TR>
+<TR>
+<TD Class="Num">74</TD>
+<TD>SKOLENRGML</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">75</TD>
+<TD>VISFNR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table KLASORDN</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0KLASORDN</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1KLASORDN</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, SKOLEAR, INNTAKNR, SKOLENR, KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKKLASORDN</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, SKOLEAR, SKOLENR, INNTAKNR, KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table KLASORDN</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>ARSKOLE_FOR_KLASORDN</TD>
+<TD>FYLKESNR, SKOLEAR, SKOLENR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSKOLE" HREF="ARSKOLE.html">ARSKOLE</A></TD>
+<TD>FYLKESNR, SKOLEAR, SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_KLASORDN</TD>
+<TD>KURSKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>SKOLE_FOR_KLASORDN</TD>
+<TD>SKOLENR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="SKOLE" HREF="SKOLE.html">SKOLE</A></TD>
+<TD>SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table KLASORDN</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013021</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013022</TD>
+<TD>Check</TD>
+<TD>"SKOLEAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLEAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013023</TD>
+<TD>Check</TD>
+<TD>"SKOLENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013024</TD>
+<TD>Check</TD>
+<TD>"INNTAKNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNTAKNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013025</TD>
+<TD>Check</TD>
+<TD>"KURSKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013026</TD>
+<TD>Check</TD>
+<TD>"FBRUKRET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FBRUKRET</TD>
+</TR>
+<TR>
+<TD>SYS_C0013027</TD>
+<TD>Check</TD>
+<TD>"FILTER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FILTER</TD>
+</TR>
+<TR>
+<TD>SYS_C0013028</TD>
+<TD>Check</TD>
+<TD>"LANDSLIN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LANDSLIN</TD>
+</TR>
+<TR>
+<TD>SYS_C0013029</TD>
+<TD>Check</TD>
+<TD>"STOPKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>STOPKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013030</TD>
+<TD>Check</TD>
+<TD>"VILBLINO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VILBLINO</TD>
+</TR>
+<TR>
+<TD>SYS_C0013031</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013032</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013033</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013034</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013035</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013036</TD>
+<TD>Check</TD>
+<TD>"LANDSDEK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LANDSDEK</TD>
+</TR>
+<TR>
+<TD>SYS_C0013037</TD>
+<TD>Check</TD>
+<TD>"OPPTPROV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPTPROV</TD>
+</TR>
+<TR>
+<TD>SYS_C0013038</TD>
+<TD>Check</TD>
+<TD>"EGETSKJE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>EGETSKJE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013039</TD>
+<TD>Check</TD>
+<TD>"WSOKLIST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WSOKLIST</TD>
+</TR>
+<TR>
+<TD>SYS_C00171242</TD>
+<TD>Check</TD>
+<TD>"VISFNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VISFNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0027468</TD>
+<TD>Check</TD>
+<TD>"WSOKLISTRETT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WSOKLISTRETT</TD>
+</TR>
+<TR>
+<TD>SYS_C0027469</TD>
+<TD>Check</TD>
+<TD>"WSOKLISTONR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WSOKLISTONR</TD>
+</TR>
+<TR>
+<TD>SYS_C0027470</TD>
+<TD>Check</TD>
+<TD>"WSOKLISTSNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WSOKLISTSNR</TD>
+</TR>
+<TR>
+<TD>XPKKLASORDN</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, SKOLEAR, SKOLENR, INNTAKNR, KURSKODE</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table KLASORDN does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
