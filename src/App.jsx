@@ -25,7 +25,7 @@ function App() {
                     <MenuCard title="NPrinting WebConsole" body="Utvikling av rapporter"
                               href="https://np-admin.fintlabs.no/login/saml/sso/npavigoiks"/>
                     <MenuCard title="Databasedokumentasjon" body="Dokumentasjon av Vigo Sentraldatabase"
-                              href="/dbdoc/db/schemas/vigos/summary.html"/>
+                              href="/dbdoc/db/schemas/VIGOS/summary.html"/>
                 </MenuContainer>
             </MainContainer>
             <footer>
