@@ -23,7 +23,7 @@ function App() {
                     <MenuCard title="NPrinting NewsStand" body="Rapporter"
                               href="https://np.fintlabs.no"/>
                     <MenuCard title="NPrinting WebConsole" body="Utvikling av rapporter"
-                              href="https://qv-admin.fintlabs.no"/>
+                              href="https://np-admin.fintlabs.no"/>
                     <MenuCard title="Databasedokumentasjon" body="Dokumentasjon av Vigo Sentraldatabase"
                               href="/dbdoc/db/schemas/vigos/summary.html"/>
                 </MenuContainer>
