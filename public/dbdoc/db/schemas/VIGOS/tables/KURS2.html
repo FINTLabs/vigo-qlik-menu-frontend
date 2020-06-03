@@ -1,0 +1,633 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table KURS2</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./KURSVID.html" TITLE="KURSVID">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#KURS2">Table KURS2</A></TD>
+<TD Class="NavR"><A HREF="./KVITTERING.html" TITLE="KVITTERING">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table KURS2</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Programområde per fylke</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table KURS2</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FYLKESNR</B><SUB>1</SUB></TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>KURSKODE</B><SUB>2</SUB></TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdekode [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>BERMARES</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine adm. ressurs [O=Ordinær,S=Spesialundervisning]</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>FORTRINN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kan utløse fortrinnsrett? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>INNRUTFR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for inntak fullføringsrett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>INNRUTMR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for inntak med rett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>INNRUTUR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for inntak uten rett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>INNRUTVR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for inntak voksenrett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>KJONKVOT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjønnskvotering? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>KURSAUTO</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Neste års programområdekode [ihht KURS] </TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>MINPOENG</TD>
+<TD nowrap>NUMBER(10,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nedre poeng-grense for inntak</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>PLARUTFR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for plassering av søkere fullføringsrett.[P=Poengsum,A=Avgiverskole]</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>PLARUTMR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for plassering av søkere med rett.[P=Poengsum,A=Avgiverskole]</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>PLARUTUR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for plassering av søkere uten rett.[P=Poengsum,A=Avgiverskole]</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>PLARUTVR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for plassering av søkere fullføringsrett.[P=Poengsum,A=Avgiverskole]</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>PREUTFYL</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Preutfylt skjema neste år? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>PROSUR</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Prosent reservert for søkere uten rett</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>STOPKODE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Stoppkode.[ =Som normalt,F=Stopp fellesinntak,S=Stopp statistikk,B=Begge deler(F+S)]</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>VIDRUTFR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for videresøking av søkere fullføringsrett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>VIDRUTMR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for videresøking av søkere med rett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>VIDRUTUR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for videresøking av søkere uten rett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>VIDRUTVR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Rutine for videresøking av søkere voksenrett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>VOKSNE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Er programområdeet spesielt for voksne? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">26</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>SOKNKAT</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>SOKERTYP2</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>STATUSNR</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>VALGT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table KURS2</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0KURS2</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKKURS2</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table KURS2</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>BEHANKAT_FOR_KURS2_SOKNKAT</TD>
+<TD>SOKNKAT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEHANKAT" HREF="../tables/BEHANKAT.html">BEHANKAT</A></TD>
+<TD>BKATKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_KURS2</TD>
+<TD>KURSKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>CASCADE</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_KURS2_KURSAUTO</TD>
+<TD>KURSAUTO</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table KURS2</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C00169115</TD>
+<TD>Check</TD>
+<TD>"SOKERTYP2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SOKERTYP2</TD>
+</TR>
+<TR>
+<TD>SYS_C00169116</TD>
+<TD>Check</TD>
+<TD>"STATUSNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>STATUSNR</TD>
+</TR>
+<TR>
+<TD>SYS_C00169165</TD>
+<TD>Check</TD>
+<TD>"VALGT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VALGT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021346</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021347</TD>
+<TD>Check</TD>
+<TD>"KURSKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021348</TD>
+<TD>Check</TD>
+<TD>"BERMARES" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BERMARES</TD>
+</TR>
+<TR>
+<TD>SYS_C0021349</TD>
+<TD>Check</TD>
+<TD>"FORTRINN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FORTRINN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021350</TD>
+<TD>Check</TD>
+<TD>"INNRUTFR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNRUTFR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021351</TD>
+<TD>Check</TD>
+<TD>"INNRUTMR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNRUTMR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021352</TD>
+<TD>Check</TD>
+<TD>"INNRUTUR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNRUTUR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021353</TD>
+<TD>Check</TD>
+<TD>"INNRUTVR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNRUTVR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021354</TD>
+<TD>Check</TD>
+<TD>"KJONKVOT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KJONKVOT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021355</TD>
+<TD>Check</TD>
+<TD>"PLARUTFR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PLARUTFR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021356</TD>
+<TD>Check</TD>
+<TD>"PLARUTMR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PLARUTMR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021357</TD>
+<TD>Check</TD>
+<TD>"PLARUTUR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PLARUTUR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021358</TD>
+<TD>Check</TD>
+<TD>"PLARUTVR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PLARUTVR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021359</TD>
+<TD>Check</TD>
+<TD>"PREUTFYL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PREUTFYL</TD>
+</TR>
+<TR>
+<TD>SYS_C0021361</TD>
+<TD>Check</TD>
+<TD>"VIDRUTFR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VIDRUTFR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021362</TD>
+<TD>Check</TD>
+<TD>"VIDRUTMR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VIDRUTMR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021363</TD>
+<TD>Check</TD>
+<TD>"VIDRUTUR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VIDRUTUR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021364</TD>
+<TD>Check</TD>
+<TD>"VIDRUTVR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VIDRUTVR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021365</TD>
+<TD>Check</TD>
+<TD>"VOKSNE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VOKSNE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021366</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0021367</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0021368</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0021369</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0021370</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKKURS2</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, KURSKODE</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table KURS2 does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

@@ -1,0 +1,935 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Package OSTATUS</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./OFKDVH.html" TITLE="OFKDVH">Prior Package</A></TD>
+<TD Class="NavC">Package OSTATUS</TD>
+<TD Class="NavR"><A HREF="./PK_VSEC.html" TITLE="PK_VSEC">Next Package</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Objects and Arguments for Package OSTATUS</CAPTION>
+<TR>
+<TH>Object Name</TH>
+<TH>Overload</TH>
+<TH>Argument Name</TH>
+<TH>Position</TH>
+<TH>Datatype</TH>
+<TH>Direction</TH>
+</TR>
+<TR>
+<TD>ERAUTOMATISKUAKTUELLSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERAUTOMATISKUAKTUELLSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>ERFORMIDLETFORSLAG</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSK</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERFORMIDLETFORSLAG</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>ERFORMIDLETSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERFORMIDLETSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>ERLAREFAGONSKE</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLENR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERLAREFAGONSKE</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>CHAR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>ERSKALFORMIDLESSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERSKALFORMIDLESSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>ERTAKKETNEIFORSLAG</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSK</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERTAKKETNEIFORSLAG</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>ERTAKKETNEISTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERTAKKETNEISTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>ERUAKTUELLSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">ERUAKTUELLSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>FORSLAGKODEFRANR</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">FORSLAGKODEFRANR</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>VARCHAR2</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>FORSLAGNRFRAKODE</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSK</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">FORSLAGNRFRAKODE</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>HARKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">HARKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">HARKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">HARKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">HARKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>CHAR</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>KORRESPONDERENDEFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKESTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">KORRESPONDERENDEFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>VARCHAR2</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PRADNR</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSKODENY</TD>
+<TD Class="Num">6</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PLTIDFRAD</TD>
+<TD Class="Num">7</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>POPPDANDRE</TD>
+<TD Class="Num">8</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERFORSLAGSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PBRUKERID</TD>
+<TD Class="Num">9</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDATERONSKESTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERONSKESTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERONSKESTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERONSKESTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDATERONSKESTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDFORSLAGTILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PRADNR</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">6</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDFORSLAGTILOPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILOPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILOPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILOPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILOPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PRADNR</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILOPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">6</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDFORSLAGTILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PRADNR</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">6</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDFORSLAGTILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>POPPDANDRE</TD>
+<TD Class="Num">7</TD>
+<TD>CHAR</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDONSKETILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDONSKETILSKALFORMIDLES</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILSKALFORMIDLES</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILSKALFORMIDLES</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILSKALFORMIDLES</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILSKALFORMIDLES</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDONSKETILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILTAKKETNEI</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDONSKETILUAKTUELL</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILUAKTUELL</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILUAKTUELL</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILUAKTUELL</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDONSKETILUAKTUELL</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDSKOLEONSKERFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERFORMIDLET</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDSKOLEONSKERHOYERE</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERHOYERE</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERHOYERE</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERHOYERE</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKERHOYERE</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNRNY</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>OPPDSKOLEONSKEROPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKEROPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKEROPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">OPPDSKOLEONSKEROPPHEV</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>STATUSENDRET</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSENDRET</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSENDRET</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSENDRET</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSENDRET</TD>
+<TD>&nbsp;</TD>
+<TD>PRADNR</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSENDRET</TD>
+<TD>&nbsp;</TD>
+<TD>PNYSTATUSK</TD>
+<TD Class="Num">6</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSENDRET</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>PL/SQL BOOLEAN</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>STATUSKODETILSTATUSNR</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSKODE</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSKODETILSTATUSNR</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>STATUSNRTILSTATUSKODE</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">STATUSNRTILSTATUSKODE</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>VARCHAR2</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>VISSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">VISSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEAR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">VISSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">VISSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PONSKENR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">VISSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>PSTATUSNR</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">VISSTATUS</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>CHAR</TD>
+<TD>OUT</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

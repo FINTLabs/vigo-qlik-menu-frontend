@@ -1,0 +1,19 @@
+.navBox {
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: 1fr;
+}
+
+@media only screen and (min-width: 768px) {
+    .navBox {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 940px) {
+    .navBox {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2.5em;
+        grid-row-gap: 1.8em;
+    }
+}

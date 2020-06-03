@@ -1,0 +1,655 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table GRLSOKER</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./GRLLTID.html" TITLE="GRLLTID">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#GRLSOKER">Table GRLSOKER</A></TD>
+<TD Class="NavR"><A HREF="./HENDELSE.html" TITLE="HENDELSE">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table GRLSOKER</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Statistikkgrunnlag søker (linje)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table GRLSOKER</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FYLKESNR</B><SUB>1</SUB></TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>GRLID</B><SUB>2</SUB></TD>
+<TD nowrap>VARCHAR2(24)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Grunnlagsidentifikator [ihht GRLHODE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">3</TD>
+<TD><B>FNR</B><SUB>3</SUB></TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr [ihht ELEV2]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">4</TD>
+<TD><B>ONSKENR</B><SUB>4</SUB></TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Ønskenr</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>ALDER</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Alder</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>ALDERGRP</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Aldersgruppe [1=Under 17,2=17,3=18,4=19,5=20,6=21-25,7=Over 25]</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>KJONN</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kjønn [M,K]</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>KOMMNR</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kommunenr</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>RETT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Rett [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>SOKERTYP</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Søkertype [O,S,M,OS,OM,SO,MO]</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>KURSKODE</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdekode [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>SKOLENR</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skolenr [ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>STATUSNR</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Ønskets statusnr [ihht STATUS]</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>SOKSTAT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Søkerstatus [A,B,C,D,E,F,G,U,X]</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>AVGISKNR</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiverskolenr [ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>AVGIKURS</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiverprogramområde</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>AVGIKLAS</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiverklasse</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>MORSMKOD</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Morsmålskode [ihht MORSMAL]</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>MALFORM</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Målform [B,N,S,F]</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>AVGARGR</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgangsår fra grunnskolen</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>AVSLKOMP</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Sluttkompetanse? [N,M,A]</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>KARPOENG</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Karakterpoeng</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>SOKNKAT</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Søknadskategori fortrinnssøker</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>INSTKAT</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Innstillingskategori fortrinnssøker</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>VEDTKAT</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Vedtakskategori fortrinnssøker</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>VEDTKODE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Vedtakskode fortrtinns ønske</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>INSTKODE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Innstillingskode fortrinns ønske</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>FULLFKOD</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fullførtkode [B,X,I,A,M,S,U,O,-]</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>VURDERES</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Vurderes? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>FORMIDLES</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Formidles? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>STOPPET</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Stoppet? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>NEITILLP</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Svart nei til læreplass? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>STUDKODE</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Studieretningskode [ihht STUDRETN]</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>EGNEANDR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Egne/Andre? [E,A]</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>REGIONNR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Regionsnr</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>SKOLEIER</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skoleeier[1= Fylke,2=Stat,3=Kommune,4=Privat]</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>KURSONSK</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdeønskenr</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>SOKNGRUN</TD>
+<TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Søknadsgrunn</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>ONSSKOMP</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Ønsket sluttkompetanse [ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>DATDRKMP</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Realkompetansevurdert dato</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>KURSKATK</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdekategorikode [ihht KURSKAT]</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>AVGIOTEN</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiver OTenhet [ihht OTENHET]</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>AVGIVER1</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiverskole eller avgiver otenhet [ihht SKOLE,OTENHET]</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>AVGIOTST</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiver Otstatus [ihht OTSTATUS]</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>AVGIVER2</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avgiverprogramområde eller avgiver otstatus [ihht KURS,OTSTATUS]</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>GRUNSKOL</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Grunnskole</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">49</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">50</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">52</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table GRLSOKER</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0GRLSOKER</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKGRLSOKER</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, GRLID, FNR, ONSKENR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table GRLSOKER</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FYLKE_FOR_GRLSOKER</TD>
+<TD>FYLKESNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>GRLHODE_FOR_GRLSOKER</TD>
+<TD>FYLKESNR, GRLID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="GRLHODE" HREF="../tables/GRLHODE.html">GRLHODE</A></TD>
+<TD>FYLKESNR, GRLID</TD>
+<TD>CASCADE</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table GRLSOKER</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020265</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020266</TD>
+<TD>Check</TD>
+<TD>"GRLID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>GRLID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020267</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020268</TD>
+<TD>Check</TD>
+<TD>"ONSKENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ONSKENR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020269</TD>
+<TD>Check</TD>
+<TD>"SOKSTAT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SOKSTAT</TD>
+</TR>
+<TR>
+<TD>SYS_C0020270</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020271</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020272</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020273</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020274</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKGRLSOKER</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, GRLID, FNR, ONSKENR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table GRLSOKER does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

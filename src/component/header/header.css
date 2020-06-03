@@ -1,26 +1,54 @@
 header {
-    min-height: 100px;
-    position: relative;
-    max-width: 1250px;
-    padding: 0 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 1em;
+    margin-bottom: 3em;
 }
 
-header > h3 {
-    margin: 0;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 2.6em;
-    color: #fff;
+.logo {
+    padding: 2em 0 0 2em;
+    width: 140px;
+    height: 60px;
+    background: url(https://www.vigoiks.no/extension/site/design/site/images/logo_light.svg) top left no-repeat;
 }
 
-.header-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    height: 1%;
-    max-width: 1250px;
-    width: 100%;
-    margin: 0 auto;
+.vigoIKSlink {
+    display: none;
+}
+
+.d-none {
+    display: none;
+}
+
+@media only screen and (min-width: 940px) {
+
+    .logo {
+        width: 180px;
+        height: 100px;
+    }
+
+    header {
+        padding-left: 3em;
+        padding-top: 4.5em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .vigoIKSlink {
+        display: block;
+        color: #8EC044;
+        text-decoration: none;
+        font-size: 2em;
+        font-weight: 300;
+        margin-top: 1.5em;
+    }
+
+    .vigoIKSlink:hover {
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (min-width: 1260px) {
+    header {
+        padding-left: 0;
+    }
 }

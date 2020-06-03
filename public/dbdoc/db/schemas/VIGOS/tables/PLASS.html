@@ -1,0 +1,1095 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table PLASS</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./PLAN_TABLE.html" TITLE="PLAN_TABLE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#PLASS">Table PLASS</A></TD>
+<TD Class="NavR"><A HREF="./PLASSALG.html" TITLE="PLASSALG">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table PLASS</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Plass-Lærekontrakt</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table PLASS</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FNR</B><SUB>1</SUB></TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr [Ihht ELEV]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>KONTRNR</B><SUB>2</SUB></TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kontraktnr (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD>FYLKESNR</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>ANNFYLKE</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Annet fylke [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>AVSLKODE</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrakt avsluttet kode [Ihht ARSAK]</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>AVTALEVEDLAGT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Avtale vedlagt? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">7</TD>
+<TD>BNR</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftsnr [Ihht BEDRIFT]</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>BRUKERID</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>BrukerId</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>DAGLEDFNR</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Daglig leder [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>FAGLEDFNR</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Faglig leder [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>KONGODKD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrakt godkjent dato</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>HEVETAV</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Hevet av [L= lærlingens ønske,LB= lærlig og bedrift,B= bedriftens ønske]</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>HJEMMEL</TD>
+<TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Hjemmel</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>AVTALEDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Avtaledato</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>KONAVSLD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrakt avsluttet dato</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>KONMOTTD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrakt mottatt dato</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">17</TD>
+<TD>KURSKODE</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Programområdekode [Ihht KURS]</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>LERLPROS</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Lærlingprosent</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>LTIDTILD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Læretid sluttdato</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>MEDLBNR</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Medlemsbedrift orgnr [Ihht BEDRIFT2]</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>OPPLBESTILLING</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opplæringsbestilling</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>OPRINR</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Opplæringsring nr [Ihht OPPLRING]</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>ORDNINGID</TD>
+<TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Ordningid [Ihht TS_ORDNING]</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>RETT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Rettstype [U=Ungdomsrett,F=Fullføringsrett,V=Voksenrett]</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>STATUSID</TD>
+<TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Hvor langt i prosessen den er kommet</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>SUMFRADR</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fradrag</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>TYPE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Type [L=Lærekontrakt,E= Fagopplæring i skole,O=Opplæringskontrakt,A=Annet fylke]</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>VG1FELLES</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøp av teori VG1 fellesfag</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>VG1PROGRAM</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøp av teori VG1 programfag</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>VG2FELLES</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøp av teori VG2 fellesfag</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>VG2PROGRAM</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøp av teori VG2 programfag</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>VG3PROGRAM</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøp av teori VG3 programfag</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>S_OBJECTID_LOK</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Lokal Objectid (ikke i bruk)</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">37</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>ARKIVNR</TD>
+<TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Arkivnr</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>KONREGAD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Registreringsdato for kontrakt avsluttet</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>KONTRTYPE</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontraktstype [Ihht KONTRTYPE]</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>LTIDFRAD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Læretid startdato</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>NORMLTID</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Normaltid</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>NTOLTID</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Netto læretid</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>NVSKAPTID</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Netto verdiskapningstid</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>REGION</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Region</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>SKOLENR</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skolenummer [Ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD Class="Num">49</TD>
+<TD>SKOLENRTEORI</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skolenr, Kjøp av teori [Ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD Class="Num">50</TD>
+<TD>TEOAVSLD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøp av teori, registrert dato avsluttet</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>TILHORIGHET</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkestilhørighet [Ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">52</TD>
+<TD>TILSREPRFNR</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilsynsrepresentant [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">53</TD>
+<TD>VSKAPTID</TD>
+<TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Verdiskapningstid</TD>
+</TR>
+<TR>
+<TD Class="Num">54</TD>
+<TD>ALTVURDFORM</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Alternativ vurderingsform [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">55</TD>
+<TD>GODKJREF</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Godkjent refusjon [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">56</TD>
+<TD>KONTLOP</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kontraktsløp [N=Normalløp,A=Avvikende løp,S=Særløp]</TD>
+</TR>
+<TR>
+<TD Class="Num">57</TD>
+<TD>TEORI</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøp av teori? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">58</TD>
+<TD>VERNEVERDIG</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Små og verneverdige fag? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">59</TD>
+<TD>TILANNFYLKE</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Til annet fylke [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">60</TD>
+<TD>HJEMFYLKEKOPI</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kontraktskopi [N,J=lesetilgang]</TD>
+</TR>
+<TR>
+<TD Class="Num">61</TD>
+<TD>UTSKRWEB</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Utskrift web? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">62</TD>
+<TD>SSBDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for overført til SSB</TD>
+</TR>
+<TR>
+<TD Class="Num">63</TD>
+<TD>VEKSLMOD</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Vekslingsmodell [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">64</TD>
+<TD>PBREVKAND</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Praksisbrevkandidat</TD>
+</TR>
+<TR>
+<TD Class="Num">65</TD>
+<TD>ELEVKURSID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Knytning mot elevkurset [Ihht s_objectid på elevkurs]</TD>
+</TR>
+<TR>
+<TD Class="Num">66</TD>
+<TD>PBREVPLANKURS</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Praksisbrev programområde [ihht PBREVPLANMAAL]</TD>
+</TR>
+<TR>
+<TD Class="Num">67</TD>
+<TD>PBREVPLANNR</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Praksisbrev plannr [ihht PBREVPLANMAAL]</TD>
+</TR>
+<TR>
+<TD Class="Num">68</TD>
+<TD>OFORSLAGOBJECTID</TD>
+<TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Systemkolonne, kobling til OFORSLAG</TD>
+</TR>
+<TR>
+<TD Class="Num">69</TD>
+<TD>ANTVARSEL</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">70</TD>
+<TD>ARSAK_STATUS4</TD>
+<TD nowrap>VARCHAR2(200)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tekstfelt for beskrivelse av årsak til status 4</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table PLASS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0PLASS</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1PLASS</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, BNR, KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKPLASS</TD>
+<TD>NORMAL</TD>
+<TD>FNR, KONTRNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table PLASS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_PLASS_DAGLEDFNR</TD>
+<TD>FYLKESNR, DAGLEDFNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="../tables/ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_PLASS_FAGLEDFNR</TD>
+<TD>FYLKESNR, FAGLEDFNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="../tables/ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_PLASS_TILSREPRFNR</TD>
+<TD>FYLKESNR, TILSREPRFNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="../tables/ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ARSAK_FOR_PLASS_AVSLKODE</TD>
+<TD>AVSLKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="../tables/ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ARSAK_FOR_PLASS_HEVETAV</TD>
+<TD>HEVETAV</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="../tables/ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEDRIFT2_FOR_PLASS</TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEDRIFT2_FOR_PLASS_MEDLBNR</TD>
+<TD>FYLKESNR, MEDLBNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ELEV_FOR_PLASS</TD>
+<TD>FNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ELEV" HREF="../tables/ELEV.html">ELEV</A></TD>
+<TD>FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_PLASS_ANNFYLKE</TD>
+<TD>ANNFYLKE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_PLASS_TILANNFYLKE</TD>
+<TD>TILANNFYLKE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_PLASS_TILHORIGHET</TD>
+<TD>TILHORIGHET</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KONTRSTATUS_FOR_PLASS</TD>
+<TD>STATUSID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KONTRAKTSTATUS" HREF="../tables/KONTRAKTSTATUS.html">KONTRAKTSTATUS</A></TD>
+<TD>STATUSID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KONTRTYPE_FOR_PLASS</TD>
+<TD>KONTRTYPE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KONTRTYPE" HREF="../tables/KONTRTYPE.html">KONTRTYPE</A></TD>
+<TD>KONTRTYPE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_PLASS</TD>
+<TD>KURSKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>OPPLRING_FOR_PLASS</TD>
+<TD>FYLKESNR, OPRINR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="OPPLRING" HREF="../tables/OPPLRING.html">OPPLRING</A></TD>
+<TD>FYLKESNR, OPRINR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ORDNING_FOR_PLASS</TD>
+<TD>ORDNINGID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TS_ORDNING" HREF="../tables/TS_ORDNING.html">TS_ORDNING</A></TD>
+<TD>ORDNINGID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>PBREVPLAN_FOR_PLASS</TD>
+<TD>FYLKESNR, PBREVPLANKURS, PBREVPLANNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="PBREVPLAN" HREF="../tables/PBREVPLAN.html">PBREVPLAN</A></TD>
+<TD>FYLKESNR, KURSKODE, PLANNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>SKOLE_FOR_PLASS</TD>
+<TD>SKOLENR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="SKOLE" HREF="../tables/SKOLE.html">SKOLE</A></TD>
+<TD>SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>SKOLE_FOR_PLASS_SKOLENRTEORI</TD>
+<TD>SKOLENRTEORI</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="SKOLE" HREF="../tables/SKOLE.html">SKOLE</A></TD>
+<TD>SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table PLASS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013392</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013393</TD>
+<TD>Check</TD>
+<TD>"KONTRNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTRNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013394</TD>
+<TD>Check</TD>
+<TD>"AVTALEVEDLAGT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVTALEVEDLAGT</TD>
+</TR>
+<TR>
+<TD>SYS_C0013395</TD>
+<TD>Check</TD>
+<TD>"OPPLBESTILLING" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPLBESTILLING</TD>
+</TR>
+<TR>
+<TD>SYS_C0013396</TD>
+<TD>Check</TD>
+<TD>"TYPE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TYPE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013397</TD>
+<TD>Check</TD>
+<TD>"VG1FELLES" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG1FELLES</TD>
+</TR>
+<TR>
+<TD>SYS_C0013398</TD>
+<TD>Check</TD>
+<TD>"VG1PROGRAM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG1PROGRAM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013399</TD>
+<TD>Check</TD>
+<TD>"VG2FELLES" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG2FELLES</TD>
+</TR>
+<TR>
+<TD>SYS_C0013400</TD>
+<TD>Check</TD>
+<TD>"VG2PROGRAM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG2PROGRAM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013401</TD>
+<TD>Check</TD>
+<TD>"VG3PROGRAM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG3PROGRAM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013402</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013403</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013404</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013405</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013406</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013407</TD>
+<TD>Check</TD>
+<TD>"TILHORIGHET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TILHORIGHET</TD>
+</TR>
+<TR>
+<TD>SYS_C0013408</TD>
+<TD>Check</TD>
+<TD>"ALTVURDFORM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ALTVURDFORM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013409</TD>
+<TD>Check</TD>
+<TD>"GODKJREF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>GODKJREF</TD>
+</TR>
+<TR>
+<TD>SYS_C0013410</TD>
+<TD>Check</TD>
+<TD>"KONTLOP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTLOP</TD>
+</TR>
+<TR>
+<TD>SYS_C0013411</TD>
+<TD>Check</TD>
+<TD>"TEORI" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TEORI</TD>
+</TR>
+<TR>
+<TD>SYS_C0013412</TD>
+<TD>Check</TD>
+<TD>"VERNEVERDIG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERNEVERDIG</TD>
+</TR>
+<TR>
+<TD>SYS_C0013413</TD>
+<TD>Check</TD>
+<TD>"HJEMFYLKEKOPI" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>HJEMFYLKEKOPI</TD>
+</TR>
+<TR>
+<TD>SYS_C0013414</TD>
+<TD>Check</TD>
+<TD>"VEKSLMOD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VEKSLMOD</TD>
+</TR>
+<TR>
+<TD>SYS_C0013415</TD>
+<TD>Check</TD>
+<TD>"PBREVKAND" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PBREVKAND</TD>
+</TR>
+<TR>
+<TD>XPKPLASS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FNR, KONTRNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table PLASS does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

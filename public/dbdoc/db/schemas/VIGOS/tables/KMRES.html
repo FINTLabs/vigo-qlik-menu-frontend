@@ -1,0 +1,407 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table KMRES</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./KMLOGG.html" TITLE="KMLOGG">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#KMRES">Table KMRES</A></TD>
+<TD Class="NavR"><A HREF="./KMRESLINJE.html" TITLE="KMRESLINJE">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table KMRES</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Kontrollmotor: Resultat (systemtabell)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table KMRES</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FYLKESNR</B><SUB>1</SUB></TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>VERSJON</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versjon</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>VERSJONSDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versjonsdato</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>VERSJON_SERVER</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Versjon server</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>VERSJONSDATO_SERVER</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Versjonsdato server</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>VERSJONSDATO_NESTE</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Versjonsdato neste</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>TIDSPUNKT</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Tidspunkt</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>KJOERETID</TD>
+<TD nowrap>NUMBER(6,2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kjøretid</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>ANTALL_LINJER</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Antall linjer</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>ANTALL_E_LINJER</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Antall E-linjer</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>ANTALL_K_LINJER</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Antall K-linjer</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>ANTALL_L_LINJER</TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Antall L-linjer</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">15</TD>
+<TD><B>S_OBJECTID</B><SUB>2</SUB></TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table KMRES</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0KMRES</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKKMRES</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table KMRES</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>FYLKE_FOR_KMRES</TD>
+<TD>FYLKESNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table KMRES</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020706</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020707</TD>
+<TD>Check</TD>
+<TD>"VERSJON" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSJON</TD>
+</TR>
+<TR>
+<TD>SYS_C0020708</TD>
+<TD>Check</TD>
+<TD>"VERSJONSDATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSJONSDATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0020709</TD>
+<TD>Check</TD>
+<TD>"VERSJONSDATO_NESTE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERSJONSDATO_NESTE</TD>
+</TR>
+<TR>
+<TD>SYS_C0020710</TD>
+<TD>Check</TD>
+<TD>"TIDSPUNKT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TIDSPUNKT</TD>
+</TR>
+<TR>
+<TD>SYS_C0020711</TD>
+<TD>Check</TD>
+<TD>"KJOERETID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KJOERETID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020712</TD>
+<TD>Check</TD>
+<TD>"ANTALL_LINJER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ANTALL_LINJER</TD>
+</TR>
+<TR>
+<TD>SYS_C0020713</TD>
+<TD>Check</TD>
+<TD>"ANTALL_E_LINJER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ANTALL_E_LINJER</TD>
+</TR>
+<TR>
+<TD>SYS_C0020714</TD>
+<TD>Check</TD>
+<TD>"ANTALL_K_LINJER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ANTALL_K_LINJER</TD>
+</TR>
+<TR>
+<TD>SYS_C0020715</TD>
+<TD>Check</TD>
+<TD>"ANTALL_L_LINJER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ANTALL_L_LINJER</TD>
+</TR>
+<TR>
+<TD>SYS_C0020716</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020717</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020718</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020719</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020720</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKKMRES</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, S_OBJECTID</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table KMRES does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

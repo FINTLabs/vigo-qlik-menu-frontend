@@ -1,0 +1,455 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Package KONTRBEREGN</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./KONTRAKT.html" TITLE="KONTRAKT">Prior Package</A></TD>
+<TD Class="NavC">Package KONTRBEREGN</TD>
+<TD Class="NavR"><A HREF="./LAKTIV.html" TITLE="LAKTIV">Next Package</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Objects and Arguments for Package KONTRBEREGN</CAPTION>
+<TR>
+<TH>Object Name</TH>
+<TH>Overload</TH>
+<TH>Argument Name</TH>
+<TH>Position</TH>
+<TH>Datatype</TH>
+<TH>Direction</TH>
+</TR>
+<TR>
+<TD>BEREGNKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">BEREGNKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">BEREGNKONTRAKT</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD>BEREGNLTIDTILD</TD>
+<TD>&nbsp;</TD>
+<TD>P_FNR</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">BEREGNLTIDTILD</TD>
+<TD>&nbsp;</TD>
+<TD>P_KONTRNR</TD>
+<TD Class="Num">2</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">BEREGNLTIDTILD</TD>
+<TD>&nbsp;</TD>
+<TD>P_LTIDFRAD</TD>
+<TD Class="Num">3</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">BEREGNLTIDTILD</TD>
+<TD>&nbsp;</TD>
+<TD>P_NTOLTID</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">BEREGNLTIDTILD</TD>
+<TD>&nbsp;</TD>
+<TD>P_LERLPROS</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">BEREGNLTIDTILD</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>DATE</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>HENTNORMLTID</TD>
+<TD>&nbsp;</TD>
+<TD>PKURSKODE</TD>
+<TD Class="Num">1</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">HENTNORMLTID</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>KALKSKOLEFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">KALKSKOLEFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">KALKSKOLEFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">KALKSKOLEFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>KALKYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">KALKYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">KALKYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">KALKYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>REKALKNETTOLTIDALT2</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNETTOLTIDALT2</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNETTOLTIDALT2</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNETTOLTIDALT2</TD>
+<TD>&nbsp;</TD>
+<TD>PSUMFRADR</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNETTOLTIDALT2</TD>
+<TD>&nbsp;</TD>
+<TD>PKURSKODE</TD>
+<TD Class="Num">5</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNETTOLTIDALT2</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>REKALKNVSKAPTID</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNVSKAPTID</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNVSKAPTID</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNVSKAPTID</TD>
+<TD>&nbsp;</TD>
+<TD>PKURSKODE</TD>
+<TD Class="Num">4</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNVSKAPTID</TD>
+<TD>&nbsp;</TD>
+<TD>PSKOLEFRADRAG</TD>
+<TD Class="Num">5</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNVSKAPTID</TD>
+<TD>&nbsp;</TD>
+<TD>PVSKAPTID</TD>
+<TD Class="Num">6</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKNVSKAPTID</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>REKALKSLUTTDATOALT3</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKSLUTTDATOALT3</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKSLUTTDATOALT3</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKSLUTTDATOALT3</TD>
+<TD>&nbsp;</TD>
+<TD>PNETTOLTID</TD>
+<TD Class="Num">4</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKSLUTTDATOALT3</TD>
+<TD>&nbsp;</TD>
+<TD>PLTIDFRAD</TD>
+<TD Class="Num">5</TD>
+<TD>DATE</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKSLUTTDATOALT3</TD>
+<TD>&nbsp;</TD>
+<TD>PLERLPROS</TD>
+<TD Class="Num">6</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">REKALKSLUTTDATOALT3</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>DATE</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>SUMFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>SUMFRADRAGTILLEGG</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMFRADRAGTILLEGG</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMFRADRAGTILLEGG</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMFRADRAGTILLEGG</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+<TR>
+<TD>SUMYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFYLKESNR</TD>
+<TD Class="Num">1</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PFNR</TD>
+<TD Class="Num">2</TD>
+<TD>VARCHAR2</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>PKONTRNR</TD>
+<TD Class="Num">3</TD>
+<TD>NUMBER</TD>
+<TD>IN</TD>
+</TR>
+<TR>
+<TD Class="Silver">SUMYRKEANDREFRADRAG</TD>
+<TD>&nbsp;</TD>
+<TD>&lt;return value for function&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>NUMBER</TD>
+<TD>OUT</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>
