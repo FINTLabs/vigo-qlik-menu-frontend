@@ -3,16 +3,13 @@ import './menu-card.css';
 
 const MenuCard = ({title, body, href}) => {
     return (
-        <div className="menu-card">
-            <a href={href} className="menu-card-href" target="_blank"  rel="noopener noreferrer">
-            <span className="menu-card-title">
-               <h2>{title}</h2>
-            </span>
-                <span className="menu-card-body">
-               <p>{body}</p>
-            </span>
-            </a>
-        </div>
+        <a href={href} target="_blank" className="nav"
+           title={title}>
+            <h2 className="navTitle">{title}</h2>
+            <p className="navText">
+                {body}
+            </p>
+        </a>
     );
 };
 

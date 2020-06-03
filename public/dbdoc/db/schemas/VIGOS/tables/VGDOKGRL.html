@@ -1,0 +1,748 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table VGDOKGRL</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./VGDOKFAGGRL.html" TITLE="VGDOKFAGGRL">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#VGDOKGRL">Table VGDOKGRL</A></TD>
+<TD Class="NavR"><A HREF="./VGDOKMERKNAD.html" TITLE="VGDOKMERKNAD">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table VGDOKGRL</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Grunnlag (dokumentasjon)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table VGDOKGRL</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FYLKESNR</B><SUB>1</SUB></TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>VGDOKNR</B><SUB>2</SUB></TD>
+<TD nowrap>CHAR(19)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Vgdoknr [ihht VGDOK]</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>FNR</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnummer [ihht ELEV]</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>TEST</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Test?[J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>UTSKREVET</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Utskrevet? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>UTSKRDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Utskrdato</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>KONTROLLERT</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrollert? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>KONTRDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrdato</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>KONTROLLID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontroll ID</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>EKSPORTNVB</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Eksport nvb? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>EKSPORTNVBDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Eksport nvb dato</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>FOERSTEGANGSVM</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Førstegangsvitnemål? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>REFORMKODE</TD>
+<TD nowrap>VARCHAR2(3)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Reformkode</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>VGDOKTYPE</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Vgdoktype</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>AVGANGSAAR</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Avgangsår</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>ORGNR</TD>
+<TD nowrap>NUMBER(9)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Orgnr</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>UTSTEDERSTED</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Utstedersted</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>DATO_UTSTEDT</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Dato utstedt</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>SKOLENAVN</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Skolenavn</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>REKTORNAVN</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Navn på rektor</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>UNDERSKRIVERNAVN</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Underskriver-navn</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>FOEDTDATO</TD>
+<TD nowrap>CHAR(6)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fødtdato</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>PERSONNUMMER</TD>
+<TD nowrap>CHAR(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Personnummer</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>PERSONNAVN</TD>
+<TD nowrap>VARCHAR2(60)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Navn</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>DISPENSASJONSKODE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dispensasjonskode</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>GSK_OK</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Grunnskole ok [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">27</TD>
+<TD>OMFANG</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Omfang</TD>
+</TR>
+<TR>
+<TD Class="Num">28</TD>
+<TD>ORDEN</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Orden</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>ADFERD</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Adferd</TD>
+</TR>
+<TR>
+<TD Class="Num">30</TD>
+<TD>ANTALL_VEDLEGG</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Antall vedlegg</TD>
+</TR>
+<TR>
+<TD Class="Num">31</TD>
+<TD>FILNAVN_VEDLEGG</TD>
+<TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>filnavn vedlegg</TD>
+</TR>
+<TR>
+<TD Class="Num">32</TD>
+<TD>SPRAAKKODE</TD>
+<TD nowrap>CHAR(3)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Språkkode</TD>
+</TR>
+<TR>
+<TD Class="Num">33</TD>
+<TD>MAALFORMKODE</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Målformkode [ihht MALFORM]</TD>
+</TR>
+<TR>
+<TD Class="Num">34</TD>
+<TD>KOMMENTAR</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kommentar</TD>
+</TR>
+<TR>
+<TD Class="Num">35</TD>
+<TD>ENDELIG_VGDOKNR</TD>
+<TD nowrap>CHAR(19)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Endelig vgdoknr</TD>
+</TR>
+<TR>
+<TD Class="Num">36</TD>
+<TD>NYSIDETERSKEL</TD>
+<TD nowrap>INTEGER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Ny side terskel</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>KONTROVERST</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrollmotor overstyrt? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>KONTROVERST_MERKNAD</TD>
+<TD nowrap>VARCHAR2(250)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontrollmotor overstyrt merknad</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>DOKBAKGRUNN</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Dokbakgrunn</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>YRK_OK</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Yrk. ok [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">43</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table VGDOKGRL</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0VGDOKGRL</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKVGDOKGRL</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, VGDOKNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table VGDOKGRL</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>ARSAK_FOR_VGDOKGRL</TD>
+<TD>DOKBAKGRUNN</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="../tables/ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ELEV2_FOR_VGDOKGRL</TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ELEV2" HREF="../tables/ELEV2.html">ELEV2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>CASCADE</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_VGDOKGRL</TD>
+<TD>FYLKESNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KMRES_FOR_VGDOKGRL</TD>
+<TD>FYLKESNR, KONTROLLID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KMRES" HREF="../tables/KMRES.html">KMRES</A></TD>
+<TD>FYLKESNR, S_OBJECTID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table VGDOKGRL</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0021145</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021146</TD>
+<TD>Check</TD>
+<TD>"VGDOKNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VGDOKNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021147</TD>
+<TD>Check</TD>
+<TD>"TEST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TEST</TD>
+</TR>
+<TR>
+<TD>SYS_C0021148</TD>
+<TD>Check</TD>
+<TD>"UTSKREVET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTSKREVET</TD>
+</TR>
+<TR>
+<TD>SYS_C0021149</TD>
+<TD>Check</TD>
+<TD>"KONTROLLERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTROLLERT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021150</TD>
+<TD>Check</TD>
+<TD>"EKSPORTNVB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>EKSPORTNVB</TD>
+</TR>
+<TR>
+<TD>SYS_C0021151</TD>
+<TD>Check</TD>
+<TD>"REFORMKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REFORMKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021152</TD>
+<TD>Check</TD>
+<TD>"VGDOKTYPE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VGDOKTYPE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021153</TD>
+<TD>Check</TD>
+<TD>"AVGANGSAAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVGANGSAAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021154</TD>
+<TD>Check</TD>
+<TD>"ORGNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ORGNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021155</TD>
+<TD>Check</TD>
+<TD>"UTSTEDERSTED" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTSTEDERSTED</TD>
+</TR>
+<TR>
+<TD>SYS_C0021156</TD>
+<TD>Check</TD>
+<TD>"DATO_UTSTEDT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DATO_UTSTEDT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021157</TD>
+<TD>Check</TD>
+<TD>"SKOLENAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021158</TD>
+<TD>Check</TD>
+<TD>"REKTORNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REKTORNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021159</TD>
+<TD>Check</TD>
+<TD>"UNDERSKRIVERNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UNDERSKRIVERNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021160</TD>
+<TD>Check</TD>
+<TD>"FOEDTDATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FOEDTDATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0021161</TD>
+<TD>Check</TD>
+<TD>"PERSONNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PERSONNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021162</TD>
+<TD>Check</TD>
+<TD>"OMFANG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OMFANG</TD>
+</TR>
+<TR>
+<TD>SYS_C0021163</TD>
+<TD>Check</TD>
+<TD>"NYSIDETERSKEL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NYSIDETERSKEL</TD>
+</TR>
+<TR>
+<TD>SYS_C0021164</TD>
+<TD>Check</TD>
+<TD>"KONTROVERST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTROVERST</TD>
+</TR>
+<TR>
+<TD>SYS_C0021165</TD>
+<TD>Check</TD>
+<TD>"DOKBAKGRUNN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DOKBAKGRUNN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021166</TD>
+<TD>Check</TD>
+<TD>"YRK_OK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>YRK_OK</TD>
+</TR>
+<TR>
+<TD>SYS_C0021167</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0021168</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0021169</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0021170</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0021171</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKVGDOKGRL</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, VGDOKNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table VGDOKGRL does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

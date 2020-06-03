@@ -1,0 +1,526 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<TITLE>VIGOS Table OFORSLAG</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./OFKDVHRESULTROW.html" TITLE="OFKDVHRESULTROW">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#OFORSLAG">Table OFORSLAG</A></TD>
+<TD Class="NavR"><A HREF="./OFORSLAGSTATUS.html" TITLE="OFORSLAGSTATUS">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table OFORSLAG</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Ønske-forslag</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table OFORSLAG</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FNR</B><SUB>1</SUB></TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnummer [Ihht ONSKE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>SKOLEAR</B><SUB>2</SUB></TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Skoleår [ihht SKOLEAR]</TD>
+</TR>
+<TR>
+<TD Class="NumRed">3</TD>
+<TD><B>FYLKESNR</B><SUB>3</SUB></TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Fylkesnr [Ihht ONSKE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">4</TD>
+<TD><B>ONSKENR</B><SUB>4</SUB></TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Ønskenr [Ihht ONSKE]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">5</TD>
+<TD><B>RADNR</B><SUB>5</SUB></TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Radnr (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>BNR</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftsnr [Ihht BEDRIFT2]</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>FORMIDLID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Formidling id</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>FORSLAGNR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Forslagnr</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>FRASOKER</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Ønsket av søkeren</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>STATUSK</TD>
+<TD nowrap>VARCHAR2(6)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Status formidling [Ihht OFORSLAGSTATUS]</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">13</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>FORMIDLDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Formidlingsdato</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>LTIDFRAD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Ønsket læretid f.o.m. dato</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>ANNFYLKE</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Annet fylke [Ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>SKOLENR</TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skole [Ihht SKOLE]</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>BRUKERID</TD>
+<TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Brukerid</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>BNRMEDL</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Bedriftsnr medlemsbedrift [Ihht BEDRIFT2]</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>FAGLEDFNR</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnummer faglig leder [ihht ANSATT2]</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>KONTBEDR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Søker kontaktet bedrift [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>FSTATUSK</TD>
+<TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige statuskode [Ihht OFORSLAGSTATUS]</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table OFORSLAG</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0OFORSLAG</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1OFORSLAG</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR, ONSKENR, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKOFORSLAG</TD>
+<TD>NORMAL</TD>
+<TD>FNR, SKOLEAR, FYLKESNR, ONSKENR, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table OFORSLAG</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_OFORSLAG</TD>
+<TD>FYLKESNR, FAGLEDFNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="../tables/ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEDRIFT2_FOR_OFORSLAG</TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEDRIFT2_FOR_OFORSLAG_BNRMEDL</TD>
+<TD>FYLKESNR, BNRMEDL</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_OFORSLAG_ANNFYLKE</TD>
+<TD>ANNFYLKE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>OFORSLAGSTATUS_FOR_OFORSLAG</TD>
+<TD>STATUSK</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="OFORSLAGSTATUS" HREF="../tables/OFORSLAGSTATUS.html">OFORSLAGSTATUS</A></TD>
+<TD>STATUSK</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ONSKE_FOR_OFORSLAG</TD>
+<TD>FNR, SKOLEAR, FYLKESNR, ONSKENR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ONSKE" HREF="../tables/ONSKE.html">ONSKE</A></TD>
+<TD>FNR, SKOLEAR, FYLKESNR, ONSKENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>SKOLE_FOR_OFORSLAG_SKOLENR</TD>
+<TD>SKOLENR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="SKOLE" HREF="../tables/SKOLE.html">SKOLE</A></TD>
+<TD>SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table OFORSLAG</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013119</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013120</TD>
+<TD>Check</TD>
+<TD>"SKOLEAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLEAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013121</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013122</TD>
+<TD>Check</TD>
+<TD>"ONSKENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ONSKENR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013123</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013124</TD>
+<TD>Check</TD>
+<TD>"FRASOKER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FRASOKER</TD>
+</TR>
+<TR>
+<TD>SYS_C0013125</TD>
+<TD>Check</TD>
+<TD>"STATUSK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>STATUSK</TD>
+</TR>
+<TR>
+<TD>SYS_C0013126</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013127</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013128</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013129</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013130</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013131</TD>
+<TD>Check</TD>
+<TD>"KONTBEDR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTBEDR</TD>
+</TR>
+<TR>
+<TD>XPKOFORSLAG</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FNR, SKOLEAR, FYLKESNR, ONSKENR, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table OFORSLAG does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

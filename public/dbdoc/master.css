@@ -1,0 +1,331 @@
+﻿@charset "UTF-8";
+
+body {
+  font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+  background : #FFFFFF;
+  visibility : visible;
+  padding: 0pt;
+}
+
+.headerEnd {
+	display: none;
+}
+
+div.title  {
+  color: #FFFFFF;
+  background: #78A3F1;
+  margin: auto;
+  padding: 0pt;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24pt;
+  font-family: MS Shell Dlg 2}
+
+div.subtitle1  {
+  color: #FFFFFF;
+  background: #78A3F1;
+  margin: auto;
+  padding: 0pt;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: MS Shell Dlg 2}
+
+div.subtitle2  {
+  color: #FFFFFF;
+  background: #78A3F1;
+  margin: auto;
+  padding: 0pt;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14pt;
+  font-family: MS Shell Dlg 2}
+
+#headerContainer {
+  background: #fff;
+  display: block;
+  position: static;
+  border-bottom: 2pt solid #78A3F1;
+}
+
+#header {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  position: static;
+  margin: 0pt;
+}
+
+CAPTION.Ttl {
+  color: #000000;
+  background: #78A3F1;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+
+TABLE {
+  min-width: 400px;
+  border-style: solid;
+  border-color: #78A3F1;
+  border-width: thin;
+}
+
+TABLE.Nav {
+  border-style: none;
+  width: 100%
+}
+
+TABLE.NavSum {
+  border-style: none;
+}
+
+TD.NavL {
+  background : #FFFFFF;
+  text-align: left;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NavLSilver {color: #C0C0C0;
+  background : #FFFFFF;
+  text-align: left;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NavC {color: #000000;
+  background : #FFFFFF;
+  text-align: center;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NavC10 {color: #000000;
+  background : #FFFFFF;
+  text-align: center;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NavCSilver {color: #C0C0C0;
+  background : #FFFFFF;
+  text-align: center;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NavR {
+  background : #FFFFFF;
+  text-align: right;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NavRSilver {color: #C0C0C0;
+  background : #FFFFFF;
+  text-align: right;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TH {COLOR: #0000FF;
+  border-style: none;
+  background: #A6CAF0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD {color: #0000FF;
+  border-style: none;
+  background: #F8F8F8;
+  text-align: left;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.black {color: #000000;
+  border-style: none;
+  text-align: left;
+  font-size: 8pt;
+  font-family: Courier New;}
+
+TD.red {color: #FF0000;
+  border-style: none;
+  text-align: left;
+  font-size: 8pt;
+  font-family: Courier New;}
+
+TD.green {color: #008000;
+  border-style: none;
+  text-align: left;
+  font-size: 8pt;
+  font-family: Courier New;}
+
+A.Small {
+    FONT-WEIGHT: normal;
+    TEXT-ALIGN: left;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: MS Shell Dlg 2}
+
+TD.Silver {color: #C0C0C0;
+  border-style: none;
+  background: #F8F8F8;
+  text-align: left;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.Num {color: #0000FF;
+  border-style: none;
+  background: #F8F8F8;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NumBlue {color: #0000FF;
+  border-style: none;
+  background: #F8F8F8;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NumGreen {color: #008000;
+  border-style: none;
+  background: #F8F8F8;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.Red {color: #FF0000;
+  border-style: none;
+  background: #F8F8F8;
+  text-align: left;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+TD.NumRed {color: #FF0000;
+  border-style: none;
+  background: #F8F8F8;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 10pt;
+  font-family: MS Shell Dlg 2}
+
+ul#list-nav {
+  list-style:none;
+  margin:0px;
+  padding:0;
+}
+
+ul#list-nav li {
+  display:inline-block
+}
+
+ul#list-nav li a {
+  padding: 2px 4px 4px 2px;
+  background:#78A3F1;
+  color:#FFFFFF;
+  float:left;
+  text-align:center;
+  border-top:4px solid #fff;
+  border-left:1px solid #fff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+ul#list-nav li.selected a {
+  padding: 2px 4px 4px 2px;
+  background:#000080;
+  color:#FFFFFF;
+  float:left;
+  text-align:center;
+  border-top:4px solid #fff;
+  border-left:1px solid #fff;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+ul#list-nav li a:hover {
+  background:#A6CAF0;
+  color:#FFFFFF;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+ul#list-nav li.selected a:hover {
+  background:#000080;
+  color:#FFFFFF;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+
+center.h1 {color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+
+center.h2 {color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+
+center.h3 {color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+
+center.h4 {color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+
+center.f1 {color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12pt;
+  font-family: MS Shell Dlg 2}
+
+
+center.f2 {color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: Tahoma}
+
+
+center.f3 {color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: Tahoma}
+
+
+center.f4 {color: #000000;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 12pt;
+  font-family: Tahoma}
+
+

@@ -1,15 +1,17 @@
 import React from 'react';
-import VigoLogoLight from "../vigo-logo-light/vigo-logo-light";
 import './header.css';
 
 const Header = () => {
     return (
-        <div className="header-container">
-            <header>
-                <VigoLogoLight/>
-                <h3>QLik</h3>
-            </header>
-        </div>
+        <header>
+            <div className="logo">
+                <h1>
+                    <span className="d-none">Vigo portalen</span>
+                </h1>
+            </div>
+            <a href="http://www.vigoiks.no" target="_blank" className="vigoIKSlink"
+               title="Informajsonsnettsted for fylkesansatte">Vigo IKS</a>
+        </header>
     );
 };
 
