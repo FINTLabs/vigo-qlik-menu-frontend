@@ -10,8 +10,13 @@ header {
     background: url(https://www.vigoiks.no/extension/site/design/site/images/logo_light.svg) top left no-repeat;
 }
 
-.vigoIKSlink {
+.menuLinks {
     display: none;
+    margin-right: 16px;
+}
+
+.menuContainer {
+    display: flex;
 }
 
 .d-none {
@@ -33,7 +38,7 @@ header {
         align-items: flex-start;
     }
 
-    .vigoIKSlink {
+    .menuLinks {
         display: block;
         color: #8EC044;
         text-decoration: none;
@@ -42,7 +47,7 @@ header {
         margin-top: 1.5em;
     }
 
-    .vigoIKSlink:hover {
+    .menuLinks:hover {
         text-decoration: underline;
     }
 }
