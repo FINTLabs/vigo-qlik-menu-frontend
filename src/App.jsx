@@ -14,23 +14,23 @@ function App() {
                 <Header/>
                 <h3 className="welcome-text align-center">Velkommen til Qlik-portalen</h3>
                 <MenuContainer>
-                    <MenuCard title="QlikSense" body="Modeller og analyse"
+                    <MenuCard title="Qlik Sense" body="Lesetilgang"
                               href="https://qs.fintlabs.no/prod"/>
-                    <MenuCard title="QlikSense utviklingsmiljø" body="Modeller og analyse"
+                    <MenuCard title="Qlik Sense" body="Utviklingsmiljø"
                               href="https://qs.fintlabs.no/dev"/>
-                    <MenuCard title="QlikView AccessPoint" body="Modeller og analyse"
+                    <MenuCard title="QlikView" body="Lesetilgang"
                               href="https://qv.fintlabs.no"/>
-                    <MenuCard title="NPrinting NewsStand" body="Rapporter"
+                    <MenuCard title="NPrinting" body="NewsStand"
                               href="https://np.fintlabs.no/login/saml/sso/NPVIGOIKS"/>
-                    <MenuCard title="NPrinting WebConsole" body="Utvikling av rapporter"
+                    <MenuCard title="NPrinting" body="Utviklingsmiljø"
                               href="https://np-admin.fintlabs.no/login/saml/sso/npavigoiks"/>
-                    <MenuCard title="Databasedokumentasjon" body="Dokumentasjon av Vigo Sentraldatabase"
+                    <MenuCard title="Dokumentasjon" body="Dokumentasjon av VIGO Sentraldatabase"
                               href="/dbdoc/db/schemas/VIGOS/summary.html"/>
                 </MenuContainer>
             </MainContainer>
             <footer>
-                <p>Vigo IKS har samlet Qlik-applikasjonene på et sted for å gi brukerene en bedre oversikt.<br/>
-                    Tilgang til de enkelte applikasjonene i portalen kan kreve at du har en brukerID.</p>
+                <p>Vigo IKS har samlet analyseverktøyene på et sted for å gi brukerene en bedre oversikt.<br/>
+                    Tilgang styres av VIGO ansvarlig i eget fylke.</p>
             </footer>
         </>
     );
