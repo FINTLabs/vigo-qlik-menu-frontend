@@ -35,7 +35,7 @@ spec:
     spec:
       restartPolicy: Always
       containers:
-        - image: fintlabs.azurecr.io/vigo-qlik-menu-frontend:build.${BUILD_NUMBER}
+        - image: fintlabsacr.azurecr.io/vigo-qlik-menu-frontend:build.${BUILD_NUMBER}
           name: vigo-qlik-menu-frontend
           resources:
             limits:
