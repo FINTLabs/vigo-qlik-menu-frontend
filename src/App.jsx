@@ -27,8 +27,10 @@ function App() {
                     <MenuCard title="Dokumentasjon" body="Dokumentasjon av VIGO Sentraldatabase"
                               href="/dbdoc/db/schemas/VIGOS/summary.html"/>
                 </MenuContainer>
+
             </MainContainer>
             <footer>
+                <p>Opplæringsvideoene ligger i Qlikteam for fylkeskommunene i Teams.</p>
                 <p>Vigo IKS har samlet analyseverktøyene på et sted for å gi brukerene en bedre oversikt.<br/>
                     Tilgang styres av VIGO ansvarlig i eget fylke.</p>
             </footer>
