@@ -30,8 +30,11 @@ function App() {
 
             </MainContainer>
             <footer>
-                <p>Opplæringsvideoene ligger i Qlikteam for fylkeskommunene i Teams.</p>
-                <p>Vigo IKS har samlet analyseverktøyene på et sted for å gi brukerene en bedre oversikt.<br/>
+                <p>Opplæringsvideoene ligger på «Qlikteam for fylkeskommunene» i Teams. Om du ønsker
+                    tilgang, send en melding til oss via linken til support oppe til høyre på denne
+                    siden.</p>
+                <p>Vigo IKS har samlet analyseverktøyene på et sted for å gi brukerene en bedre
+                    oversikt.<br/>
                     Tilgang styres av VIGO ansvarlig i eget fylke.</p>
             </footer>
         </>
