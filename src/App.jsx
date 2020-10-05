@@ -15,15 +15,15 @@ function App() {
                 <h3 className="welcome-text align-center">Velkommen til Qlik-portalen</h3>
                 <MenuContainer>
                     <MenuCard title="Qlik Sense" body="Lesetilgang"
-                              href="https://qs.fintlabs.no/prod"/>
+                              href="https://qs.vigoiks.no/prod"/>
                     <MenuCard title="Qlik Sense" body="Utviklingsmiljø"
-                              href="https://qs.fintlabs.no/dev"/>
+                              href="https://qs.vigoiks.no/dev"/>
                     <MenuCard title="QlikView" body="Lesetilgang"
-                              href="https://qv.fintlabs.no"/>
+                              href="https://qv.vigoiks.no"/>
                     <MenuCard title="NPrinting" body="NewsStand"
-                              href="https://np.fintlabs.no/login/saml/sso/NPVIGOIKS"/>
+                              href="https://np.vigoiks.no/login/saml/sso/np_vigoiks_no"/>
                     <MenuCard title="NPrinting" body="Utviklingsmiljø"
-                              href="https://np-admin.fintlabs.no/login/saml/sso/npavigoiks"/>
+                              href="https://np-admin.vigoiks.no/login/saml/sso/np-admin_vigoiks_no"/>
                     <MenuCard title="Dokumentasjon" body="Dokumentasjon av VIGO Sentraldatabase"
                               href="/dbdoc/db/schemas/VIGOS/summary.html"/>
                 </MenuContainer>
