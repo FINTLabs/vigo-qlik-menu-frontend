@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="TS_OPPGJORSOPPGAVE.html" TITLE="TS_OPPGJORSOPPGAVE">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./TS_OPPGJORSOPPGAVE.html" TITLE="TS_OPPGJORSOPPGAVE">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables3.html#TS_ORDNING">Table TS_ORDNING</A></TD>
-<TD Class="NavR"><A HREF="TS_PERIODE.html" TITLE="TS_PERIODE">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./TS_PERIODE.html" TITLE="TS_PERIODE">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,7 +50,6 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -58,55 +57,48 @@
 <TD><B>ORDNINGID</B></TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Ordning id</TD>
 </TR>
 <TR>
 <TD Class="Num">2</TD>
 <TD>AKTIV</TD>
-<TD nowrap>CHAR(1)</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Aktivitetsstatus [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(255)</TD>
+<TD nowrap>VARCHAR2(255 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>TMP_ANSVAR</TD>
-<TD nowrap>VARCHAR2(20)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(20 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Systemkolonne ifbm konvertering</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>TMP_ORDNING</TD>
-<TD nowrap>VARCHAR2(16)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Systemkolonne ifbm konvertering</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -114,23 +106,20 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="NumRed">9</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -138,123 +127,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table TS_ORDNING</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0TS_ORDNING</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKTS_ORDNING</TD>
-<TD>NORMAL</TD>
-<TD>ORDNINGID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TS_ORDNING</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0013384</TD>
-<TD>Check</TD>
-<TD>"ORDNINGID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>ORDNINGID</TD>
-</TR>
-<TR>
-<TD>SYS_C0013385</TD>
-<TD>Check</TD>
-<TD>"AKTIV" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>AKTIV</TD>
-</TR>
-<TR>
-<TD>SYS_C0013386</TD>
-<TD>Check</TD>
-<TD>"BESKRIVELSE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>BESKRIVELSE</TD>
-</TR>
-<TR>
-<TD>SYS_C0013387</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013388</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0013389</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0013390</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013391</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKTS_ORDNING</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>ORDNINGID</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -267,9 +140,6 @@
 </TR>
 <TR>
 <TD>Foreign Key Constraints</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

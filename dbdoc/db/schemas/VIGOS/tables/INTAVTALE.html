@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="INSTANS.html" TITLE="INSTANS">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./INSTANS.html" TITLE="INSTANS">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#INTAVTALE">Table INTAVTALE</A></TD>
-<TD Class="NavR"><A HREF="INTERN.html" TITLE="INTERN">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./INTERN.html" TITLE="INTERN">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,23 +50,20 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumBlue">1</TD>
 <TD><B>BNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(16)</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Bedriftsnr [ihht BEDRIFT2]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>KURSKODE</B><SUB>3</SUB></TD>
-<TD nowrap>VARCHAR2(10)</TD>
+<TD nowrap>VARCHAR2(10 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
 <TR>
@@ -74,15 +71,13 @@
 <TD><B>RADNR</B><SUB>4</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Radnr (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>AVTTYPE</TD>
-<TD nowrap>CHAR(1)</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Avtaletype</TD>
 </TR>
 <TR>
@@ -90,23 +85,20 @@
 <TD>ANTPLASS</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall plasser</TD>
 </TR>
 <TR>
 <TD Class="NumRed">6</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -114,15 +106,13 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -130,7 +120,6 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -138,22 +127,19 @@
 <TD>GYLDIGAR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Gyldig år</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>BEHOVSKODE</TD>
-<TD nowrap>VARCHAR2(8)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(8 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Tilbakemelding fra bedrift (web) [ihht ARSAK]</TD>
 </TR>
@@ -162,7 +148,6 @@
 <TD>BEHOVSDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Dato for tilbakemelding fra bedrift</TD>
 </TR>
 <TR>
@@ -170,55 +155,14 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>BRUKERID</TD>
-<TD nowrap>VARCHAR2(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Hvilken bruker har lagt inn behov</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table INTAVTALE</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0INTAVTALE</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKINTAVTALE</TD>
-<TD>NORMAL</TD>
-<TD>FYLKESNR, BNR, KURSKODE, RADNR</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -241,7 +185,7 @@
 <TD>ARSAK_FOR_INTAVTALE_BEHOVSKODE</TD>
 <TD>BEHOVSKODE</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="ARSAK" HREF="ARSAK.html">ARSAK</A></TD>
+<TD><A NAME="ARSAK" HREF="../tables/ARSAK.html">ARSAK</A></TD>
 <TD>ARSKODE</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -252,7 +196,7 @@
 <TD>BEDRIFT2_FOR_INTAVTALE</TD>
 <TD>FYLKESNR, BNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="BEDRIFT2" HREF="BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
 <TD>FYLKESNR, BNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -263,7 +207,7 @@
 <TD>KURS_FOR_INTAVTALE_KURSKODE</TD>
 <TD>KURSKODE</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="KURS" HREF="KURS.html">KURS</A></TD>
+<TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
 <TD>KURSKODE</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -275,88 +219,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table INTAVTALE</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0012969</TD>
-<TD>Check</TD>
-<TD>"BNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>BNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0012970</TD>
-<TD>Check</TD>
-<TD>"KURSKODE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>KURSKODE</TD>
-</TR>
-<TR>
-<TD>SYS_C0012971</TD>
-<TD>Check</TD>
-<TD>"RADNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RADNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0012972</TD>
-<TD>Check</TD>
-<TD>"AVTTYPE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>AVTTYPE</TD>
-</TR>
-<TR>
-<TD>SYS_C0012973</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0012974</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0012975</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0012976</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKINTAVTALE</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR, BNR, KURSKODE, RADNR</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table INTAVTALE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

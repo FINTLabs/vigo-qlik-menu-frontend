@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="VARSEL.html" TITLE="VARSEL">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./VARSEL.html" TITLE="VARSEL">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables3.html#VEDLEGG">Table VEDLEGG</A></TD>
-<TD Class="NavR"><A HREF="VEILEDNING.html" TITLE="VEILEDNING">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./VEILEDNING.html" TITLE="VEILEDNING">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,15 +50,13 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B><SUB>1</SUB></TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fødselsnummer [Ihht ELEVKURS,ELEV2,ELEV]</TD>
 </TR>
 <TR>
@@ -66,7 +64,6 @@
 <TD><B>SKOLEAR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Skoleår [Ihht ELEVKURS,SKOLEAR]</TD>
 </TR>
 <TR>
@@ -74,47 +71,41 @@
 <TD><B>RADNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Rad nr [Ihht ELEVKURS]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">4</TD>
 <TD><B>VLKODE</B><SUB>4</SUB></TD>
-<TD nowrap>VARCHAR2(10)</TD>
+<TD nowrap>VARCHAR2(10 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Vedleggskode</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>VLTYPE</TD>
-<TD nowrap>VARCHAR2(2)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(2 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Vedleggstype</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>VEDLEGG</TD>
-<TD nowrap>VARCHAR2(4000)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(4000 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Vedlegg</TD>
 </TR>
 <TR>
 <TD Class="NumRed">7</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -122,15 +113,13 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -138,55 +127,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table VEDLEGG</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0VEDLEGG</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKVEDLEGG</TD>
-<TD>NORMAL</TD>
-<TD>FNR, SKOLEAR, RADNR, VLKODE</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -209,7 +157,7 @@
 <TD>ELEVKURS_FOR_VEDLEGG</TD>
 <TD>FNR, SKOLEAR, RADNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="ELEVKURS" HREF="ELEVKURS.html">ELEVKURS</A></TD>
+<TD><A NAME="ELEVKURS" HREF="../tables/ELEVKURS.html">ELEVKURS</A></TD>
 <TD>FNR, SKOLEAR, RADNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -221,88 +169,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table VEDLEGG</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0013803</TD>
-<TD>Check</TD>
-<TD>"FNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0013804</TD>
-<TD>Check</TD>
-<TD>"SKOLEAR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>SKOLEAR</TD>
-</TR>
-<TR>
-<TD>SYS_C0013805</TD>
-<TD>Check</TD>
-<TD>"RADNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RADNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0013806</TD>
-<TD>Check</TD>
-<TD>"VLKODE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>VLKODE</TD>
-</TR>
-<TR>
-<TD>SYS_C0013807</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013808</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0013809</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013810</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKVEDLEGG</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FNR, SKOLEAR, RADNR, VLKODE</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table VEDLEGG does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

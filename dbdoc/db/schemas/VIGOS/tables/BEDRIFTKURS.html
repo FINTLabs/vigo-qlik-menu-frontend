@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="BEDEXPRESULTROW.html" TITLE="BEDEXPRESULTROW">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./BEDRIFTBRREG.html" TITLE="BEDRIFTBRREG">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#BEDRIFTKURS">Table BEDRIFTKURS</A></TD>
-<TD Class="NavR"><A HREF="BEDRIFTSSB.html" TITLE="BEDRIFTSSB">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./BEDRIFT_NETTVERK.html" TITLE="BEDRIFT_NETTVERK">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,7 +50,6 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -58,23 +57,20 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>BNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(16)</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Organisasjonsnummer bedrift [Ihht BEDRIFT2]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">3</TD>
 <TD><B>BNRMEDL</B><SUB>3</SUB></TD>
-<TD nowrap>VARCHAR2(16)</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Organisasjonnummer medlemsbedrift [Ihht BEDRIFT2]</TD>
 </TR>
 <TR>
@@ -82,22 +78,19 @@
 <TD><B>RADNR</B><SUB>4</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Radnr (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">5</TD>
 <TD>KURSKODE</TD>
-<TD nowrap>VARCHAR2(10)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(10 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>TYPE</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Full eller begrenset godkjenning [B,G]</TD>
 </TR>
@@ -106,23 +99,20 @@
 <TD>PASSIVDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Passiv dato</TD>
 </TR>
 <TR>
 <TD Class="NumRed">8</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -130,15 +120,13 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -146,82 +134,28 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>TILVILBLI</TD>
-<TD nowrap>CHAR(1)</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Til vilbli</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>PASSIV_EGENDEF</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Egendefinert passiv</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table BEDRIFTKURS</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0BEDRIFTKURS</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>NON-UNIQUE</TD>
-<TD>XIE1BEDRIFTKURS</TD>
-<TD>NORMAL</TD>
-<TD>FYLKESNR, BNR, BNRMEDL, KURSKODE</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKBEDRIFTKURS</TD>
-<TD>NORMAL</TD>
-<TD>FYLKESNR, BNR, BNRMEDL, RADNR</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -244,7 +178,7 @@
 <TD>BEDRIFT2_FOR_BEDRIFTKURS</TD>
 <TD>FYLKESNR, BNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="BEDRIFT2" HREF="BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
 <TD>FYLKESNR, BNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -255,7 +189,7 @@
 <TD>BEDRIFT2_FOR_BEDRIFTKURS_BNRMD</TD>
 <TD>FYLKESNR, BNRMEDL</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="BEDRIFT2" HREF="BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
 <TD>FYLKESNR, BNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -266,7 +200,7 @@
 <TD>KURS_FOR_BEDRIFTKURS</TD>
 <TD>KURSKODE</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="KURS" HREF="KURS.html">KURS</A></TD>
+<TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
 <TD>KURSKODE</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -278,102 +212,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table BEDRIFTKURS</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0013606</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0013607</TD>
-<TD>Check</TD>
-<TD>"BNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>BNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0013608</TD>
-<TD>Check</TD>
-<TD>"BNRMEDL" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>BNRMEDL</TD>
-</TR>
-<TR>
-<TD>SYS_C0013609</TD>
-<TD>Check</TD>
-<TD>"RADNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RADNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0013610</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0013611</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013612</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0013613</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013614</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0013615</TD>
-<TD>Check</TD>
-<TD>"TILVILBLI" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>TILVILBLI</TD>
-</TR>
-<TR>
-<TD>XPKBEDRIFTKURS</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR, BNR, BNRMEDL, RADNR</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table BEDRIFTKURS does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

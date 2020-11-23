@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="INTAVTALE.html" TITLE="INTAVTALE">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./INTAVTALE.html" TITLE="INTAVTALE">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#INTERN">Table INTERN</A></TD>
-<TD Class="NavR"><A HREF="INTERNF.html" TITLE="INTERNF">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./INTERNF.html" TITLE="INTERNF">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,15 +50,13 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B><SUB>1</SUB></TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fødselsnr [ihht ELEV,ELEV2]</TD>
 </TR>
 <TR>
@@ -66,7 +64,6 @@
 <TD><B>FYLKESNR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -74,23 +71,20 @@
 <TD><B>INTNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Internkodenr [ihht INTKODE]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">4</TD>
 <TD><B>INTKODE</B><SUB>4</SUB></TD>
-<TD nowrap>CHAR(1)</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Internkode [ihht INTKODE]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -98,23 +92,20 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="NumRed">7</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -122,66 +113,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table INTERN</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>SYS_C0015123</TD>
-<TD>NORMAL</TD>
-<TD>FNR, FYLKESNR, INTNR</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0INTERN</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKINTERN</TD>
-<TD>NORMAL</TD>
-<TD>FNR, FYLKESNR, INTNR, INTKODE</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -204,7 +143,7 @@
 <TD>ELEV2_FOR_INTERN</TD>
 <TD>FYLKESNR, FNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="ELEV2" HREF="ELEV2.html">ELEV2</A></TD>
+<TD><A NAME="ELEV2" HREF="../tables/ELEV2.html">ELEV2</A></TD>
 <TD>FYLKESNR, FNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -215,7 +154,7 @@
 <TD>INTKODE_FOR_INTERN</TD>
 <TD>FYLKESNR, INTNR, INTKODE</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="INTKODE" HREF="INTKODE.html">INTKODE</A></TD>
+<TD><A NAME="INTKODE" HREF="../tables/INTKODE.html">INTKODE</A></TD>
 <TD>FYLKESNR, INTNR, INTKODE</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -227,102 +166,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table INTERN</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0012977</TD>
-<TD>Check</TD>
-<TD>"FNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0012978</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0012979</TD>
-<TD>Check</TD>
-<TD>"INTNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>INTNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0012980</TD>
-<TD>Check</TD>
-<TD>"INTKODE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>INTKODE</TD>
-</TR>
-<TR>
-<TD>SYS_C0012981</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0012982</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0012983</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0012984</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0012985</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKINTERN</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FNR, FYLKESNR, INTNR, INTKODE</TD>
-</TR>
-<TR>
-<TD>SYS_C0015123</TD>
-<TD>Unique</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FNR, FYLKESNR, INTNR</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table INTERN does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

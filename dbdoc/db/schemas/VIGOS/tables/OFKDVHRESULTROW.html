@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:36:53</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="OFKDVHRESULT.html" TITLE="OFKDVHRESULT">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./OFKDVHRESULT.html" TITLE="OFKDVHRESULT">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables2.html#OFKDVHRESULTROW">Table OFKDVHRESULTROW</A></TD>
-<TD Class="NavR"><A HREF="OFORSLAG.html" TITLE="OFORSLAG">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./OFORSLAG.html" TITLE="OFORSLAG">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -38,23 +38,20 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>RESULTID</B><SUB>1</SUB></TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>EXTRACTID</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(6)</TD>
+<TD nowrap>VARCHAR2(6 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
@@ -63,7 +60,6 @@
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">4</TD>
@@ -71,30 +67,26 @@
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>DATASTRING</TD>
-<TD nowrap>VARCHAR2(4000)</TD>
+<TD nowrap>VARCHAR2(4000 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="NumRed">6</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
@@ -103,14 +95,12 @@
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
@@ -119,13 +109,11 @@
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -135,7 +123,6 @@
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
@@ -143,175 +130,6 @@
 <TD nowrap>CLOB</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table OFKDVHRESULTROW</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0OFKDVHRESULTROW</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>NON-UNIQUE</TD>
-<TD>XIE1OFKDVHRESULTROW</TD>
-<TD>NORMAL</TD>
-<TD>DELIVERED</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKOFKDVHRESULTROW</TD>
-<TD>NORMAL</TD>
-<TD>RESULTID, EXTRACTID, FYLKESNR, ROWNUMBER</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Foreign Key Constraints on Table OFKDVHRESULTROW</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Columns</TH>
-<TH>Ref Table Owner</TH>
-<TH>Referenced Table Name</TH>
-<TH>Referenced Columns</TH>
-<TH>Delete Rule</TH>
-<TH>Status</TH>
-<TH>Deferrable</TH>
-<TH>Deferred</TH>
-</TR>
-<TR>
-<TD>OFKDVHRESULT_FOR_OFKDVHRESULTROW</TD>
-<TD>RESULTID, EXTRACTID, FYLKESNR</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="OFKDVHRESULT" HREF="OFKDVHRESULT.html">OFKDVHRESULT</A></TD>
-<TD>RESULTID, EXTRACTID, FYLKESNR</TD>
-<TD>CASCADE</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table OFKDVHRESULTROW</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0051990</TD>
-<TD>Check</TD>
-<TD>"RESULTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RESULTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0051991</TD>
-<TD>Check</TD>
-<TD>"EXTRACTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>EXTRACTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0051992</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0051993</TD>
-<TD>Check</TD>
-<TD>"ROWNUMBER" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>ROWNUMBER</TD>
-</TR>
-<TR>
-<TD>SYS_C0051994</TD>
-<TD>Check</TD>
-<TD>"DATASTRING" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>DATASTRING</TD>
-</TR>
-<TR>
-<TD>SYS_C0051995</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0051996</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0051997</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0051998</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0051999</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKOFKDVHRESULTROW</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>RESULTID, EXTRACTID, FYLKESNR, ROWNUMBER</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -324,9 +142,6 @@
 </TR>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

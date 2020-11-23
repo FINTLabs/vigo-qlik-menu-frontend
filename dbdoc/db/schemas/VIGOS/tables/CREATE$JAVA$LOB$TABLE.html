@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:36:53</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="CBRUKER.html" TITLE="CBRUKER">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./CBRUKER.html" TITLE="CBRUKER">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#CREATE$JAVA$LOB$TABLE">Table CREATE$JAVA$LOB$TABLE</A></TD>
-<TD Class="NavR"><A HREF="DOKUMENT.html" TITLE="DOKUMENT">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./DOKUMENT.html" TITLE="DOKUMENT">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -38,14 +38,12 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD>NAME</TD>
-<TD nowrap>VARCHAR2(700)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(700 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -55,7 +53,6 @@
 <TD nowrap>BLOB</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
@@ -63,55 +60,6 @@
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table CREATE$JAVA$LOB$TABLE</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>SYS_C00167447</TD>
-<TD>NORMAL</TD>
-<TD>NAME</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table CREATE$JAVA$LOB$TABLE</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C00167447</TD>
-<TD>Unique</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>NAME</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -124,12 +72,6 @@
 </TR>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Foreign Key Constraints</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

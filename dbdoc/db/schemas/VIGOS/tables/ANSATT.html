@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="AJOURHOL.html" TITLE="AJOURHOL">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./AJOURHOL.html" TITLE="AJOURHOL">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#ANSATT">Table ANSATT</A></TD>
-<TD Class="NavR"><A HREF="ANSATT2.html" TITLE="ANSATT2">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./ANSATT2.html" TITLE="ANSATT2">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,38 +50,33 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B></TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fødselsnr</TD>
 </TR>
 <TR>
 <TD Class="Num">2</TD>
 <TD>NAVN</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>GATE1H</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Gate hjemsted</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>GATE2H</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Gate hjemsted</TD>
 </TR>
@@ -90,7 +85,6 @@
 <TD>POSTNRH</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Postnr hjemsted [ihht POSTSTED]</TD>
 </TR>
 <TR>
@@ -98,22 +92,19 @@
 <TD>KOMMNRH</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Kommunenr hjemsted [ihht KOMMUNE]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>GATE1J</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse1 jobb</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>GATE2J</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse2 jobb</TD>
 </TR>
@@ -122,14 +113,12 @@
 <TD>POSTNRJ</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Postnr jobb [ihht POSTSTED]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>KOMMNRJ</TD>
 <TD nowrap>NUMBER(4)</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kommunenr jobb [ihht KOMMUNE]</TD>
 </TR>
@@ -138,14 +127,12 @@
 <TD>DSPPRK</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>DSP personstatus kode</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>DSPPRTEKS</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>DSP personstatus navn</TD>
 </TR>
@@ -154,63 +141,55 @@
 <TD>DSPSRSK</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>DSP spesiell status kode</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>DSPSRST</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>DSP spesiell status navn</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>TELEFON</TD>
-<TD nowrap>VARCHAR2(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Telefon jobb</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>TELEFON2</TD>
-<TD nowrap>VARCHAR2(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Telefon mobil</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>EPOST</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>e-postadresse</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>LANDKODE</TD>
-<TD nowrap>VARCHAR2(4)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(4 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Landkode [ihht LAND]</TD>
 </TR>
 <TR>
 <TD Class="NumRed">19</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -218,15 +197,13 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -234,38 +211,33 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>PASSORD</TD>
-<TD nowrap>VARCHAR2(8)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(8 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Passord</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>BRUKERID</TD>
-<TD nowrap>VARCHAR2(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Bruker ID</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>FNRNYTT</TD>
-<TD nowrap>VARCHAR2(11)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Nytt fnr</TD>
 </TR>
@@ -274,14 +246,12 @@
 <TD>FNRNYTTDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Dato nytt fnr</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>FNRTIDL</TD>
-<TD nowrap>VARCHAR2(11)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Tidligere fnr</TD>
 </TR>
@@ -290,47 +260,7 @@
 <TD>FNRTIDLDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Dato tidligere fnr</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table ANSATT</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0ANSATT</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKANSATT</TD>
-<TD>NORMAL</TD>
-<TD>FNR</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -353,7 +283,7 @@
 <TD>KOMMUNE_FOR_ANSATT_KOMMNRH</TD>
 <TD>KOMMNRH</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="KOMMUNE" HREF="KOMMUNE.html">KOMMUNE</A></TD>
+<TD><A NAME="KOMMUNE" HREF="../tables/KOMMUNE.html">KOMMUNE</A></TD>
 <TD>KOMMNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -364,7 +294,7 @@
 <TD>KOMMUNE_FOR_ANSATT_KOMMNRJ</TD>
 <TD>KOMMNRJ</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="KOMMUNE" HREF="KOMMUNE.html">KOMMUNE</A></TD>
+<TD><A NAME="KOMMUNE" HREF="../tables/KOMMUNE.html">KOMMUNE</A></TD>
 <TD>KOMMNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -375,7 +305,7 @@
 <TD>LAND_FOR_ANSATT_LANDKODE</TD>
 <TD>LANDKODE</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="LAND" HREF="LAND.html">LAND</A></TD>
+<TD><A NAME="LAND" HREF="../tables/LAND.html">LAND</A></TD>
 <TD>LANDKODE</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -386,7 +316,7 @@
 <TD>POSTSTED_FOR_ANSATT_POSTNRH</TD>
 <TD>POSTNRH</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="POSTSTED" HREF="POSTSTED.html">POSTSTED</A></TD>
+<TD><A NAME="POSTSTED" HREF="../tables/POSTSTED.html">POSTSTED</A></TD>
 <TD>POSTNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -397,7 +327,7 @@
 <TD>POSTSTED_FOR_ANSATT_POSTNRJ</TD>
 <TD>POSTNRJ</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="POSTSTED" HREF="POSTSTED.html">POSTSTED</A></TD>
+<TD><A NAME="POSTSTED" HREF="../tables/POSTSTED.html">POSTSTED</A></TD>
 <TD>POSTNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -409,67 +339,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table ANSATT</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0012636</TD>
-<TD>Check</TD>
-<TD>"FNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0012637</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0012638</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0012639</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0012640</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKANSATT</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FNR</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table ANSATT does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

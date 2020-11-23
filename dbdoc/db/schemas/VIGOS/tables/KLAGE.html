@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="KKLINJE.html" TITLE="KKLINJE">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./KKLINJE.html" TITLE="KKLINJE">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#KLAGE">Table KLAGE</A></TD>
-<TD Class="NavR"><A HREF="KLASORDN.html" TITLE="KLASORDN">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./KLASORDN.html" TITLE="KLASORDN">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,7 +50,6 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -58,15 +57,13 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>FNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fødselsnr [ihht PROVE]</TD>
 </TR>
 <TR>
@@ -74,7 +71,6 @@
 <TD><B>PROVENR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Prøvenr (systemfelt) [ihht PROVE]</TD>
 </TR>
 <TR>
@@ -82,30 +78,26 @@
 <TD><B>RADNR</B><SUB>4</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Radnr (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>EIERID</TD>
-<TD nowrap>VARCHAR2(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Eierid [S_objectid til PROVE]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>KLAGETYPE</TD>
-<TD nowrap>VARCHAR2(2)</TD>
+<TD nowrap>VARCHAR2(2 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Klagetype (faglig/formell klage) [FA=Faglig klage,FO=Formell klage]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>MOTTATTDATO</TD>
 <TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Mottatt dato</TD>
 </TR>
@@ -114,14 +106,12 @@
 <TD>SENDTNEMNDDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Sendt nemnd dato</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>FRANEMNDDATO</TD>
 <TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fra nemnd dato</TD>
 </TR>
@@ -130,14 +120,12 @@
 <TD>SVARSENDTKANDDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Svar sendt kandidat dato</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>SVARFRAKANDDATO</TD>
 <TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Svar fra kandidat dato</TD>
 </TR>
@@ -146,14 +134,12 @@
 <TD>OVERSENDTSUEDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Oversendt SUE dato</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>SVARFRASUEDATO</TD>
 <TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Svar fra SUE dato</TD>
 </TR>
@@ -162,14 +148,12 @@
 <TD>KANDUNDERRETTETDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Kandidat underrettet dato</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>YNMOTEDATO</TD>
 <TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Yrkesopplæringsnemnda møte dato</TD>
 </TR>
@@ -178,7 +162,6 @@
 <TD>SENDTFKKLAGENEMNDDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Sendt fylkeskommunal klagenemnd dato</TD>
 </TR>
 <TR>
@@ -186,22 +169,19 @@
 <TD>SVARFRAFKKLAGENEMNDDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Svar fra fylkeskommunal klagenemnd dato</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>NEMNDNR</TD>
-<TD nowrap>VARCHAR2(16)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Klagenemnd [Ihht NEMND]</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>KLAGEVEDTAK</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Klagevedtak-kode [O=Vedtak opprettholdt,A=Prøve annullert,B=Prøve omgjort til bestått]</TD>
 </TR>
@@ -210,15 +190,13 @@
 <TD>TRUKKETDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Klage trukket dato</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -226,23 +204,20 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="NumRed">23</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -250,55 +225,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table KLAGE</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0KLAGE</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKKLAGE</TD>
-<TD>NORMAL</TD>
-<TD>FYLKESNR, FNR, PROVENR, RADNR</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -321,7 +255,7 @@
 <TD>FYLKE_FOR_KLAGE</TD>
 <TD>FYLKESNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="FYLKE" HREF="FYLKE.html">FYLKE</A></TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
 <TD>FYLKESNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -332,7 +266,7 @@
 <TD>NEMND_FOR_KLAGE</TD>
 <TD>FYLKESNR, NEMNDNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="NEMND" HREF="NEMND.html">NEMND</A></TD>
+<TD><A NAME="NEMND" HREF="../tables/NEMND.html">NEMND</A></TD>
 <TD>FYLKESNR, NEMNDNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -343,7 +277,7 @@
 <TD>PROVE_FOR_KLAGE</TD>
 <TD>FYLKESNR, FNR, PROVENR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="PROVE" HREF="PROVE.html">PROVE</A></TD>
+<TD><A NAME="PROVE" HREF="../tables/PROVE.html">PROVE</A></TD>
 <TD>FYLKESNR, FNR, PROVENR</TD>
 <TD>CASCADE</TD>
 <TD>ENABLED</TD>
@@ -355,102 +289,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table KLAGE</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0020277</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020278</TD>
-<TD>Check</TD>
-<TD>"FNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020279</TD>
-<TD>Check</TD>
-<TD>"PROVENR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>PROVENR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020280</TD>
-<TD>Check</TD>
-<TD>"RADNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RADNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020281</TD>
-<TD>Check</TD>
-<TD>"KLAGETYPE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>KLAGETYPE</TD>
-</TR>
-<TR>
-<TD>SYS_C0020282</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0020283</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0020284</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0020285</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0020286</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKKLAGE</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR, FNR, PROVENR, RADNR</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table KLAGE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

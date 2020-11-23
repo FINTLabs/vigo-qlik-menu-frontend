@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="KMRES.html" TITLE="KMRES">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./KMRES.html" TITLE="KMRES">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#KMRESLINJE">Table KMRESLINJE</A></TD>
-<TD Class="NavR"><A HREF="KMTLINJE.html" TITLE="KMTLINJE">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./KMTLINJE.html" TITLE="KMTLINJE">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,7 +50,6 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -58,15 +57,13 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>KMRESID</B><SUB>2</SUB></TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>ID</TD>
 </TR>
 <TR>
@@ -74,23 +71,20 @@
 <TD><B>KONTROLLNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(7)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Kontrollnr</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>VGDOKNR</TD>
-<TD nowrap>VARCHAR2(19)</TD>
+<TD nowrap>VARCHAR2(19 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Vgdoknr [ihht VGDOK]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>KRAVKODE</TD>
-<TD nowrap>VARCHAR2(40)</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Kravkode</TD>
 </TR>
 <TR>
@@ -98,22 +92,19 @@
 <TD>TIDSPUNKT</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Tidspunkt</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>RESULTATTYPE</TD>
-<TD nowrap>CHAR(1)</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Resultattype</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>RESULTATKODE</TD>
-<TD nowrap>VARCHAR2(5)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(5 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Resultatkode</TD>
 </TR>
@@ -122,14 +113,12 @@
 <TD>RESULTATALL</TD>
 <TD nowrap>NUMBER(9,4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Resultatfag</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>ANTALL_FAG</TD>
 <TD nowrap>NUMBER(6)</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall fag</TD>
 </TR>
@@ -138,14 +127,12 @@
 <TD>OMFANG</TD>
 <TD nowrap>NUMBER(6)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Omfang</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>VEKT</TD>
 <TD nowrap>NUMBER(6)</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Vekt</TD>
 </TR>
@@ -154,14 +141,12 @@
 <TD>ANTALL_TALLKARAKTERER</TD>
 <TD nowrap>NUMBER(6)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall tallkarakterer</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>SUM_TALLKARAKTERER</TD>
 <TD nowrap>NUMBER(6)</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sum tallkarakterer</TD>
 </TR>
@@ -170,7 +155,6 @@
 <TD>SNITT_TALLKARAKTERER</TD>
 <TD nowrap>NUMBER(9,4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Snitt tallkarakterer</TD>
 </TR>
 <TR>
@@ -178,15 +162,13 @@
 <TD>ANTALL_FORDYPNINGER_FOERT</TD>
 <TD nowrap>NUMBER(6)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall fordypninger ført</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -194,23 +176,20 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="NumRed">19</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -218,55 +197,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table KMRESLINJE</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0KMRESLINJE</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKKMRESLINJE</TD>
-<TD>NORMAL</TD>
-<TD>FYLKESNR, KMRESID, KONTROLLNR</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -289,7 +227,7 @@
 <TD>FYLKE_FOR_KMRESLINJE</TD>
 <TD>FYLKESNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="FYLKE" HREF="FYLKE.html">FYLKE</A></TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
 <TD>FYLKESNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
@@ -300,7 +238,7 @@
 <TD>KMRES_FOR_KMRESLINJE</TD>
 <TD>FYLKESNR, KMRESID</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="KMRES" HREF="KMRES.html">KMRES</A></TD>
+<TD><A NAME="KMRES" HREF="../tables/KMRES.html">KMRES</A></TD>
 <TD>FYLKESNR, S_OBJECTID</TD>
 <TD>CASCADE</TD>
 <TD>ENABLED</TD>
@@ -312,116 +250,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table KMRESLINJE</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0020721</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020722</TD>
-<TD>Check</TD>
-<TD>"KMRESID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>KMRESID</TD>
-</TR>
-<TR>
-<TD>SYS_C0020723</TD>
-<TD>Check</TD>
-<TD>"KONTROLLNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>KONTROLLNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020724</TD>
-<TD>Check</TD>
-<TD>"VGDOKNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>VGDOKNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020725</TD>
-<TD>Check</TD>
-<TD>"KRAVKODE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>KRAVKODE</TD>
-</TR>
-<TR>
-<TD>SYS_C0020726</TD>
-<TD>Check</TD>
-<TD>"TIDSPUNKT" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>TIDSPUNKT</TD>
-</TR>
-<TR>
-<TD>SYS_C0020727</TD>
-<TD>Check</TD>
-<TD>"RESULTATTYPE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RESULTATTYPE</TD>
-</TR>
-<TR>
-<TD>SYS_C0020728</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0020729</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0020730</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0020731</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0020732</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKKMRESLINJE</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR, KMRESID, KONTROLLNR</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table KMRESLINJE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>
