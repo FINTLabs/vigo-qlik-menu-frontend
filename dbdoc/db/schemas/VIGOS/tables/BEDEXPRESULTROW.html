@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="BEDEXPRESULT.html" TITLE="BEDEXPRESULT">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./BEDEXPRESULT.html" TITLE="BEDEXPRESULT">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#BEDEXPRESULTROW">Table BEDEXPRESULTROW</A></TD>
-<TD Class="NavR"><A HREF="BEDRIFTKURS.html" TITLE="BEDRIFTKURS">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./BEDKONTROLL.html" TITLE="BEDKONTROLL">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,15 +50,13 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>RESULTID</B><SUB>1</SUB></TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Resultat ID</TD>
 </TR>
 <TR>
@@ -66,7 +64,6 @@
 <TD><B>FYLKESNR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -74,54 +71,47 @@
 <TD><B>ROWNUMBER</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Radnr</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>OK_ORGNR</TD>
-<TD nowrap>VARCHAR2(16)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringskontor: Orgnr</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>OK_NAVN</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringskontor: Navn</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>OK_TLF</TD>
-<TD nowrap>VARCHAR2(16)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringskontor: Telefon</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>OK_EPOST</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringskontor: Epost</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>OK_WWW</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringskontor: Web</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>OK_ADRESSE</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringskontor: Adresse</TD>
 </TR>
@@ -130,62 +120,54 @@
 <TD>OK_POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Opplæringskontor: Postnr</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>OK_POSTSTED</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringskontor: Poststed</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>B_ORGNR</TD>
-<TD nowrap>VARCHAR2(16)</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Bedrift: Orgnr</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>B_NAVN</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift: Navn</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>B_TLF</TD>
-<TD nowrap>VARCHAR2(16)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift: Telefon</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>B_EPOST</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift: Epost</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>B_WWW</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift: Web</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>B_ADRESSE</TD>
-<TD nowrap>VARCHAR2(80)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(80 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift: Adresse</TD>
 </TR>
@@ -194,23 +176,20 @@
 <TD>B_POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Bedrift: Postnr</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>B_POSTSTED</TD>
-<TD nowrap>VARCHAR2(40)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(40 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift: Poststed</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>GODKJTYPE</TD>
-<TD nowrap>CHAR(1)</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Godkjent type</TD>
 </TR>
 <TR>
@@ -218,22 +197,19 @@
 <TD>GODKJ_TILDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Godkjent til dato</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>KURS_KODE</TD>
-<TD nowrap>VARCHAR2(10)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(10 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>KURS_NAVN</TD>
-<TD nowrap>VARCHAR2(47)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(47 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdenavn</TD>
 </TR>
@@ -242,14 +218,12 @@
 <TD>KON_ANT_LOPENDE</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall løpende kontrakter</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>KON_ANT_3AR</TD>
 <TD nowrap>NUMBER</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall kontrakter 3 år</TD>
 </TR>
@@ -258,14 +232,12 @@
 <TD>LAREKON_ANT_LOPENDE</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall løpende lærekontrakter</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>LAREKON_ANT_3AR</TD>
 <TD nowrap>NUMBER</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall lærekontrakter 3 år</TD>
 </TR>
@@ -274,14 +246,12 @@
 <TD>OPPLKON_ANT_LOPENDE</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall løpende opplæringskontrakter</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>OPPLKON_ANT_3AR</TD>
 <TD nowrap>NUMBER</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall opplæringskontrakter 3 år</TD>
 </TR>
@@ -290,14 +260,12 @@
 <TD>LAREKON_ANT_UNIK_LOP</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall unike løpende lærekontrakter</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>LAREKON_ANT_UNIK_3AR</TD>
 <TD nowrap>NUMBER</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall unike lærekontrakter 3 år</TD>
 </TR>
@@ -306,7 +274,6 @@
 <TD>OPPLKON_ANT_UNIK_LOP</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall unike løpende opplæringskontrakter</TD>
 </TR>
 <TR>
@@ -314,36 +281,7 @@
 <TD>OPPLKON_ANT_UNIK_3AR</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Antall unike opplæringskontrakter 3 år</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table BEDEXPRESULTROW</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKBEDEXPRESULTROW</TD>
-<TD>NORMAL</TD>
-<TD>RESULTID, FYLKESNR, ROWNUMBER</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -366,7 +304,7 @@
 <TD>RESULTID_FOR_BEDEXPRESULTROW</TD>
 <TD>RESULTID, FYLKESNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="BEDEXPRESULT" HREF="BEDEXPRESULT.html">BEDEXPRESULT</A></TD>
+<TD><A NAME="BEDEXPRESULT" HREF="../tables/BEDEXPRESULT.html">BEDEXPRESULT</A></TD>
 <TD>RESULTID, FYLKESNR</TD>
 <TD>CASCADE</TD>
 <TD>ENABLED</TD>
@@ -378,67 +316,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table BEDEXPRESULTROW</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0013999</TD>
-<TD>Check</TD>
-<TD>"RESULTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RESULTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0014000</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0014001</TD>
-<TD>Check</TD>
-<TD>"ROWNUMBER" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>ROWNUMBER</TD>
-</TR>
-<TR>
-<TD>SYS_C0014002</TD>
-<TD>Check</TD>
-<TD>"B_ORGNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>B_ORGNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0014003</TD>
-<TD>Check</TD>
-<TD>"GODKJTYPE" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>GODKJTYPE</TD>
-</TR>
-<TR>
-<TD>XPKBEDEXPRESULTROW</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>RESULTID, FYLKESNR, ROWNUMBER</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table BEDEXPRESULTROW does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

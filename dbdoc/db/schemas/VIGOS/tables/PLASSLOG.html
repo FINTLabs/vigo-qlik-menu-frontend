@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="PLASS_LERLPROS.html" TITLE="PLASS_LERLPROS">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./PLASS_LERLPROS.html" TITLE="PLASS_LERLPROS">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables2.html#PLASSLOG">Table PLASSLOG</A></TD>
-<TD Class="NavR"><A HREF="P_ONSKE.html" TITLE="P_ONSKE">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./P_ONSKE.html" TITLE="P_ONSKE">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,15 +50,13 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B><SUB>1</SUB></TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fødselsnr [Ihht PLASS]</TD>
 </TR>
 <TR>
@@ -66,7 +64,6 @@
 <TD><B>KONTRNR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Kontraktnr (systemfelt) [Ihht PLASS]</TD>
 </TR>
 <TR>
@@ -74,47 +71,41 @@
 <TD><B>RADNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Radnr (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>FELTNAVN</TD>
-<TD nowrap>VARCHAR2(32)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(32 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Feltnavn</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>GMLVERDI</TD>
-<TD nowrap>VARCHAR2(20)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(20 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Gammel verdi</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>NYVERDI</TD>
-<TD nowrap>VARCHAR2(20)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(20 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Ny verdi</TD>
 </TR>
 <TR>
 <TD Class="NumRed">7</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -122,15 +113,13 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -138,55 +127,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table PLASSLOG</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0PLASSLOG</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKPLASSLOG</TD>
-<TD>NORMAL</TD>
-<TD>FNR, KONTRNR, RADNR</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -209,7 +157,7 @@
 <TD>PLASS_FOR_PLASSLOG</TD>
 <TD>FNR, KONTRNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="PLASS" HREF="PLASS.html">PLASS</A></TD>
+<TD><A NAME="PLASS" HREF="../tables/PLASS.html">PLASS</A></TD>
 <TD>FNR, KONTRNR</TD>
 <TD>CASCADE</TD>
 <TD>ENABLED</TD>
@@ -221,88 +169,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table PLASSLOG</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0020393</TD>
-<TD>Check</TD>
-<TD>"FNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020394</TD>
-<TD>Check</TD>
-<TD>"KONTRNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>KONTRNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020395</TD>
-<TD>Check</TD>
-<TD>"RADNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RADNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020396</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0020397</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0020398</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0020399</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0020400</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>XPKPLASSLOG</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FNR, KONTRNR, RADNR</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table PLASSLOG does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="TS_BEDRIFT_DETALJER.html" TITLE="TS_BEDRIFT_DETALJER">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./TS_BEDRIFT_DETALJER.html" TITLE="TS_BEDRIFT_DETALJER">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables3.html#TS_BEREGNING">Table TS_BEREGNING</A></TD>
-<TD Class="NavR"><A HREF="TS_GIROTEKST.html" TITLE="TS_GIROTEKST">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./TS_GIROTEKST.html" TITLE="TS_GIROTEKST">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,7 +50,6 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -58,7 +57,6 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylke nr [Ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -66,7 +64,6 @@
 <TD><B>TELLEDATO</B><SUB>2</SUB></TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Telledato [30.06 eller 31.12]</TD>
 </TR>
 <TR>
@@ -74,7 +71,6 @@
 <TD>PERIODEFRA</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Peride fra-dato [01.01 eller 01.07]</TD>
 </TR>
 <TR>
@@ -82,14 +78,12 @@
 <TD>PERIODETIL</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Periode til-dato [30.06 eller 31.12]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>GODKJENT</TD>
 <TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Godkjent dato</TD>
 </TR>
@@ -98,15 +92,13 @@
 <TD>BEREGNET</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Beregnet dato</TD>
 </TR>
 <TR>
 <TD Class="NumRed">7</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -114,15 +106,13 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -130,22 +120,19 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11)</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>TMP_TELLDATO</TD>
-<TD nowrap>VARCHAR2(20)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(20 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Systemkolonne ifbm konvertering</TD>
 </TR>
@@ -154,7 +141,6 @@
 <TD>BBS_GENERERT</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Dato for bbs-generering</TD>
 </TR>
 <TR>
@@ -162,153 +148,21 @@
 <TD>BBS_LOPENR</TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 <TD>Løpenr for bbs-generering</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>WEBVISNING</TD>
-<TD nowrap>CHAR(1)</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Skal tilskuddsberegningen vises for bedriften på web [J,N]</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table TS_BEREGNING</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XAK0TS_BEREGNING</TD>
-<TD>NORMAL</TD>
-<TD>S_OBJECTID</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKTS_BEREGNING</TD>
-<TD>NORMAL</TD>
-<TD>FYLKESNR, TELLEDATO</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TS_BEREGNING</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0013582</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0013583</TD>
-<TD>Check</TD>
-<TD>"TELLEDATO" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>TELLEDATO</TD>
-</TR>
-<TR>
-<TD>SYS_C0013584</TD>
-<TD>Check</TD>
-<TD>"PERIODEFRA" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>PERIODEFRA</TD>
-</TR>
-<TR>
-<TD>SYS_C0013585</TD>
-<TD>Check</TD>
-<TD>"PERIODETIL" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>PERIODETIL</TD>
-</TR>
-<TR>
-<TD>SYS_C0013586</TD>
-<TD>Check</TD>
-<TD>"S_OBJECTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_OBJECTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0013587</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0013588</TD>
-<TD>Check</TD>
-<TD>"S_INSERTED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_INSERTED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013589</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_TS" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_TS</TD>
-</TR>
-<TR>
-<TD>SYS_C0013590</TD>
-<TD>Check</TD>
-<TD>"S_UPDATED_BY" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>S_UPDATED_BY</TD>
-</TR>
-<TR>
-<TD>SYS_C0013591</TD>
-<TD>Check</TD>
-<TD>"WEBVISNING" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>WEBVISNING</TD>
-</TR>
-<TR>
-<TD>XPKTS_BEREGNING</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR, TELLEDATO</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -321,9 +175,6 @@
 </TR>
 <TR>
 <TD>Foreign Key Constraints</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

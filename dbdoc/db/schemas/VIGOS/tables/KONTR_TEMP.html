@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:36:53</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="KONTRAKTSTATUS.html" TITLE="KONTRAKTSTATUS">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./KONTRAKTSTATUS.html" TITLE="KONTRAKTSTATUS">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables2.html#KONTR_TEMP">Table KONTR_TEMP</A></TD>
-<TD Class="NavR"><A HREF="KONTRTYPE.html" TITLE="KONTRTYPE">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./KONTRTYPE.html" TITLE="KONTRTYPE">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -38,14 +38,12 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="Num">1</TD>
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -55,13 +53,11 @@
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>FNR</TD>
-<TD nowrap>VARCHAR2(11)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -71,21 +67,18 @@
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>KURSKODE</TD>
-<TD nowrap>VARCHAR2(10)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(10 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>BNR</TD>
-<TD nowrap>VARCHAR2(16)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -95,21 +88,18 @@
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>OFORSLAGOBJECTID</TD>
-<TD nowrap>VARCHAR2(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>STATUSK</TD>
-<TD nowrap>VARCHAR2(6)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(6 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -119,7 +109,6 @@
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
@@ -127,13 +116,11 @@
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>FAGOTYPE</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(1 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -143,13 +130,11 @@
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>BNRMEDL</TD>
-<TD nowrap>VARCHAR2(16)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(16 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -159,21 +144,18 @@
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>FAGLEDFNR</TD>
-<TD nowrap>VARCHAR2(11)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(11 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>ONSKEOBJECTID</TD>
-<TD nowrap>CHAR(12)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -181,7 +163,6 @@
 <TD Class="Num">18</TD>
 <TD>SKOLEAR</TD>
 <TD nowrap>NUMBER(8)</TD>
-<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -196,18 +177,6 @@
 </TR>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Indexes</TD>
-</TR>
-<TR>
-<TD>Foreign Key Constraints</TD>
-</TR>
-<TR>
-<TD>Primary Key, Unique, or Check Constraints</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

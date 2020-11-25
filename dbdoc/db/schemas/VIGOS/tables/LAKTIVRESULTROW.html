@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 18/03/2020 10:05:53</div></CENTER>
+<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,9 +25,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="LAKTIVRESULT.html" TITLE="LAKTIVRESULT">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./LAKTIVRESULT.html" TITLE="LAKTIVRESULT">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables2.html#LAKTIVRESULTROW">Table LAKTIVRESULTROW</A></TD>
-<TD Class="NavR"><A HREF="LAND.html" TITLE="LAND">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./LAND.html" TITLE="LAND">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -50,15 +50,13 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
-<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>RESULTID</B><SUB>1</SUB></TD>
-<TD nowrap>CHAR(12)</TD>
+<TD nowrap>CHAR(12 BYTE)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>ID</TD>
 </TR>
 <TR>
@@ -66,7 +64,6 @@
 <TD><B>FYLKESNR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -74,44 +71,14 @@
 <TD><B>ROWNUMBER</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
 <TD>Radnr</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>DATASTRING</TD>
-<TD nowrap>VARCHAR2(4000)</TD>
-<TD>&nbsp;</TD>
+<TD nowrap>VARCHAR2(4000 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Data</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
-<CAPTION class="Ttl">Indexes on Table LAKTIVRESULTROW</CAPTION>
-<TR>
-<TH>Uniqueness</TH>
-<TH>Index Name</TH>
-<TH>Type</TH>
-<TH>Columns</TH>
-<TH>Partitions</TH>
-<TH>Partition Type</TH>
-<TH>Partition Columns</TH>
-<TH>Subpartition Type</TH>
-<TH>Subpartition Columns</TH>
-</TR>
-<TR>
-<TD>UNIQUE</TD>
-<TD>XPKLAKTIVRESULTROW</TD>
-<TD>NORMAL</TD>
-<TD>RESULTID, FYLKESNR, ROWNUMBER</TD>
-<TD>&lt;none&gt;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -134,7 +101,7 @@
 <TD>RESULT_FOR_LAKTIVRESULTROW</TD>
 <TD>RESULTID, FYLKESNR</TD>
 <TD>VIGOS</TD>
-<TD><A NAME="LAKTIVRESULT" HREF="LAKTIVRESULT.html">LAKTIVRESULT</A></TD>
+<TD><A NAME="LAKTIVRESULT" HREF="../tables/LAKTIVRESULT.html">LAKTIVRESULT</A></TD>
 <TD>RESULTID, FYLKESNR</TD>
 <TD>CASCADE</TD>
 <TD>ENABLED</TD>
@@ -146,53 +113,9 @@
 <BR>
 <CENTER>
 <TABLE>
-<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table LAKTIVRESULTROW</CAPTION>
-<TR>
-<TH>Constraint Name</TH>
-<TH>Type</TH>
-<TH>Condition</TH>
-<TH>Status</TH>
-<TH>Columns</TH>
-</TR>
-<TR>
-<TD>SYS_C0032927</TD>
-<TD>Check</TD>
-<TD>"RESULTID" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>RESULTID</TD>
-</TR>
-<TR>
-<TD>SYS_C0032928</TD>
-<TD>Check</TD>
-<TD>"FYLKESNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>FYLKESNR</TD>
-</TR>
-<TR>
-<TD>SYS_C0032929</TD>
-<TD>Check</TD>
-<TD>"ROWNUMBER" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>ROWNUMBER</TD>
-</TR>
-<TR>
-<TD>XPKLAKTIVRESULTROW</TD>
-<TD>Primary Key</TD>
-<TD>&nbsp;</TD>
-<TD>ENABLED</TD>
-<TD>RESULTID, FYLKESNR, ROWNUMBER</TD>
-</TR>
-</TABLE>
-</CENTER>
-<BR>
-<CENTER>
-<TABLE>
 <CAPTION class="Ttl">Table LAKTIVRESULTROW does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
-</TR>
-<TR>
-<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>
