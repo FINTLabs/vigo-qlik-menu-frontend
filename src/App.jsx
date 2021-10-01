@@ -30,12 +30,12 @@ function App() {
 
             </MainContainer>
             <footer>
-                <p>Opplæringsvideoene ligger på «Qlikteam for fylkeskommunene» i Teams. Om du ønsker
-                    tilgang, send en melding til oss via linken til support oppe til høyre på denne
-                    siden.</p>
-                <p>Vigo IKS har samlet analyseverktøyene på et sted for å gi brukerene en bedre
-                    oversikt.<br/>
-                    Tilgang styres av VIGO ansvarlig i eget fylke.</p>
+                <p>Vigo IKS har samlet Qlik Sense og NPrinting tilgangene i denne portalen for å gi
+                    brukerne en bedre oversikt.
+                Tilganger styres via VIGO i egen fylkeskommune, ta kontakt med systemansvarlig               
+                </p>
+                <p>Opplæringsvideoer og annen nyttig informasjon ligger i Qlikteam for fylkeskommunene i Teams</p>
+                <p>Trykk på Support oppe i høyre hjørne på denne siden dersom du har spørsmål, vil melde fra om en hendelse eller har tekniske problemer</p>
             </footer>
         </>
     );
