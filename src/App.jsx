@@ -14,12 +14,12 @@ function App() {
                 <Header/>
                 <h3 className="welcome-text align-center">Velkommen til Qlik-portalen</h3>
                 <MenuContainer>
-                    <MenuCard title="Qlik Sense" body="Lesetilgang"
+                    <MenuCard title="Qlik Sense" body="Sentrale Apper"
+                              href="https://qscore.vigoiks.no/ecore/extensions/openiframe/index.html"/>
+                    <MenuCard title="Qlik Sense" body="Lesetilgang lokale Apper"
                               href="https://qs.vigoiks.no/prod"/>
-                    <MenuCard title="Qlik Sense" body="Utviklingsmiljø"
+                    <MenuCard title="Qlik Sense" body="Utviklingsmiljø lokale Apper"
                               href="https://qs.vigoiks.no/dev"/>
-                    <MenuCard title="QlikView" body="Lesetilgang"
-                              href="https://qv.vigoiks.no"/>
                     <MenuCard title="NPrinting" body="NewsStand"
                               href="https://np.vigoiks.no/login/saml/sso/np_vigoiks_no"/>
                     <MenuCard title="NPrinting" body="Utviklingsmiljø"
