@@ -1,0 +1,34 @@
+name: build
+on:
+  push:
+
+  workflow_dispatch:
+env:
+  REGISTRY_NAME: fintlabsacr
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@master
+
+      - name: Get repo name
+        id: get_repo
+        run: echo ::set-output name=REPO::${GITHUB_REPOSITORY#*/}
+
+      - name: Container build and push to a Azure Container Registry (ACR)
+        run: |
+          docker build . -t ${{ env.REGISTRY_NAME }}.azurecr.io/${{steps.get_repo.outputs.REPO}}:${{ github.sha }}
+
+     
+
+## Uncomment to trigger a build and publish image to ACR
+      - name: Start publish workflow
+#if: github.ref == 'refs/head/master'
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.GITHUBACTION_TOKEN }}
+          repository: ${{ github.repository }}
+          event-type: trigger-to-publish
+
