@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table PLASS</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 16/02/2022 14:15:26</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -20,13 +20,14 @@
 <CENTER>
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
+<li><a href="../functions1.html">Functions</a></li>
 <li><a href="../tables1.html">Tables</a></li>
 <li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="./P_ELEV2.html" TITLE="P_ELEV2">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables2.html#PLASS">Table PLASS</A></TD>
+<TD Class="NavL"><A HREF="./PLAN_TABLE.html" TITLE="PLAN_TABLE">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#PLASS">Table PLASS</A></TD>
 <TD Class="NavR"><A HREF="./PLASSALG.html" TITLE="PLASSALG">Next Table</A></TD>
 </TR></TABLE>
 <BR>
@@ -533,7 +534,7 @@
 <TD>ANTVARSEL</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Antall oppføringer i varselsenter for kontrakten</TD>
 </TR>
 <TR>
 <TD Class="Num">70</TD>
@@ -541,6 +542,270 @@
 <TD nowrap>VARCHAR2(200 BYTE)</TD>
 <TD>&nbsp;</TD>
 <TD>Tekstfelt for beskrivelse av årsak til status 4</TD>
+</TR>
+<TR>
+<TD Class="Num">71</TD>
+<TD>LKVER</TD>
+<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD>&nbsp;</TD>
+<TD>LK06/LK20</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table PLASS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0PLASS</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1PLASS</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, BNR, KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKPLASS</TD>
+<TD>NORMAL</TD>
+<TD>FNR, KONTRNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Triggers on Table PLASS</CAPTION>
+<TR>
+<TH>Trigger Name</TH>
+<TH>Status</TH>
+<TH>Triggering Event</TH>
+<TH>When Clause</TH>
+<TH>Trigger Type</TH>
+<TH>Body</TH>
+</TR>
+<TR>
+<TD>PLASS_DELETE</TD>
+<TD>ENABLED</TD>
+<TD>DELETE</TD>
+<TD>&nbsp;</TD>
+<TD>AFTER EACH ROW</TD>
+<TD><PRE>BEGIN
+  INSERT INTO vigos.SLETTET (tabell,fnr,kontrnr,fylkesnr) values (&#x0027;PLASS&#x0027;,:old.fnr,:old.kontrnr,fylkesnr_fra_kontrnr(:old.kontrnr));
+END;</PRE></TD>
+</TR>
+<TR>
+<TD>PLASS_INSERT</TD>
+<TD>ENABLED</TD>
+<TD>INSERT</TD>
+<TD>&nbsp;</TD>
+<TD>BEFORE EACH ROW</TD>
+<TD><PRE>declare
+   ObjectId Char(12);
+   iElevnavn varchar2(100);
+begin
+   if (:new.s_ObjectId is null) then
+     DPSYS000.Get_Next_ObjectId(ObjectId);
+     :new.s_ObjectId:= ObjectId;
+   end if;
+   if (:new.s_inserted_ts is null) then
+     :new.s_inserted_ts:=sysdate;
+   end if;
+   if (:new.s_updated_ts is null) then
+     :new.s_updated_ts:=:new.s_inserted_ts;
+   end if;
+   if (:new.s_inserted_by is null) then
+     :new.s_inserted_by:=user;
+   end if;
+   if (:new.s_updated_by is null) then
+     :new.s_updated_by:=:new.s_inserted_by;
+   end if;
+   if (:new.kontrnr is null) then
+     :new.kontrnr := VIGOS.NesteRadnr(&#x0027;PLASS&#x0027;,:new.fnr, TO_CHAR(:new.tilhorighet));
+   end if;
+   if (:new.type is null) then
+     :new.type:=&#x0027;L&#x0027;;
+   end if;
+   if (:new.rett is null) then
+     :new.rett:=vigos.getRett2(:new.fylkesnr,:new.fnr);
+   end if;
+   if (:new.avtalevedlagt is null) then
+     :new.avtalevedlagt := &#x0027;N&#x0027;;
+   end if;
+   if (:new.vg1felles is null) then
+     :new.vg1felles := &#x0027;N&#x0027;;
+   end if;
+   if (:new.vg1program is null) then
+     :new.vg1program := &#x0027;N&#x0027;;
+   end if;
+   if (:new.vg2felles is null) then
+     :new.vg2felles := &#x0027;N&#x0027;;
+   end if;
+   if (:new.vg2program is null) then
+     :new.vg2program := &#x0027;N&#x0027;;
+   end if;
+   if (:new.vg3program is null) then
+     :new.vg3program := &#x0027;N&#x0027;;
+   end if;
+   if (:new.opplbestilling is null) then
+     :new.opplbestilling := &#x0027;N&#x0027;;
+   end if;
+   if (:new.kontlop is null) then
+     :new.kontlop:=&#x0027;N&#x0027;;
+   end if;
+   if (:new.godkjref is null) then
+     :new.godkjref:=&#x0027;N&#x0027;;
+   end if;
+   if (:new.teori is null) then
+     :new.teori:=&#x0027;N&#x0027;;
+   end if;
+   if (:new.altvurdform is null) then
+     :new.altvurdform := &#x0027;N&#x0027;;
+   end if;
+   if (:new.verneverdig is null) then
+     :new.verneverdig := &#x0027;N&#x0027;;
+   end if;
+   if (:new.statusid is null) then
+     :new.statusid := &#x0027;2&#x0027;;
+   end if;
+   if (:new.hjemfylkekopi is null) then
+     :new.hjemfylkekopi:=&#x0027;N&#x0027;;
+   end if;
+   if (:new.vekslmod is null) then
+     :new.vekslmod:=&#x0027;N&#x0027;;
+   end if;
+   IF (:NEW.pbrevkand IS NULL) THEN
+     :NEW.pbrevkand := &#x0027;N&#x0027;;
+   END IF;
+   if user &lt;&gt; &#x0027;VSWEB&#x0027; then
+      if :new.bnr is not null then
+        select elevnavn into iElevnavn from vigos.elev where fnr = :new.fnr;
+        if :new.statusid in (&#x0027;2&#x0027;,&#x0027;4&#x0027;) then
+            insert into vigos.wl_weblogg (fylkesnr, bnr, eier, dato, kontekst, nivaa, id1, id2, id3, tekst, utfoert) 
+            values(:new.fylkesnr, :new.bnr, &#x0027;B&#x0027;, trunc(sysdate), &#x0027;KON&#x0027;, &#x0027;V&#x0027;, :new.fnr, :new.kontrnr, :new.kurskode, &#x0027;Kontrakt for &#x0027;||iElevnavn||&#x0027; oversendt bedrift&#x0027;,&#x0027;N&#x0027;);      
+         elsif :new.statusid = &#x0027;5&#x0027; then
+            insert into vigos.wl_weblogg (fylkesnr, bnr, eier, dato, kontekst, nivaa, id1, id2, id3, tekst, utfoert) 
+            values(:new.fylkesnr, :new.bnr, &#x0027;B&#x0027;, trunc(sysdate), &#x0027;KON&#x0027;, &#x0027;V&#x0027;, :new.fnr, :new.kontrnr, :new.kurskode, &#x0027;Kontrakt for &#x0027;||iElevnavn||&#x0027; klar for utskrift&#x0027;,&#x0027;N&#x0027;);      
+         elsif :new.statusid = &#x0027;6&#x0027; then
+            insert into vigos.wl_weblogg (fylkesnr, bnr, eier, dato, kontekst, nivaa, id1, id2, id3, tekst, utfoert) 
+            values(:new.fylkesnr, :new.bnr, &#x0027;B&#x0027;, trunc(sysdate), &#x0027;KON&#x0027;, &#x0027;I&#x0027;, :new.fnr, :new.kontrnr, :new.kurskode, &#x0027;Kontrakt for &#x0027;||iElevnavn||&#x0027; godkjent av fylket&#x0027;,&#x0027;N&#x0027;);      
+         end if;
+	  end if;
+   end if;
+end;</PRE></TD>
+</TR>
+<TR>
+<TD>PLASS_LKQ</TD>
+<TD>DISABLED</TD>
+<TD>UPDATE OR DELETE</TD>
+<TD>&nbsp;</TD>
+<TD>AFTER EACH ROW</TD>
+<TD><PRE>BEGIN   
+  IF UPDATING THEN
+    IF ((:OLD.kongodkd IS NULL AND :NEW.kongodkd IS NOT NULL) OR (:OLD.kongodkd&lt;&gt;:NEW.kongodkd) OR
+        (:OLD.konavsld IS NULL AND :NEW.konavsld IS NOT NULL) OR (:OLD.konavsld&lt;&gt;:NEW.konavsld) OR
+        (:OLD.sumfradr IS NULL AND :NEW.sumfradr IS NOT NULL) OR (:OLD.sumfradr IS NOT NULL AND :NEW.sumfradr IS NULL) OR (:OLD.sumfradr&lt;&gt;:NEW.sumfradr) OR
+        (:OLD.ltidtild IS NULL AND :NEW.ltidtild IS NOT NULL) OR (:OLD.ltidtild IS NOT NULL AND :NEW.ltidtild IS NULL) OR (:OLD.ltidtild&lt;&gt;:NEW.ltidtild))
+    THEN
+      AddToLKQ(&#x0027;PLASS&#x0027;,:NEW.s_objectid,&#x0027;U&#x0027;,:NEW.fnr,:NEW.kontrnr);
+    END IF;
+  ELSIF DELETING THEN
+    AddToLKQ(&#x0027;PLASS&#x0027;,:OLD.s_objectid,&#x0027;D&#x0027;,:OLD.fnr,:OLD.kontrnr);
+  END IF;
+END;</PRE></TD>
+</TR>
+<TR>
+<TD>PLASS_UPDATE</TD>
+<TD>ENABLED</TD>
+<TD>UPDATE</TD>
+<TD>&nbsp;</TD>
+<TD>BEFORE EACH ROW</TD>
+<TD><PRE>declare
+   iElevnavn varchar2(100);
+begin
+   :new.s_updated_ts:=sysdate;
+   :new.s_updated_by:=user;
+   /* Foreløpig er det disse endringene som trigger sletting av ssbdato */
+   if ((:new.konavsld &lt;&gt; :old.konavsld) or
+      ( :new.kongodkd &lt;&gt; :old.kongodkd) or
+      ( :new.ltidfrad &lt;&gt; :old.ltidfrad) or
+      ( :new.ltidtild &lt;&gt; :old.ltidtild)) then
+     :new.ssbdato := null;
+   end if;
+   if user = &#x0027;VSWEB&#x0027; and :new.statusid=&#x0027;3&#x0027; and :old.statusid in (&#x0027;2&#x0027;,&#x0027;4&#x0027;)  then
+      if :new.bnr is not null then
+         select elevnavn into iElevnavn from vigos.elev where fnr = :new.fnr;
+         insert into vigos.wl_weblogg (fylkesnr, bnr, eier, dato, kontekst, nivaa, id1, id2, id3, tekst, utfoert) 
+         values(:new.fylkesnr, :new.bnr, &#x0027;F&#x0027;, trunc(sysdate), &#x0027;KON&#x0027;, &#x0027;V&#x0027;, :new.fnr, :new.kontrnr, :new.kurskode, &#x0027;Kontrakt for &#x0027;||iElevnavn||&#x0027; sendt inn til fylket&#x0027;,&#x0027;N&#x0027;);      
+      end if;		 
+   end if;
+   if user &lt;&gt; &#x0027;VSWEB&#x0027; then
+      if :new.bnr is not null then
+         select elevnavn into iElevnavn from vigos.elev where fnr = :new.fnr;
+         if :new.statusid in (&#x0027;2&#x0027;,&#x0027;4&#x0027;) and :old.statusid&lt;&gt;:new.statusid  then
+            insert into vigos.wl_weblogg (fylkesnr, bnr, eier, dato, kontekst, nivaa, id1, id2, id3, tekst, utfoert) 
+            values(:new.fylkesnr, :new.bnr, &#x0027;B&#x0027;, trunc(sysdate), &#x0027;KON&#x0027;, &#x0027;V&#x0027;, :new.fnr, :new.kontrnr, :new.kurskode, &#x0027;Kontrakt for &#x0027;||iElevnavn||&#x0027; oversendt bedrift&#x0027;,&#x0027;N&#x0027;);
+         elsif :new.statusid = &#x0027;5&#x0027; and :old.statusid&lt;&gt;:new.statusid  then
+            insert into vigos.wl_weblogg (fylkesnr, bnr, eier, dato, kontekst, nivaa, id1, id2, id3, tekst, utfoert) 
+            values(:new.fylkesnr, :new.bnr, &#x0027;B&#x0027;, trunc(sysdate), &#x0027;KON&#x0027;, &#x0027;V&#x0027;, :new.fnr, :new.kontrnr, :new.kurskode, &#x0027;Kontrakt for &#x0027;||iElevnavn||&#x0027; klar for utskrift&#x0027;,&#x0027;N&#x0027;);
+         elsif :new.statusid = &#x0027;6&#x0027; and :old.statusid&lt;&gt;:new.statusid  then
+            insert into vigos.wl_weblogg (fylkesnr, bnr, eier, dato, kontekst, nivaa, id1, id2, id3, tekst, utfoert) 
+            values(:new.fylkesnr, :new.bnr, &#x0027;B&#x0027;, trunc(sysdate), &#x0027;KON&#x0027;, &#x0027;I&#x0027;, :new.fnr, :new.kontrnr, :new.kurskode, &#x0027;Kontrakt for &#x0027;||iElevnavn||&#x0027; godkjent av fylket&#x0027;,&#x0027;N&#x0027;);
+         end if;
+      end if;		 
+   end if;
+end;</PRE></TD>
+</TR>
+<TR>
+<TD>TRG_PLASS_NY_BEREGNING</TD>
+<TD>ENABLED</TD>
+<TD>INSERT OR UPDATE OR DELETE</TD>
+<TD>&nbsp;</TD>
+<TD>AFTER EACH ROW</TD>
+<TD><PRE>DECLARE
+    v_fylkesnr   vigos.plass.fylkesnr%TYPE;
+    v_fnr        plass.fnr%TYPE;
+    v_kontrnr    plass.kontrnr%TYPE;
+BEGIN
+    v_fnr := NVL (:new.fnr, :old.fnr);
+    v_kontrnr := NVL (:new.kontrnr, :old.kontrnr);
+    v_fylkesnr := vigos.fylkesnr_fra_kontrnr (v_kontrnr);
+
+    IF v_fylkesnr = vigos.flogonfylkesnr
+    THEN
+        vigos.ts.lagre_som_ny_beregning (v_fylkesnr, v_fnr, v_kontrnr);
+    END IF;
+END trg_plass_ny_beregning;</PRE></TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -767,6 +1032,194 @@
 <TD>ENABLED</TD>
 <TD>No</TD>
 <TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table PLASS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013392</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013393</TD>
+<TD>Check</TD>
+<TD>"KONTRNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTRNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013394</TD>
+<TD>Check</TD>
+<TD>"AVTALEVEDLAGT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVTALEVEDLAGT</TD>
+</TR>
+<TR>
+<TD>SYS_C0013395</TD>
+<TD>Check</TD>
+<TD>"OPPLBESTILLING" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPLBESTILLING</TD>
+</TR>
+<TR>
+<TD>SYS_C0013396</TD>
+<TD>Check</TD>
+<TD>"TYPE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TYPE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013397</TD>
+<TD>Check</TD>
+<TD>"VG1FELLES" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG1FELLES</TD>
+</TR>
+<TR>
+<TD>SYS_C0013398</TD>
+<TD>Check</TD>
+<TD>"VG1PROGRAM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG1PROGRAM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013399</TD>
+<TD>Check</TD>
+<TD>"VG2FELLES" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG2FELLES</TD>
+</TR>
+<TR>
+<TD>SYS_C0013400</TD>
+<TD>Check</TD>
+<TD>"VG2PROGRAM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG2PROGRAM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013401</TD>
+<TD>Check</TD>
+<TD>"VG3PROGRAM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VG3PROGRAM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013402</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013403</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013404</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013405</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013406</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013407</TD>
+<TD>Check</TD>
+<TD>"TILHORIGHET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TILHORIGHET</TD>
+</TR>
+<TR>
+<TD>SYS_C0013408</TD>
+<TD>Check</TD>
+<TD>"ALTVURDFORM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ALTVURDFORM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013409</TD>
+<TD>Check</TD>
+<TD>"GODKJREF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>GODKJREF</TD>
+</TR>
+<TR>
+<TD>SYS_C0013410</TD>
+<TD>Check</TD>
+<TD>"KONTLOP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTLOP</TD>
+</TR>
+<TR>
+<TD>SYS_C0013411</TD>
+<TD>Check</TD>
+<TD>"TEORI" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TEORI</TD>
+</TR>
+<TR>
+<TD>SYS_C0013412</TD>
+<TD>Check</TD>
+<TD>"VERNEVERDIG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERNEVERDIG</TD>
+</TR>
+<TR>
+<TD>SYS_C0013413</TD>
+<TD>Check</TD>
+<TD>"HJEMFYLKEKOPI" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>HJEMFYLKEKOPI</TD>
+</TR>
+<TR>
+<TD>SYS_C0013414</TD>
+<TD>Check</TD>
+<TD>"VEKSLMOD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VEKSLMOD</TD>
+</TR>
+<TR>
+<TD>SYS_C0013415</TD>
+<TD>Check</TD>
+<TD>"PBREVKAND" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PBREVKAND</TD>
+</TR>
+<TR>
+<TD>XPKPLASS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FNR, KONTRNR</TD>
 </TR>
 </TABLE>
 </CENTER>
