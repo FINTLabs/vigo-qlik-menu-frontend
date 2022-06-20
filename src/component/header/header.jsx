@@ -10,7 +10,7 @@ const Header = () => {
                 </h1>
             </div>
             <div className="menuContainer">
-                <a href="https://vigo-qlik-support.fintlabs.no/" target="_blank"
+                <a href="mailto:support@vigo-qlik.zendesk.com" target="_blank"
                    rel="noopener noreferrer" className="menuLinks"
                    title="Support">Support</a>
             </div>
