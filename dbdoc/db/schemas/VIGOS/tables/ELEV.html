@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table ELEV</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -55,7 +54,7 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Fødselsnr</TD>
 </TR>
@@ -83,14 +82,14 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>AVGIKLAS</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Avgiver-klassekode</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>AVGIKURS</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Avgiver-programområde [Ihht KURS]</TD>
 </TR>
@@ -104,7 +103,7 @@
 <TR>
 <TD Class="Num">8</TD>
 <TD>AVGIOTST</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Avgiver-otstatus [Ihht OTSTATUS]</TD>
 </TR>
@@ -125,7 +124,7 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>DSPPRTEKS</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
 <TD>DSF personstatus navn</TD>
 </TR>
@@ -134,33 +133,33 @@
 <TD>DSPSRSK</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>&nbsp;</TD>
-<TD>DSF spesiell status kode</TD>
+<TD>DSF adressestatus kode</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>DSPSRST</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
-<TD>DSF spesiell status navn</TD>
+<TD>DSF adressestatus navn</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>ELEVNAVN</TD>
-<TD nowrap>VARCHAR2(60 BYTE)</TD>
+<TD nowrap>VARCHAR2(100)</TD>
 <TD>&nbsp;</TD>
 <TD>Elevnavn</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>EPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Epost-adresse</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>GATE2</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(60)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse 2</TD>
 </TR>
@@ -174,7 +173,7 @@
 <TR>
 <TD Class="Num">18</TD>
 <TD>KARTBEDR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Karakterer til bedrift? [J,N]</TD>
 </TR>
@@ -188,7 +187,7 @@
 <TR>
 <TD Class="Num">20</TD>
 <TD>LANDKODE</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>Y</TD>
 <TD>Landkode [ihht LAND]</TD>
 </TR>
@@ -216,14 +215,14 @@
 <TR>
 <TD Class="Num">24</TD>
 <TD>NUMADR4</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Numerisk adresse 4 (undernr 1 / festenr)</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>NUMADR5</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Numerisk adresse 5 (undernr 2 / underfestenr)</TD>
 </TR>
@@ -237,14 +236,14 @@
 <TR>
 <TD Class="Num">27</TD>
 <TD>TELEFON</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr 1</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>TELEFON2</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr 2</TD>
 </TR>
@@ -258,7 +257,7 @@
 <TR>
 <TD Class="Num">30</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -272,14 +271,14 @@
 <TR>
 <TD Class="NumRed">32</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -293,14 +292,14 @@
 <TR>
 <TD Class="Num">35</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">36</TD>
 <TD>REALDOK_PASSORD</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
 <TD>Realdok: Passord</TD>
 </TR>
@@ -314,7 +313,7 @@
 <TR>
 <TD Class="Num">38</TD>
 <TD>S_UPDATED_BY_2</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Oppdatert av 2 (systemfelt)</TD>
 </TR>
@@ -328,7 +327,7 @@
 <TR>
 <TD Class="Num">40</TD>
 <TD>DSFFKOMN</TD>
-<TD nowrap>VARCHAR2(42 BYTE)</TD>
+<TD nowrap>VARCHAR2(42)</TD>
 <TD>&nbsp;</TD>
 <TD>DSF flyttet fra kommune navn</TD>
 </TR>
@@ -377,14 +376,14 @@
 <TR>
 <TD Class="Num">47</TD>
 <TD>GATEDSF</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse DSF</TD>
 </TR>
 <TR>
 <TD Class="Num">48</TD>
 <TD>GATE1MARS</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse DSF pr 1 mars</TD>
 </TR>
@@ -398,7 +397,7 @@
 <TR>
 <TD Class="Num">50</TD>
 <TD>OPPHTILL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Har gyldig oppholdstillatelse [J,N]</TD>
 </TR>
@@ -419,7 +418,7 @@
 <TR>
 <TD Class="Num">53</TD>
 <TD>AVGIKUOT</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Avgiver-otstatus [Ihht OTSTATUS]</TD>
 </TR>
@@ -461,7 +460,7 @@
 <TR>
 <TD Class="Num">59</TD>
 <TD>VOKSOKT</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Hva ble søkt på web (voksen)</TD>
 </TR>
@@ -474,367 +473,311 @@
 </TR>
 <TR>
 <TD Class="Num">61</TD>
-<TD>HEMMADR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>EPOSTX</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
-<TD>Har eleven hemmelig adresse [J,N]</TD>
+<TD>Epost-adresse, sperret</TD>
 </TR>
 <TR>
 <TD Class="Num">62</TD>
-<TD>GATE1MARSX</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD>TELEFONX</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
-<TD>Gateadresse DSF pr 1 mars, hemmelig</TD>
+<TD>Telefonnr 1, sperret</TD>
 </TR>
 <TR>
 <TD Class="Num">63</TD>
-<TD>GATE2X</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD>TELEFON2X</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
-<TD>Gateadresse 2, hemmelig</TD>
+<TD>Telefonnr 2, sperret</TD>
 </TR>
 <TR>
 <TD Class="Num">64</TD>
-<TD>GATEDSFX</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
-<TD>&nbsp;</TD>
-<TD>Gateadresse DSF, hemmelig</TD>
-</TR>
-<TR>
-<TD Class="Num">65</TD>
-<TD>POSTNR1MARSX</TD>
-<TD nowrap>NUMBER(4)</TD>
-<TD>&nbsp;</TD>
-<TD>Postnr fra DSF pr 1. mars, hemmelig [Ihht POSTSTED]</TD>
-</TR>
-<TR>
-<TD Class="Num">66</TD>
-<TD>POSTNR2X</TD>
-<TD nowrap>NUMBER(4)</TD>
-<TD>&nbsp;</TD>
-<TD>Postnr 2 (bosted), hemmelig [Ihht POSTSTED]</TD>
-</TR>
-<TR>
-<TD Class="Num">67</TD>
-<TD>POSTNRDSFX</TD>
-<TD nowrap>NUMBER(4)</TD>
-<TD>&nbsp;</TD>
-<TD>Postnr fra DSF, hemmelig [Ihht POSTSTED]</TD>
-</TR>
-<TR>
-<TD Class="Num">68</TD>
-<TD>EPOSTX</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
-<TD>&nbsp;</TD>
-<TD>Epost-adresse, hemmelig</TD>
-</TR>
-<TR>
-<TD Class="Num">69</TD>
-<TD>TELEFONX</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
-<TD>&nbsp;</TD>
-<TD>Telefonnr 1, hemmelig</TD>
-</TR>
-<TR>
-<TD Class="Num">70</TD>
-<TD>TELEFON2X</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
-<TD>&nbsp;</TD>
-<TD>Telefonnr 2, hemmelig</TD>
-</TR>
-<TR>
-<TD Class="Num">71</TD>
 <TD>AKSEPT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Aksept Vigo Voksen</TD>
 </TR>
 <TR>
-<TD Class="Num">72</TD>
+<TD Class="Num">65</TD>
 <TD>KOMMNRDSFUPD</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for siste oppslag mot DSF</TD>
 </TR>
 <TR>
-<TD Class="Num">73</TD>
+<TD Class="Num">66</TD>
 <TD>KOMMNRDSFOLD</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Tidligere dsf-adresse kommnr [ihht KOMMUNE]</TD>
 </TR>
 <TR>
-<TD Class="Num">74</TD>
+<TD Class="Num">67</TD>
 <TD>MALFORMWEB</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Målform på web[nb,nn]</TD>
 </TR>
 <TR>
-<TD Class="Num">75</TD>
+<TD Class="Num">68</TD>
 <TD>TILHORIGHET</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Fylkes tilhørighet</TD>
 </TR>
 <TR>
-<TD Class="Num">76</TD>
+<TD Class="Num">69</TD>
 <TD>SYSID</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>Y</TD>
 <TD>Til intern bruk (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">77</TD>
+<TD Class="Num">70</TD>
 <TD>UPDADR2</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>Siste red. av bostedsadresse</TD>
 </TR>
 <TR>
-<TD Class="Num">78</TD>
+<TD Class="Num">71</TD>
 <TD>REALDOK_GODKJUTD</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Realdok: Godkjent utdanning</TD>
 </TR>
 <TR>
-<TD Class="Num">79</TD>
+<TD Class="Num">72</TD>
 <TD>S_UPDATED_BY_3</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Oppdatert av 3 (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">80</TD>
+<TD Class="Num">73</TD>
 <TD>LKPID</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
 <TD>ID LKP</TD>
 </TR>
 <TR>
-<TD Class="Num">81</TD>
+<TD Class="Num">74</TD>
 <TD>LKTS</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>LKTS</TD>
 </TR>
 <TR>
-<TD Class="NumRed">82</TD>
+<TD Class="NumRed">75</TD>
 <TD>FNRTIDL</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Tidligere fnr ved konvertering</TD>
 </TR>
 <TR>
-<TD Class="Num">83</TD>
+<TD Class="Num">76</TD>
 <TD>FNRNYTT</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Nytt fnr ved konvertering</TD>
 </TR>
 <TR>
-<TD Class="Num">84</TD>
+<TD Class="Num">77</TD>
 <TD>FNRTIDLDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for nytt fnr ved konvertering</TD>
 </TR>
 <TR>
-<TD Class="Num">85</TD>
+<TD Class="Num">78</TD>
 <TD>FNRNYTTDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for nytt fnr ved konvertering</TD>
 </TR>
 <TR>
-<TD Class="Num">86</TD>
+<TD Class="Num">79</TD>
 <TD>FNRENDR</TD>
-<TD nowrap>VARCHAR2(999 BYTE)</TD>
+<TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
-<TD>Systemfelt i forbinelse med konvertering av fnr</TD>
+<TD>Systemfelt i forbindelse med konvertering av fnr</TD>
 </TR>
 <TR>
-<TD Class="Num">87</TD>
+<TD Class="Num">80</TD>
 <TD>FODT</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>Født</TD>
 </TR>
 <TR>
-<TD Class="Num">88</TD>
+<TD Class="Num">81</TD>
 <TD>FORE1INFO</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Foresatt 1: Informasjon</TD>
 </TR>
 <TR>
-<TD Class="Num">89</TD>
+<TD Class="Num">82</TD>
 <TD>FORE2INFO</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Foresatt 2: Informasjon</TD>
 </TR>
 <TR>
-<TD Class="Num">90</TD>
+<TD Class="Num">83</TD>
 <TD>FORE1NAVN</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 1: Navn</TD>
 </TR>
 <TR>
-<TD Class="Num">91</TD>
+<TD Class="Num">84</TD>
 <TD>FORE1ADR</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 1: Adresse</TD>
 </TR>
 <TR>
-<TD Class="Num">92</TD>
+<TD Class="Num">85</TD>
 <TD>FORE1POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 1: Postnr [ihht POSTSTED]</TD>
 </TR>
 <TR>
-<TD Class="Num">93</TD>
+<TD Class="Num">86</TD>
 <TD>FORE1KOMMNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 1: Kommunenr [ihht KOMMUNE]</TD>
 </TR>
 <TR>
-<TD Class="Num">94</TD>
+<TD Class="Num">87</TD>
 <TD>FORE1TELEFON1</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 1: Telefon 1</TD>
 </TR>
 <TR>
-<TD Class="Num">95</TD>
+<TD Class="Num">88</TD>
 <TD>FORE1TELEFON2</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 1: Telefon 2</TD>
 </TR>
 <TR>
-<TD Class="Num">96</TD>
+<TD Class="Num">89</TD>
 <TD>FORE1EPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 1: E-post</TD>
 </TR>
 <TR>
-<TD Class="Num">97</TD>
+<TD Class="Num">90</TD>
 <TD>FORE2NAVN</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 2: Navn</TD>
 </TR>
 <TR>
-<TD Class="Num">98</TD>
+<TD Class="Num">91</TD>
 <TD>FORE2ADR</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 2: Adresse</TD>
 </TR>
 <TR>
-<TD Class="Num">99</TD>
+<TD Class="Num">92</TD>
 <TD>FORE2POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 2: Postnr [ihht POSTSTED]</TD>
 </TR>
 <TR>
-<TD Class="Num">100</TD>
+<TD Class="Num">93</TD>
 <TD>FORE2KOMMNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 2: Kommunenr [ihht KOMMUNE]</TD>
 </TR>
 <TR>
-<TD Class="Num">101</TD>
+<TD Class="Num">94</TD>
 <TD>FORE2TELEFON1</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 2: Telefon 1</TD>
 </TR>
 <TR>
-<TD Class="Num">102</TD>
+<TD Class="Num">95</TD>
 <TD>FORE2TELEFON2</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 2: Telefon 2</TD>
 </TR>
 <TR>
-<TD Class="Num">103</TD>
+<TD Class="Num">96</TD>
 <TD>FORE2EPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Foresatt 2: E-post</TD>
 </TR>
 <TR>
-<TD Class="Num">104</TD>
+<TD Class="Num">97</TD>
 <TD>EPOST2</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>E-post 2</TD>
 </TR>
 <TR>
-<TD Class="Num">105</TD>
-<TD>EPOST2X</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
-<TD>&nbsp;</TD>
-<TD>E-post 2, hemmelig</TD>
-</TR>
-<TR>
-<TD Class="Num">106</TD>
+<TD Class="Num">98</TD>
 <TD>INNVDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>Innvandret dato</TD>
 </TR>
 <TR>
-<TD Class="Num">107</TD>
+<TD Class="Num">99</TD>
 <TD>OTSAMTYKKE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>OT: Samtykke</TD>
 </TR>
 <TR>
-<TD Class="Num">108</TD>
+<TD Class="Num">100</TD>
 <TD>DSFINN</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>DSF inn</TD>
 </TR>
 <TR>
-<TD Class="Num">109</TD>
+<TD Class="Num">101</TD>
 <TD>DSFDATO1</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for siste forespørsel mot DSF</TD>
 </TR>
 <TR>
-<TD Class="Num">110</TD>
+<TD Class="Num">102</TD>
 <TD>MALFORM</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Målform på eleven[ihht MALFORM]</TD>
 </TR>
 <TR>
-<TD Class="Num">111</TD>
-<TD>KOMMNRDSFGML</TD>
+<TD Class="Num">103</TD>
+<TD>KOMMNRDSFX</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Kommunenr DSF gammelt</TD>
+<TD>DSF kommunenr (sperret)</TD>
 </TR>
 <TR>
-<TD Class="Num">112</TD>
-<TD>KOMMNR2X</TD>
-<TD nowrap>NUMBER(4)</TD>
-<TD>&nbsp;</TD>
-<TD>Kommunenr (bosted) hemmelig</TD>
+<TD Class="Num">104</TD>
+<TD>FYLKETYP</TD>
+<TD nowrap>NUMBER</TD>
+<TD>Y</TD>
+<TD>Elev bostatt i et reelt fylke (=1)</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -922,17 +865,6 @@
 <TR>
 <TD>KOMMUNE_FOR_ELEV_KOMMNR2</TD>
 <TD>KOMMNR2</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="KOMMUNE" HREF="../tables/KOMMUNE.html">KOMMUNE</A></TD>
-<TD>KOMMNR</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>KOMMUNE_FOR_ELEV_KOMMNR2X</TD>
-<TD>KOMMNR2X</TD>
 <TD>VIGOS</TD>
 <TD><A NAME="KOMMUNE" HREF="../tables/KOMMUNE.html">KOMMUNE</A></TD>
 <TD>KOMMNR</TD>
@@ -1041,17 +973,6 @@
 <TD>No</TD>
 </TR>
 <TR>
-<TD>POSTSTED_FOR_ELEV_POSTNRDSFX</TD>
-<TD>POSTNRDSFX</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="POSTSTED" HREF="../tables/POSTSTED.html">POSTSTED</A></TD>
-<TD>POSTNR</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
 <TD>POSTSTED_FOR_ELEV_POSTNR1MARS</TD>
 <TD>POSTNR1MARS</TD>
 <TD>VIGOS</TD>
@@ -1063,30 +984,8 @@
 <TD>No</TD>
 </TR>
 <TR>
-<TD>POSTSTED_FOR_ELEV_POSTNR1MARSX</TD>
-<TD>POSTNR1MARSX</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="POSTSTED" HREF="../tables/POSTSTED.html">POSTSTED</A></TD>
-<TD>POSTNR</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
 <TD>POSTSTED_FOR_ELEV_POSTNR2</TD>
 <TD>POSTNR2</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="POSTSTED" HREF="../tables/POSTSTED.html">POSTSTED</A></TD>
-<TD>POSTNR</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>POSTSTED_FOR_ELEV_POSTNR2X</TD>
-<TD>POSTNR2X</TD>
 <TD>VIGOS</TD>
 <TD><A NAME="POSTSTED" HREF="../tables/POSTSTED.html">POSTSTED</A></TD>
 <TD>POSTNR</TD>

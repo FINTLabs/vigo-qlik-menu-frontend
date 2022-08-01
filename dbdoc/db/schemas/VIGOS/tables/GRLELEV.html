@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table GRLELEV</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,14 +61,14 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>GRLID</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(24 BYTE)</TD>
+<TD nowrap>VARCHAR2(24)</TD>
 <TD>Y</TD>
 <TD>Grunnlagsidentifikator</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">3</TD>
 <TD><B>FNR</B><SUB>3</SUB></TD>
-<TD nowrap>CHAR(11 BYTE)</TD>
+<TD nowrap>CHAR(11)</TD>
 <TD>Y</TD>
 <TD>Fødselsnr [ihht ELEV]</TD>
 </TR>
@@ -111,7 +110,7 @@
 <TR>
 <TD Class="Num">9</TD>
 <TD>AVGIKURS</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Hvilket programområde eleven gikk på sist</TD>
 </TR>
@@ -125,7 +124,7 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>BEHANKAT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Behandlingskategori (fortrinn)</TD>
 </TR>
@@ -139,14 +138,14 @@
 <TR>
 <TD Class="Num">13</TD>
 <TD>EGNEANDR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Egne/Andre [E,A]</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>FRAFAARS</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
 <TD>Frafallsårsak</TD>
 </TR>
@@ -167,21 +166,21 @@
 <TR>
 <TD Class="Num">17</TD>
 <TD>FULLFKOD</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Fullførtkode [B,X,I,A,M,S,U,O,-]</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>HELDEL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Helkurs/Delkurs</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>INDOPPL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Individuell opplæringsplan? [J,N]</TD>
 </TR>
@@ -195,7 +194,7 @@
 <TR>
 <TD Class="Num">21</TD>
 <TD>KJONN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Kjønn [M,K]</TD>
 </TR>
@@ -209,42 +208,42 @@
 <TR>
 <TD Class="Num">23</TD>
 <TD>KURSKOD1</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdeønske 1 [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>KURSKOD2</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdeønske 2 [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>KURSKOD3</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdeønske 3[ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>KURSKOD4</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdeønske 4[ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>KURSKODE</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode/OT-status [ihht KURS,OTSTATUS]</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>MALFORM</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Målform [ihht MALFORM]</TD>
 </TR>
@@ -265,7 +264,7 @@
 <TR>
 <TD Class="Num">31</TD>
 <TD>REFUSJON</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Refusjon? [J,N]</TD>
 </TR>
@@ -279,7 +278,7 @@
 <TR>
 <TD Class="Num">33</TD>
 <TD>RETT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Rett? [J,N]</TD>
 </TR>
@@ -300,14 +299,14 @@
 <TR>
 <TD Class="Num">36</TD>
 <TD>SERSKILT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Særskilt? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">37</TD>
 <TD>SKOLEIER</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Skoleeier [1= Fylke,2=Stat,3=Kommune,4=Privat]</TD>
 </TR>
@@ -328,7 +327,7 @@
 <TR>
 <TD Class="Num">40</TD>
 <TD>SOKERTYP</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Søkertype</TD>
 </TR>
@@ -342,119 +341,119 @@
 <TR>
 <TD Class="Num">42</TD>
 <TD>STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status [N=Normal,R=Reservert neste år,V=Venteår]</TD>
 </TR>
 <TR>
 <TD Class="Num">43</TD>
 <TD>STUDKODE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Studieretningskode</TD>
 </TR>
 <TR>
 <TD Class="Num">44</TD>
 <TD>UTVIDARS</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Årsak for utvidelse av rett [Ihht ARSAK]</TD>
 </TR>
 <TR>
 <TD Class="Num">45</TD>
 <TD>VEDTKODE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Vedtakskode</TD>
 </TR>
 <TR>
 <TD Class="Num">46</TD>
 <TD>RETTMAN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Rettstype (manuelt satt) [U=Ungdomsrett,V=Voksenrett,F=Fullføringsrett,I=Ikke rett]</TD>
 </TR>
 <TR>
 <TD Class="Num">47</TD>
 <TD>RETTFINF</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Fullføringsrett innfridd? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">48</TD>
 <TD>RETTVINF</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Voksenrett innfridd? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">49</TD>
 <TD>RETTUINF</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Ungdomsrett innfridd? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">50</TD>
 <TD>ONSSKOMP</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Ønsket sluttkompetanse [Ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">51</TD>
 <TD>REALVURD</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Realkompetansevurdert? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">52</TD>
 <TD>REALINNT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Inntatt på grunnlag av realkompetanse? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">53</TD>
 <TD>ONSLKOMP</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Ønsker sluttkompetanse lavere nivå? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">54</TD>
 <TD>PRAKAND1</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Får teorioppl. for praksiskandidater? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">55</TD>
 <TD>PRAKAND2</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Fullført teorioppl. for praksiskandidater? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">56</TD>
 <TD>LERL1112</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Lærling ihht. pgr 11-12 første ledd? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">57</TD>
 <TD>BESTATT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Bestått med ønsket sluttkomp? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">58</TD>
 <TD>FKTILBEF</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Fått fylkeskommunalt tilbud i eget fylke? [J,N]</TD>
 </TR>
@@ -524,14 +523,14 @@
 <TR>
 <TD Class="Num">68</TD>
 <TD>INNTSYS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Inntakssystem [U=Ukjent,V=VIGO,A=Annet]</TD>
 </TR>
 <TR>
 <TD Class="Num">69</TD>
 <TD>KURSKATK</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekategorikode [ihht KURSKAT]</TD>
 </TR>
@@ -559,14 +558,14 @@
 <TR>
 <TD Class="Num">73</TD>
 <TD>AVGIOTST</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Avgiver Otstatus [ihht OTSTATUS]</TD>
 </TR>
 <TR>
 <TD Class="Num">74</TD>
 <TD>AVGIVER2</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Avgiverprogramområde eller avgiver otstatus [ihht KURS / OTSTATUS]</TD>
 </TR>
@@ -580,7 +579,7 @@
 <TR>
 <TD Class="Num">76</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -594,14 +593,14 @@
 <TR>
 <TD Class="NumRed">78</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">79</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -615,7 +614,7 @@
 <TR>
 <TD Class="Num">81</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>

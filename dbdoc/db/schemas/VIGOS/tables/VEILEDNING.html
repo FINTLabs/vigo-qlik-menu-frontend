@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table VEILEDNING</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,13 +21,12 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./VEDLEGG.html" TITLE="VEDLEGG">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables3.html#VEILEDNING">Table VEILEDNING</A></TD>
-<TD Class="NavR"><A HREF="./VGDOK.html" TITLE="VGDOK">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./VERB_LK20.html" TITLE="VERB_LK20">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -62,7 +61,7 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>BNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
 <TD>Bedrift nr [Ihht BEDRIFT]</TD>
 </TR>
@@ -83,28 +82,28 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>STATUS</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Veiledningstatus [OK=ok, FO=Følges opp]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>BESKRIV</TD>
-<TD nowrap>VARCHAR2(2048 BYTE)</TD>
+<TD nowrap>VARCHAR2(2048)</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse av veiledningsmøte</TD>
 </TR>
 <TR>
 <TD Class="NumRed">7</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -118,7 +117,7 @@
 <TR>
 <TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -132,9 +131,44 @@
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>VEILTYPE</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>Veiledningstype [Ihht TILSYNTYPE]</TD>
+</TR>
+<TR>
+<TD Class="Num">14</TD>
+<TD>VEILFORM</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>Veiledningsform [Ihht TILSYNFORM]</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>FNRANSATT1</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr for ansatt 1 med i veiledningsmøte [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>FNRANSATT2</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr for ansatt 2 med i veiledningsmøte [Ihht ANSATT]</TD>
+</TR>
+<TR>
+<TD Class="Num">17</TD>
+<TD>FNRANSATT3</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>Fødselsnr for ansatt 3 med i veiledningsmøte [Ihht ANSATT]</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -154,6 +188,39 @@
 <TH>Deferred</TH>
 </TR>
 <TR>
+<TD>ANSATT_FOR_VEILEDNING_FNRANSATT1</TD>
+<TD>FNRANSATT1</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT" HREF="../tables/ANSATT.html">ANSATT</A></TD>
+<TD>FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT_FOR_VEILEDNING_FNRANSATT2</TD>
+<TD>FNRANSATT2</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT" HREF="../tables/ANSATT.html">ANSATT</A></TD>
+<TD>FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT_FOR_VEILEDNING_FNRANSATT3</TD>
+<TD>FNRANSATT3</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT" HREF="../tables/ANSATT.html">ANSATT</A></TD>
+<TD>FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
 <TD>BEDRIFT2_FOR_VEILEDNING</TD>
 <TD>FYLKESNR, BNR</TD>
 <TD>VIGOS</TD>
@@ -170,6 +237,28 @@
 <TD>VIGOS</TD>
 <TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
 <TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>TILSYNFORM_FOR_VEILEDNING_VEILFORM</TD>
+<TD>VEILFORM</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TILSYNFORM" HREF="../tables/TILSYNFORM.html">TILSYNFORM</A></TD>
+<TD>TILSYNFORM</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>TILSYNTYPE_FOR_VEILEDNING_VEILTYPE</TD>
+<TD>VEILTYPE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TILSYNTYPE" HREF="../tables/TILSYNTYPE.html">TILSYNTYPE</A></TD>
+<TD>TILSYNTYPE</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>

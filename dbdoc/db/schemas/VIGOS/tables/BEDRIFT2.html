@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table BEDRIFT2</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,49 +61,49 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>BNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
 <TD>Bedriftsnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>BEDRTYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Bedriftstype [P=privat,K=kommunal,F=fylkeskommunal,S=statlig]</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>EPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>e-postadresse</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>GATE1K</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse kontor</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>GATE1P</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse post</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>GATE2K</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse kontor</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>GATE2P</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse post</TD>
 </TR>
@@ -125,49 +124,49 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>KONTONR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontonr</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>KUNMEDL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kun godkjent som medlemsbedrift [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>LANDKODE</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Landkode [Ihht LAND]</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>LOKALTNAVN</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(180)</TD>
 <TD>&nbsp;</TD>
 <TD>Lokalt navn</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>NAVN</TD>
-<TD nowrap>VARCHAR2(180 BYTE)</TD>
+<TD nowrap>VARCHAR2(180)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedriftsnavn</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>OPPLKONTOR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Opplæringskontor? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>PASSIVARSAK</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
 <TD>Passiv årsak [BO=bedrift opphørt,FG=fratatt godkjenning,IL=ønsker ikke lærlinger]</TD>
 </TR>
@@ -195,35 +194,35 @@
 <TR>
 <TD Class="Num">21</TD>
 <TD>PROVESTASJON</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Er prøvestasjon [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>REGION</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Region</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>TELEFAX</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Telefax</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>TELEFON1</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Telefon 1</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>TELEFON2</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Telefon 2</TD>
 </TR>
@@ -237,14 +236,14 @@
 <TR>
 <TD Class="Num">27</TD>
 <TD>WWW</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Web-adresse</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -258,21 +257,21 @@
 <TR>
 <TD Class="NumRed">30</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -286,30 +285,30 @@
 <TR>
 <TD Class="Num">34</TD>
 <TD>MOLBRESERVERT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Reservert: Merkeordning for læreberdrifter [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">35</TD>
 <TD>DIGITALSIGNATUR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Digital signatur [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">36</TD>
 <TD>SOKLISTP</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Ønsker lister på papir [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">37</TD>
-<TD>KOMMNRKGML</TD>
-<TD nowrap>NUMBER</TD>
+<TD>BETALREF</TD>
+<TD nowrap>VARCHAR2(60)</TD>
 <TD>&nbsp;</TD>
-<TD>Kommunenr kontor gammelt [Ihht KOMMUNE]</TD>
+<TD>Bedriftens referanse</TD>
 </TR>
 </TABLE>
 </CENTER>

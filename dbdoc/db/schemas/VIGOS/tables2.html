@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../styles.css">
 <TITLE>VIGOS Table Summary</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,13 +21,12 @@
 <ul id="list-nav">
 <li><a href="./summary.html">Summary</a></li>
 <li class="selected"><a>Tables</a></li>
-<li><a href="./views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><CENTER><TABLE class="NavSum"><CAPTION>Tables</CAPTION><TR>
-<TD Class="NavC"><A HREF="./tables1.html" TITLE="AJOURHOL ... KMRESLINJE">1</A></TD>
-<TD Class="NavCSilver"><A TITLE="KMTLINJE ... RETTIGHET">2</A></TD>
-<TD Class="NavC"><A HREF="./tables3.html" TITLE="SASDATA ... WL_WEBLOGG">3</A></TD>
+<TD Class="NavC"><A HREF="./tables1.html" TITLE="AJOURHOL ... KMRES">1</A></TD>
+<TD Class="NavCSilver"><A TITLE="KMRESLINJE ... RANGER">2</A></TD>
+<TD Class="NavC"><A HREF="./tables3.html" TITLE="RAPPORT ... WSPARAMS">3</A></TD>
 </TR></TABLE></CENTER>
 <BR>
 <CENTER>
@@ -42,10 +41,18 @@
 <TH>Comment</TH>
 </TR>
 <TR>
+<TD><A NAME="KMRESLINJE" HREF="./tables/KMRESLINJE.html">KMRESLINJE</A></TD>
+<TD Class="Num">22</TD>
+<TD Class="Num">2</TD>
+<TD>13M</TD>
+<TD>DP_DATA</TD>
+<TD>Kontrollmotor: Resultatlinje (systemtabell)</TD>
+</TR>
+<TR>
 <TD><A NAME="KMTLINJE" HREF="./tables/KMTLINJE.html">KMTLINJE</A></TD>
 <TD Class="Num">9</TD>
 <TD Class="Num">2</TD>
-<TD>512K</TD>
+<TD>832K</TD>
 <TD>DP_DATA</TD>
 <TD>Kontrollmotor: Linje (systemtabell)</TD>
 </TR>
@@ -69,7 +76,15 @@
 <TD><A NAME="KOMPDELMAAL" HREF="./tables/KOMPDELMAAL.html">KOMPDELMAAL</A></TD>
 <TD Class="Num">14</TD>
 <TD Class="Num">1</TD>
-<TD>960K</TD>
+<TD>1M</TD>
+<TD>DP_DATA</TD>
+<TD>Kompetansedelmål</TD>
+</TR>
+<TR>
+<TD><A NAME="KOMPDELMAAL_LK20" HREF="./tables/KOMPDELMAAL_LK20.html">KOMPDELMAAL_LK20</A></TD>
+<TD Class="Num">13</TD>
+<TD Class="Num">1</TD>
+<TD>832K</TD>
 <TD>DP_DATA</TD>
 <TD>Kompetansedelmål</TD>
 </TR>
@@ -80,6 +95,22 @@
 <TD>5M</TD>
 <TD>DP_DATA</TD>
 <TD>Kompetansemål</TD>
+</TR>
+<TR>
+<TD><A NAME="KOMPETANSEMAAL_LK20" HREF="./tables/KOMPETANSEMAAL_LK20.html">KOMPETANSEMAAL_LK20</A></TD>
+<TD Class="Num">18</TD>
+<TD Class="Num">2</TD>
+<TD>2M</TD>
+<TD>DP_DATA</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD><A NAME="KOMPETANSEMAALSETT_LK20" HREF="./tables/KOMPETANSEMAALSETT_LK20.html">KOMPETANSEMAALSETT_LK20</A></TD>
+<TD Class="Num">24</TD>
+<TD Class="Num">2</TD>
+<TD>832K</TD>
+<TD>DP_DATA</TD>
+<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMPKODE" HREF="./tables/KOMPKODE.html">KOMPKODE</A></TD>
@@ -107,7 +138,7 @@
 </TR>
 <TR>
 <TD><A NAME="KURS" HREF="./tables/KURS.html">KURS</A></TD>
-<TD Class="Num">55</TD>
+<TD Class="Num">56</TD>
 <TD Class="Num">2</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
@@ -117,7 +148,7 @@
 <TD><A NAME="KURSFAG" HREF="./tables/KURSFAG.html">KURSFAG</A></TD>
 <TD Class="Num">15</TD>
 <TD Class="Num">2</TD>
-<TD>3M</TD>
+<TD>4M</TD>
 <TD>DP_DATA</TD>
 <TD>Fag som inngår i et programområde</TD>
 </TR>
@@ -165,15 +196,15 @@
 <TD><A NAME="KVITTERING" HREF="./tables/KVITTERING.html">KVITTERING</A></TD>
 <TD Class="Num">16</TD>
 <TD Class="Num">4</TD>
-<TD>764M</TD>
+<TD>789M</TD>
 <TD>DP_DATA</TD>
 <TD>Kvitteringer</TD>
 </TR>
 <TR>
 <TD><A NAME="KVITTERINGQ" HREF="./tables/KVITTERINGQ.html">KVITTERINGQ</A></TD>
-<TD Class="Num">12</TD>
+<TD Class="Num">13</TD>
 <TD Class="Num">3</TD>
-<TD>1216M</TD>
+<TD>1472M</TD>
 <TD>DP_DATA</TD>
 <TD>Kvitterings-kø</TD>
 </TR>
@@ -186,28 +217,12 @@
 <TD>Læreplan</TD>
 </TR>
 <TR>
-<TD><A NAME="LAKTIVFYLKER" HREF="./tables/LAKTIVFYLKER.html">LAKTIVFYLKER</A></TD>
-<TD Class="Num">11</TD>
+<TD><A NAME="LAEREPLAN_LK20" HREF="./tables/LAEREPLAN_LK20.html">LAEREPLAN_LK20</A></TD>
+<TD Class="Num">24</TD>
 <TD Class="Num">2</TD>
-<TD>64K</TD>
+<TD>384K</TD>
 <TD>DP_DATA</TD>
-<TD>Aktive lærlinger: Fylker</TD>
-</TR>
-<TR>
-<TD><A NAME="LAKTIVRESULT" HREF="./tables/LAKTIVRESULT.html">LAKTIVRESULT</A></TD>
-<TD Class="Num">17</TD>
-<TD Class="Num">2</TD>
-<TD>64K</TD>
-<TD>DP_DATA</TD>
-<TD>Aktive lærlinger: Resultat</TD>
-</TR>
-<TR>
-<TD><A NAME="LAKTIVRESULTROW" HREF="./tables/LAKTIVRESULTROW.html">LAKTIVRESULTROW</A></TD>
-<TD Class="Num">4</TD>
-<TD Class="Num">1</TD>
-<TD>6M</TD>
-<TD>DP_DATA</TD>
-<TD>Aktive lærlinger: Resultatrad</TD>
+<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="LAND" HREF="./tables/LAND.html">LAND</A></TD>
@@ -224,6 +239,14 @@
 <TD>64K</TD>
 <TD>DP_DATA</TD>
 <TD>Ledetekster</TD>
+</TR>
+<TR>
+<TD><A NAME="LERLINGINFO" HREF="./tables/LERLINGINFO.html">LERLINGINFO</A></TD>
+<TD Class="Num">11</TD>
+<TD Class="Num">3</TD>
+<TD>64K</TD>
+<TD>DP_DATA</TD>
+<TD>Overskrift og tekst for info ut til lærling</TD>
 </TR>
 <TR>
 <TD><A NAME="LG_HENDELSE" HREF="./tables/LG_HENDELSE.html">LG_HENDELSE</A></TD>
@@ -245,7 +268,7 @@
 <TD><A NAME="LG_LINJE" HREF="./tables/LG_LINJE.html">LG_LINJE</A></TD>
 <TD Class="Num">17</TD>
 <TD Class="Num">1</TD>
-<TD>36M</TD>
+<TD>56M</TD>
 <TD>DP_DATA</TD>
 <TD>Logg-linjer</TD>
 </TR>
@@ -261,7 +284,7 @@
 <TD><A NAME="LKKARLINJE" HREF="./tables/LKKARLINJE.html">LKKARLINJE</A></TD>
 <TD Class="Num">21</TD>
 <TD Class="Num">3</TD>
-<TD>1930M</TD>
+<TD>2227M</TD>
 <TD>DP_DATA</TD>
 <TD>Karakterlinjer til Lånekassen</TD>
 </TR>
@@ -285,7 +308,7 @@
 <TD><A NAME="LKLOGG" HREF="./tables/LKLOGG.html">LKLOGG</A></TD>
 <TD Class="Num">8</TD>
 <TD Class="Num">1</TD>
-<TD>1M</TD>
+<TD>2M</TD>
 <TD>DP_DATA</TD>
 <TD>Lånekassen: Logg</TD>
 </TR>
@@ -325,9 +348,25 @@
 <TD><A NAME="LOGGLINJE" HREF="./tables/LOGGLINJE.html">LOGGLINJE</A></TD>
 <TD Class="Num">10</TD>
 <TD Class="Num">3</TD>
-<TD>5487M</TD>
+<TD>8157M</TD>
 <TD>DP_DATA</TD>
 <TD>Logglinje (systemtabell)</TD>
+</TR>
+<TR>
+<TD><A NAME="LPLASSPROG" HREF="./tables/LPLASSPROG.html">LPLASSPROG</A></TD>
+<TD Class="Num">11</TD>
+<TD Class="Num">2</TD>
+<TD>64K</TD>
+<TD>DP_DATA</TD>
+<TD>Læreplassprognose</TD>
+</TR>
+<TR>
+<TD><A NAME="LPLASSPROGRAD" HREF="./tables/LPLASSPROGRAD.html">LPLASSPROGRAD</A></TD>
+<TD Class="Num">24</TD>
+<TD Class="Num">2</TD>
+<TD>0</TD>
+<TD>DP_DATA</TD>
+<TD>Læreplassprognoserad</TD>
 </TR>
 <TR>
 <TD><A NAME="MALFORM" HREF="./tables/MALFORM.html">MALFORM</A></TD>
@@ -341,7 +380,7 @@
 <TD><A NAME="MANGLTEORI" HREF="./tables/MANGLTEORI.html">MANGLTEORI</A></TD>
 <TD Class="Num">19</TD>
 <TD Class="Num">2</TD>
-<TD>8M</TD>
+<TD>9M</TD>
 <TD>DP_DATA</TD>
 <TD>Manglende teori kontrakt</TD>
 </TR>
@@ -365,7 +404,7 @@
 <TD><A NAME="MEDLBEDRKONTR" HREF="./tables/MEDLBEDRKONTR.html">MEDLBEDRKONTR</A></TD>
 <TD Class="Num">14</TD>
 <TD Class="Num">2</TD>
-<TD>39M</TD>
+<TD>46M</TD>
 <TD>DP_DATA</TD>
 <TD>Kontrakt med medlem av opplæringskontor</TD>
 </TR>
@@ -403,7 +442,7 @@
 </TR>
 <TR>
 <TD><A NAME="NEMND" HREF="./tables/NEMND.html">NEMND</A></TD>
-<TD Class="Num">18</TD>
+<TD Class="Num">20</TD>
 <TD Class="Num">2</TD>
 <TD>3M</TD>
 <TD>DP_DATA</TD>
@@ -434,18 +473,10 @@
 <TD>Nemnd-type</TD>
 </TR>
 <TR>
-<TD><A NAME="NETTLESERE" HREF="./tables/NETTLESERE.html">NETTLESERE</A></TD>
-<TD Class="Num">2</TD>
-<TD Class="Num">0</TD>
-<TD>161M</TD>
-<TD>DP_DATA</TD>
-<TD>Nettlesere</TD>
-</TR>
-<TR>
 <TD><A NAME="OFORSLAG" HREF="./tables/OFORSLAG.html">OFORSLAG</A></TD>
 <TD Class="Num">26</TD>
 <TD Class="Num">3</TD>
-<TD>122M</TD>
+<TD>138M</TD>
 <TD>DP_DATA</TD>
 <TD>Ønske-forslag</TD>
 </TR>
@@ -459,7 +490,7 @@
 </TR>
 <TR>
 <TD><A NAME="ONSKE" HREF="./tables/ONSKE.html">ONSKE</A></TD>
-<TD Class="Num">64</TD>
+<TD Class="Num">57</TD>
 <TD Class="Num">5</TD>
 <TD>192M</TD>
 <TD>DP_DATA</TD>
@@ -467,7 +498,7 @@
 </TR>
 <TR>
 <TD><A NAME="ONSKE2" HREF="./tables/ONSKE2.html">ONSKE2</A></TD>
-<TD Class="Num">43</TD>
+<TD Class="Num">41</TD>
 <TD Class="Num">2</TD>
 <TD>182M</TD>
 <TD>DP_DATA</TD>
@@ -477,7 +508,7 @@
 <TD><A NAME="OPPDRAG" HREF="./tables/OPPDRAG.html">OPPDRAG</A></TD>
 <TD Class="Num">19</TD>
 <TD Class="Num">3</TD>
-<TD>36M</TD>
+<TD>88M</TD>
 <TD>DP_DATA</TD>
 <TD>Oppdrag</TD>
 </TR>
@@ -523,9 +554,9 @@
 </TR>
 <TR>
 <TD><A NAME="OT_BRUKER" HREF="./tables/OT_BRUKER.html">OT_BRUKER</A></TD>
-<TD Class="Num">16</TD>
+<TD Class="Num">17</TD>
 <TD Class="Num">2</TD>
-<TD>128K</TD>
+<TD>192K</TD>
 <TD>DP_DATA</TD>
 <TD>OT: Bruker</TD>
 </TR>
@@ -573,7 +604,7 @@
 <TD><A NAME="OT_DG_JOBB" HREF="./tables/OT_DG_JOBB.html">OT_DG_JOBB</A></TD>
 <TD Class="Num">15</TD>
 <TD Class="Num">3</TD>
-<TD>192K</TD>
+<TD>256K</TD>
 <TD>DP_DATA</TD>
 <TD>OT Dokument-generator: Jobb</TD>
 </TR>
@@ -627,7 +658,7 @@
 </TR>
 <TR>
 <TD><A NAME="OTGRUPPE2" HREF="./tables/OTGRUPPE2.html">OTGRUPPE2</A></TD>
-<TD Class="Num">13</TD>
+<TD Class="Num">14</TD>
 <TD Class="Num">1</TD>
 <TD>192K</TD>
 <TD>DP_DATA</TD>
@@ -645,7 +676,7 @@
 <TD><A NAME="OTNOTAT" HREF="./tables/OTNOTAT.html">OTNOTAT</A></TD>
 <TD Class="Num">14</TD>
 <TD Class="Num">2</TD>
-<TD>2M</TD>
+<TD>3M</TD>
 <TD>DP_DATA</TD>
 <TD>OT Notat</TD>
 </TR>
@@ -653,7 +684,7 @@
 <TD><A NAME="OTNOTAT_MOTTAKER" HREF="./tables/OTNOTAT_MOTTAKER.html">OTNOTAT_MOTTAKER</A></TD>
 <TD Class="Num">10</TD>
 <TD Class="Num">2</TD>
-<TD>576K</TD>
+<TD>640K</TD>
 <TD>DP_DATA</TD>
 <TD>OT Notatmottaker</TD>
 </TR>
@@ -693,7 +724,7 @@
 <TD><A NAME="OTSTATUSGRUPPE" HREF="./tables/OTSTATUSGRUPPE.html">OTSTATUSGRUPPE</A></TD>
 <TD Class="Num">9</TD>
 <TD Class="Num">1</TD>
-<TD>64K</TD>
+<TD>128K</TD>
 <TD>DP_DATA</TD>
 <TD>OT: Statusgruppe</TD>
 </TR>
@@ -715,7 +746,7 @@
 </TR>
 <TR>
 <TD><A NAME="PBREVPLAN" HREF="./tables/PBREVPLAN.html">PBREVPLAN</A></TD>
-<TD Class="Num">18</TD>
+<TD Class="Num">21</TD>
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
@@ -733,21 +764,21 @@
 <TD><A NAME="P_ELEV2" HREF="./tables/P_ELEV2.html">P_ELEV2</A></TD>
 <TD Class="Num">19</TD>
 <TD Class="Num">3</TD>
-<TD>28M</TD>
+<TD>30M</TD>
 <TD>DP_DATA</TD>
 <TD>Prøve elev2 (prøveinntak)</TD>
 </TR>
 <TR>
 <TD><A NAME="PLASS" HREF="./tables/PLASS.html">PLASS</A></TD>
-<TD Class="Num">70</TD>
+<TD Class="Num">71</TD>
 <TD Class="Num">3</TD>
-<TD>168M</TD>
+<TD>184M</TD>
 <TD>DP_DATA</TD>
 <TD>Plass-Lærekontrakt</TD>
 </TR>
 <TR>
 <TD><A NAME="PLASSALG" HREF="./tables/PLASSALG.html">PLASSALG</A></TD>
-<TD Class="Num">14</TD>
+<TD Class="Num">13</TD>
 <TD Class="Num">2</TD>
 <TD>2M</TD>
 <TD>DP_DATA</TD>
@@ -763,7 +794,7 @@
 </TR>
 <TR>
 <TD><A NAME="PLASSLOG" HREF="./tables/PLASSLOG.html">PLASSLOG</A></TD>
-<TD Class="Num">12</TD>
+<TD Class="Num">11</TD>
 <TD Class="Num">2</TD>
 <TD>180M</TD>
 <TD>DP_DATA</TD>
@@ -771,7 +802,7 @@
 </TR>
 <TR>
 <TD><A NAME="P_ONSKE" HREF="./tables/P_ONSKE.html">P_ONSKE</A></TD>
-<TD Class="Num">66</TD>
+<TD Class="Num">59</TD>
 <TD Class="Num">6</TD>
 <TD>178M</TD>
 <TD>DP_DATA</TD>
@@ -787,9 +818,9 @@
 </TR>
 <TR>
 <TD><A NAME="PROVE" HREF="./tables/PROVE.html">PROVE</A></TD>
-<TD Class="Num">86</TD>
+<TD Class="Num">90</TD>
 <TD Class="Num">4</TD>
-<TD>223M</TD>
+<TD>258M</TD>
 <TD>DP_DATA</TD>
 <TD>Prøve (fag-/svenneprøve)</TD>
 </TR>
@@ -808,38 +839,6 @@
 <TD>54M</TD>
 <TD>DP_DATA</TD>
 <TD>Rangering i inntaket (systemtabell)</TD>
-</TR>
-<TR>
-<TD><A NAME="RAPPORT" HREF="./tables/RAPPORT.html">RAPPORT</A></TD>
-<TD Class="Num">11</TD>
-<TD Class="Num">2</TD>
-<TD>64K</TD>
-<TD>DP_DATA</TD>
-<TD>Rapport</TD>
-</TR>
-<TR>
-<TD><A NAME="REFUSATS" HREF="./tables/REFUSATS.html">REFUSATS</A></TD>
-<TD Class="Num">13</TD>
-<TD Class="Num">2</TD>
-<TD>64K</TD>
-<TD>DP_DATA</TD>
-<TD>Refusjonssats</TD>
-</TR>
-<TR>
-<TD><A NAME="REGION" HREF="./tables/REGION.html">REGION</A></TD>
-<TD Class="Num">10</TD>
-<TD Class="Num">2</TD>
-<TD>64K</TD>
-<TD>DP_DATA</TD>
-<TD>Region</TD>
-</TR>
-<TR>
-<TD><A NAME="RETTIGHET" HREF="./tables/RETTIGHET.html">RETTIGHET</A></TD>
-<TD Class="Num">9</TD>
-<TD Class="Num">2</TD>
-<TD>37M</TD>
-<TD>DP_DATA</TD>
-<TD>Rettighet (systemtabell)</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table PBREVPLAN</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,7 +61,7 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>KURSKODE</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
@@ -83,28 +82,28 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>AKTIV</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Aktiv? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>BESKRIV</TD>
-<TD nowrap>VARCHAR2(300 BYTE)</TD>
+<TD nowrap>VARCHAR2(300)</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
 <TR>
 <TD Class="NumRed">7</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -118,7 +117,7 @@
 <TR>
 <TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -132,51 +131,72 @@
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>PROVEBESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(2000 BYTE)</TD>
+<TD nowrap>VARCHAR2(2000)</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvebeskrivelse</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>KURSVG2</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode Vg2 [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>KURSVG1</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode Vg1 [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>LPVG1</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>ID til læreplan vg1 [ihht LAEREPLAN]</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>LPVG2</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>ID til læreplan vg2 [ihht LAEREPLAN]</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>LPVG3</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>ID til læreplan vg3 [ihht LAEREPLAN]</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>LPVG1LKVER</TD>
+<TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>LPVG2LKVER</TD>
+<TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">21</TD>
+<TD>LPVG3LKVER</TD>
+<TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -223,39 +243,6 @@
 <TD>VIGOS</TD>
 <TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
 <TD>KURSKODE</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>LAEREPLAN_FOR_PBREVPLAN_LPVG1</TD>
-<TD>LPVG1</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="LAEREPLAN" HREF="../tables/LAEREPLAN.html">LAEREPLAN</A></TD>
-<TD>S_OBJECTID</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>LAEREPLAN_FOR_PBREVPLAN_LPVG2</TD>
-<TD>LPVG2</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="LAEREPLAN" HREF="../tables/LAEREPLAN.html">LAEREPLAN</A></TD>
-<TD>S_OBJECTID</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>LAEREPLAN_FOR_PBREVPLAN_LPVG3</TD>
-<TD>LPVG3</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="LAEREPLAN" HREF="../tables/LAEREPLAN.html">LAEREPLAN</A></TD>
-<TD>S_OBJECTID</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>

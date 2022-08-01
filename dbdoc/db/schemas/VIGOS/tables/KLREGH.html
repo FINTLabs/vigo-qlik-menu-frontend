@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table KLREGH</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -55,142 +54,142 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B><SUB>1</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Fødselsnummer</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>SKOLEAR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Skoleår [ihht SKOLEAR]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">3</TD>
 <TD><B>SKOLENR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Skolenr [ihht SKOLE]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">4</TD>
 <TD><B>KURSKODE</B><SUB>4</SUB></TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Programområdekode [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>KARTYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>O=orden/atferd</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>KARORD</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter orden</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>FRAVDAG</TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Fravær dager</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>FRAVTIME</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Fravær timer</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>MALFORM</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Målform</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>STATUS</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Aktiv=kan oppdatere VIGO, Passiv=skal ikke oppdatere VIGO</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="NumRed">14</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>KARATF</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter atferd</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>OVERFTS</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Oppdatert VIGO tidspunkt</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>MERKNAD</TD>
-<TD nowrap>VARCHAR2(200 BYTE)</TD>
+<TD nowrap>VARCHAR2(200)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Merkand</TD>
 </TR>
 </TABLE>
 </CENTER>

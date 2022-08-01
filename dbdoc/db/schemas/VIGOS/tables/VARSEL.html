@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table VARSEL</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,13 +21,12 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./UNGDOMOTJOURNAL.html" TITLE="UNGDOMOTJOURNAL">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables3.html#VARSEL">Table VARSEL</A></TD>
-<TD Class="NavR"><A HREF="./VEDLEGG.html" TITLE="VEDLEGG">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./VBRUKER.html" TITLE="VBRUKER">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -43,14 +42,14 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>JOBBID</B><SUB>1</SUB></TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="NumRed">2</TD>
 <TD><B>S_OBJECTID</B><SUB>2</SUB></TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -64,14 +63,14 @@
 <TR>
 <TD Class="Num">4</TD>
 <TD>TEKST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>ELEVFNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -85,14 +84,14 @@
 <TR>
 <TD Class="Num">7</TD>
 <TD>BNR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>ANSATTFNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -113,7 +112,7 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>FERDIG</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -127,7 +126,7 @@
 <TR>
 <TD Class="Num">13</TD>
 <TD>UTFHANDLING</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -141,7 +140,7 @@
 <TR>
 <TD Class="Num">15</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -155,7 +154,7 @@
 <TR>
 <TD Class="Num">17</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -169,23 +168,30 @@
 <TR>
 <TD Class="Num">19</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>MELDING</TD>
-<TD nowrap>VARCHAR2(60 BYTE)</TD>
+<TD nowrap>VARCHAR2(60)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>SLETT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>NEMNDNR</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>Prøvenemndnr [ihht NEMND]</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -210,6 +216,17 @@
 <TD>VIGOS</TD>
 <TD><A NAME="AUTOJOBB" HREF="../tables/AUTOJOBB.html">AUTOJOBB</A></TD>
 <TD>S_OBJECTID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>NEMND_FOR_VARSEL</TD>
+<TD>FYLKESNR, NEMNDNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="NEMND" HREF="../tables/NEMND.html">NEMND</A></TD>
+<TD>FYLKESNR, NEMNDNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>

@@ -1,0 +1,217 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
+<TITLE>VIGOS Table KLREGV</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./KLREGL.html" TITLE="KLREGL">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#KLREGV">Table KLREGV</A></TD>
+<TD Class="NavR"><A HREF="./KMFAG.html" TITLE="KMFAG">Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table KLREGV</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>VIGO Skole - Data til VIGO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table KLREGV</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>FNR</B><SUB>1</SUB></TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>Fødselsnr [ihht KLREGH]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">2</TD>
+<TD><B>SKOLEAR</B><SUB>2</SUB></TD>
+<TD nowrap>NUMBER(8)</TD>
+<TD>Y</TD>
+<TD>Skoleår [ihht KLREGH]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">3</TD>
+<TD><B>SKOLENR</B><SUB>3</SUB></TD>
+<TD nowrap>NUMBER(5)</TD>
+<TD>Y</TD>
+<TD>Skolenr [ihht KLREGH]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">4</TD>
+<TD><B>KURSKODE</B><SUB>4</SUB></TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>Y</TD>
+<TD>Programområde [ihht KLREGH]</TD>
+</TR>
+<TR>
+<TD Class="NumBlue">5</TD>
+<TD><B>VMMKODE</B><SUB>5</SUB></TD>
+<TD nowrap>VARCHAR2(5)</TD>
+<TD>Y</TD>
+<TD>Vitnemålsmerknad-kode</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>VMMVAR1</TD>
+<TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
+<TD>Variabel tekst 1</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>VMMVAR2</TD>
+<TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
+<TD>Variabel tekst 2</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>STATUS</TD>
+<TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
+<TD>Aktiv=kan oppdatere VIGO, Passiv=skal ikke oppdatere VIGO</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>OVERFTS</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert VIGO tidspunkt</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>MERKNAD</TD>
+<TD nowrap>VARCHAR2(200)</TD>
+<TD>&nbsp;</TD>
+<TD>Vitnemålsmerknad</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="NumRed">14</TD>
+<TD>S_OBJECTID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">15</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">16</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table KLREGV</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>KLREGH_FOR_KLREGV</TD>
+<TD>FNR, SKOLEAR, SKOLENR, KURSKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KLREGH" HREF="../tables/KLREGH.html">KLREGH</A></TD>
+<TD>FNR, SKOLEAR, SKOLENR, KURSKODE</TD>
+<TD>CASCADE</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>VMM_FOR_KLREGV</TD>
+<TD>VMMKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="VMM" HREF="../tables/VMM.html">VMM</A></TD>
+<TD>VMMKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table KLREGV does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

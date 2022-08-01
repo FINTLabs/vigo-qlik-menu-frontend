@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table CBRUKER</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -60,51 +59,51 @@
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
-<TD Class="NumBlue">2</TD>
+<TD Class="NumRed">2</TD>
 <TD><B>FNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
-<TD>Fødselsnummer</TD>
+<TD>Fødselsnummer/organisasjonsnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>FORNAVN</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
 <TD>Fornavn</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>ETTERNAVN</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
 <TD>Etternavn</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>EPOST</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
 <TD>E-postadresse</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>MOBIL</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
 <TD>Mobilnummer</TD>
 </TR>
 <TR>
 <TD Class="NumRed">7</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -118,7 +117,7 @@
 <TR>
 <TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -132,42 +131,42 @@
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>ACCVIGO</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilgang VIGO Opplæring</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>ACCQVV</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilgang Qlik</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>ACCQVD</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilgang Qlik designer</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>ACCQSD</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilgang Qlik Sens designer</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>ACCQSV</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilgang Qlik Sens</TD>
 </TR>
@@ -181,23 +180,58 @@
 <TR>
 <TD Class="Num">19</TD>
 <TD>ACCNPD</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilgang NPrinting designer</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>ACCNPV</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilgang NPrinting</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>TJENSTED</TD>
-<TD nowrap>VARCHAR2(30 BYTE)</TD>
+<TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
 <TD>Arbeidssted</TD>
+</TR>
+<TR>
+<TD Class="Num">22</TD>
+<TD>FNRORGNR</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>O=org.nr, F=fnr</TD>
+</TR>
+<TR>
+<TD Class="Num">23</TD>
+<TD>OSUSER</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>Internt systemfelt</TD>
+</TR>
+<TR>
+<TD Class="Num">24</TD>
+<TD>EPOST2</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>E-post-adresse 2 (Qlik)</TD>
+</TR>
+<TR>
+<TD Class="Num">25</TD>
+<TD>MOBIL2</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>Mobiltelefonnr 2 (Qlik)</TD>
+</TR>
+<TR>
+<TD Class="Num">26</TD>
+<TD>TJENSTED2</TD>
+<TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
+<TD>Tjenestested 2 (Qlik)</TD>
 </TR>
 </TABLE>
 </CENTER>

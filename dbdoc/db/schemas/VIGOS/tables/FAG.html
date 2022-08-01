@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table FAG</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -55,14 +54,14 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FAGKODE</B></TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>Y</TD>
 <TD>Fagkode</TD>
 </TR>
 <TR>
 <TD Class="Num">2</TD>
 <TD>AKTIV</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Aktiv kode [J,N]</TD>
 </TR>
@@ -76,35 +75,35 @@
 <TR>
 <TD Class="Num">4</TD>
 <TD>FAGNAVN</TD>
-<TD nowrap>VARCHAR2(32 BYTE)</TD>
+<TD nowrap>VARCHAR2(32)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagnavn</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>FAGNAVN2</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagnavn (langt)</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>FAGTYPE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagtype [ihht FAGTYPE]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>TVERRFAG</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Inngår i tverrfaglig eksamen? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -118,14 +117,14 @@
 <TR>
 <TD Class="NumRed">10</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -139,42 +138,42 @@
 <TR>
 <TD Class="Num">13</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>FAGTYPE2</TD>
-<TD nowrap>VARCHAR2(3 BYTE)</TD>
+<TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagtype 2 [STP=standpunkt,SKR=skriftlig avgangspr.,MUN=muntlig avgangspr.]</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>KONVTIL</TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>&nbsp;</TD>
 <TD>Konverteres til fagkode [ihht FAG]</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>IMPORTER</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Data importeres (6A001) [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>UTENSTP</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Fellesfag uten standpunktkarakter? (Terminkarakter benyttes) [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>POBREGN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Poengberenges? [J,N]</TD>
 </TR>
@@ -202,161 +201,161 @@
 <TR>
 <TD Class="Num">22</TD>
 <TD>FSPRKODE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Fremmedspråk [ihht FREMSPR]</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>ELEVTGRL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Elevtimer som grunnlag for kurs%</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>GRLNORSK</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
-<TD>Y</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>Grunnleggende norsk for min.språk</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>STNORENG</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
-<TD>Y</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>Styrket opplæring i norsk eller engelsk</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>MORSMOPP</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
-<TD>Y</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>Morsmålsopplæring</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>IB</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Er faget et IB-fag [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>NAVN_NNO</TD>
-<TD nowrap>VARCHAR2(999 BYTE)</TD>
+<TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn nynorsk</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>NAVN_ENG</TD>
-<TD nowrap>VARCHAR2(999 BYTE)</TD>
+<TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn engelsk</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>NAVN_KORTFORM_NYNORSK</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform nynork</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>OPPLAERINGSFAG</TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringsfag [ihht FAG]</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>TYPE_EKSAMENSFAG_ELEV</TD>
-<TD nowrap>VARCHAR2(30 BYTE)</TD>
+<TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
 <TD>Type eksamensfag elev</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>TYPE_EKSAMENSFORM_VITNEMAAL_EL</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
 <TD>Type eksamensform vitnemål elev</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>TYPE_EKSAMENSORDNING_ELEV</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
 <TD>Type eksamensordning elev</TD>
 </TR>
 <TR>
 <TD Class="Num">35</TD>
 <TD>TYPE_VURDERINGSFORM_ELEV</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
 <TD>Type vurderingsform elev</TD>
 </TR>
 <TR>
 <TD Class="Num">36</TD>
 <TD>STANDPUNKT_ELEV</TD>
-<TD nowrap>VARCHAR2(1 BYTE)</TD>
+<TD nowrap>VARCHAR2(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Standpunkt elev</TD>
 </TR>
 <TR>
 <TD Class="Num">37</TD>
 <TD>TYPE_EKSAMENSFAG_PRIV</TD>
-<TD nowrap>VARCHAR2(30 BYTE)</TD>
+<TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
 <TD>Type eksamensfag privatist</TD>
 </TR>
 <TR>
 <TD Class="Num">38</TD>
 <TD>TYPE_EKSAMENSFORM_VITNEMAAL_PR</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
 <TD>Type eksamensform vitnemål privatist</TD>
 </TR>
 <TR>
 <TD Class="Num">39</TD>
 <TD>TYPE_EKSAMENSORDNING_PRIV</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
 <TD>Type eksamensordning privatist</TD>
 </TR>
 <TR>
 <TD Class="Num">40</TD>
 <TD>TYPE_VURDERINGSFORM_PRIV</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
 <TD>Type vurderingsform privatist</TD>
 </TR>
 <TR>
 <TD Class="Num">41</TD>
 <TD>STANDPUNKT_PRIV</TD>
-<TD nowrap>VARCHAR2(1 BYTE)</TD>
+<TD nowrap>VARCHAR2(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Standpunkt privatisk</TD>
 </TR>
 <TR>
 <TD Class="Num">42</TD>
 <TD>NAVN_KORTFORM_BOKMAAL</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform bokmål</TD>
 </TR>
 <TR>
 <TD Class="Num">43</TD>
 <TD>HOEYESTE_NIVAA_ELEV</TD>
-<TD nowrap>VARCHAR2(1 BYTE)</TD>
+<TD nowrap>VARCHAR2(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Høyeste nivå elev</TD>
 </TR>
 <TR>
 <TD Class="Num">44</TD>
 <TD>HOEYESTE_NIVAA_PRIV</TD>
-<TD nowrap>VARCHAR2(1 BYTE)</TD>
+<TD nowrap>VARCHAR2(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Høyeste nivå privatist</TD>
 </TR>
@@ -370,63 +369,56 @@
 <TR>
 <TD Class="Num">46</TD>
 <TD>KLKODE</TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>&nbsp;</TD>
 <TD>Klkode for vitnemål</TD>
 </TR>
 <TR>
 <TD Class="Num">47</TD>
-<TD>FAGSKOLEN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD>KARTYPE</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
-<TD>Er faget et fagskolefag [J,N]</TD>
+<TD>Karaktertype [G=grunnskole,I=IB kurs,V=videregående]</TD>
 </TR>
 <TR>
 <TD Class="Num">48</TD>
-<TD>KARTYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
-<TD>Y</TD>
-<TD>Karaktertype [G=grunnskole,I=IB kurs,T=fagskole,V=videregående]</TD>
-</TR>
-<TR>
-<TD Class="Num">49</TD>
 <TD>NAVN_KORTFORM_SAMISK</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform samisk</TD>
 </TR>
 <TR>
-<TD Class="Num">50</TD>
+<TD Class="Num">49</TD>
 <TD>NAVN_KORTFORM_ENGELSK</TD>
-<TD nowrap>VARCHAR2(99 BYTE)</TD>
+<TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform engelsk</TD>
 </TR>
 <TR>
-<TD Class="Num">51</TD>
+<TD Class="Num">50</TD>
 <TD>NAVN_NOB</TD>
-<TD nowrap>VARCHAR2(999 BYTE)</TD>
+<TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn bokmål</TD>
 </TR>
 <TR>
-<TD Class="Num">52</TD>
+<TD Class="Num">51</TD>
 <TD>NAVN_SME</TD>
-<TD nowrap>VARCHAR2(999 BYTE)</TD>
+<TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
 <TD>Navn samisk</TD>
 </TR>
 <TR>
-<TD Class="Num">53</TD>
+<TD Class="Num">52</TD>
 <TD>ARSTIMER2</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Årstimer statistikkformål</TD>
 </TR>
 <TR>
-<TD Class="Num">54</TD>
+<TD Class="Num">53</TD>
 <TD>REFORM</TD>
-<TD nowrap>VARCHAR2(3 BYTE)</TD>
+<TD nowrap>VARCHAR2(3)</TD>
 <TD>Y</TD>
 <TD>Reform [KL=kunnskapsløftet, R94=reform 94, X= alle]</TD>
 </TR>

@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table VGDOKGRL</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,28 +61,28 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>VGDOKNR</B><SUB>2</SUB></TD>
-<TD nowrap>CHAR(19 BYTE)</TD>
+<TD nowrap>CHAR(19)</TD>
 <TD>Y</TD>
 <TD>Vgdoknr [ihht VGDOK]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>FNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Fødselsnummer [ihht ELEV]</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>TEST</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Test?[J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>UTSKREVET</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Utskrevet? [J,N]</TD>
 </TR>
@@ -97,7 +96,7 @@
 <TR>
 <TD Class="Num">7</TD>
 <TD>KONTROLLERT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kontrollert? [J,N]</TD>
 </TR>
@@ -111,14 +110,14 @@
 <TR>
 <TD Class="Num">9</TD>
 <TD>KONTROLLID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontroll ID</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>EKSPORTNVB</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Eksport nvb? [J,N]</TD>
 </TR>
@@ -132,21 +131,21 @@
 <TR>
 <TD Class="Num">12</TD>
 <TD>FOERSTEGANGSVM</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Førstegangsvitnemål? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>REFORMKODE</TD>
-<TD nowrap>VARCHAR2(3 BYTE)</TD>
+<TD nowrap>VARCHAR2(3)</TD>
 <TD>Y</TD>
 <TD>Reformkode</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>VGDOKTYPE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
 <TD>Vgdoktype</TD>
 </TR>
@@ -167,7 +166,7 @@
 <TR>
 <TD Class="Num">17</TD>
 <TD>UTSTEDERSTED</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>Y</TD>
 <TD>Utstedersted</TD>
 </TR>
@@ -181,56 +180,56 @@
 <TR>
 <TD Class="Num">19</TD>
 <TD>SKOLENAVN</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>Y</TD>
 <TD>Skolenavn</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>REKTORNAVN</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>Y</TD>
 <TD>Navn på rektor</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>UNDERSKRIVERNAVN</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>Y</TD>
 <TD>Underskriver-navn</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>FOEDTDATO</TD>
-<TD nowrap>CHAR(6 BYTE)</TD>
+<TD nowrap>CHAR(6)</TD>
 <TD>Y</TD>
 <TD>Fødtdato</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>PERSONNUMMER</TD>
-<TD nowrap>CHAR(5 BYTE)</TD>
+<TD nowrap>CHAR(5)</TD>
 <TD>&nbsp;</TD>
 <TD>Personnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>PERSONNAVN</TD>
-<TD nowrap>VARCHAR2(60 BYTE)</TD>
+<TD nowrap>VARCHAR2(60)</TD>
 <TD>Y</TD>
 <TD>Navn</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>DISPENSASJONSKODE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Dispensasjonskode</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>GSK_OK</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Grunnskole ok [J,N]</TD>
 </TR>
@@ -244,14 +243,14 @@
 <TR>
 <TD Class="Num">28</TD>
 <TD>ORDEN</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Orden</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>ADFERD</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Adferd</TD>
 </TR>
@@ -265,35 +264,35 @@
 <TR>
 <TD Class="Num">31</TD>
 <TD>FILNAVN_VEDLEGG</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>filnavn vedlegg</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>SPRAAKKODE</TD>
-<TD nowrap>CHAR(3 BYTE)</TD>
+<TD nowrap>CHAR(3)</TD>
 <TD>&nbsp;</TD>
 <TD>Språkkode</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>MAALFORMKODE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Målformkode [ihht MALFORM]</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>KOMMENTAR</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Kommentar</TD>
 </TR>
 <TR>
 <TD Class="Num">35</TD>
 <TD>ENDELIG_VGDOKNR</TD>
-<TD nowrap>CHAR(19 BYTE)</TD>
+<TD nowrap>CHAR(19)</TD>
 <TD>&nbsp;</TD>
 <TD>Endelig vgdoknr</TD>
 </TR>
@@ -307,35 +306,35 @@
 <TR>
 <TD Class="Num">37</TD>
 <TD>KONTROVERST</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kontrollmotor overstyrt? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">38</TD>
 <TD>KONTROVERST_MERKNAD</TD>
-<TD nowrap>VARCHAR2(250 BYTE)</TD>
+<TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontrollmotor overstyrt merknad</TD>
 </TR>
 <TR>
 <TD Class="Num">39</TD>
 <TD>DOKBAKGRUNN</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>Y</TD>
 <TD>Dokbakgrunn</TD>
 </TR>
 <TR>
 <TD Class="Num">40</TD>
 <TD>YRK_OK</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Yrk. ok [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">41</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -349,14 +348,14 @@
 <TR>
 <TD Class="NumRed">43</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">44</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -370,7 +369,7 @@
 <TR>
 <TD Class="Num">46</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>

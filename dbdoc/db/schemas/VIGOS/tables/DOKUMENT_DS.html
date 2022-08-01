@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table DOKUMENT_DS</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,13 +21,12 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./DOKUMENT.html" TITLE="DOKUMENT">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#DOKUMENT_DS">Table DOKUMENT_DS</A></TD>
-<TD Class="NavR"><A HREF="./DSFDATA.html" TITLE="DSFDATA">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./EKSTYPE.html" TITLE="EKSTYPE">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -62,14 +61,14 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>DOKUMENT_ID</B><SUB>2</SUB></TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>ID</TD>
 </TR>
 <TR>
-<TD Class="Num">3</TD>
+<TD Class="NumBlue">3</TD>
 <TD>FNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Fødselsnummer [ihht PLASS]</TD>
 </TR>
@@ -83,56 +82,56 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>DOKUMENT_ID2</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>ID 2 [ihht DOKUMENT_DS]</TD>
 </TR>
 <TR>
-<TD Class="Num">6</TD>
+<TD Class="NumBlue">6</TD>
 <TD>DOKUMENT_TYPE</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
-<TD>Dokumenttype</TD>
+<TD>Dokumenttype (ANSVEDL, FAGSKOLEN, KON, KONVEDLSIGN, LAEREPLASSSVEDL, PLASSVEDL, PROTOKOLL, PROVEVEDL, PROVEVEDL_B, PROVEVEDL_N, SKOLEVEDLEGG)</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>TITTEL</TD>
-<TD nowrap>VARCHAR2(30 BYTE)</TD>
+<TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
 <TD>Tittel</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>TITTEL_IKKE_SENS</TD>
-<TD nowrap>VARCHAR2(100 BYTE)</TD>
+<TD nowrap>VARCHAR2(100)</TD>
 <TD>&nbsp;</TD>
 <TD>Tittel (ikke sensitiv)</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(220 BYTE)</TD>
+<TD nowrap>VARCHAR2(220)</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>FIL_TYPE</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Filtype</TD>
 </TR>
 <TR>
 <TD Class="NumRed">11</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -146,7 +145,7 @@
 <TR>
 <TD Class="Num">14</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -160,7 +159,7 @@
 <TR>
 <TD Class="Num">16</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -170,6 +169,27 @@
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvenummer [ihht PROVE]</TD>
+</TR>
+<TR>
+<TD Class="Num">18</TD>
+<TD>REFERANSE</TD>
+<TD nowrap>VARCHAR2(150)</TD>
+<TD>&nbsp;</TD>
+<TD>Gjelder OTvedlegg, saksbehandlers navn</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>SENDT_ARKIV</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>Tidspunkt når vedlegg er lagt i arkivkø</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>VURDERING_RADNR</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>Ihht VURDERING</TD>
 </TR>
 </TABLE>
 </CENTER>

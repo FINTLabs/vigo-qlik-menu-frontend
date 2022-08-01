@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table SASPAKKE</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -37,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Pakke til skolesystemer</TD>
+<TD>Datapakke til/fra skolesystemer (integrasjon)</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -62,16 +61,16 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>PAKKEID</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>Y</TD>
 <TD>Pakke ID</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>FRA</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>Y</TD>
-<TD>Fra</TD>
+<TD>Fra skolesystem</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
@@ -83,7 +82,7 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>VERSJON</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
 <TD>Versjon</TD>
 </TR>
@@ -97,7 +96,7 @@
 <TR>
 <TD Class="Num">7</TD>
 <TD>AVSENDERINFO</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Avsenderinformasjon</TD>
 </TR>
@@ -125,28 +124,28 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>STATUS</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Status</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>MELDING</TD>
-<TD nowrap>VARCHAR2(400 BYTE)</TD>
+<TD nowrap>VARCHAR2(400)</TD>
 <TD>&nbsp;</TD>
 <TD>Melding</TD>
 </TR>
 <TR>
 <TD Class="NumRed">13</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -160,7 +159,7 @@
 <TR>
 <TD Class="Num">16</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -174,7 +173,7 @@
 <TR>
 <TD Class="Num">18</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -204,63 +203,63 @@
 <TD>ANTKL</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall KL</TD>
+<TD>Antall karakterlinjer</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>ANTKA</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall karakterer</TD>
+<TD>Antall karakterlinjer</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>ANTVM</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall vitnemål</TD>
+<TD>Antall vitnemålsmerknader</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>ANTVL</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall VL</TD>
+<TD>Antall vedleggslinjer</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>ANTAV</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall AV</TD>
+<TD>Antall avgangselev-linjer</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>ANTAJ</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall AJ</TD>
+<TD>Antall ajourholdslinjer</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>ANTSO</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall søkere</TD>
+<TD>Antall søker-linjer</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>ANTIN</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall inntatte</TD>
+<TD>Antall inntatte-linjer</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>ANTVO</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall VO</TD>
+<TD>Antall venteplass-linjer</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
@@ -274,7 +273,7 @@
 <TD>ANTTOT</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Antall totalt</TD>
+<TD>Antall totalt linjer</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
@@ -288,14 +287,14 @@
 <TD>KLARFORSAS</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>Klar for skolesystemer</TD>
+<TD>Klar for overføring til skolesystemer</TD>
 </TR>
 <TR>
 <TD Class="Num">35</TD>
 <TD>ANTSL</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Antall sluttere</TD>
 </TR>
 </TABLE>
 </CENTER>

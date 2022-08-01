@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table ILKPMAAL</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,7 +61,7 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>FNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Fødselsnummer [ihht ILKP]</TD>
 </TR>
@@ -89,59 +88,59 @@
 </TR>
 <TR>
 <TD Class="Num">6</TD>
-<TD>KOMPMAALID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
-<TD>&nbsp;</TD>
-<TD>Kompetansemål-Id</TD>
-</TR>
-<TR>
-<TD Class="Num">7</TD>
 <TD>KOMPDELMAALID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Kompetansedelmål-Id</TD>
 </TR>
 <TR>
-<TD Class="Num">8</TD>
+<TD Class="Num">7</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">9</TD>
+<TD Class="Num">8</TD>
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="NumRed">10</TD>
+<TD Class="NumRed">9</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">11</TD>
+<TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">12</TD>
+<TD Class="Num">11</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">13</TD>
+<TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">13</TD>
+<TD>KOMPMAALID</TD>
+<TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -167,28 +166,6 @@
 <TD><A NAME="ILKP" HREF="../tables/ILKP.html">ILKP</A></TD>
 <TD>FYLKESNR, FNR, KONTRNR, ILKPNR</TD>
 <TD>CASCADE</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>KOMPDELMAAL_FOR_ILKPMAAL</TD>
-<TD>KOMPDELMAALID</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="KOMPDELMAAL" HREF="../tables/KOMPDELMAAL.html">KOMPDELMAAL</A></TD>
-<TD>S_OBJECTID</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>KOMPMAAL_FOR_ILKPMAAL</TD>
-<TD>KOMPMAALID</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="KOMPETANSEMAAL" HREF="../tables/KOMPETANSEMAAL.html">KOMPETANSEMAAL</A></TD>
-<TD>S_OBJECTID</TD>
-<TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>
 <TD>No</TD>

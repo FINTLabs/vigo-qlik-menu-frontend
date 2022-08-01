@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table TS_PLASS_DETALJER</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,7 +61,7 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>FNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Fødsels nr [Ihht PLASS]</TD>
 </TR>
@@ -167,7 +166,7 @@
 <TR>
 <TD Class="Num">17</TD>
 <TD>BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>Y</TD>
 <TD>Beskrivelse</TD>
 </TR>
@@ -181,14 +180,14 @@
 <TR>
 <TD Class="Num">19</TD>
 <TD>ENHET</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Tidsenhet [T=timer, M=måneder]</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>SPESIFIKASJON</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>Spesifikasjon</TD>
 </TR>
@@ -209,7 +208,7 @@
 <TR>
 <TD Class="NumRed">23</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
@@ -223,7 +222,7 @@
 <TR>
 <TD Class="Num">25</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -237,16 +236,23 @@
 <TR>
 <TD Class="Num">27</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>MANTILSK_ID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -310,17 +316,6 @@
 <TD>No</TD>
 </TR>
 <TR>
-<TD>MANUELLETILSKUDD_FOR_PLASS_DET</TD>
-<TD>FNR, KONTRNR, TYPEID, MANTILSK_ORDNINGID, MANTILSK_RADNR</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="TS_MANUELLETILSKUDD" HREF="../tables/TS_MANUELLETILSKUDD.html">TS_MANUELLETILSKUDD</A></TD>
-<TD>FNR, KONTRNR, TYPEID, ORDNINGID, RADNR</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
 <TD>OPPR_BEREGNING_FOR_PLASS_DET</TD>
 <TD>FYLKESNR, OPPRINNELIG_TELLEDATO</TD>
 <TD>VIGOS</TD>
@@ -348,6 +343,17 @@
 <TD>VIGOS</TD>
 <TD><A NAME="TS_SATS" HREF="../tables/TS_SATS.html">TS_SATS</A></TD>
 <TD>FYLKESNR, SATSID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>TS_MANTILSK_FOR_PLASSDET</TD>
+<TD>MANTILSK_ID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TS_MANUELLETILSKUDD" HREF="../tables/TS_MANUELLETILSKUDD.html">TS_MANUELLETILSKUDD</A></TD>
+<TD>S_OBJECTID</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>

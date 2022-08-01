@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table BEDRIFTBRREG</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,11 +21,10 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="./BEDKONTROLLRES.html" TITLE="BEDKONTROLLRES">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./BEDKONTROLLRESBK.html" TITLE="BEDKONTROLLRESBK">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#BEDRIFTBRREG">Table BEDRIFTBRREG</A></TD>
 <TD Class="NavR"><A HREF="./BEDRIFTKURS.html" TITLE="BEDRIFTKURS">Next Table</A></TD>
 </TR></TABLE>
@@ -55,28 +54,28 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>ORGNR</B></TD>
-<TD nowrap>VARCHAR2(9 BYTE)</TD>
+<TD nowrap>VARCHAR2(9)</TD>
 <TD>Y</TD>
 <TD>basisdata.organisasjonsnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">2</TD>
 <TD>OVERORDNETENHET</TD>
-<TD nowrap>VARCHAR2(9 BYTE)</TD>
+<TD nowrap>VARCHAR2(9)</TD>
 <TD>&nbsp;</TD>
 <TD>Orgnr for overordnet enhet</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>ERUNDERENHET</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Hvorvidt bedriften er en underenhet (J/N)</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>ENDRINGSTYPE</TD>
-<TD nowrap>VARCHAR2(32 BYTE)</TD>
+<TD nowrap>VARCHAR2(32)</TD>
 <TD>&nbsp;</TD>
 <TD>Endring registrert - oppdatering kreves (VF: Vigo Fil, VB Vigo Bedrift2)</TD>
 </TR>
@@ -97,196 +96,196 @@
 <TR>
 <TD Class="Num">7</TD>
 <TD>NAVN</TD>
-<TD nowrap>VARCHAR2(180 BYTE)</TD>
+<TD nowrap>VARCHAR2(180)</TD>
 <TD>&nbsp;</TD>
 <TD>Totalt navn (navn1-navn5)</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>NAVN1</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.navn.navn1</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>NAVN2</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.navn.navn2</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>NAVN3</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.navn.navn3</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>NAVN4</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.navn.navn4</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>NAVN5</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.navn.navn5</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>FADRESSE1</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.adresse1</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>FADRESSE2</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.adresse2</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>FADRESSE3</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.adresse3</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>FPOSTNR</TD>
-<TD nowrap>VARCHAR2(9 BYTE)</TD>
+<TD nowrap>VARCHAR2(9)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.postnr</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>FPOSTSTED</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.poststed</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>FKOMMNR</TD>
-<TD nowrap>VARCHAR2(9 BYTE)</TD>
+<TD nowrap>VARCHAR2(9)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.kommunenummer</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>FKOMMUNE</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.kommune</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>FLANDKODE</TD>
-<TD nowrap>VARCHAR2(3 BYTE)</TD>
+<TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.landkode</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>FLAND</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.forretningsAdresse.land</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>PADRESSE1</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.adresse1</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>PADRESSE2</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.adresse2</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>PADRESSE3</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.adresse3</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>PPOSTNR</TD>
-<TD nowrap>VARCHAR2(9 BYTE)</TD>
+<TD nowrap>VARCHAR2(9)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.postnr</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>PPOSTSTED</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.poststed</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>PKOMMNR</TD>
-<TD nowrap>VARCHAR2(9 BYTE)</TD>
+<TD nowrap>VARCHAR2(9)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.kommunenummer</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>PKOMMUNE</TD>
-<TD nowrap>VARCHAR2(35 BYTE)</TD>
+<TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.kommune</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>PLANDKODE</TD>
-<TD nowrap>VARCHAR2(3 BYTE)</TD>
+<TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.landkode</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>PLAND</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.postAdresse.land</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>ORGFORM</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.organisasjonsform.orgform</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>ORGFORMBESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(30 BYTE)</TD>
+<TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.organisasjonsform.orgformbeskrivelse</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>VIRKSOMHETARTBRANSJE</TD>
-<TD nowrap>VARCHAR2(4000 BYTE)</TD>
+<TD nowrap>VARCHAR2(4000)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.formal.virksomhetartbransje</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>VEDTEKTSFESTETFORMAAL</TD>
-<TD nowrap>VARCHAR2(4000 BYTE)</TD>
+<TD nowrap>VARCHAR2(4000)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.formal.vedtektsfestetformaal</TD>
 </TR>
@@ -300,63 +299,63 @@
 <TR>
 <TD Class="Num">36</TD>
 <TD>MAALFORMKODE</TD>
-<TD nowrap>VARCHAR2(1 BYTE)</TD>
+<TD nowrap>VARCHAR2(1)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.malform.maalformkode</TD>
 </TR>
 <TR>
 <TD Class="Num">37</TD>
 <TD>MAALFORMTEKST</TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>&nbsp;</TD>
 <TD>basisdata.malform.maalformtekst</TD>
 </TR>
 <TR>
 <TD Class="Num">38</TD>
 <TD>TELEFONNUMMER</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>kontaktdata.telefonnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">39</TD>
 <TD>TELEFAKSNUMMER</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>kontaktdata.telefaksnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">40</TD>
 <TD>MOBILTELEFONNUMMER</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>kontaktdata.mobiltelefonnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">41</TD>
 <TD>EPOSTADRESSE</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>kontaktdata.epostadresse</TD>
 </TR>
 <TR>
 <TD Class="Num">42</TD>
 <TD>HJEMMESIDEADRESSE</TD>
-<TD nowrap>VARCHAR2(200 BYTE)</TD>
+<TD nowrap>VARCHAR2(200)</TD>
 <TD>&nbsp;</TD>
 <TD>kontaktdata.hjemmesideadresse</TD>
 </TR>
 <TR>
 <TD Class="Num">43</TD>
 <TD>SEKTORKODE</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.sektorkode.kode</TD>
 </TR>
 <TR>
 <TD Class="Num">44</TD>
 <TD>SEKTORKODEBESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(141 BYTE)</TD>
+<TD nowrap>VARCHAR2(141)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.sektorkode.beskrivelse</TD>
 </TR>
@@ -377,49 +376,49 @@
 <TR>
 <TD Class="Num">47</TD>
 <TD>NACEKODE1</TD>
-<TD nowrap>VARCHAR2(6 BYTE)</TD>
+<TD nowrap>VARCHAR2(6)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.nacekoder.nacekode.kode  rekkefolge 1</TD>
 </TR>
 <TR>
 <TD Class="Num">48</TD>
 <TD>NACEKODE1BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(141 BYTE)</TD>
+<TD nowrap>VARCHAR2(141)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.nacekoder.nacekode.beskrivelse rekkefolge 1</TD>
 </TR>
 <TR>
 <TD Class="Num">49</TD>
 <TD>NACEKODE2</TD>
-<TD nowrap>VARCHAR2(6 BYTE)</TD>
+<TD nowrap>VARCHAR2(6)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.nacekoder.nacekode.kode  rekkefolge 2</TD>
 </TR>
 <TR>
 <TD Class="Num">50</TD>
 <TD>NACEKODE2BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(141 BYTE)</TD>
+<TD nowrap>VARCHAR2(141)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.nacekoder.nacekode.beskrivelse rekkefolge 2</TD>
 </TR>
 <TR>
 <TD Class="Num">51</TD>
 <TD>NACEKODE3</TD>
-<TD nowrap>VARCHAR2(6 BYTE)</TD>
+<TD nowrap>VARCHAR2(6)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.nacekoder.nacekode.kode rekkefolge 3</TD>
 </TR>
 <TR>
 <TD Class="Num">52</TD>
 <TD>NACEKODE3BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(141 BYTE)</TD>
+<TD nowrap>VARCHAR2(141)</TD>
 <TD>&nbsp;</TD>
 <TD>OpplTilknRegister.nacekoder.nacekode.beskrivelse rekkefolge 3</TD>
 </TR>
 <TR>
 <TD Class="Num">53</TD>
 <TD>KONK</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis hentSaerligeOpplysninger.status.statuskode = KONK</TD>
 </TR>
@@ -433,14 +432,14 @@
 <TR>
 <TD Class="Num">55</TD>
 <TD>KONKTEKST</TD>
-<TD nowrap>VARCHAR2(1000 BYTE)</TD>
+<TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
 <TD>tekstlinjer knyttet til statuskode KONK</TD>
 </TR>
 <TR>
 <TD Class="Num">56</TD>
 <TD>TVOP</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis hentSaerligeOpplysninger.status.statuskode = TVOP</TD>
 </TR>
@@ -454,14 +453,14 @@
 <TR>
 <TD Class="Num">58</TD>
 <TD>TVOPTEKST</TD>
-<TD nowrap>VARCHAR2(1000 BYTE)</TD>
+<TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
 <TD>tekstlinjer knyttet til statuskode TVOP</TD>
 </TR>
 <TR>
 <TD Class="Num">59</TD>
 <TD>TVUK</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis hentSaerligeOpplysninger.status.statuskode = TVUK</TD>
 </TR>
@@ -475,14 +474,14 @@
 <TR>
 <TD Class="Num">61</TD>
 <TD>TVUKTEKST</TD>
-<TD nowrap>VARCHAR2(1000 BYTE)</TD>
+<TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
 <TD>tekstlinjer knyttet til statuskode TVUK</TD>
 </TR>
 <TR>
 <TD Class="Num">62</TD>
 <TD>OPPL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis hentSaerligeOpplysninger.status.statuskode = OPPL</TD>
 </TR>
@@ -496,14 +495,14 @@
 <TR>
 <TD Class="Num">64</TD>
 <TD>OPPLTEKST</TD>
-<TD nowrap>VARCHAR2(1000 BYTE)</TD>
+<TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
 <TD>tekstlinjer knyttet til statuskode OPPL</TD>
 </TR>
 <TR>
 <TD Class="Num">65</TD>
 <TD>USL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis hentSaerligeOpplysninger.status.statuskode = USL</TD>
 </TR>
@@ -517,14 +516,14 @@
 <TR>
 <TD Class="Num">67</TD>
 <TD>USLTEKST</TD>
-<TD nowrap>VARCHAR2(1000 BYTE)</TD>
+<TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
 <TD>tekstlinjer knyttet til statuskode USL</TD>
 </TR>
 <TR>
 <TD Class="Num">68</TD>
 <TD>FUSJ</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis hentSaerligeOpplysninger.status.statuskode = FUSJ</TD>
 </TR>
@@ -538,14 +537,14 @@
 <TR>
 <TD Class="Num">70</TD>
 <TD>FUSJTEKST</TD>
-<TD nowrap>VARCHAR2(1000 BYTE)</TD>
+<TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
 <TD>tekstlinjer knyttet til statuskode FUSJ</TD>
 </TR>
 <TR>
 <TD Class="Num">71</TD>
 <TD>FISJ</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis hentSaerligeOpplysninger.status.statuskode = FISJ</TD>
 </TR>
@@ -559,35 +558,35 @@
 <TR>
 <TD Class="Num">73</TD>
 <TD>FISJTEKST</TD>
-<TD nowrap>VARCHAR2(1000 BYTE)</TD>
+<TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
 <TD>tekstlinjer knyttet til statuskode FISJ</TD>
 </TR>
 <TR>
 <TD Class="Num">74</TD>
 <TD>STATUS</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
 <TD>Kodefelt for spesiell status</TD>
 </TR>
 <TR>
 <TD Class="Num">75</TD>
 <TD>STATUSTEKST</TD>
-<TD nowrap>VARCHAR2(250 BYTE)</TD>
+<TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse knyttet til kodefelt for spesiell status</TD>
 </TR>
 <TR>
 <TD Class="NumRed">76</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">77</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -601,7 +600,7 @@
 <TR>
 <TD Class="Num">79</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -615,7 +614,7 @@
 <TR>
 <TD Class="Num">81</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>

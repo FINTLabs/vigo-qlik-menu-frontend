@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table PROVE</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,7 +61,7 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>FNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Fødselsnr [Ihht ELEV]</TD>
 </TR>
@@ -76,21 +75,21 @@
 <TR>
 <TD Class="Num">4</TD>
 <TD>ALTVURDFORM</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Alternativ vurderingsform [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>ARKIVNR</TD>
-<TD nowrap>VARCHAR2(20 BYTE)</TD>
+<TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
 <TD>Arkiv nr</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">6</TD>
 <TD>BNR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Avleggelse ved bedrift/prøvestasjon [Ihht BEDRIFT]</TD>
 </TR>
@@ -104,14 +103,14 @@
 <TR>
 <TD Class="Num">8</TD>
 <TD>FSBESTST</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Utskrift av fag/svennebrev, status [N=Utskrift ikke bestilt,U=Utskrift bestilt]</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>FSTYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Fag/svennebrev,type [F=Fagbrev,S=Svennebrev]</TD>
 </TR>
@@ -125,28 +124,28 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>KANDTYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kandidattype [L=Lærling,E=Elev i skole,P=Praksiskandidat,K=Lærekandidat]</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>KARTYPPR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Karaktertype, praktisk prøve [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>KARTYPST</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Karaktertype, status [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>KARTYPTE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Karaktertype, toeri [Ihht KARAKTER]</TD>
 </TR>
@@ -160,14 +159,14 @@
 <TR>
 <TD Class="Num">16</TD>
 <TD>KURSKODE</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode [Ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>MALFORM</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Målform [Ihht MALFORM]</TD>
 </TR>
@@ -188,7 +187,7 @@
 <TR>
 <TD Class="NumBlue">20</TD>
 <TD>NEMNDNR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvenemndnr [Ihht NEMND]</TD>
 </TR>
@@ -216,35 +215,35 @@
 <TR>
 <TD Class="Num">24</TD>
 <TD>PROVESTA</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvestatus (resultat) [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>PROVESTED</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvested (Bedrift) [Ihht BEDRIFT2]</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>PROVETYPE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvetype [V=Fag-/svenneprøve,K=Kompetanseprøve]</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>PTILSBER</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilskudd beregnetArbeidsbok [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>REGION</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Region</TD>
 </TR>
@@ -258,14 +257,14 @@
 <TR>
 <TD Class="Num">30</TD>
 <TD>RESPRAKT</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Resultat praktisk prøve [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>RESTEORI</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Resultat teoretisk prøve [Ihht KARAKTER]</TD>
 </TR>
@@ -300,7 +299,7 @@
 <TR>
 <TD Class="Num">36</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -314,21 +313,21 @@
 <TR>
 <TD Class="NumRed">38</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">39</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">40</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -342,35 +341,35 @@
 <TR>
 <TD Class="Num">42</TD>
 <TD>HJEMFYLKEKOPI</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Info om prøve tatt I annet fylke [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">43</TD>
 <TD>KONTAKTEPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontaktperson epost</TD>
 </TR>
 <TR>
 <TD Class="Num">44</TD>
 <TD>KONTAKTP</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontaktperson</TD>
 </TR>
 <TR>
 <TD Class="Num">45</TD>
 <TD>KONTAKTTLF</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontaktperson telefon</TD>
 </TR>
 <TR>
 <TD Class="Num">46</TD>
 <TD>MANGLTEORI</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Mangler teori? [J,N]</TD>
 </TR>
@@ -384,28 +383,28 @@
 <TR>
 <TD Class="Num">48</TD>
 <TD>ONSPROVESTED</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Ønsket prøvested</TD>
 </TR>
 <TR>
 <TD Class="Num">49</TD>
 <TD>ONSPRSTKONTAKTEPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
 <TD>Ønsket prøvested kontaktperson epost</TD>
 </TR>
 <TR>
 <TD Class="Num">50</TD>
 <TD>ONSPRSTKONTAKTP</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Ønsket prøvested kontaktperson</TD>
 </TR>
 <TR>
 <TD Class="Num">51</TD>
 <TD>ONSPRSTKONTAKTTLF</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Ønsket prøvested kontaktperson tlf</TD>
 </TR>
@@ -426,42 +425,42 @@
 <TR>
 <TD Class="Num">54</TD>
 <TD>TILRLPROVE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilrettelagt prøve</TD>
 </TR>
 <TR>
 <TD Class="Num">55</TD>
 <TD>TILSPERS1</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Stedfortreder 1 for nemnd</TD>
 </TR>
 <TR>
 <TD Class="Num">56</TD>
 <TD>TILSPERS2</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Stedfortreder 2 for nemnd</TD>
 </TR>
 <TR>
 <TD Class="Num">57</TD>
 <TD>VEDLANN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Vedlegg annet</TD>
 </TR>
 <TR>
 <TD Class="Num">58</TD>
 <TD>VEDLIO</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Vedlegg individuell opplæringsplan</TD>
 </TR>
 <TR>
 <TD Class="Num">59</TD>
 <TD>VEDLKB</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Vedlegg kompetansebevis</TD>
 </TR>
@@ -475,14 +474,14 @@
 <TR>
 <TD Class="Num">61</TD>
 <TD>KANREDIGERE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Om bedriften kan redigere prøven [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">62</TD>
 <TD>UTSKRWEB</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Utskrift web</TD>
 </TR>
@@ -496,7 +495,7 @@
 <TR>
 <TD Class="Num">64</TD>
 <TD>ELEVKURSID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Knytning mot elevkurset [Ihht s_objectid på elevkurs]</TD>
 </TR>
@@ -517,7 +516,7 @@
 <TR>
 <TD Class="Num">67</TD>
 <TD>IMDOKU</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Ikke møtt dokumentasjon [J,N]</TD>
 </TR>
@@ -531,14 +530,14 @@
 <TR>
 <TD Class="Num">69</TD>
 <TD>OLDRESPRAKT</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Tidligere resultat praktisk prøve</TD>
 </TR>
 <TR>
 <TD Class="Num">70</TD>
 <TD>OLDPROVESTA</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Tidligere prøvestatus (resultat)</TD>
 </TR>
@@ -552,107 +551,135 @@
 <TR>
 <TD Class="Num">72</TD>
 <TD>MELDINGNEMND</TD>
-<TD nowrap>VARCHAR2(250 BYTE)</TD>
+<TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Melding til nemnd</TD>
 </TR>
 <TR>
 <TD Class="Num">73</TD>
 <TD>TILSPERS1TLF</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Tilsynsrepresentat 1 for nemnd tlf</TD>
 </TR>
 <TR>
 <TD Class="Num">74</TD>
 <TD>TILSPERS1EPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Tilsynsrepresentat 1 for nemnd e-post</TD>
 </TR>
 <TR>
 <TD Class="Num">75</TD>
 <TD>TILSPERS2TLF</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Tilsynsrepresentat 2 for nemnd tlf</TD>
 </TR>
 <TR>
 <TD Class="Num">76</TD>
 <TD>TILSPERS2EPOST</TD>
-<TD nowrap>VARCHAR2(80 BYTE)</TD>
+<TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Tilsynsrepresentat 2 for nemnd e-post</TD>
 </TR>
 <TR>
 <TD Class="Num">77</TD>
 <TD>PROVESTARTD</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Prøvestart dato</TD>
 </TR>
 <TR>
 <TD Class="Num">78</TD>
 <TD>PROTSIGNSTED</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Signatursted for prøveprotokoll</TD>
 </TR>
 <TR>
 <TD Class="Num">79</TD>
 <TD>PROTSIGNDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Signaturdato for prøveprotokoll</TD>
 </TR>
 <TR>
 <TD Class="Num">80</TD>
 <TD>OFF_KAR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Prøveresultat er bekreftet og kan vises</TD>
 </TR>
 <TR>
 <TD Class="Num">81</TD>
 <TD>ARKIVERT_SENDT_PN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Prøven er arkivert og tilgjengelig for prøvenemnd (J/N)</TD>
 </TR>
 <TR>
 <TD Class="Num">82</TD>
 <TD>AVLARSAK</TD>
-<TD nowrap>VARCHAR2(250 BYTE)</TD>
+<TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Årsak til avlyst prøve - fritekst</TD>
 </TR>
 <TR>
 <TD Class="Num">83</TD>
 <TD>KVITT_VEDL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Kvittering vedlagt </TD>
 </TR>
 <TR>
 <TD Class="Num">84</TD>
 <TD>TILRLPROVE_INNV</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Tilrettelagt prøve er innvilget (J/N)</TD>
 </TR>
 <TR>
 <TD Class="Num">85</TD>
 <TD>TILRLPROVE_INNV_TEKST</TD>
-<TD nowrap>VARCHAR2(370 BYTE)</TD>
+<TD nowrap>VARCHAR2(370)</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse knyttet til innvilget tilrettelagt prøve</TD>
 </TR>
 <TR>
 <TD Class="Num">86</TD>
 <TD>ONSPROVETEKST</TD>
-<TD nowrap>VARCHAR2(50 BYTE)</TD>
+<TD nowrap>VARCHAR2(50)</TD>
 <TD>&nbsp;</TD>
 <TD>Ønsket prøvetidspunkt (tekst)</TD>
+</TR>
+<TR>
+<TD Class="Num">87</TD>
+<TD>SENDTNEMND</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>Sendt E-post med melding til nemnd? [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">88</TD>
+<TD>PROVEFYLKE</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>Y</TD>
+<TD>Fylke der prøven avlegges ved lån av nemnd [Ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">89</TD>
+<TD>SENDTPROVEFYLKE</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for oversending til prøvefylke (ved lån av nemnd)</TD>
+</TR>
+<TR>
+<TD Class="Num">90</TD>
+<TD>LKVER</TD>
+<TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
+<TD>LK06/LK20</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -707,6 +734,17 @@
 <TR>
 <TD>FYLKE_FOR_PROVE_ANNFYLKE</TD>
 <TD>ANNFYLKE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_PROVE_PROVEFYLKE</TD>
+<TD>PROVEFYLKE</TD>
 <TD>VIGOS</TD>
 <TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
 <TD>FYLKESNR</TD>
@@ -782,8 +820,8 @@
 <TD>No</TD>
 </TR>
 <TR>
-<TD>NEMND_FOR_PROVE</TD>
-<TD>FYLKESNR, NEMNDNR</TD>
+<TD>NEMND_FOR_PROVE_PROVEFYLKE</TD>
+<TD>PROVEFYLKE, NEMNDNR</TD>
 <TD>VIGOS</TD>
 <TD><A NAME="NEMND" HREF="../tables/NEMND.html">NEMND</A></TD>
 <TD>FYLKESNR, NEMNDNR</TD>

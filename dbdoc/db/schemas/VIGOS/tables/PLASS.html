@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table PLASS</TITLE>
 </HEAD>
 <BODY>
@@ -12,23 +12,34 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 16/02/2022 14:15:26</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
 </div>
 <CENTER>
-  <ul id="list-nav">
-    <li><a href="../summary.html">Summary</a></li>
-    <li><a href="../tables1.html">Tables</a></li>
-    <li><a href="../views1.html">Views</a></li>
-  </ul>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="./PLAN_TABLE.html" TITLE="PLAN_TABLE">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables3.html#PLASS">Table PLASS</A></TD>
+<TD Class="NavL"><A HREF="./P_ELEV2.html" TITLE="P_ELEV2">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#PLASS">Table PLASS</A></TD>
 <TD Class="NavR"><A HREF="./PLASSALG.html" TITLE="PLASSALG">Next Table</A></TD>
 </TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table PLASS</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Plass-Lærekontrakt</TD>
+</TR>
+</TABLE>
+</CENTER>
 <BR>
 <CENTER>
 <TABLE>
@@ -43,7 +54,7 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B><SUB>1</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Fødselsnr [Ihht ELEV]</TD>
 </TR>
@@ -71,42 +82,42 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>AVSLKODE</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontrakt avsluttet kode [Ihht ARSAK]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>AVTALEVEDLAGT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Avtale vedlagt? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">7</TD>
 <TD>BNR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedriftsnr [Ihht BEDRIFT]</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>BRUKERID</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>BrukerId</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>DAGLEDFNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Daglig leder [Ihht ANSATT]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>FAGLEDFNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Faglig leder [Ihht ANSATT]</TD>
 </TR>
@@ -120,14 +131,14 @@
 <TR>
 <TD Class="Num">12</TD>
 <TD>HEVETAV</TD>
-<TD nowrap>VARCHAR2(8 BYTE)</TD>
+<TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
 <TD>Hevet av [L= lærlingens ønske,LB= lærlig og bedrift,B= bedriftens ønske]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>HJEMMEL</TD>
-<TD nowrap>VARCHAR2(20 BYTE)</TD>
+<TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
 <TD>Hjemmel</TD>
 </TR>
@@ -155,7 +166,7 @@
 <TR>
 <TD Class="NumBlue">17</TD>
 <TD>KURSKODE</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode [Ihht KURS]</TD>
 </TR>
@@ -176,21 +187,21 @@
 <TR>
 <TD Class="Num">20</TD>
 <TD>MEDLBNR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Medlemsbedrift orgnr [Ihht BEDRIFT2]</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>OPPLBESTILLING</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Opplæringsbestilling</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>OPRINR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Opplæringsring nr [Ihht OPPLRING]</TD>
 </TR>
@@ -204,14 +215,14 @@
 <TR>
 <TD Class="Num">24</TD>
 <TD>RETT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Rettstype [U=Ungdomsrett,F=Fullføringsrett,V=Voksenrett]</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>STATUSID</TD>
-<TD nowrap>VARCHAR2(20 BYTE)</TD>
+<TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
 <TD>Hvor langt i prosessen den er kommet</TD>
 </TR>
@@ -225,63 +236,63 @@
 <TR>
 <TD Class="Num">27</TD>
 <TD>TYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Type [L=Lærekontrakt,E= Fagopplæring i skole,O=Opplæringskontrakt,A=Annet fylke]</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>VG1FELLES</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kjøp av teori VG1 fellesfag</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>VG1PROGRAM</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kjøp av teori VG1 programfag</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>VG2FELLES</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kjøp av teori VG2 fellesfag</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>VG2PROGRAM</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kjøp av teori VG2 programfag</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>VG3PROGRAM</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kjøp av teori VG3 programfag</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>S_OBJECTID_LOK</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Lokal Objectid (ikke i bruk)</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">35</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -295,14 +306,14 @@
 <TR>
 <TD Class="NumRed">37</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">38</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -316,7 +327,7 @@
 <TR>
 <TD Class="Num">40</TD>
 <TD>ARKIVNR</TD>
-<TD nowrap>VARCHAR2(20 BYTE)</TD>
+<TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
 <TD>Arkivnr</TD>
 </TR>
@@ -330,7 +341,7 @@
 <TR>
 <TD Class="Num">42</TD>
 <TD>KONTRTYPE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Kontraktstype [Ihht KONTRTYPE]</TD>
 </TR>
@@ -365,7 +376,7 @@
 <TR>
 <TD Class="Num">47</TD>
 <TD>REGION</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Region</TD>
 </TR>
@@ -400,7 +411,7 @@
 <TR>
 <TD Class="Num">52</TD>
 <TD>TILSREPRFNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Tilsynsrepresentant [Ihht ANSATT]</TD>
 </TR>
@@ -414,35 +425,35 @@
 <TR>
 <TD Class="Num">54</TD>
 <TD>ALTVURDFORM</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Alternativ vurderingsform [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">55</TD>
 <TD>GODKJREF</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Godkjent refusjon [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">56</TD>
 <TD>KONTLOP</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kontraktsløp [N=Normalløp,A=Avvikende løp,S=Særløp]</TD>
 </TR>
 <TR>
 <TD Class="Num">57</TD>
 <TD>TEORI</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kjøp av teori? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">58</TD>
 <TD>VERNEVERDIG</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Små og verneverdige fag? [J,N]</TD>
 </TR>
@@ -456,14 +467,14 @@
 <TR>
 <TD Class="Num">60</TD>
 <TD>HJEMFYLKEKOPI</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kontraktskopi [N,J=lesetilgang]</TD>
 </TR>
 <TR>
 <TD Class="Num">61</TD>
 <TD>UTSKRWEB</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Utskrift web? [J,N]</TD>
 </TR>
@@ -477,28 +488,28 @@
 <TR>
 <TD Class="Num">63</TD>
 <TD>VEKSLMOD</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Vekslingsmodell [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">64</TD>
 <TD>PBREVKAND</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Praksisbrevkandidat</TD>
 </TR>
 <TR>
 <TD Class="Num">65</TD>
 <TD>ELEVKURSID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Knytning mot elevkurset [Ihht s_objectid på elevkurs]</TD>
 </TR>
 <TR>
 <TD Class="Num">66</TD>
 <TD>PBREVPLANKURS</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Praksisbrev programområde [ihht PBREVPLANMAAL]</TD>
 </TR>
@@ -512,7 +523,7 @@
 <TR>
 <TD Class="Num">68</TD>
 <TD>OFORSLAGOBJECTID</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Systemkolonne, kobling til OFORSLAG</TD>
 </TR>
@@ -526,16 +537,251 @@
 <TR>
 <TD Class="Num">70</TD>
 <TD>ARSAK_STATUS4</TD>
-<TD nowrap>VARCHAR2(200 BYTE)</TD>
+<TD nowrap>VARCHAR2(200)</TD>
 <TD>&nbsp;</TD>
 <TD>Tekstfelt for beskrivelse av årsak til status 4</TD>
 </TR>
 <TR>
 <TD Class="Num">71</TD>
 <TD>LKVER</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>LK06/LK20</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Foreign Key Constraints on Table PLASS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Columns</TH>
+<TH>Ref Table Owner</TH>
+<TH>Referenced Table Name</TH>
+<TH>Referenced Columns</TH>
+<TH>Delete Rule</TH>
+<TH>Status</TH>
+<TH>Deferrable</TH>
+<TH>Deferred</TH>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_PLASS_DAGLEDFNR</TD>
+<TD>FYLKESNR, DAGLEDFNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="../tables/ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_PLASS_FAGLEDFNR</TD>
+<TD>FYLKESNR, FAGLEDFNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="../tables/ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ANSATT2_FOR_PLASS_TILSREPRFNR</TD>
+<TD>FYLKESNR, TILSREPRFNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ANSATT2" HREF="../tables/ANSATT2.html">ANSATT2</A></TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ARSAK_FOR_PLASS_AVSLKODE</TD>
+<TD>AVSLKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="../tables/ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ARSAK_FOR_PLASS_HEVETAV</TD>
+<TD>HEVETAV</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ARSAK" HREF="../tables/ARSAK.html">ARSAK</A></TD>
+<TD>ARSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEDRIFT2_FOR_PLASS</TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>BEDRIFT2_FOR_PLASS_MEDLBNR</TD>
+<TD>FYLKESNR, MEDLBNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="BEDRIFT2" HREF="../tables/BEDRIFT2.html">BEDRIFT2</A></TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ELEV_FOR_PLASS</TD>
+<TD>FNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="ELEV" HREF="../tables/ELEV.html">ELEV</A></TD>
+<TD>FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_PLASS_ANNFYLKE</TD>
+<TD>ANNFYLKE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_PLASS_TILANNFYLKE</TD>
+<TD>TILANNFYLKE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FYLKE_FOR_PLASS_TILHORIGHET</TD>
+<TD>TILHORIGHET</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
+<TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KONTRSTATUS_FOR_PLASS</TD>
+<TD>STATUSID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KONTRAKTSTATUS" HREF="../tables/KONTRAKTSTATUS.html">KONTRAKTSTATUS</A></TD>
+<TD>STATUSID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KONTRTYPE_FOR_PLASS</TD>
+<TD>KONTRTYPE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KONTRTYPE" HREF="../tables/KONTRTYPE.html">KONTRTYPE</A></TD>
+<TD>KONTRTYPE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>KURS_FOR_PLASS</TD>
+<TD>KURSKODE</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
+<TD>KURSKODE</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>OPPLRING_FOR_PLASS</TD>
+<TD>FYLKESNR, OPRINR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="OPPLRING" HREF="../tables/OPPLRING.html">OPPLRING</A></TD>
+<TD>FYLKESNR, OPRINR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>ORDNING_FOR_PLASS</TD>
+<TD>ORDNINGID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TS_ORDNING" HREF="../tables/TS_ORDNING.html">TS_ORDNING</A></TD>
+<TD>ORDNINGID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>PBREVPLAN_FOR_PLASS</TD>
+<TD>FYLKESNR, PBREVPLANKURS, PBREVPLANNR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="PBREVPLAN" HREF="../tables/PBREVPLAN.html">PBREVPLAN</A></TD>
+<TD>FYLKESNR, KURSKODE, PLANNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>SKOLE_FOR_PLASS</TD>
+<TD>SKOLENR</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="SKOLE" HREF="../tables/SKOLE.html">SKOLE</A></TD>
+<TD>SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>SKOLE_FOR_PLASS_SKOLENRTEORI</TD>
+<TD>SKOLENRTEORI</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="SKOLE" HREF="../tables/SKOLE.html">SKOLE</A></TD>
+<TD>SKOLENR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table PLASS does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
 </TR>
 </TABLE>
 </CENTER>

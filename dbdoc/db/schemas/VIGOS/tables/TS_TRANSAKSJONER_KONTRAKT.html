@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table TS_TRANSAKSJONER_KONTRAKT</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -69,7 +68,7 @@
 <TR>
 <TD Class="Num">3</TD>
 <TD>BNR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedriftsnr [ihht BEDRIFT2]</TD>
 </TR>
@@ -83,7 +82,7 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>FNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Fødselsnr [ihht PLASS]</TD>
 </TR>
@@ -118,7 +117,7 @@
 <TR>
 <TD Class="Num">10</TD>
 <TD>BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
@@ -153,7 +152,7 @@
 <TR>
 <TD Class="Num">15</TD>
 <TD>TRANSTYPE</TD>
-<TD nowrap>VARCHAR2(20 BYTE)</TD>
+<TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
 <TD>Transaksjonstype</TD>
 </TR>
@@ -167,21 +166,21 @@
 <TR>
 <TD Class="Num">17</TD>
 <TD>ENHET</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Enhet</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>SPESIFIKASJON</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>Spesifikasjon</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>SKJULT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Skjult</TD>
 </TR>
@@ -209,14 +208,14 @@
 <TR>
 <TD Class="Num">23</TD>
 <TD>ANNULLERING_AV</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Annulering av [ihht TS_TRANSAKSJONER]</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>PROVE_FNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Fødselsnr (prøve) [ihht PROVE]</TD>
 </TR>
@@ -230,7 +229,7 @@
 <TR>
 <TD Class="Num">26</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>ID</TD>
 </TR>
@@ -247,6 +246,13 @@
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
 <TD>Tilhørighet [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">29</TD>
+<TD>MANTILSK_ID</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>

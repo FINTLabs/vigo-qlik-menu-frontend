@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table KURS2</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,63 +61,63 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>KURSKODE</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>BERMARES</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine adm. ressurs [O=Ordinær,S=Spesialundervisning]</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>FORTRINN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kan utløse fortrinnsrett? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>INNRUTFR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for inntak fullføringsrett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>INNRUTMR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for inntak med rett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>INNRUTUR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for inntak uten rett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>INNRUTVR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for inntak voksenrett. S=Skolevist,R=Regionsvist,F=Fylkesvist</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>KJONKVOT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Kjønnskvotering? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>KURSAUTO</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
 <TD>Neste års programområdekode [ihht KURS] </TD>
 </TR>
@@ -132,35 +131,35 @@
 <TR>
 <TD Class="Num">12</TD>
 <TD>PLARUTFR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for plassering av søkere fullføringsrett.[P=Poengsum,A=Avgiverskole]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>PLARUTMR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for plassering av søkere med rett.[P=Poengsum,A=Avgiverskole]</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>PLARUTUR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for plassering av søkere uten rett.[P=Poengsum,A=Avgiverskole]</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>PLARUTVR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for plassering av søkere fullføringsrett.[P=Poengsum,A=Avgiverskole]</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>PREUTFYL</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Preutfylt skjema neste år? [J,N]</TD>
 </TR>
@@ -174,49 +173,49 @@
 <TR>
 <TD Class="Num">18</TD>
 <TD>STOPKODE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Stoppkode.[ =Som normalt,F=Stopp fellesinntak,S=Stopp statistikk,B=Begge deler(F+S)]</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>VIDRUTFR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for videresøking av søkere fullføringsrett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>VIDRUTMR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for videresøking av søkere med rett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>VIDRUTUR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for videresøking av søkere uten rett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>VIDRUTVR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Rutine for videresøking av søkere voksenrett. [I=Ingen videresøking,A=Avgiverskole,B=Bosted,S=Skole]</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>VOKSNE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Er programområdeet spesielt for voksne? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -230,14 +229,14 @@
 <TR>
 <TD Class="NumRed">26</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -251,21 +250,21 @@
 <TR>
 <TD Class="Num">29</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>SOKNKAT</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Søknadskategori ved preutfylling</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>SOKERTYP2</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Søknadstype ved preutfylling</TD>
 </TR>
@@ -279,9 +278,9 @@
 <TR>
 <TD Class="Num">33</TD>
 <TD>VALGT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
-<TD>Med i rutine for tildeling [J,N]</TD>
+<TD>Med i rutine for tildeling [J,N] spesielt for Viken</TD>
 </TR>
 </TABLE>
 </CENTER>

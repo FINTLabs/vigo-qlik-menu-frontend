@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table SASLINJE</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -37,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Linjer til skolesystemer</TD>
+<TD>Linjer til/fra skolesystemer (integrasjon)</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -62,7 +61,7 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>PAKKEID</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>Y</TD>
 <TD>Pakke ID</TD>
 </TR>
@@ -76,42 +75,42 @@
 <TR>
 <TD Class="Num">4</TD>
 <TD>LINJETYPE</TD>
-<TD nowrap>VARCHAR2(3 BYTE)</TD>
+<TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
 <TD>Linjetype</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>LINJE</TD>
-<TD nowrap>VARCHAR2(4000 BYTE)</TD>
+<TD nowrap>VARCHAR2(4000)</TD>
 <TD>&nbsp;</TD>
 <TD>Linje</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>STATUS</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Status</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>MELDING</TD>
-<TD nowrap>VARCHAR2(4000 BYTE)</TD>
+<TD nowrap>VARCHAR2(4000)</TD>
 <TD>&nbsp;</TD>
 <TD>Melding</TD>
 </TR>
 <TR>
 <TD Class="NumRed">8</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -125,7 +124,7 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -139,7 +138,7 @@
 <TR>
 <TD Class="Num">13</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>

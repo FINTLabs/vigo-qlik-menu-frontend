@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table NEMND</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,28 +61,28 @@
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>NEMNDNR</B><SUB>2</SUB></TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
 <TD>Nemndnr</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>NEMNDNAVN</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Nemndnavn</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>NEMNDTYPE</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Nemndtype</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>GATEP</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse post</TD>
 </TR>
@@ -97,21 +96,21 @@
 <TR>
 <TD Class="Num">7</TD>
 <TD>LANDKODE</TD>
-<TD nowrap>VARCHAR2(4 BYTE)</TD>
+<TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Landkode [Ihht LAND]</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>REGION</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Region</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>ADRSOMLEDER</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Adresse lik leders adresse [J,N]</TD>
 </TR>
@@ -125,28 +124,28 @@
 <TR>
 <TD Class="Num">11</TD>
 <TD>GATE2P</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse 2 post</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>NEMNDTLF</TD>
-<TD nowrap>VARCHAR2(12 BYTE)</TD>
+<TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Nemnd telefon</TD>
 </TR>
 <TR>
 <TD Class="NumRed">13</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -160,7 +159,7 @@
 <TR>
 <TD Class="Num">16</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -174,9 +173,23 @@
 <TR>
 <TD Class="Num">18</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">19</TD>
+<TD>GYLDFRAD_TRG</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>Beregnet gyldig fradato</TD>
+</TR>
+<TR>
+<TD Class="Num">20</TD>
+<TD>GYLDTILD_TRG</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>Beregnet gyldig tildato</TD>
 </TR>
 </TABLE>
 </CENTER>

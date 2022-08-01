@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table KLASORDN</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -83,7 +82,7 @@
 <TR>
 <TD Class="NumBlue">5</TD>
 <TD><B>KURSKODE</B><SUB>5</SUB></TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
@@ -104,14 +103,14 @@
 <TR>
 <TD Class="Num">8</TD>
 <TD>FILTER</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>WEB-filter [1=Internt,2=Vedtatt,3=Offentlig]</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>GRLID</TD>
-<TD nowrap>VARCHAR2(24 BYTE)</TD>
+<TD nowrap>VARCHAR2(24)</TD>
 <TD>&nbsp;</TD>
 <TD>Grunnlagsid [ihht GRLHODE]</TD>
 </TR>
@@ -202,7 +201,7 @@
 <TR>
 <TD Class="Num">22</TD>
 <TD>LANDSLIN</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Landslinje? [K=Som programområdet,J=Ja,N=Nei]</TD>
 </TR>
@@ -349,7 +348,7 @@
 <TR>
 <TD Class="Num">43</TD>
 <TD>STOPKODE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Stoppkode [0=Som normalt,I=Stopp inntak,N=Stopp nullstilling,B=Stopp brev,X=I+N+B]</TD>
 </TR>
@@ -363,14 +362,14 @@
 <TR>
 <TD Class="Num">45</TD>
 <TD>VILBLINO</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Overføres til vilbli.no? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">46</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -384,14 +383,14 @@
 <TR>
 <TD Class="NumRed">48</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">49</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -405,114 +404,114 @@
 <TR>
 <TD Class="Num">51</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">52</TD>
 <TD>LANDSDEK</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Landsdekkende tilbud? [K=Som programområdet,J=Ja,N=Nei]</TD>
 </TR>
 <TR>
 <TD Class="Num">53</TD>
 <TD>OPPTPROV</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Opptaksprøve? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">54</TD>
 <TD>EGETSKJE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Eget skjema? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">55</TD>
-<TD>SLUTTDAT</TD>
-<TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
-<TD>Sluttdato</TD>
-</TR>
-<TR>
-<TD Class="Num">56</TD>
 <TD>WSOKLIST</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Vise søkerliste på Vigo Skole [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">57</TD>
+<TD Class="Num">56</TD>
 <TD>WSOKLISTRETT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Utvalg på søker-rett [J/N]</TD>
 </TR>
 <TR>
-<TD Class="Num">58</TD>
+<TD Class="Num">57</TD>
 <TD>WSOKLISTONR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Utvalg på ønskenr [J/N]</TD>
 </TR>
 <TR>
-<TD Class="Num">59</TD>
+<TD Class="Num">58</TD>
 <TD>WSOKLISTSNR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Utvalg på statusnr [J/N]</TD>
 </TR>
 <TR>
-<TD Class="Num">60</TD>
+<TD Class="Num">59</TD>
 <TD>ANTON1</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
 <TD>Antall primærønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">61</TD>
-<TD>SKOLENRGML</TD>
-<TD nowrap>NUMBER</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD Class="Num">62</TD>
+<TD Class="Num">60</TD>
 <TD>VISFNR</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Skal fnr vises i VIGO Skole</TD>
 </TR>
 <TR>
-<TD Class="Num">63</TD>
+<TD Class="Num">61</TD>
 <TD>MINPOKU</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Laveste poengsum karakterpoeng u-rett</TD>
 </TR>
 <TR>
-<TD Class="Num">64</TD>
+<TD Class="Num">62</TD>
 <TD>MINPOTU</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Laveste poengsum totalpoeng u-rett</TD>
 </TR>
 <TR>
-<TD Class="Num">65</TD>
+<TD Class="Num">63</TD>
 <TD>ANTON1A</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Antall primærønsker (bare aktive ønsker)</TD>
 </TR>
 <TR>
-<TD Class="Num">66</TD>
+<TD Class="Num">64</TD>
 <TD>UPDTELLTS</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>Dato for sist oppdatert tellere på klasseordningen</TD>
+</TR>
+<TR>
+<TD Class="Num">65</TD>
+<TD>VEDLEGG</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>Skal vedlegg kunne lastes opp i VIGO Søknad</TD>
+</TR>
+<TR>
+<TD Class="Num">66</TD>
+<TD>MERKNAD</TD>
+<TD nowrap>VARCHAR2(100)</TD>
 <TD>&nbsp;</TD>
+<TD>Generell merknad</TD>
 </TR>
 </TABLE>
 </CENTER>

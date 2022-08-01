@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table TS_TRANSAKSJONER</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,7 +21,6 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -76,14 +75,14 @@
 <TR>
 <TD Class="Num">4</TD>
 <TD>BNR</TD>
-<TD nowrap>VARCHAR2(16 BYTE)</TD>
+<TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift nr [Ihht BEDRIFT2]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">5</TD>
 <TD>FNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Fødsels nr [Ihht PLASS]</TD>
 </TR>
@@ -118,7 +117,7 @@
 <TR>
 <TD Class="Num">10</TD>
 <TD>BESKRIVELSE</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
@@ -146,14 +145,14 @@
 <TR>
 <TD Class="Num">14</TD>
 <TD>TRANSTYPE</TD>
-<TD nowrap>VARCHAR2(20 BYTE)</TD>
+<TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
 <TD>Transaksjonstype [***Annullering, ***Avregning, ***Etterbetaling, ***SKYLDIG eller blank]</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>CHAR(11 BYTE)</TD>
+<TD nowrap>CHAR(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -167,14 +166,14 @@
 <TR>
 <TD Class="NumRed">17</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>CHAR(11 BYTE)</TD>
+<TD nowrap>CHAR(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
@@ -195,21 +194,21 @@
 <TR>
 <TD Class="Num">21</TD>
 <TD>ENHET</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Tidsenhet</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>SPESIFIKASJON</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>Spesifikasjon</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>SKJULT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Skjult, alltid J i VIGOopplæring [J,N]</TD>
 </TR>
@@ -244,14 +243,14 @@
 <TR>
 <TD Class="NumRed">28</TD>
 <TD>ANNULLERING_AV</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>Annullering av [Ihht til S_OBJECTID på annullert transaksjon i TS_TRANSAKSJON]</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>PROVE_FNR</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>Fødselsnummer på prøve [Ihht PROVE]</TD>
 </TR>
@@ -272,49 +271,49 @@
 <TR>
 <TD Class="Num">32</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>TS_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
-<TD>LOKALID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-</TR>
-<TR>
-<TD Class="Num">35</TD>
 <TD>OPPRINNELIG_TELLEDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>Opprinnelig telledato</TD>
 </TR>
 <TR>
-<TD Class="Num">36</TD>
+<TD Class="Num">35</TD>
 <TD>FYLKESNR_OLD</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
-<TD Class="Num">37</TD>
+<TD Class="Num">36</TD>
 <TD>TS_FYLKESNR_OLD</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
 <TR>
-<TD Class="Num">38</TD>
+<TD Class="Num">37</TD>
 <TD>REFUSJONSINSTANS_OLD</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>MANTILSK_ID</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -369,17 +368,6 @@
 <TD>No</TD>
 </TR>
 <TR>
-<TD>MANUELLETILSKUDD_FOR_TRANSAKSJ</TD>
-<TD>FNR, KONTRNR, TYPEID, MANTILSK_ORDNINGID, MANTILSK_RADNR</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="TS_MANUELLETILSKUDD" HREF="../tables/TS_MANUELLETILSKUDD.html">TS_MANUELLETILSKUDD</A></TD>
-<TD>FNR, KONTRNR, TYPEID, ORDNINGID, RADNR</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
 <TD>PLASS_FOR_TRANSAKSJONER</TD>
 <TD>FNR, KONTRNR</TD>
 <TD>VIGOS</TD>
@@ -407,6 +395,17 @@
 <TD>VIGOS</TD>
 <TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
 <TD>FYLKESNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>TS_MANTILSK_FOR_TRANS</TD>
+<TD>MANTILSK_ID</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="TS_MANUELLETILSKUDD" HREF="../tables/TS_MANUELLETILSKUDD.html">TS_MANUELLETILSKUDD</A></TD>
+<TD>S_OBJECTID</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>

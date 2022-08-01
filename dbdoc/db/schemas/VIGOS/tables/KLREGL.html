@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table KLREGL</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,13 +21,12 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./KLREGH.html" TITLE="KLREGH">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#KLREGL">Table KLREGL</A></TD>
-<TD Class="NavR"><A HREF="./KMFAG.html" TITLE="KMFAG">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./KLREGV.html" TITLE="KLREGV">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -55,163 +54,163 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B><SUB>1</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Fødselsnr [ihht KLREGH]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
 <TD><B>SKOLEAR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Skoleår [ihht KLREGH]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">3</TD>
 <TD><B>SKOLENR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Skolenr [ihht KLREGH]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">4</TD>
 <TD><B>KURSKODE</B><SUB>4</SUB></TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Programområde [ihht KLREGH]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">5</TD>
 <TD><B>FAGKODE</B><SUB>5</SUB></TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Fagkode [ihht FAG]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>KARTYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karaktertype</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>KART1</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter termin 1 [ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>KART2</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter termin 2 [ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>KARSTP</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter standpunkt [ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>KARSKR</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter skriftlig eksamen [ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>KARMUN</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter muntlig eksamen [ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>KARANN</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Karakter annen eksamen [ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>FAMKODE</TD>
-<TD nowrap>VARCHAR2(5 BYTE)</TD>
+<TD nowrap>VARCHAR2(5)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Fagmerknad</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>FAMVAR</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Fagmerknad variabel tekst</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>STATUS</TD>
-<TD nowrap>VARCHAR2(10 BYTE)</TD>
+<TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Aktiv=kan oppdatere VIGO, Passiv=skal ikke oppdatere VIGO</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="NumRed">18</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
-<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>OVERFTS</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Oppdatert VIGO tidspunkt</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>MERKNAD</TD>
-<TD nowrap>VARCHAR2(200 BYTE)</TD>
+<TD nowrap>VARCHAR2(200)</TD>
 <TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
+<TD>Merknad</TD>
 </TR>
 </TABLE>
 </CENTER>

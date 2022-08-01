@@ -3,7 +3,7 @@
 <HEAD>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
 <META NAME="Generator" CONTENT="TOAD">
-<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../master.css">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
 <TITLE>VIGOS Table KARLINJE</TITLE>
 </HEAD>
 <BODY>
@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 29/10/2020 18:54:02</div></CENTER>
+<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,13 +21,12 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
-<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./KARAKTER2.html" TITLE="KARAKTER2">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables1.html#KARLINJE">Table KARLINJE</A></TD>
-<TD Class="NavR"><A HREF="./KKHODE.html" TITLE="KKHODE">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./KJERNEELEMENT_LK20.html" TITLE="KJERNEELEMENT_LK20">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -55,7 +54,7 @@
 <TR>
 <TD Class="NumRed">1</TD>
 <TD><B>FNR</B><SUB>1</SUB></TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Fødselsnr [ihht ELEVKURS]</TD>
 </TR>
@@ -76,21 +75,21 @@
 <TR>
 <TD Class="NumRed">4</TD>
 <TD><B>FAGKODE</B><SUB>4</SUB></TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>Y</TD>
 <TD>Fagkode [ihht FAG]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>EKSTERM</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Eksamenstermin</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>EKSTYPE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Eksamenstype [Ihht EKSTYPE]</TD>
 </TR>
@@ -104,63 +103,63 @@
 <TR>
 <TD Class="Num">8</TD>
 <TD>FAGTYPE</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagtype [Ihht FAGTYPE]</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>KARANN</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Annen karakter [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>KARMUN</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Muntlig eksamenskarakter [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>KARSKR</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Skriftlig eksamenskarakter [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>KARSTP</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Standpunktkarakter [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>KART1</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Terminkarakter 1 [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>KART2</TD>
-<TD nowrap>VARCHAR2(2 BYTE)</TD>
+<TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Terminkarakter 2 [Ihht KARAKTER]</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>KARTYPE</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Karaktertype [G=Grunnskolekarakter,V=Vidg. karakter]</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>KLSTATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>Statuskode for karakterlinje (systemfelt) [E=elev,A=alternativ opplæring,F=fritatt,H=hospitant,N=nettundervising,U=utenlandsk elev,I=norsk elev i utlandet,P=privatist,R=realkompetanse,S=sluttet,O=oppdragsundervisning]</TD>
 </TR>
@@ -174,7 +173,7 @@
 <TR>
 <TD Class="Num">18</TD>
 <TD>MERKNAD</TD>
-<TD nowrap>VARCHAR2(255 BYTE)</TD>
+<TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
 <TD>Merknad</TD>
 </TR>
@@ -216,7 +215,7 @@
 <TR>
 <TD Class="Num">24</TD>
 <TD>S_INSERTED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
@@ -230,19 +229,19 @@
 <TR>
 <TD Class="NumRed">26</TD>
 <TD>S_OBJECTID</TD>
-<TD nowrap>CHAR(12 BYTE)</TD>
+<TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>S_UPDATED_BY</TD>
-<TD nowrap>VARCHAR2(11 BYTE)</TD>
+<TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">28</TD>
+<TD Class="NumRed">28</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
@@ -251,49 +250,49 @@
 <TR>
 <TD Class="Num">29</TD>
 <TD>S_STATUS</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>FAMKODE</TD>
-<TD nowrap>VARCHAR2(5 BYTE)</TD>
+<TD nowrap>VARCHAR2(5)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagmerknad-kode [ihht FAM]</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>FAMVAR</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagmerknad - tekst</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>KARSTAT</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
-<TD>Karakterstatus [E=endring pga feilføring,K=klage på karakter,U=utsatt prøve,N=ny prøve,S=særskilt prøve]</TD>
+<TD>Karakterstatus [E=endring pga feilføring,K=klage på karakter,U=utsatt prøve,N=ny prøve,S=særskilt prøve,A=avlyst eksamen,B=annullert eksamen]</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>OPPMSTAT</TD>
-<TD nowrap>VARCHAR2(40 BYTE)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Oppmøtestatus (PAS)</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>KLSTATUSF</TD>
-<TD nowrap>CHAR(1 BYTE)</TD>
+<TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
-<TD>Fagstatus forrige [som klstatus]</TD>
+<TD>Fagstatus 1/10</TD>
 </TR>
 <TR>
 <TD Class="Num">35</TD>
 <TD>KLKODE</TD>
-<TD nowrap>VARCHAR2(7 BYTE)</TD>
+<TD nowrap>VARCHAR2(7)</TD>
 <TD>&nbsp;</TD>
 <TD>Fagkode konvertert til Kunnskapsløftet [ihht FAG]</TD>
 </TR>
@@ -303,6 +302,55 @@
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
 <TD>Fylkesnr 2 [ihht FYLKE]</TD>
+</TR>
+<TR>
+<TD Class="Num">37</TD>
+<TD>KARTYPEF</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige karaktertype</TD>
+</TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>KART1F</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige termin 1 karakter</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>KART2F</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige termin 2 karakter</TD>
+</TR>
+<TR>
+<TD Class="Num">40</TD>
+<TD>KARSTPF</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige standpunkt  karakter</TD>
+</TR>
+<TR>
+<TD Class="Num">41</TD>
+<TD>KARSKRF</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige skriftlig eksamens karakter</TD>
+</TR>
+<TR>
+<TD Class="Num">42</TD>
+<TD>KARMUNF</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige muntlig eksamens karakter</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>KARANNF</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige annen eksamens karakter</TD>
 </TR>
 </TABLE>
 </CENTER>
