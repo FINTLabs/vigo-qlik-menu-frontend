@@ -19,7 +19,7 @@ function App() {
                     <MenuCard title="Qlik Sense" body="Utviklingsmiljø lokale Apper"
                               href="https://qs.vigoiks.no/dev"/>
                     <MenuCard title="Qlik Sense" body="Sentrale Apper"
-                              href="https://qscore.vigoiks.no/ecore/extensions/openiframe/index.html" />
+                              href="https://qscore.vigoiks.no/ecore/extensions/openNewTab/index.html" />
                     <MenuCard title="NPrinting" body="NewsStand"
                               href="https://np.vigoiks.no/login/saml/sso/np_vigoiks_no"/>
                     <MenuCard title="NPrinting" body="Utviklingsmiljø"
