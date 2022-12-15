@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,7 +25,7 @@
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./STATUS.html" TITLE="STATUS">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables3.html#STUDRETN">Table STUDRETN</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#STUDRETN">Table STUDRETN</A></TD>
 <TD Class="NavR"><A HREF="./SYSPARAM.html" TITLE="SYSPARAM">Next Table</A></TD>
 </TR></TABLE>
 <BR>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>STUDKODE</B></TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Utdanningsprogramkode (Studieretningskode)</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD>REFORM</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Reform [R=Reform 94,K=Kunnskapsløftet,X=Alle]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>STUDNAVN</TD>
 <TD nowrap>VARCHAR2(42)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Utdanningsprogramsnavn (kort)</TD>
 </TR>
@@ -77,6 +81,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -84,6 +89,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -91,6 +97,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -98,6 +105,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -105,12 +113,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -119,6 +129,7 @@
 <TD>REFUKODE</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Refusjonskode [Ihht REFUSATS]</TD>
 </TR>
 <TR>
@@ -126,12 +137,14 @@
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv kode [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>GYLDIGFOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig fra dato</TD>
 </TR>
@@ -140,12 +153,14 @@
 <TD>GYLDIGTOM</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Gyldig til dato</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>DISTR_FAKTISK</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Da koden faktisk ble distribuert</TD>
 </TR>
@@ -154,12 +169,14 @@
 <TD>STUDNAVN2</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Utdanningsprogramsnavn (lang)</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>NAVN_NNO</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn nynorsk</TD>
 </TR>
@@ -168,12 +185,14 @@
 <TD>NAVN_ENG</TD>
 <TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Navn engelsk</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>NAVN_KORTFORM_NYNORSK</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform nynorsk</TD>
 </TR>
@@ -182,12 +201,14 @@
 <TD>NAVN_KORTFORM_BOKMAAL</TD>
 <TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Navn kortform bokmål</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>NAVN_KORTFORM_SAMISK</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform samisk</TD>
 </TR>
@@ -196,12 +217,14 @@
 <TD>NAVN_KORTFORM_ENGELSK</TD>
 <TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Navn kortform engelsk</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>NAVN_NOB</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn bokmål</TD>
 </TR>
@@ -210,7 +233,47 @@
 <TD>NAVN_SME</TD>
 <TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Navn samisk</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table STUDRETN</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0STUDRETN</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKSTUDRETN</TD>
+<TD>NORMAL</TD>
+<TD>STUDKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -245,9 +308,88 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table STUDRETN</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013265</TD>
+<TD>Check</TD>
+<TD>"STUDKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>STUDKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013266</TD>
+<TD>Check</TD>
+<TD>"REFORM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REFORM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013267</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013268</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013269</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013270</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013271</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013272</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>XPKSTUDRETN</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>STUDKODE</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table STUDRETN does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

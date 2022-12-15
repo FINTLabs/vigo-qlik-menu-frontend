@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Målform</TD>
+<TD>M&#229;lform</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,12 +57,14 @@
 <TD><B>MALFORM</B></TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Målform kode [B=Bokmål,N=Nynorsk,S=Samisk]</TD>
 </TR>
 <TR>
 <TD Class="Num">2</TD>
 <TD>MALFNAVN</TD>
 <TD nowrap>VARCHAR2(22)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Målform navn</TD>
 </TR>
@@ -70,6 +73,7 @@
 <TD>PLASS</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Plassering på web</TD>
 </TR>
 <TR>
@@ -77,6 +81,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -84,6 +89,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -91,6 +97,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -98,6 +105,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -105,12 +113,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -119,12 +129,14 @@
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv kode [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>GYLDIGFOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig fra dato</TD>
 </TR>
@@ -133,6 +145,7 @@
 <TD>GYLDIGTOM</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Gyldig til dato</TD>
 </TR>
 <TR>
@@ -140,7 +153,116 @@
 <TD>DISTR_FAKTISK</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Da koden faktisk ble distribuert</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table MALFORM</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0MALFORM</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKMALFORM</TD>
+<TD>NORMAL</TD>
+<TD>MALFORM</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table MALFORM</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013093</TD>
+<TD>Check</TD>
+<TD>"MALFORM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>MALFORM</TD>
+</TR>
+<TR>
+<TD>SYS_C0013094</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013095</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013096</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013097</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013098</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013099</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>XPKMALFORM</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>MALFORM</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -153,6 +275,9 @@
 </TR>
 <TR>
 <TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

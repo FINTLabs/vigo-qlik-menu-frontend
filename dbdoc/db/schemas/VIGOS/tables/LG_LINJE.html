@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -26,7 +26,7 @@
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./LG_KONTEKST.html" TITLE="LG_KONTEKST">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables2.html#LG_LINJE">Table LG_LINJE</A></TD>
-<TD Class="NavR"><A HREF="./LKAVBRUDD.html" TITLE="LKAVBRUDD">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./LPLASSPROG.html" TITLE="LPLASSPROG">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD>HENDELSEID</TD>
 <TD nowrap>VARCHAR2(30)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Hendelse ID</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>MERKNAD</TD>
 <TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Merknad</TD>
 </TR>
@@ -77,12 +81,14 @@
 <TD>F1</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>F1</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>F2</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>F2</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>F3</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>F3</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>F4</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>F4</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>F5</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>F5</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>F6</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>F6</TD>
 </TR>
@@ -119,12 +129,14 @@
 <TD>F7</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>F7</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>F8</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>F8</TD>
 </TR>
@@ -133,6 +145,7 @@
 <TD>F9</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>F9</TD>
 </TR>
 <TR>
@@ -140,6 +153,7 @@
 <TD><B>S_OBJECTID</B></TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -147,6 +161,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,6 +177,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -168,7 +185,36 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table LG_LINJE</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKLG_LINJE</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -214,9 +260,81 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table LG_LINJE</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020785</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020786</TD>
+<TD>Check</TD>
+<TD>"HENDELSEID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>HENDELSEID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020787</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020788</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020789</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020790</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020791</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>XPKLG_LINJE</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table LG_LINJE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

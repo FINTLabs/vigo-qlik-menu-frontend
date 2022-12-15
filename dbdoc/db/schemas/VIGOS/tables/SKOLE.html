@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,7 +25,7 @@
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./SIGNATUR_STATUS.html" TITLE="SIGNATUR_STATUS">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables3.html#SKOLE">Table SKOLE</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#SKOLE">Table SKOLE</A></TD>
 <TD Class="NavR"><A HREF="./SKOLEAR.html" TITLE="SKOLEAR">Next Table</A></TD>
 </TR></TABLE>
 <BR>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>SKOLENR</B></TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skolenr</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv kode [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Epostadresse</TD>
 </TR>
@@ -77,12 +81,14 @@
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [Ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>GATE</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>KOMMNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kommunenr [Ihht KOMMUNE]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>ORGNR</TD>
 <TD nowrap>VARCHAR2(9)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Organisasjonsnr</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>POSTADR</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postadresse</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postnr [Ihht POSTSTED]</TD>
 </TR>
@@ -119,6 +129,7 @@
 <TD>REGIONNR</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Regionsnr [Ihht REGION]</TD>
 </TR>
 <TR>
@@ -126,6 +137,7 @@
 <TD>SKOLEIER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skoleeier [1= Fylke,2=Stat,3=Kommune,4=Privat]</TD>
 </TR>
 <TR>
@@ -133,12 +145,14 @@
 <TD>SKOLETYP</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skoletype bestemt av kodeverket [V=Vidg.skole,G=Grunnskole,L=Lærlingeskolen,P=Privatistsenter,R=Realkompetansesenter,A=Annet]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>SKOLNAVN</TD>
 <TD nowrap>VARCHAR2(100)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolenavn</TD>
 </TR>
@@ -147,12 +161,14 @@
 <TD>TELEFAX</TD>
 <TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Telefaksnr</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>TELEFON</TD>
 <TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr</TD>
 </TR>
@@ -161,6 +177,7 @@
 <TD>WWW</TD>
 <TD nowrap>VARCHAR2(120)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Web-adresse</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -175,6 +193,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -182,6 +201,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -189,6 +209,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -196,12 +217,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -210,12 +233,14 @@
 <TD>FRISKOLE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inngår i friskole-innsamlingen? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>GYLDIGFOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig fra dato</TD>
 </TR>
@@ -224,12 +249,14 @@
 <TD>GYLDIGTOM</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Gyldig til dato</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>DISTR_FAKTISK</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Da koden ble distribuert</TD>
 </TR>
@@ -238,6 +265,7 @@
 <TD>KONVTIL</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Konverters til (6A001) [Ihht SKOLE]</TD>
 </TR>
 <TR>
@@ -245,12 +273,14 @@
 <TD>IMPORTER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Data importeres (6A001) [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>MERKNAD</TD>
 <TD nowrap>VARCHAR2(2048)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Merknadsfelt fra sentralbasen</TD>
 </TR>
@@ -259,12 +289,14 @@
 <TD>SKOLENRH</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Hovedskole ved avdeling [ihht SKOLE]</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>NSRID</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>ID i NSR</TD>
 </TR>
@@ -273,12 +305,14 @@
 <TD>NSRNAVN1</TD>
 <TD nowrap>VARCHAR2(400)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Navn 1 i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>NSRNAVN2</TD>
 <TD nowrap>VARCHAR2(400)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn 2 i NSR</TD>
 </TR>
@@ -287,12 +321,14 @@
 <TD>NSRAKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">35</TD>
 <TD>NSRENHETSTYPER</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Enhetstype i NSR</TD>
 </TR>
@@ -301,12 +337,14 @@
 <TD>NSRSTATUSTYPER</TD>
 <TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Statustype i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">37</TD>
 <TD>NSRSKOLETYPER</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skoletype i NSR</TD>
 </TR>
@@ -315,12 +353,14 @@
 <TD>POSTNRP</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postnr postadresse [Ihht POSTSTED]</TD>
 </TR>
 <TR>
 <TD Class="Num">39</TD>
 <TD>LANDKODE</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Landkode [Ihht LAND]</TD>
 </TR>
@@ -329,12 +369,14 @@
 <TD>LANDKODEP</TD>
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Landkode postadresse [Ihht LAND]</TD>
 </TR>
 <TR>
 <TD Class="Num">41</TD>
 <TD>POSTNRU</TD>
 <TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postnr utland</TD>
 </TR>
@@ -343,12 +385,14 @@
 <TD>POSTNRUP</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postnr postadresse utland</TD>
 </TR>
 <TR>
 <TD Class="Num">43</TD>
 <TD>TELEFONM</TD>
 <TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr mobil</TD>
 </TR>
@@ -357,12 +401,14 @@
 <TD>NSRINSERTEDBY</TD>
 <TD nowrap>VARCHAR2(400)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">45</TD>
 <TD>NSRINSERTEDTS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Opprettet tidspunkt i NSR</TD>
 </TR>
@@ -371,12 +417,14 @@
 <TD>NSRUPDATEDBY</TD>
 <TD nowrap>VARCHAR2(400)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">47</TD>
 <TD>NSRUPDATEDTS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Oppdatert tidspunkt i NSR</TD>
 </TR>
@@ -385,12 +433,14 @@
 <TD>NSRFYLKESNR</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">49</TD>
 <TD>NSRKOMMNR</TD>
 <TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kommunenr i NSR</TD>
 </TR>
@@ -399,12 +449,14 @@
 <TD>NSRERPRIVATSKOLE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Merket som privatskole i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">51</TD>
 <TD>OTENHET</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>OT-enhet [Ihht OTENHET]</TD>
 </TR>
@@ -413,12 +465,14 @@
 <TD>PPTNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>PPT-kontor nr [Ihht PPTKNTOR]</TD>
 </TR>
 <TR>
 <TD Class="Num">53</TD>
 <TD>SKOLETYP2</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skoletype bestemt av fylket [V=Vidg.skole,G=Grunnskole,L=Lærlingeskolen,P=Privatistsenter,R=Realkompetansesenter,A=Annet]</TD>
 </TR>
@@ -427,12 +481,14 @@
 <TD>NSRSKOLETRINN_FRA</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Skoletrinn fra i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">55</TD>
 <TD>NSRSKOLETRINN_TIL</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skoletrinn til i NSR</TD>
 </TR>
@@ -441,12 +497,14 @@
 <TD>NSRNACEKODER</TD>
 <TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Nacekoder i NSR</TD>
 </TR>
 <TR>
 <TD Class="Num">57</TD>
 <TD>NSRMAALFORMTYPE</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Målform i NSR</TD>
 </TR>
@@ -455,12 +513,14 @@
 <TD>BESKYTT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Beskyttet navn</TD>
 </TR>
 <TR>
 <TD Class="Num">59</TD>
 <TD>NSRSKOLELEDER</TD>
 <TD nowrap>VARCHAR2(400)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skoleleder</TD>
 </TR>
@@ -469,12 +529,14 @@
 <TD>NSRSKOLELEDER_TELEFON</TD>
 <TD nowrap>VARCHAR2(400)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Skoleleders telefon</TD>
 </TR>
 <TR>
 <TD Class="Num">61</TD>
 <TD>NSRSKOLELEDER_EPOST</TD>
 <TD nowrap>VARCHAR2(400)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skoleleders epost</TD>
 </TR>
@@ -483,12 +545,14 @@
 <TD>NYKODE</TD>
 <TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Ny skolekode</TD>
 </TR>
 <TR>
 <TD Class="Num">63</TD>
 <TD>GMLKODE</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gammelt skolenr [ihht SKOLE]</TD>
 </TR>
@@ -497,7 +561,47 @@
 <TD>FEMFAGF</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Er skolen med i forsøksordning for 5-fagsprøven</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table SKOLE</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0SKOLE</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKSKOLE</TD>
+<TD>NORMAL</TD>
+<TD>SKOLENR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -631,9 +735,123 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table SKOLE</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013231</TD>
+<TD>Check</TD>
+<TD>"SKOLENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013232</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0013233</TD>
+<TD>Check</TD>
+<TD>"SKOLEIER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLEIER</TD>
+</TR>
+<TR>
+<TD>SYS_C0013234</TD>
+<TD>Check</TD>
+<TD>"SKOLETYP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLETYP</TD>
+</TR>
+<TR>
+<TD>SYS_C0013235</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013236</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013237</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013238</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013239</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013240</TD>
+<TD>Check</TD>
+<TD>"FRISKOLE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FRISKOLE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013241</TD>
+<TD>Check</TD>
+<TD>"IMPORTER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>IMPORTER</TD>
+</TR>
+<TR>
+<TD>SYS_C0013242</TD>
+<TD>Check</TD>
+<TD>"BESKYTT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BESKYTT</TD>
+</TR>
+<TR>
+<TD>SYS_C00289650</TD>
+<TD>Check</TD>
+<TD>"FEMFAGF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FEMFAGF</TD>
+</TR>
+<TR>
+<TD>XPKSKOLE</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table SKOLE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

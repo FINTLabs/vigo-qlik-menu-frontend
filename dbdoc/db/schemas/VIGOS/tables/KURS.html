@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,7 +25,7 @@
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./KONTRTYPE.html" TITLE="KONTRTYPE">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables2.html#KURS">Table KURS</A></TD>
+<TD Class="NavC"><A HREF="../tables1.html#KURS">Table KURS</A></TD>
 <TD Class="NavR"><A HREF="./KURSFAG.html" TITLE="KURSFAG">Next Table</A></TD>
 </TR></TABLE>
 <BR>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Programområde (kurs)</TD>
+<TD>Programomr&#229;de (kurs)</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>KURSKODE</B></TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode</TD>
 </TR>
 <TR>
@@ -63,385 +65,463 @@
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktivt? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
-<TD>ANTELEKL</TD>
-<TD nowrap>NUMBER(2)</TD>
-<TD>&nbsp;</TD>
-<TD>Maksimalt antall elever per klasse</TD>
-</TR>
-<TR>
-<TD Class="Num">4</TD>
 <TD>ARSTIMKL</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Årstimer per klasse - ordinært</TD>
 </TR>
 <TR>
-<TD Class="Num">5</TD>
+<TD Class="Num">4</TD>
 <TD>ARSTIMSA</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Årstimer per klasse - samisk</TD>
 </TR>
 <TR>
-<TD Class="Num">6</TD>
+<TD Class="Num">5</TD>
 <TD>AVSLKOMP</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Avsluttende kompetanse? [A=avsluttende, F=fullført, N=nei]</TD>
 </TR>
 <TR>
-<TD Class="Num">7</TD>
+<TD Class="Num">6</TD>
 <TD>GRUNKODE</TD>
 <TD nowrap>VARCHAR2(6)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Grunnkode</TD>
 </TR>
 <TR>
-<TD Class="Num">8</TD>
+<TD Class="Num">7</TD>
 <TD>KUFKODE</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Alfanumerisk programområdekode</TD>
 </TR>
 <TR>
-<TD Class="Num">9</TD>
+<TD Class="Num">8</TD>
 <TD>KURSKATK</TD>
 <TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekategorikode [ihht KURSKAT]</TD>
 </TR>
 <TR>
-<TD Class="Num">10</TD>
+<TD Class="Num">9</TD>
 <TD>KURSKOD2</TD>
 <TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Alternativ kode [ihht KURS]</TD>
 </TR>
 <TR>
-<TD Class="Num">11</TD>
+<TD Class="Num">10</TD>
 <TD>KURSNAVN</TD>
 <TD nowrap>VARCHAR2(47)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdenavn (kort)</TD>
 </TR>
 <TR>
-<TD Class="Num">12</TD>
+<TD Class="Num">11</TD>
 <TD>KURSNAVN2</TD>
 <TD nowrap>VARCHAR2(120)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdenavn (langt)</TD>
 </TR>
 <TR>
-<TD Class="Num">13</TD>
+<TD Class="Num">12</TD>
 <TD>KURSTYPE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdetype [N=Normal (vidg.),S=Særskilt tilrettel.,A=Avviksfag,L=Lærefag,G=Grunnskolen,I=International Baccalaureate]</TD>
 </TR>
 <TR>
-<TD Class="Num">14</TD>
-<TD>KURSVARI</TD>
-<TD nowrap>NUMBER(2)</TD>
-<TD>&nbsp;</TD>
-<TD>Programområdevarighet i uker</TD>
-</TR>
-<TR>
-<TD Class="Num">15</TD>
+<TD Class="Num">13</TD>
 <TD>LANDSLIN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Landslinje [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">16</TD>
+<TD Class="Num">14</TD>
 <TD>MERKNAD</TD>
 <TD nowrap>VARCHAR2(2048)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Merknad</TD>
 </TR>
 <TR>
-<TD Class="Num">17</TD>
+<TD Class="Num">15</TD>
 <TD>NIVA</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Nivå</TD>
 </TR>
 <TR>
-<TD Class="Num">18</TD>
+<TD Class="Num">16</TD>
 <TD>POBREGN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Poengberegnes [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">19</TD>
+<TD Class="Num">17</TD>
 <TD>STUDKODE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Utdanningsprogram [ihht STUDRETN]</TD>
 </TR>
 <TR>
-<TD Class="Num">20</TD>
+<TD Class="Num">18</TD>
 <TD>WWW</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>WEB-adresse</TD>
 </TR>
 <TR>
-<TD Class="Num">21</TD>
+<TD Class="Num">19</TD>
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">22</TD>
+<TD Class="Num">20</TD>
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="NumRed">23</TD>
+<TD Class="NumRed">21</TD>
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">24</TD>
+<TD Class="Num">22</TD>
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">25</TD>
+<TD Class="Num">23</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">26</TD>
+<TD Class="Num">24</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">27</TD>
+<TD Class="Num">25</TD>
 <TD>LANDSDEK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Landsdekkende tilbud? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">28</TD>
+<TD Class="Num">26</TD>
 <TD>FEMFAG</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inngår i femfags-prøven? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">29</TD>
+<TD Class="Num">27</TD>
 <TD>FORMNAVN</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Formelt navn (på fag/svennebrev)</TD>
 </TR>
 <TR>
-<TD Class="Num">30</TD>
+<TD Class="Num">28</TD>
 <TD>FSTYPE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gir fag/svennebrev [F=Fagbrev,S=Svennebrev,I=Ingen]</TD>
 </TR>
 <TR>
-<TD Class="Num">31</TD>
+<TD Class="Num">29</TD>
 <TD>KONTRLOP</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kontraktsløp</TD>
 </TR>
 <TR>
-<TD Class="Num">32</TD>
+<TD Class="Num">30</TD>
 <TD>NORMLTID</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Normert tid</TD>
 </TR>
 <TR>
-<TD Class="Num">33</TD>
+<TD Class="Num">31</TD>
 <TD>VSKAPTID</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Verdiskapningstid</TD>
 </TR>
 <TR>
-<TD Class="Num">34</TD>
+<TD Class="Num">32</TD>
 <TD>VERNEVERDIG</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Verneverdig? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">35</TD>
+<TD Class="Num">33</TD>
 <TD>NUSKODE</TD>
 <TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>NUS-kode</TD>
 </TR>
 <TR>
-<TD Class="Num">36</TD>
+<TD Class="Num">34</TD>
 <TD>GYLDIGFOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig fra dato</TD>
 </TR>
 <TR>
-<TD Class="Num">37</TD>
+<TD Class="Num">35</TD>
 <TD>GYLDIGTOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig til dato</TD>
 </TR>
 <TR>
-<TD Class="Num">38</TD>
+<TD Class="Num">36</TD>
 <TD>DISTR_FAKTISK</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Faktisk distribuert</TD>
 </TR>
 <TR>
-<TD Class="Num">39</TD>
+<TD Class="Num">37</TD>
 <TD>KONVTIL</TD>
 <TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Konverteres til [ihht KURS]</TD>
 </TR>
 <TR>
-<TD Class="Num">40</TD>
+<TD Class="Num">38</TD>
 <TD>APO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Apo? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">41</TD>
+<TD Class="Num">39</TD>
 <TD>IMPORTER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Importer? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">42</TD>
+<TD Class="Num">40</TD>
 <TD>UTDTYPE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Utdanningstype</TD>
 </TR>
 <TR>
-<TD Class="Num">43</TD>
+<TD Class="Num">41</TD>
 <TD>NAVN_NOB</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn bokmål</TD>
 </TR>
 <TR>
-<TD Class="Num">44</TD>
+<TD Class="Num">42</TD>
 <TD>NAVN_NNO</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn nynorsk</TD>
 </TR>
 <TR>
-<TD Class="Num">45</TD>
+<TD Class="Num">43</TD>
 <TD>NAVN_ENG</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn engelsk</TD>
 </TR>
 <TR>
-<TD Class="Num">46</TD>
+<TD Class="Num">44</TD>
 <TD>NAVN_KORTFORM_NYNORSK</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform nynorsk</TD>
 </TR>
 <TR>
-<TD Class="Num">47</TD>
+<TD Class="Num">45</TD>
 <TD>NAVN_KORTFORM_BOKMAAL</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform bokmål</TD>
 </TR>
 <TR>
-<TD Class="Num">48</TD>
-<TD>SAMLEKODE</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>&nbsp;</TD>
-<TD>Samlekode (TAF)</TD>
-</TR>
-<TR>
-<TD Class="Num">49</TD>
+<TD Class="Num">46</TD>
 <TD>NAVN_KORTFORM_SAMISK</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform samisk</TD>
 </TR>
 <TR>
-<TD Class="Num">50</TD>
+<TD Class="Num">47</TD>
 <TD>NAVN_KORTFORM_ENGELSK</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn kortform engelsk</TD>
 </TR>
 <TR>
-<TD Class="Num">51</TD>
+<TD Class="Num">48</TD>
 <TD>NAVN_SME</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn samisk</TD>
 </TR>
 <TR>
-<TD Class="Num">52</TD>
+<TD Class="Num">49</TD>
 <TD>ARSTIMKL2</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Årstimer per klasse - statistikk</TD>
 </TR>
 <TR>
-<TD Class="Num">53</TD>
+<TD Class="Num">50</TD>
 <TD>PROVEFAGKODE</TD>
 <TD nowrap>VARCHAR2(7)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvefagkode [ihht FAG]</TD>
 </TR>
 <TR>
-<TD Class="Num">54</TD>
+<TD Class="Num">51</TD>
 <TD>REFORM</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Reform [KL=kunnskapsløftet, R94=reform 94, X= alle]</TD>
 </TR>
 <TR>
-<TD Class="Num">55</TD>
+<TD Class="Num">52</TD>
 <TD>FLYFAG</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inngår koden i flyfag (for spesialhåndtering av 2S008)</TD>
 </TR>
 <TR>
-<TD Class="Num">56</TD>
+<TD Class="Num">53</TD>
 <TD>TYPE_PROGRAMOMRAADE</TD>
 <TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>GREP type programområde</TD>
+</TR>
+<TR>
+<TD Class="Num">54</TD>
+<TD>LK20</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Om programområdet tilhører LK20</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table KURS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0KURS</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKKURS</TD>
+<TD>NORMAL</TD>
+<TD>KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -520,9 +600,179 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table KURS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013052</TD>
+<TD>Check</TD>
+<TD>"KURSKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013053</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0013054</TD>
+<TD>Check</TD>
+<TD>"AVSLKOMP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVSLKOMP</TD>
+</TR>
+<TR>
+<TD>SYS_C0013055</TD>
+<TD>Check</TD>
+<TD>"GRUNKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>GRUNKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013056</TD>
+<TD>Check</TD>
+<TD>"KURSTYPE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSTYPE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013057</TD>
+<TD>Check</TD>
+<TD>"LANDSLIN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LANDSLIN</TD>
+</TR>
+<TR>
+<TD>SYS_C0013058</TD>
+<TD>Check</TD>
+<TD>"NIVA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NIVA</TD>
+</TR>
+<TR>
+<TD>SYS_C0013059</TD>
+<TD>Check</TD>
+<TD>"POBREGN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>POBREGN</TD>
+</TR>
+<TR>
+<TD>SYS_C0013060</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013061</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013062</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013063</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013064</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013065</TD>
+<TD>Check</TD>
+<TD>"LANDSDEK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LANDSDEK</TD>
+</TR>
+<TR>
+<TD>SYS_C0013066</TD>
+<TD>Check</TD>
+<TD>"FEMFAG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FEMFAG</TD>
+</TR>
+<TR>
+<TD>SYS_C0013067</TD>
+<TD>Check</TD>
+<TD>"VERNEVERDIG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VERNEVERDIG</TD>
+</TR>
+<TR>
+<TD>SYS_C0013068</TD>
+<TD>Check</TD>
+<TD>"APO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>APO</TD>
+</TR>
+<TR>
+<TD>SYS_C0013069</TD>
+<TD>Check</TD>
+<TD>"IMPORTER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>IMPORTER</TD>
+</TR>
+<TR>
+<TD>SYS_C00183189</TD>
+<TD>Check</TD>
+<TD>"REFORM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REFORM</TD>
+</TR>
+<TR>
+<TD>SYS_C00238449</TD>
+<TD>Check</TD>
+<TD>"FLYFAG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FLYFAG</TD>
+</TR>
+<TR>
+<TD>SYS_C00316477</TD>
+<TD>Check</TD>
+<TD>"LK20" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LK20</TD>
+</TR>
+<TR>
+<TD>XPKKURS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>KURSKODE</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table KURS does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

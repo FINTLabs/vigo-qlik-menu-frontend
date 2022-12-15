@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Begrensninger av videresøk</TD>
+<TD>Begrensninger av videres&#248;k</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD><B>RADNR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Radnr (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>SKOLENR1</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolenr fra [Ihht SKOLE]</TD>
 </TR>
@@ -77,12 +81,14 @@
 <TD>SKOLENR2</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Skolenr til [Ihht SKOLE]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>KURSKODE1</TD>
 <TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode fra [Ihht KURS]</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>KURSKODE2</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode til [Ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>KOMMNR1</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kommunenr fra [Ihht KOMMUNE]</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>KOMMNR2</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kommunenr til [Ihht KOMMUNE]</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>POSTNR1</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postnr fra [Ihht POSTSTED]</TD>
 </TR>
@@ -119,12 +129,14 @@
 <TD>POSTNR2</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postnr til [Ihht POSTSTED]</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>REGIONNR1</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Regionnr fra [Ihht REGION]</TD>
 </TR>
@@ -133,6 +145,7 @@
 <TD>REGIONNR2</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Regionnr til [Ihht REGION]</TD>
 </TR>
 <TR>
@@ -140,6 +153,7 @@
 <TD>STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Status [A=Aktiv, B=beslektet, E=enhet, P=passiv, U=uten tilbud]</TD>
 </TR>
 <TR>
@@ -147,6 +161,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,6 +177,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -175,6 +193,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -182,7 +201,47 @@
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table BEGRENS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0BEGRENS</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKBEGRENS</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -327,9 +386,88 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table BEGRENS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020160</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020161</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020162</TD>
+<TD>Check</TD>
+<TD>"STATUS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>STATUS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020163</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020164</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020165</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020166</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020167</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKBEGRENS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table BEGRENS does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Nedlagt/overført</TD>
+<TD>Nedlagt/overf&#248;rt</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>FNR</B><SUB>2</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fnr [Ihht ELEV]</TD>
 </TR>
 <TR>
@@ -70,12 +73,14 @@
 <TD><B>RADNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Radnr (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>SKOLENR1</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fra skolenr [Ihht SKOLE]</TD>
 </TR>
@@ -84,12 +89,14 @@
 <TD>KURSKODE1</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fra programområdekode [Ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>SKOLENR2</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Til skolenr [Ihht SKOLE]</TD>
 </TR>
@@ -98,12 +105,14 @@
 <TD>KURSKODE2</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Til programområdekode [Ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>ONSKENR</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Ønskenr</TD>
 </TR>
@@ -112,12 +121,14 @@
 <TD>STATUS</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Intern status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>TYPE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Type [N=Nedlegging,O=Overføring]</TD>
 </TR>
@@ -126,6 +137,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -133,6 +145,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -140,6 +153,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -147,6 +161,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,7 +177,47 @@
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table NEDLAGT2</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0NEDLAGT2</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKNEDLAGT2</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -251,9 +307,88 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table NEDLAGT2</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020336</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020337</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020338</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020339</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020340</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020341</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020342</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020343</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKNEDLAGT2</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, FNR, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table NEDLAGT2 does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

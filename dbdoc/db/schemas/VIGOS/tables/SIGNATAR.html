@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,7 +25,7 @@
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./SEKTOR.html" TITLE="SEKTOR">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables3.html#SIGNATAR">Table SIGNATAR</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#SIGNATAR">Table SIGNATAR</A></TD>
 <TD Class="NavR"><A HREF="./SIGNATUR.html" TITLE="SIGNATUR">Next Table</A></TD>
 </TR></TABLE>
 <BR>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr[ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD><B>FNR</B><SUB>2</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødselsnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>NAVN</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn</TD>
 </TR>
@@ -77,12 +81,14 @@
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Epost</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>MERKNAD</TD>
 <TD nowrap>VARCHAR2(220)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Merknad</TD>
 </TR>
@@ -91,6 +97,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -98,6 +105,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -105,6 +113,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -112,6 +121,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -119,12 +129,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -133,6 +145,7 @@
 <TD>MOBILTELEFON</TD>
 <TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Mobiltelefon</TD>
 </TR>
 <TR>
@@ -140,6 +153,7 @@
 <TD>STANDARD</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Standard</TD>
 </TR>
 <TR>
@@ -147,7 +161,130 @@
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv signatar</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table SIGNATAR</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0SIGNATAR</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKSIGNATAR</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table SIGNATAR</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0017256</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0017257</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0017258</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0017259</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0017260</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0017261</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0017262</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C00205952</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0030897</TD>
+<TD>Check</TD>
+<TD>"STANDARD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>STANDARD</TD>
+</TR>
+<TR>
+<TD>XPKSIGNATAR</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, FNR</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -160,6 +297,9 @@
 </TR>
 <TR>
 <TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

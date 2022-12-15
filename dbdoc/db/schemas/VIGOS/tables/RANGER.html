@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:30:57</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,7 +25,7 @@
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./PROVEOPPMTEKSTER.html" TITLE="PROVEOPPMTEKSTER">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables2.html#RANGER">Table RANGER</A></TD>
+<TD Class="NavC"><A HREF="../tables3.html#RANGER">Table RANGER</A></TD>
 <TD Class="NavR"><A HREF="./RAPPORT.html" TITLE="RAPPORT">Next Table</A></TD>
 </TR></TABLE>
 <BR>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>FNR</B><SUB>2</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødselsnummer [ihht ONSKE]</TD>
 </TR>
 <TR>
@@ -70,12 +73,14 @@
 <TD><B>ONSKENR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ønskenr [ihht ONSKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>REFNR</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Referansenr</TD>
 </TR>
@@ -84,12 +89,14 @@
 <TD>EGETFYLK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Eget fylke [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>INTERN</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Intern</TD>
 </TR>
@@ -98,12 +105,14 @@
 <TD>INTERN2</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Intern 2</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>KJONN</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kjønn [M,K]</TD>
 </TR>
@@ -112,12 +121,14 @@
 <TD>KURSKODE</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>PASSIF</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Passifisert? [J,N]</TD>
 </TR>
@@ -126,12 +137,14 @@
 <TD>RANDOM</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Random</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>RESERVE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Reservert</TD>
 </TR>
@@ -140,12 +153,14 @@
 <TD>RETT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Rett [U,V,F,I]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">14</TD>
 <TD>SKOLENR</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolenummer [ihht SKOLE]</TD>
 </TR>
@@ -154,12 +169,14 @@
 <TD>STATUS</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status [ihht STATUS]</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>STOPPET</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Stoppet</TD>
 </TR>
@@ -168,12 +185,14 @@
 <TD>TOTPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Total poengsum</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>VSOK</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Videresøk? [J,N]</TD>
 </TR>
@@ -182,12 +201,14 @@
 <TD>VSOKANT</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Antall videresøk</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>INTERN3</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Intern 3</TD>
 </TR>
@@ -196,6 +217,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -203,6 +225,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -210,6 +233,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -217,6 +241,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -224,6 +249,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -231,7 +257,134 @@
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table RANGER</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0RANGER</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1RANGER</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, RETT, KURSKODE, SKOLENR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKRANGER</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR, ONSKENR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table RANGER</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0031825</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0031826</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0031827</TD>
+<TD>Check</TD>
+<TD>"ONSKENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ONSKENR</TD>
+</TR>
+<TR>
+<TD>SYS_C0031828</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0031829</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0031830</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0031831</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0031832</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKRANGER</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, FNR, ONSKENR</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -244,6 +397,9 @@
 </TR>
 <TR>
 <TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

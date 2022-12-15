@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,7 +25,7 @@
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./TS_BEREGNING.html" TITLE="TS_BEREGNING">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables3.html#TS_GIROTEKST">Table TS_GIROTEKST</A></TD>
+<TD Class="NavC"><A HREF="../tables2.html#TS_GIROTEKST">Table TS_GIROTEKST</A></TD>
 <TD Class="NavR"><A HREF="./TS_GIROTEKST_LINJER.html" TITLE="TS_GIROTEKST_LINJER">Next Table</A></TD>
 </TR></TABLE>
 <BR>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylke nr [Ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>FRADATO</B><SUB>2</SUB></TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Dato som teksten gjelder fra</TD>
 </TR>
 <TR>
@@ -70,6 +73,7 @@
 <TD>TILDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Dato som teksten gjelder til</TD>
 </TR>
 <TR>
@@ -77,6 +81,7 @@
 <TD>BESKRIVELSE_KORT</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Kort beskrivelse</TD>
 </TR>
 <TR>
@@ -84,6 +89,7 @@
 <TD>BESKRIVELSE_LANG</TD>
 <TD nowrap>VARCHAR2(25)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Lang beskrivelse</TD>
 </TR>
 <TR>
@@ -91,6 +97,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -98,6 +105,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -105,6 +113,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -112,6 +121,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -119,6 +129,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -126,7 +137,47 @@
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TS_GIROTEKST</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XAK0TS_GIROTEKST</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKTS_GIROTEKST</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FRADATO</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -161,9 +212,102 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TS_GIROTEKST</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020914</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020915</TD>
+<TD>Check</TD>
+<TD>"FRADATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FRADATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0020916</TD>
+<TD>Check</TD>
+<TD>"TILDATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TILDATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0020917</TD>
+<TD>Check</TD>
+<TD>"BESKRIVELSE_KORT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BESKRIVELSE_KORT</TD>
+</TR>
+<TR>
+<TD>SYS_C0020918</TD>
+<TD>Check</TD>
+<TD>"BESKRIVELSE_LANG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BESKRIVELSE_LANG</TD>
+</TR>
+<TR>
+<TD>SYS_C0020919</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020920</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020921</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0020922</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0020923</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>XPKTS_GIROTEKST</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, FRADATO</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table TS_GIROTEKST does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

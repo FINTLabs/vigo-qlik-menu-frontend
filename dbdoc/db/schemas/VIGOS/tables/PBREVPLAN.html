@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -24,7 +24,7 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="./PARAM.html" TITLE="PARAM">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./OTSTATUSGRUPPE.html" TITLE="OTSTATUSGRUPPE">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables2.html#PBREVPLAN">Table PBREVPLAN</A></TD>
 <TD Class="NavR"><A HREF="./PBREVPLANMAAL.html" TITLE="PBREVPLANMAAL">Next Table</A></TD>
 </TR></TABLE>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>KURSKODE</B><SUB>2</SUB></TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
 <TR>
@@ -70,12 +73,14 @@
 <TD><B>PLANNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Plannr.</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>GODKJDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Godkjent dato</TD>
 </TR>
@@ -84,12 +89,14 @@
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>BESKRIV</TD>
 <TD nowrap>VARCHAR2(300)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
@@ -98,6 +105,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -105,6 +113,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -112,6 +121,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -119,6 +129,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -126,12 +137,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -140,12 +153,14 @@
 <TD>PROVEBESKRIVELSE</TD>
 <TD nowrap>VARCHAR2(2000)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Prøvebeskrivelse</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>KURSVG2</TD>
 <TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode Vg2 [ihht KURS]</TD>
 </TR>
@@ -154,12 +169,14 @@
 <TD>KURSVG1</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode Vg1 [ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>LPVG1</TD>
 <TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>ID til læreplan vg1 [ihht LAEREPLAN]</TD>
 </TR>
@@ -168,12 +185,14 @@
 <TD>LPVG2</TD>
 <TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>ID til læreplan vg2 [ihht LAEREPLAN]</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>LPVG3</TD>
 <TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>ID til læreplan vg3 [ihht LAEREPLAN]</TD>
 </TR>
@@ -183,6 +202,7 @@
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
+<TD>Læreplanversjon vg1 (LK06/LK20)</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
@@ -190,11 +210,52 @@
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
+<TD>Læreplanversjon vg2 (LK06/LK20)</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>LPVG3LKVER</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Læreplanversjon vg3 (LK06/LK20)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table PBREVPLAN</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0PBREVPLAN</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKPBREVPLAN</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, KURSKODE, PLANNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -253,9 +314,95 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table PBREVPLAN</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0023506</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0023507</TD>
+<TD>Check</TD>
+<TD>"KURSKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0023508</TD>
+<TD>Check</TD>
+<TD>"PLANNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PLANNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0023509</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0023510</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0023511</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0023512</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0023513</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0023514</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKPBREVPLAN</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, KURSKODE, PLANNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table PBREVPLAN does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FNR</B><SUB>1</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødselsnummer [Ihht ELEV]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>SKOLEAR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skoleår [Ihht SKOLEAR]</TD>
 </TR>
 <TR>
@@ -70,12 +73,14 @@
 <TD><B>RADNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Radnr (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>OTBREDAT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Brevdato</TD>
 </TR>
@@ -84,12 +89,14 @@
 <TD>OTENHET</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>OTenhet [Ihht OTENHET]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>OTEXPDAT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for eksport av linjen</TD>
 </TR>
@@ -98,12 +105,14 @@
 <TD>OTGRUPPE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tilmeldingsgruppe</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>OTIMPDAT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for import av linjen</TD>
 </TR>
@@ -112,12 +121,14 @@
 <TD>OTMERK</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>OT-merknad</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>OTSTATE</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>OT-status (oppgitt) [Ihht OTSTATUS]</TD>
 </TR>
@@ -126,12 +137,14 @@
 <TD>OTSTATUS</TD>
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>OT-status [Ihht OTSTATUS]</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>SLUTTDAT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sluttdato</TD>
 </TR>
@@ -140,12 +153,14 @@
 <TD>SLUTTRAD</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Sluttrad</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>STARTDAT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Startdato</TD>
 </TR>
@@ -154,6 +169,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,6 +177,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -175,6 +193,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -182,12 +201,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -196,12 +217,14 @@
 <TD>RETT1</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Rettstype (fra inntaket)</TD>
 </TR>
 <TR>
 <TD Class="NumRed">22</TD>
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fylkesnr [Ihht FYLKE]</TD>
 </TR>
@@ -210,6 +233,7 @@
 <TD>NYGIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Deltaker I NyGiv</TD>
 </TR>
 <TR>
@@ -217,6 +241,7 @@
 <TD>INSPLASSERT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Institusjonsplassert</TD>
 </TR>
 <TR>
@@ -224,7 +249,69 @@
 <TD>PREUTFYL</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Er linje kandidat for preutfylling [J,N]</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table OTLINJE</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0OTLINJE</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK1OTLINJE</TD>
+<TD>NORMAL</TD>
+<TD>FNR, SKOLEAR, OTENHET, OTSTATUS</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1OTLINJE</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKOTLINJE</TD>
+<TD>NORMAL</TD>
+<TD>FNR, SKOLEAR, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -303,9 +390,123 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table OTLINJE</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013174</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013175</TD>
+<TD>Check</TD>
+<TD>"SKOLEAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLEAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013176</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013177</TD>
+<TD>Check</TD>
+<TD>"OTENHET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OTENHET</TD>
+</TR>
+<TR>
+<TD>SYS_C0013178</TD>
+<TD>Check</TD>
+<TD>"OTSTATUS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OTSTATUS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013181</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013182</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013183</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013184</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013185</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013186</TD>
+<TD>Check</TD>
+<TD>"NYGIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NYGIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0013187</TD>
+<TD>Check</TD>
+<TD>"INSPLASSERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INSPLASSERT</TD>
+</TR>
+<TR>
+<TD>SYS_C0013188</TD>
+<TD>Check</TD>
+<TD>"PREUTFYL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PREUTFYL</TD>
+</TR>
+<TR>
+<TD>XPKOTLINJE</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FNR, SKOLEAR, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table OTLINJE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:30:57</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -25,8 +25,8 @@
 </CENTER>
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./WL_KONTEKST.html" TITLE="WL_KONTEKST">Prior Table</A></TD>
-<TD Class="NavC"><A HREF="../tables3.html#WL_WEBLOGG">Table WL_WEBLOGG</A></TD>
-<TD Class="NavRSilver"><A>Next Table</A></TD>
+<TD Class="NavC"><A HREF="../tables4.html#WL_WEBLOGG">Table WL_WEBLOGG</A></TD>
+<TD Class="NavR"><A HREF="./WSBRUKER.html" TITLE="WSBRUKER">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD>BNR</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Bedriftsnr [ihht BEDRIFT2]</TD>
 </TR>
 <TR>
@@ -70,6 +73,7 @@
 <TD>EIER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Eier [B,F]</TD>
 </TR>
 <TR>
@@ -77,6 +81,7 @@
 <TD>DATO</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Dato</TD>
 </TR>
 <TR>
@@ -84,6 +89,7 @@
 <TD>KONTEKST</TD>
 <TD nowrap>CHAR(3)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Kontekst [ihht WL_KONTEKST]</TD>
 </TR>
 <TR>
@@ -91,12 +97,14 @@
 <TD>NIVAA</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Nivå [I,V]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>ID1</TD>
 <TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>ID 1</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>ID2</TD>
 <TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>ID 2</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>ID3</TD>
 <TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>ID 3</TD>
 </TR>
@@ -119,6 +129,7 @@
 <TD>TEKST</TD>
 <TD nowrap>VARCHAR2(200)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tekst</TD>
 </TR>
 <TR>
@@ -126,6 +137,7 @@
 <TD>UTFOERT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>'N'</TD>
 <TD>Utført [J,N]</TD>
 </TR>
 <TR>
@@ -133,6 +145,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -140,6 +153,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -147,6 +161,7 @@
 <TD><B>S_OBJECTID</B></TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,12 +177,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -175,7 +193,36 @@
 <TD>LEST</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Lest</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table WL_WEBLOGG</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKWL_WEBLOGG</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -210,9 +257,116 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table WL_WEBLOGG</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013976</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013977</TD>
+<TD>Check</TD>
+<TD>"BNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013978</TD>
+<TD>Check</TD>
+<TD>"EIER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>EIER</TD>
+</TR>
+<TR>
+<TD>SYS_C0013979</TD>
+<TD>Check</TD>
+<TD>"DATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0013980</TD>
+<TD>Check</TD>
+<TD>"KONTEKST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTEKST</TD>
+</TR>
+<TR>
+<TD>SYS_C0013981</TD>
+<TD>Check</TD>
+<TD>"NIVAA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NIVAA</TD>
+</TR>
+<TR>
+<TD>SYS_C0013982</TD>
+<TD>Check</TD>
+<TD>"UTFOERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTFOERT</TD>
+</TR>
+<TR>
+<TD>SYS_C0013983</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013984</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013985</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013986</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013987</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKWL_WEBLOGG</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table WL_WEBLOGG does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

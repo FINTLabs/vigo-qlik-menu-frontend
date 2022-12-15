@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -26,7 +26,7 @@
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./TS_PLASS_BEREGNET.html" TITLE="TS_PLASS_BEREGNET">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables3.html#TS_PLASS_DETALJER">Table TS_PLASS_DETALJER</A></TD>
-<TD Class="NavR"><A HREF="./TS_PLASS_OMBEREGNING.html" TITLE="TS_PLASS_OMBEREGNING">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./TS_SATS.html" TITLE="TS_SATS">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>TELLEDATO</B><SUB>1</SUB></TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Telledato [Ihht TS_BEREGNING]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>FNR</B><SUB>2</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødsels nr [Ihht PLASS]</TD>
 </TR>
 <TR>
@@ -70,6 +73,7 @@
 <TD><B>KONTRNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Kontrakt nr [Ihht PLASS]</TD>
 </TR>
 <TR>
@@ -77,6 +81,7 @@
 <TD><B>TYPEID</B><SUB>4</SUB></TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Type id [Ihht TS_TYPE]</TD>
 </TR>
 <TR>
@@ -84,6 +89,7 @@
 <TD><B>RADNR</B><SUB>5</SUB></TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Rad nr</TD>
 </TR>
 <TR>
@@ -91,12 +97,14 @@
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylke nr [Ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>SATSID</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sats id [Ihht TS_SATS]</TD>
 </TR>
@@ -105,6 +113,7 @@
 <TD>PERIODEFRA</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Periodedato fra</TD>
 </TR>
 <TR>
@@ -112,12 +121,14 @@
 <TD>PERIODETIL</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Periodedato til</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>TILSTEDE</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilstede, antall mnd tilstede i perioden</TD>
 </TR>
@@ -126,6 +137,7 @@
 <TD>AVBRUDD</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Avbrudd, antall mnd avbrudd i perioden</TD>
 </TR>
 <TR>
@@ -133,12 +145,14 @@
 <TD>BELOP</TD>
 <TD nowrap>NUMBER(12,4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Beløp</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>LERLPROS</TD>
 <TD nowrap>NUMBER(5,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Stillingsprosent lærekontrakt</TD>
 </TR>
@@ -147,12 +161,14 @@
 <TD>MANTILSK_RADNR</TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Rad nr manuelle tilskudd [Ihht TS_MANUELLETILSKUDD]</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>MANTILSK_ORDNINGID</TD>
 <TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Ordning nr manuelle tilskudd [Ihht TS_MANUELLETILSKUDD]</TD>
 </TR>
@@ -161,6 +177,7 @@
 <TD>OPPRINNELIG_TELLEDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprinnelig telledato</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>BESKRIVELSE</TD>
 <TD nowrap>VARCHAR2(255)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
 <TR>
@@ -175,12 +193,14 @@
 <TD>ANTALL</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Antall tidsenheter pr beløp</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>ENHET</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tidsenhet [T=timer, M=måneder]</TD>
 </TR>
@@ -189,6 +209,7 @@
 <TD>SPESIFIKASJON</TD>
 <TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Spesifikasjon</TD>
 </TR>
 <TR>
@@ -196,12 +217,14 @@
 <TD>TILHORIGHET</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilhørighet [Ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>REFUSJONSINSTANS</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Refusjonsinstans [Ihht FYLKE]</TD>
 </TR>
@@ -210,6 +233,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -217,6 +241,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -224,6 +249,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -231,6 +257,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -238,6 +265,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -245,12 +273,53 @@
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>MANTILSK_ID</TD>
 <TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TS_PLASS_DETALJER</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0TS_PLASS_DETALJER</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKTS_PLASS_DETALJER</TD>
+<TD>NORMAL</TD>
+<TD>TELLEDATO, FNR, KONTRNR, TYPEID, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -375,9 +444,158 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TS_PLASS_DETALJER</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0020992</TD>
+<TD>Check</TD>
+<TD>"TELLEDATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TELLEDATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0020993</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020994</TD>
+<TD>Check</TD>
+<TD>"KONTRNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTRNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020995</TD>
+<TD>Check</TD>
+<TD>"TYPEID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TYPEID</TD>
+</TR>
+<TR>
+<TD>SYS_C0020996</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020997</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0020998</TD>
+<TD>Check</TD>
+<TD>"PERIODEFRA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PERIODEFRA</TD>
+</TR>
+<TR>
+<TD>SYS_C0020999</TD>
+<TD>Check</TD>
+<TD>"PERIODETIL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PERIODETIL</TD>
+</TR>
+<TR>
+<TD>SYS_C0021000</TD>
+<TD>Check</TD>
+<TD>"BELOP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BELOP</TD>
+</TR>
+<TR>
+<TD>SYS_C0021001</TD>
+<TD>Check</TD>
+<TD>"OPPRINNELIG_TELLEDATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPRINNELIG_TELLEDATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0021002</TD>
+<TD>Check</TD>
+<TD>"BESKRIVELSE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BESKRIVELSE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021003</TD>
+<TD>Check</TD>
+<TD>"ANTALL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ANTALL</TD>
+</TR>
+<TR>
+<TD>SYS_C0021004</TD>
+<TD>Check</TD>
+<TD>"TILHORIGHET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TILHORIGHET</TD>
+</TR>
+<TR>
+<TD>SYS_C0021005</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0021006</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0021007</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0021008</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0021009</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>XPKTS_PLASS_DETALJER</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>TELLEDATO, FNR, KONTRNR, TYPEID, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table TS_PLASS_DETALJER does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

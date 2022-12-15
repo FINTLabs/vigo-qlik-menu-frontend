@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Nummer på eget fylke</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD>BEDRSOK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Søking på bedrift? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>CID</TD>
 <TD nowrap>CHAR(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>ID for integrasjon</TD>
 </TR>
@@ -77,12 +81,14 @@
 <TD>ENHET</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Bruke inntaksenheter? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Epost-adresse</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>EPOST2</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Epost-adresse 2</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>EPOST_FRA</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Epost fra</TD>
 </TR>
@@ -105,6 +113,7 @@
 <TD>EPOST_KVITTERING</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Epost kvittering</TD>
 </TR>
 <TR>
@@ -112,12 +121,14 @@
 <TD>FREINNT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Eget minoritetsspråklig inntak? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>FRISTSOK</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for åpning av søknadsweb</TD>
 </TR>
@@ -126,1694 +137,1959 @@
 <TD>FYLKE</TD>
 <TD nowrap>VARCHAR2(62)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnavn</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
-<TD>FYLKE_LOGO</TD>
-<TD nowrap>BLOB</TD>
-<TD>&nbsp;</TD>
-<TD>Fylkets logo (blob)</TD>
-</TR>
-<TR>
-<TD Class="Num">13</TD>
 <TD>GATE</TD>
 <TD nowrap>VARCHAR2(60)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Besøksadresse</TD>
 </TR>
 <TR>
-<TD Class="Num">14</TD>
+<TD Class="Num">13</TD>
 <TD>INNANTOM</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt ordnært med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">15</TD>
+<TD Class="Num">14</TD>
 <TD>KOTIDFRA</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kontortid fra klokka</TD>
 </TR>
 <TR>
-<TD Class="Num">16</TD>
+<TD Class="Num">15</TD>
 <TD>KOTIDTIL</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kontortid til klokka</TD>
 </TR>
 <TR>
-<TD Class="Num">17</TD>
+<TD Class="Num">16</TD>
 <TD>MALFORM</TD>
 <TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Målform [ihht MALFORM]</TD>
 </TR>
 <TR>
-<TD Class="Num">18</TD>
+<TD Class="Num">17</TD>
 <TD>MAXANTBE</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Maksimum antall bedriftsønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">19</TD>
+<TD Class="Num">18</TD>
 <TD>MAXANTKU</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Maksimum antall programområdeønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">20</TD>
+<TD Class="Num">19</TD>
 <TD>MAXANTSK</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Maksimum antall skoleønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">21</TD>
+<TD Class="Num">20</TD>
 <TD>MINANTBE</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Minimum antall bedriftsønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">22</TD>
+<TD Class="Num">21</TD>
 <TD>MINANTKU</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Minimum antall programområdeønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">23</TD>
+<TD Class="Num">22</TD>
 <TD>MINANTSK</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Minimum antall skoleønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">24</TD>
+<TD Class="Num">23</TD>
 <TD>NESTREFW</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Neste refnr web</TD>
 </TR>
 <TR>
-<TD Class="Num">25</TD>
+<TD Class="Num">24</TD>
 <TD>POSTADR</TD>
 <TD nowrap>VARCHAR2(60)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Inntakskontorets postadresse</TD>
 </TR>
 <TR>
-<TD Class="Num">26</TD>
+<TD Class="Num">25</TD>
 <TD>POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Adresse generelt [ihht POSTSTED]</TD>
 </TR>
 <TR>
-<TD Class="Num">27</TD>
+<TD Class="Num">26</TD>
 <TD>SAMISK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Samiske felter på web? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">28</TD>
+<TD Class="Num">27</TD>
 <TD>SISTE_BRUKTE_REFNR</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sist brukte refnr</TD>
 </TR>
 <TR>
-<TD Class="Num">29</TD>
+<TD Class="Num">28</TD>
 <TD>SKOLEAR</TD>
 <TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Inneværende (aktivt) skoleår [ihht SKOLEAR]</TD>
 </TR>
 <TR>
-<TD Class="Num">30</TD>
+<TD Class="Num">29</TD>
 <TD>SKOLERANG_KRETS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolerangering krets</TD>
 </TR>
 <TR>
-<TD Class="Num">31</TD>
+<TD Class="Num">30</TD>
 <TD>SKOLERANG_ONSKE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolerangering ønske</TD>
 </TR>
 <TR>
-<TD Class="Num">32</TD>
+<TD Class="Num">31</TD>
 <TD>SKOLERANG_TYPE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolerangering type</TD>
 </TR>
 <TR>
-<TD Class="Num">33</TD>
+<TD Class="Num">32</TD>
 <TD>SKYSS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>WEB Kan søkerne be om skoleskyss på svarkortet? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">34</TD>
+<TD Class="Num">33</TD>
 <TD>SMS_FRA</TD>
 <TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>SMS fra</TD>
 </TR>
 <TR>
-<TD Class="Num">35</TD>
+<TD Class="Num">34</TD>
 <TD>SYNKRONISERING_TS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Synkroniseringstidspunkt (ikke i bruk?)</TD>
 </TR>
 <TR>
-<TD Class="Num">36</TD>
+<TD Class="Num">35</TD>
 <TD>TELEFAX</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefaksnr til inntakskontoret</TD>
 </TR>
 <TR>
-<TD Class="Num">37</TD>
+<TD Class="Num">36</TD>
 <TD>TERMIN</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Termin [ST=Standpunkt,H1=Halvårsvurdering]</TD>
 </TR>
 <TR>
-<TD Class="Num">38</TD>
+<TD Class="Num">37</TD>
 <TD>TLFFORM</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr for bedriftssøkere</TD>
 </TR>
 <TR>
-<TD Class="Num">39</TD>
+<TD Class="Num">38</TD>
 <TD>TLFFRSPR</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr for minoritetsspråklige søkere</TD>
 </TR>
 <TR>
-<TD Class="Num">40</TD>
+<TD Class="Num">39</TD>
 <TD>TLFINN1</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr 1 til inntakskontoret</TD>
 </TR>
 <TR>
-<TD Class="Num">41</TD>
+<TD Class="Num">40</TD>
 <TD>TLFINN2</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr 2 til inntakskontoret</TD>
 </TR>
 <TR>
-<TD Class="Num">42</TD>
+<TD Class="Num">41</TD>
 <TD>TLFSENTR</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr til sentralbordet</TD>
 </TR>
 <TR>
-<TD Class="Num">43</TD>
+<TD Class="Num">42</TD>
 <TD>TLFSERSK</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr for fortrinnssøkere</TD>
 </TR>
 <TR>
-<TD Class="Num">44</TD>
+<TD Class="Num">43</TD>
 <TD>VEDLEGGURL</TD>
 <TD nowrap>VARCHAR2(256)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>URL vedlegg</TD>
 </TR>
 <TR>
-<TD Class="Num">45</TD>
+<TD Class="Num">44</TD>
 <TD>VIKOPPL</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>???</TD>
 </TR>
 <TR>
-<TD Class="Num">46</TD>
+<TD Class="Num">45</TD>
 <TD>WALDERGR</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-aldersgrende for søking</TD>
 </TR>
 <TR>
-<TD Class="Num">47</TD>
+<TD Class="Num">46</TD>
 <TD>WEBAKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web aktiv [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">48</TD>
+<TD Class="Num">47</TD>
 <TD>WFRFSVAR</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist forhåndssvar (ordinære)</TD>
 </TR>
 <TR>
-<TD Class="Num">49</TD>
+<TD Class="Num">48</TD>
 <TD>WFRFSVARM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist forhåndssvar (min.språk)</TD>
 </TR>
 <TR>
-<TD Class="Num">50</TD>
+<TD Class="Num">49</TD>
 <TD>WFRFSVARS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist forhåndssvar (fortrinn)</TD>
 </TR>
 <TR>
-<TD Class="Num">51</TD>
+<TD Class="Num">50</TD>
 <TD>WFRPURR</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist purring (ordinært)</TD>
 </TR>
 <TR>
-<TD Class="Num">52</TD>
+<TD Class="Num">51</TD>
 <TD>WFRSVAR</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist svar (ordinært)</TD>
 </TR>
 <TR>
-<TD Class="Num">53</TD>
+<TD Class="Num">52</TD>
 <TD>WVISKAR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis karakterpoeng [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">54</TD>
+<TD Class="Num">53</TD>
 <TD>WVISVENT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis ventenummer [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">55</TD>
+<TD Class="Num">54</TD>
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">56</TD>
+<TD Class="Num">55</TD>
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="NumRed">57</TD>
+<TD Class="NumRed">56</TD>
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">58</TD>
+<TD Class="Num">57</TD>
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">59</TD>
+<TD Class="Num">58</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">60</TD>
+<TD Class="Num">59</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">61</TD>
+<TD Class="Num">60</TD>
 <TD>REALDOK_FOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for åpen websøking for voksne</TD>
 </TR>
 <TR>
-<TD Class="Num">62</TD>
-<TD>BESTEFAG</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>Y</TD>
-<TD>Ikke i bruk</TD>
-</TR>
-<TR>
-<TD Class="Num">63</TD>
+<TD Class="Num">61</TD>
 <TD>AUTOSKOLE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Automatisk tildeling av nærmeste skole (skolerangering)?</TD>
 </TR>
 <TR>
-<TD Class="Num">64</TD>
+<TD Class="Num">62</TD>
 <TD>VISAUTOSKOLE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skal automatisk tildelt nærmeste skole vises?</TD>
 </TR>
 <TR>
-<TD Class="Num">65</TD>
+<TD Class="Num">63</TD>
 <TD>VISSOKDATE</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for at bedrifter ser søkere på web</TD>
 </TR>
 <TR>
-<TD Class="Num">66</TD>
+<TD Class="Num">64</TD>
 <TD>VISBEDDATE</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for at søkere ser bedrifter (forslag) på web</TD>
 </TR>
 <TR>
-<TD Class="Num">67</TD>
+<TD Class="Num">65</TD>
 <TD>HSKONUAKTU</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skal høyere skoleønsker settes uaktu [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">68</TD>
+<TD Class="Num">66</TD>
 <TD>DSFSPERR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylket eier gate og postnr</TD>
 </TR>
 <TR>
-<TD Class="Num">69</TD>
+<TD Class="Num">67</TD>
 <TD>DSFSPERR2</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylket eier kommunenr</TD>
 </TR>
 <TR>
-<TD Class="Num">70</TD>
+<TD Class="Num">68</TD>
 <TD>SVARMETODE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Svarmetode (ønske/søker)</TD>
 </TR>
 <TR>
-<TD Class="Num">71</TD>
+<TD Class="Num">69</TD>
 <TD>PREKOMM1</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Preutfylling: fra-kommnr</TD>
 </TR>
 <TR>
-<TD Class="Num">72</TD>
+<TD Class="Num">70</TD>
 <TD>PREKOMM2</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Preutfylling: til-kommnr</TD>
 </TR>
 <TR>
-<TD Class="Num">73</TD>
+<TD Class="Num">71</TD>
 <TD>PRERETT</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Preutfylling: rettstyper</TD>
 </TR>
 <TR>
-<TD Class="Num">74</TD>
+<TD Class="Num">72</TD>
 <TD>PRESLDAT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Preutfylling: sluttdato</TD>
 </TR>
 <TR>
-<TD Class="Num">75</TD>
+<TD Class="Num">73</TD>
 <TD>PRESLUTT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Preutfylling: sluttede elever? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">76</TD>
+<TD Class="Num">74</TD>
 <TD>PRESTAT</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Preutfylling: elevstatuser</TD>
 </TR>
 <TR>
-<TD Class="Num">77</TD>
+<TD Class="Num">75</TD>
 <TD>SINGLE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Ikke i bruk [N]</TD>
 </TR>
 <TR>
-<TD Class="Num">78</TD>
+<TD Class="Num">76</TD>
 <TD>ROLLEID1</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Rolleid 1</TD>
 </TR>
 <TR>
-<TD Class="Num">79</TD>
+<TD Class="Num">77</TD>
 <TD>ROLLEID2</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Rolleid 2</TD>
 </TR>
 <TR>
-<TD Class="Num">80</TD>
+<TD Class="Num">78</TD>
 <TD>ROLLEID3</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Rolleid 3</TD>
 </TR>
 <TR>
-<TD Class="Num">81</TD>
+<TD Class="Num">79</TD>
 <TD>ROLLEID4</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Rolleid 4</TD>
 </TR>
 <TR>
-<TD Class="Num">82</TD>
+<TD Class="Num">80</TD>
 <TD>MLDTILBEDVIS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skal melding til bedrift vises</TD>
 </TR>
 <TR>
-<TD Class="Num">83</TD>
+<TD Class="Num">81</TD>
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv kode [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">84</TD>
+<TD Class="Num">82</TD>
 <TD>POSTADR2</TD>
 <TD nowrap>VARCHAR2(60)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Adresse generelt</TD>
 </TR>
 <TR>
-<TD Class="Num">85</TD>
+<TD Class="Num">83</TD>
 <TD>FAG_GATE1</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
-<TD>Adresse til formidling</TD>
-</TR>
-<TR>
-<TD Class="Num">86</TD>
-<TD>FAG_GATE2</TD>
-<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>Adresse til formidling</TD>
 </TR>
 <TR>
-<TD Class="Num">87</TD>
+<TD Class="Num">84</TD>
+<TD>FAG_GATE2</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Adresse til formidling</TD>
+</TR>
+<TR>
+<TD Class="Num">85</TD>
 <TD>FAG_POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Adresse til formidling [Ihht POSTSTED]</TD>
 </TR>
 <TR>
-<TD Class="Num">88</TD>
+<TD Class="Num">86</TD>
 <TD>GATE1P</TD>
 <TD nowrap>VARCHAR2(60)</TD>
 <TD>&nbsp;</TD>
-<TD>Adresse i forhold til gjesterefusjon (fagopplæring)</TD>
-</TR>
-<TR>
-<TD Class="Num">89</TD>
-<TD>GATE2P</TD>
-<TD nowrap>VARCHAR2(60)</TD>
 <TD>&nbsp;</TD>
 <TD>Adresse i forhold til gjesterefusjon (fagopplæring)</TD>
 </TR>
 <TR>
-<TD Class="Num">90</TD>
+<TD Class="Num">87</TD>
+<TD>GATE2P</TD>
+<TD nowrap>VARCHAR2(60)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Adresse i forhold til gjesterefusjon (fagopplæring)</TD>
+</TR>
+<TR>
+<TD Class="Num">88</TD>
 <TD>POSTNRP</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Adresse i forhold til gjesterefusjon [ihht POSTSTED]</TD>
 </TR>
 <TR>
-<TD Class="Num">91</TD>
+<TD Class="Num">89</TD>
 <TD>GYLDIGFOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig fra dato</TD>
 </TR>
 <TR>
-<TD Class="Num">92</TD>
+<TD Class="Num">90</TD>
 <TD>GYLDIGTOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig til dato</TD>
 </TR>
 <TR>
-<TD Class="Num">93</TD>
+<TD Class="Num">91</TD>
 <TD>DISTR_FAKTISK</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Da koden faktisk ble distribuert</TD>
 </TR>
 <TR>
-<TD Class="Num">94</TD>
+<TD Class="Num">92</TD>
 <TD>RETTDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Rettsforbruk fra dato (DDMM)</TD>
 </TR>
 <TR>
-<TD Class="Num">95</TD>
+<TD Class="Num">93</TD>
 <TD>WFRSVARS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist svar (fortrinn)</TD>
 </TR>
 <TR>
-<TD Class="Num">96</TD>
+<TD Class="Num">94</TD>
 <TD>WFRSVARM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist svar (min.språk)</TD>
 </TR>
 <TR>
-<TD Class="Num">97</TD>
+<TD Class="Num">95</TD>
 <TD>WFRPURRS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist purring (fortrinn)</TD>
 </TR>
 <TR>
-<TD Class="Num">98</TD>
+<TD Class="Num">96</TD>
 <TD>WFRPURRM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist purring (min.språk)</TD>
 </TR>
 <TR>
-<TD Class="Num">99</TD>
+<TD Class="Num">97</TD>
 <TD>NAVNKORT</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Offesielt navn kort form</TD>
 </TR>
 <TR>
-<TD Class="Num">100</TD>
+<TD Class="Num">98</TD>
 <TD>NAVNLANG</TD>
 <TD nowrap>VARCHAR2(120)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Offesielt navn lang form</TD>
 </TR>
 <TR>
-<TD Class="Num">101</TD>
+<TD Class="Num">99</TD>
 <TD>WFRKVITT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for produksjon og utsendelse av pdf kvittering (ordinære)</TD>
 </TR>
 <TR>
-<TD Class="Num">102</TD>
+<TD Class="Num">100</TD>
 <TD>WFRKVITTS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for produksjon og utsendelse av pdf kvittering (fortrinn)</TD>
 </TR>
 <TR>
-<TD Class="Num">103</TD>
+<TD Class="Num">101</TD>
 <TD>WFRKVITTM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for produksjon og utsendelse av pdf kvittering (min.språk)</TD>
 </TR>
 <TR>
-<TD Class="Num">104</TD>
+<TD Class="Num">102</TD>
 <TD>PWLIFE</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall dager er passord er gyldig</TD>
 </TR>
 <TR>
-<TD Class="Num">105</TD>
+<TD Class="Num">103</TD>
 <TD>PWMODE</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sjekk på maks 3 pålogginger [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">106</TD>
+<TD Class="Num">104</TD>
 <TD>ARKIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Arkivering fra Vigo [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">107</TD>
+<TD Class="Num">105</TD>
 <TD>WVIS68</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis §6-8</TD>
 </TR>
 <TR>
-<TD Class="Num">108</TD>
+<TD Class="Num">106</TD>
 <TD>WVIS622</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis §6-22</TD>
 </TR>
 <TR>
-<TD Class="Num">109</TD>
+<TD Class="Num">107</TD>
 <TD>WVIS623</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis §6-23</TD>
 </TR>
 <TR>
-<TD Class="Num">110</TD>
+<TD Class="Num">108</TD>
 <TD>WVIS625</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis §6-25</TD>
 </TR>
 <TR>
-<TD Class="Num">111</TD>
+<TD Class="Num">109</TD>
 <TD>WVIS635</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis §6-35</TD>
 </TR>
 <TR>
-<TD Class="Num">112</TD>
+<TD Class="Num">110</TD>
 <TD>DKGRENS1</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Delkursgrense 1 (helkurs-status)</TD>
 </TR>
 <TR>
-<TD Class="Num">113</TD>
+<TD Class="Num">111</TD>
 <TD>LOGONMODE</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Modus for tillate pålogging (Oslo)</TD>
 </TR>
 <TR>
-<TD Class="Num">114</TD>
+<TD Class="Num">112</TD>
 <TD>LOGONTEXT</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Info tekst ved pålogging (Oslo)</TD>
 </TR>
 <TR>
-<TD Class="Num">115</TD>
+<TD Class="Num">113</TD>
 <TD>BEDRTILVILBLI</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Overføring av bedriftsopplysninger til vilblino [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">116</TD>
+<TD Class="Num">114</TD>
 <TD>WVIS68B</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Web - vis §6-8b</TD>
 </TR>
 <TR>
-<TD Class="Num">117</TD>
+<TD Class="Num">115</TD>
 <TD>WFRSVARI</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist svar (individuelle)</TD>
 </TR>
 <TR>
-<TD Class="Num">118</TD>
+<TD Class="Num">116</TD>
 <TD>WFRFSVARI</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist forhåndssvar (individuelle)</TD>
 </TR>
 <TR>
-<TD Class="Num">119</TD>
+<TD Class="Num">117</TD>
 <TD>WFRPURRI</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Web-frist purring (individuelle)</TD>
 </TR>
 <TR>
-<TD Class="Num">120</TD>
+<TD Class="Num">118</TD>
 <TD>WFRKVITTI</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for produksjon og utsendelse av pdf kvittering (individuelle)</TD>
 </TR>
 <TR>
-<TD Class="Num">121</TD>
+<TD Class="Num">119</TD>
 <TD>WADVOMV</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Vis advarsel når søkt omvalg</TD>
 </TR>
 <TR>
-<TD Class="Num">122</TD>
+<TD Class="Num">120</TD>
 <TD>WADVSAM</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Vis advarsel når søkt samme programområde</TD>
 </TR>
 <TR>
-<TD Class="Num">123</TD>
+<TD Class="Num">121</TD>
 <TD>WADVSAF</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Vis advarsel når ikke søkt hjemfylke, bare annet fylke</TD>
 </TR>
 <TR>
-<TD Class="Num">124</TD>
+<TD Class="Num">122</TD>
 <TD>DIGITALSIGNATUR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Digital signatur</TD>
 </TR>
 <TR>
-<TD Class="Num">125</TD>
+<TD Class="Num">123</TD>
 <TD>DEFASVAR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Standard ved manglende svar [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">126</TD>
+<TD Class="Num">124</TD>
 <TD>DKGRENS2</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Delkursgrense 2 (rettsforbruk)</TD>
 </TR>
 <TR>
-<TD Class="Num">127</TD>
+<TD Class="Num">125</TD>
 <TD>DSPSRVC</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
-<TD>DSF service</TD>
+<TD>&nbsp;</TD>
+<TD>FREG service</TD>
 </TR>
 <TR>
-<TD Class="Num">128</TD>
+<TD Class="Num">126</TD>
 <TD>FRIERESK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Friere skolevalg (Akershus-modulen)? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">129</TD>
+<TD Class="Num">127</TD>
 <TD>INDINNT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Kjører fylket eget individuelt inntak? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">130</TD>
+<TD Class="Num">128</TD>
 <TD>INNSTAF</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus fullføringsrett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">131</TD>
+<TD Class="Num">129</TD>
 <TD>INNSTAIM</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus individuell med rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">132</TD>
+<TD Class="Num">130</TD>
 <TD>INNSTAIU</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus individuell uten rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">133</TD>
+<TD Class="Num">131</TD>
 <TD>INNSTAMM</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus min.spr. med rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">134</TD>
+<TD Class="Num">132</TD>
 <TD>INNSTAMU</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus min.spr. uten rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">135</TD>
+<TD Class="Num">133</TD>
 <TD>INNSTAOM</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus ordinært med rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">136</TD>
+<TD Class="Num">134</TD>
 <TD>INNSTAOU</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus ordinært uten rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">137</TD>
+<TD Class="Num">135</TD>
 <TD>INNSTASM</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus fortrinn med rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">138</TD>
+<TD Class="Num">136</TD>
 <TD>INNSTASU</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus fortrinn uten rett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">139</TD>
+<TD Class="Num">137</TD>
 <TD>INNSTAV</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksstatus voksenrett [BL=Blank,IP=Inntak pågår,IF=Inntak ferdig,NP=Nullstilling pågår,NF=Nullstilling ferdig,TP=Tilbud pågår,TF=Tilbud ferdig,PS=Passiv]</TD>
 </TR>
 <TR>
-<TD Class="Num">140</TD>
+<TD Class="Num">138</TD>
 <TD>INNTKODG</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppfatte alle inntakskoder som G hvis termin ulik ST? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">141</TD>
+<TD Class="Num">139</TD>
 <TD>NERSKOLE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Nærskoler? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">142</TD>
+<TD Class="Num">140</TD>
 <TD>OPPDFAJO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatering før ajourhold kjørt? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">143</TD>
+<TD Class="Num">141</TD>
 <TD>PRIOAKER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prioritering (Akershus-modulen)? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">144</TD>
+<TD Class="Num">142</TD>
 <TD>SVARFRIST</TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Svarfrist (dager)</TD>
 </TR>
 <TR>
-<TD Class="Num">145</TD>
+<TD Class="Num">143</TD>
 <TD>VISPASS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skal web-passord vises på inntaksmelding? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">146</TD>
+<TD Class="Num">144</TD>
 <TD>VLSTTYP1</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ventelistetype</TD>
 </TR>
 <TR>
-<TD Class="Num">147</TD>
+<TD Class="Num">145</TD>
 <TD>VLSTTYP2</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ventelistetype 2</TD>
 </TR>
 <TR>
-<TD Class="Num">148</TD>
+<TD Class="Num">146</TD>
 <TD>VLSTTYP3</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ventelistetype 3</TD>
 </TR>
 <TR>
-<TD Class="Num">149</TD>
+<TD Class="Num">147</TD>
 <TD>VSMETOD1</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skal det fortsatt videresøkes ved JA-svar til TILBUD på videresøk? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">150</TD>
+<TD Class="Num">148</TD>
 <TD>AVSTAND</TD>
 <TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Avstand</TD>
 </TR>
 <TR>
-<TD Class="Num">151</TD>
+<TD Class="Num">149</TD>
 <TD>BEDRADMURL</TD>
 <TD nowrap>VARCHAR2(256)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>URL for pålogging til VIGObedrift</TD>
 </TR>
 <TR>
-<TD Class="Num">152</TD>
+<TD Class="Num">150</TD>
 <TD>DEBPATH</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Plassering av debug-filer</TD>
 </TR>
 <TR>
-<TD Class="Num">153</TD>
-<TD>DSPKUNDE</TD>
-<TD nowrap>VARCHAR2(8)</TD>
-<TD>&nbsp;</TD>
-<TD>DSF kundeid</TD>
-</TR>
-<TR>
-<TD Class="Num">154</TD>
-<TD>DSPPASS</TD>
-<TD nowrap>VARCHAR2(8)</TD>
-<TD>&nbsp;</TD>
-<TD>DSF passord</TD>
-</TR>
-<TR>
-<TD Class="Num">155</TD>
+<TD Class="Num">151</TD>
 <TD>FAG_EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>E-post til formidling</TD>
 </TR>
 <TR>
-<TD Class="Num">156</TD>
+<TD Class="Num">152</TD>
 <TD>FAG_FYLKE</TD>
 <TD nowrap>VARCHAR2(60)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fylkesnavn til formidling</TD>
 </TR>
 <TR>
-<TD Class="Num">157</TD>
+<TD Class="Num">153</TD>
 <TD>FAG_TELEFAX</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefaks til formidling</TD>
 </TR>
 <TR>
-<TD Class="Num">158</TD>
+<TD Class="Num">154</TD>
 <TD>FAG_TELEFON</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefon til formidling</TD>
 </TR>
 <TR>
-<TD Class="Num">159</TD>
+<TD Class="Num">155</TD>
 <TD>FAGSVENNSIGN1</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Signatur for fag/svennebrev 1</TD>
 </TR>
 <TR>
-<TD Class="Num">160</TD>
+<TD Class="Num">156</TD>
 <TD>FAGSVENNSIGN2</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Signatur for fag/svennebrev 2</TD>
 </TR>
 <TR>
-<TD Class="Num">161</TD>
+<TD Class="Num">157</TD>
 <TD>INNANTF</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt fullføringsrett</TD>
 </TR>
 <TR>
-<TD Class="Num">162</TD>
+<TD Class="Num">158</TD>
 <TD>INNANTIM</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt individuell med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">163</TD>
+<TD Class="Num">159</TD>
 <TD>INNANTIU</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt individuell uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">164</TD>
+<TD Class="Num">160</TD>
 <TD>INNANTMM</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt min.spr. med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">165</TD>
+<TD Class="Num">161</TD>
 <TD>INNANTMU</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt min.spr. uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">166</TD>
+<TD Class="Num">162</TD>
 <TD>INNANTOU</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt ordinært uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">167</TD>
+<TD Class="Num">163</TD>
 <TD>INNANTSM</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt fortrinn med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">168</TD>
+<TD Class="Num">164</TD>
 <TD>INNANTSU</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt fortrinn uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">169</TD>
+<TD Class="Num">165</TD>
 <TD>INNANTV</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall inntak kjørt voksenrett</TD>
 </TR>
 <TR>
-<TD Class="Num">170</TD>
+<TD Class="Num">166</TD>
 <TD>INNDATF</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt fullføringsrett</TD>
 </TR>
 <TR>
-<TD Class="Num">171</TD>
+<TD Class="Num">167</TD>
 <TD>INNDATIM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt individuell med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">172</TD>
+<TD Class="Num">168</TD>
 <TD>INNDATIU</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt individuell uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">173</TD>
+<TD Class="Num">169</TD>
 <TD>INNDATMM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt min.spr. med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">174</TD>
+<TD Class="Num">170</TD>
 <TD>INNDATMU</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt min.spr. uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">175</TD>
+<TD Class="Num">171</TD>
 <TD>INNDATOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt ordnært med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">176</TD>
+<TD Class="Num">172</TD>
 <TD>INNDATOU</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt ordinært uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">177</TD>
+<TD Class="Num">173</TD>
 <TD>INNDATSM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt fortrinn med rett</TD>
 </TR>
 <TR>
-<TD Class="Num">178</TD>
+<TD Class="Num">174</TD>
 <TD>INNDATSU</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt fortrinn uten rett</TD>
 </TR>
 <TR>
-<TD Class="Num">179</TD>
+<TD Class="Num">175</TD>
 <TD>INNDATV</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato kjørt voksenrett</TD>
 </TR>
 <TR>
-<TD Class="Num">180</TD>
-<TD>INNTAKNR</TD>
-<TD nowrap>NUMBER(3)</TD>
-<TD>&nbsp;</TD>
-<TD>Inntaknr</TD>
-</TR>
-<TR>
-<TD Class="Num">181</TD>
+<TD Class="Num">176</TD>
 <TD>KMMODE</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Modus for kjøring av kontrollmotor</TD>
 </TR>
 <TR>
-<TD Class="Num">182</TD>
+<TD Class="Num">177</TD>
 <TD>KMPATH</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sti for lagring av kontrollmotordok</TD>
 </TR>
 <TR>
-<TD Class="Num">183</TD>
+<TD Class="Num">178</TD>
 <TD>KOMPBEVISSIGN1</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Signatur 1 for kompetansebevis</TD>
 </TR>
 <TR>
-<TD Class="Num">184</TD>
+<TD Class="Num">179</TD>
 <TD>KOMPBEVISSIGN2</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Signatur 2 for kompetansebevis</TD>
 </TR>
 <TR>
-<TD Class="Num">185</TD>
+<TD Class="Num">180</TD>
 <TD>KOMPBEVISSTED</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Utsteder for kompetansebevis</TD>
 </TR>
 <TR>
-<TD Class="Num">186</TD>
+<TD Class="Num">181</TD>
 <TD>LKFILNR</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Lånekassens filnr</TD>
 </TR>
 <TR>
-<TD Class="Num">187</TD>
+<TD Class="Num">182</TD>
 <TD>MAXANTVS</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Maksimum antall videresøk</TD>
 </TR>
 <TR>
-<TD Class="Num">188</TD>
+<TD Class="Num">183</TD>
 <TD>MAXREFNR</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Høyeste refnr i bruk</TD>
 </TR>
 <TR>
-<TD Class="Num">189</TD>
+<TD Class="Num">184</TD>
 <TD>MFORMID</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall formidlinger mottatt</TD>
 </TR>
 <TR>
-<TD Class="Num">190</TD>
+<TD Class="Num">185</TD>
 <TD>MINPAVSL</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Minuspoeng for avsluttende kompetanse</TD>
 </TR>
 <TR>
-<TD Class="Num">191</TD>
+<TD Class="Num">186</TD>
 <TD>MINPDELK</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Minuspoeng for delkurselever</TD>
 </TR>
 <TR>
-<TD Class="Num">192</TD>
+<TD Class="Num">187</TD>
 <TD>MINPSENT</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Minuspoeng for for seint innlevert søknad</TD>
 </TR>
 <TR>
-<TD Class="Num">193</TD>
+<TD Class="Num">188</TD>
 <TD>ORGNR</TD>
 <TD nowrap>VARCHAR2(9)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Organisasjonsnr (kontrollmotor)</TD>
 </TR>
 <TR>
-<TD Class="Num">194</TD>
+<TD Class="Num">189</TD>
 <TD>PRIOPROS</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prosentsats (Akershus-modulen)</TD>
 </TR>
 <TR>
-<TD Class="Num">195</TD>
+<TD Class="Num">190</TD>
 <TD>SASMODE</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Modus for oppslag mot SAS</TD>
 </TR>
 <TR>
-<TD Class="Num">196</TD>
+<TD Class="Num">191</TD>
 <TD>SASTIMEOUT</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tid før timeout ved oppslag mot SAS</TD>
 </TR>
 <TR>
-<TD Class="Num">197</TD>
+<TD Class="Num">192</TD>
 <TD>SFORMID</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall formidlinger sendt</TD>
 </TR>
 <TR>
-<TD Class="Num">198</TD>
+<TD Class="Num">193</TD>
 <TD>TILPOAND</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilleggspoeng til søkere fra andre fylker</TD>
 </TR>
 <TR>
-<TD Class="Num">199</TD>
+<TD Class="Num">194</TD>
 <TD>TILPOEGN</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilleggspoeng til søkere fra eget fylke</TD>
 </TR>
 <TR>
-<TD Class="Num">200</TD>
+<TD Class="Num">195</TD>
 <TD>TS_AUTOGIRO_AVTALE</TD>
 <TD nowrap>VARCHAR2(9)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilskuddsparametre [VIGO/f]</TD>
+</TR>
+<TR>
+<TD Class="Num">196</TD>
+<TD>TS_AUTOGIRO_KONTONR</TD>
+<TD nowrap>CHAR(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilskuddsparametre [VIGO/f]</TD>
+</TR>
+<TR>
+<TD Class="Num">197</TD>
+<TD>TS_AUTOGIRO_KUNDENR</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilskuddsparametre [VIGO/f]</TD>
+</TR>
+<TR>
+<TD Class="Num">198</TD>
+<TD>TS_KONTONR_OMK_BBS</TD>
+<TD nowrap>CHAR(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilskuddsparametre [VIGO/f]</TD>
+</TR>
+<TR>
+<TD Class="Num">199</TD>
+<TD>TS_LOVLIGE_ORDNINGER</TD>
+<TD nowrap>VARCHAR2(32)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tilskuddsparametre [VIGO/f]</TD>
+</TR>
+<TR>
+<TD Class="Num">200</TD>
+<TD>TS_MIN_LTIDFRAD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddsparametre [VIGO/f]</TD>
 </TR>
 <TR>
 <TD Class="Num">201</TD>
-<TD>TS_AUTOGIRO_KONTONR</TD>
-<TD nowrap>CHAR(11)</TD>
+<TD>TS_MNDGRENSE</TD>
+<TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddsparametre [VIGO/f]</TD>
 </TR>
 <TR>
 <TD Class="Num">202</TD>
-<TD>TS_AUTOGIRO_KUNDENR</TD>
-<TD nowrap>VARCHAR2(8)</TD>
+<TD>TS_NESTE_UTBETALINGSDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddsparametre [VIGO/f]</TD>
 </TR>
 <TR>
 <TD Class="Num">203</TD>
-<TD>TS_KONTONR_OMK_BBS</TD>
-<TD nowrap>CHAR(11)</TD>
+<TD>TS_REFFRIST</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddsparametre [VIGO/f]</TD>
 </TR>
 <TR>
 <TD Class="Num">204</TD>
-<TD>TS_LOVLIGE_ORDNINGER</TD>
-<TD nowrap>VARCHAR2(32)</TD>
+<TD>TS_REFKONTO</TD>
+<TD nowrap>CHAR(11)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddsparametre [VIGO/f]</TD>
 </TR>
 <TR>
 <TD Class="Num">205</TD>
-<TD>TS_MIN_LTIDFRAD</TD>
-<TD nowrap>DATE</TD>
+<TD>TS_REFNAVN</TD>
+<TD nowrap>VARCHAR2(100)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddsparametre [VIGO/f]</TD>
 </TR>
 <TR>
 <TD Class="Num">206</TD>
-<TD>TS_MNDGRENSE</TD>
-<TD nowrap>NUMBER(2)</TD>
+<TD>TS_REFTLF</TD>
+<TD nowrap>CHAR(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddsparametre [VIGO/f]</TD>
 </TR>
 <TR>
 <TD Class="Num">207</TD>
-<TD>TS_NESTE_UTBETALINGSDATO</TD>
-<TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
-<TD>Tilskuddsparametre [VIGO/f]</TD>
-</TR>
-<TR>
-<TD Class="Num">208</TD>
-<TD>TS_REFFRIST</TD>
-<TD nowrap>DATE</TD>
-<TD>&nbsp;</TD>
-<TD>Tilskuddsparametre [VIGO/f]</TD>
-</TR>
-<TR>
-<TD Class="Num">209</TD>
-<TD>TS_REFKONTO</TD>
-<TD nowrap>CHAR(11)</TD>
-<TD>&nbsp;</TD>
-<TD>Tilskuddsparametre [VIGO/f]</TD>
-</TR>
-<TR>
-<TD Class="Num">210</TD>
-<TD>TS_REFNAVN</TD>
-<TD nowrap>VARCHAR2(100)</TD>
-<TD>&nbsp;</TD>
-<TD>Tilskuddsparametre [VIGO/f]</TD>
-</TR>
-<TR>
-<TD Class="Num">211</TD>
-<TD>TS_REFTLF</TD>
-<TD nowrap>CHAR(8)</TD>
-<TD>&nbsp;</TD>
-<TD>Tilskuddsparametre [VIGO/f]</TD>
-</TR>
-<TR>
-<TD Class="Num">212</TD>
 <TD>VSMETOD2</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Hvilken metode skal benyttes ved NEI-svar tilTILBUD på videresøk? [1=Ikke vsøk,2=Vsøk unntatt tilbudet,3=Vsøk også på tilbudet,4=Nei til kurset. Stryk ønsker]</TD>
 </TR>
 <TR>
-<TD Class="Num">213</TD>
+<TD Class="Num">208</TD>
 <TD>KOMPBEVISUTSSTED</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sted for utstedt kompetansebevis</TD>
 </TR>
 <TR>
-<TD Class="Num">214</TD>
+<TD Class="Num">209</TD>
 <TD>NYKODE</TD>
 <TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Nytt fylkesnr</TD>
 </TR>
 <TR>
-<TD Class="Num">215</TD>
+<TD Class="Num">210</TD>
 <TD>ORGNR_DIGSIG</TD>
 <TD nowrap>VARCHAR2(9)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Organisasjonsnr (digital signatur)</TD>
 </TR>
 <TR>
-<TD Class="Num">216</TD>
+<TD Class="Num">211</TD>
 <TD>DSNEXTPOLL</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Neste poll</TD>
 </TR>
 <TR>
-<TD Class="Num">217</TD>
+<TD Class="Num">212</TD>
 <TD>INFO</TD>
 <TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Informasjon</TD>
 </TR>
 <TR>
-<TD Class="Num">218</TD>
+<TD Class="Num">213</TD>
 <TD>AUTOGODK_DIGSIG</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Automatisk godkjenning av digital signatur? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">219</TD>
+<TD Class="Num">214</TD>
 <TD>P5A104_KJORT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Eksport til Lånekassa: Kjørt</TD>
 </TR>
 <TR>
-<TD Class="Num">220</TD>
+<TD Class="Num">215</TD>
 <TD>P5A104_FILNR</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Eksport til Lånekassa: Filnummer</TD>
 </TR>
 <TR>
-<TD Class="Num">221</TD>
+<TD Class="Num">216</TD>
 <TD>MAXKMNR</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
-<TD>Løpenummer for Vgdoknr</TD>
-</TR>
-<TR>
-<TD Class="Num">222</TD>
-<TD>MAXKMNRG</TD>
-<TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>Løpenummer for Vgdoknr</TD>
 </TR>
 <TR>
-<TD Class="Num">223</TD>
+<TD Class="Num">217</TD>
+<TD>MAXKMNRG</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Løpenummer for Vgdoknr</TD>
+</TR>
+<TR>
+<TD Class="Num">218</TD>
 <TD>SVARKTXT</TD>
 <TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Svarkorttekst</TD>
 </TR>
 <TR>
-<TD Class="Num">224</TD>
+<TD Class="Num">219</TD>
 <TD>TYPE</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Benyttes for å filtrere fylker i forskjellige sammenheng [0,1,2]</TD>
 </TR>
 <TR>
-<TD Class="Num">225</TD>
+<TD Class="Num">220</TD>
 <TD>OFKDVHTS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sist hentet data til datavasehus (Østfold)</TD>
 </TR>
 <TR>
-<TD Class="Num">226</TD>
+<TD Class="Num">221</TD>
 <TD>WVISINNT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Vis inntaksliste på VIGO Skole [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">227</TD>
+<TD Class="Num">222</TD>
 <TD>SASINT</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon aktivert [0,1]</TD>
 </TR>
 <TR>
-<TD Class="Num">228</TD>
+<TD Class="Num">223</TD>
 <TD>BRUKERSIGNATAR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Brukers signatar</TD>
 </TR>
 <TR>
-<TD Class="Num">229</TD>
+<TD Class="Num">224</TD>
 <TD>NEMND_PA_WEB</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prøvenemnders tilgang til VIGO Bedrift [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">230</TD>
+<TD Class="Num">225</TD>
 <TD>SASKTR</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon automatisk kontroll</TD>
 </TR>
 <TR>
-<TD Class="Num">231</TD>
+<TD Class="Num">226</TD>
 <TD>SASIMP</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon automatisk import</TD>
 </TR>
 <TR>
-<TD Class="Num">232</TD>
+<TD Class="Num">227</TD>
 <TD>SASOPPDBOSTED</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon oppdatere bostedsadresse</TD>
 </TR>
 <TR>
-<TD Class="Num">233</TD>
+<TD Class="Num">228</TD>
 <TD>SASOPPDSTART1</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon sette startdato alltid</TD>
 </TR>
 <TR>
-<TD Class="Num">234</TD>
+<TD Class="Num">229</TD>
 <TD>SASOPPDSTART2</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon sette startdato</TD>
 </TR>
 <TR>
-<TD Class="Num">235</TD>
+<TD Class="Num">230</TD>
 <TD>SASKONVTILSV</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon konvertere tilsvarende programområde</TD>
 </TR>
 <TR>
-<TD Class="Num">236</TD>
+<TD Class="Num">231</TD>
 <TD>SASBLANKEARK</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon fjerne karakterlinjer</TD>
 </TR>
 <TR>
-<TD Class="Num">237</TD>
+<TD Class="Num">232</TD>
 <TD>SASINNTKODEU</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon settes inntakskode U</TD>
 </TR>
 <TR>
-<TD Class="Num">238</TD>
+<TD Class="Num">233</TD>
 <TD>ARKOPPM</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Arkivering av oppmeldinger (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">239</TD>
+<TD Class="Num">234</TD>
 <TD>AUTORETFRANEMNDD</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Dato for retut fra nemnd settes automatisk</TD>
 </TR>
 <TR>
-<TD Class="Num">240</TD>
+<TD Class="Num">235</TD>
 <TD>WFRSVARA</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Svarfrist tilbud på Vg3 i skole</TD>
 </TR>
 <TR>
-<TD Class="Num">241</TD>
+<TD Class="Num">236</TD>
 <TD>WFRPURRA</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Purrefrist tilbud på Vg3 i skole</TD>
 </TR>
 <TR>
-<TD Class="Num">242</TD>
+<TD Class="Num">237</TD>
 <TD>OTALDER</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sjekk på alder ved overføring til OT [ihht 6A015]</TD>
 </TR>
 <TR>
-<TD Class="Num">243</TD>
+<TD Class="Num">238</TD>
 <TD>OT_OVERSTYR_KARAKTERER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Alle statuskoder i OT gir tilgang til fag og karakterer [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">244</TD>
+<TD Class="Num">239</TD>
 <TD>WDATATILVIGO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Om modulen Data til VIGO skal vises på VIGO Skole</TD>
 </TR>
 <TR>
-<TD Class="Num">245</TD>
+<TD Class="Num">240</TD>
 <TD>REDIGERINTAVTALE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang til å redigere antall intavtaler på web [J/N]</TD>
 </TR>
 <TR>
-<TD Class="Num">246</TD>
+<TD Class="Num">241</TD>
 <TD>SASLOGGDETALJER</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>SAS integrasjon logg detaljer</TD>
 </TR>
 <TR>
-<TD Class="Num">247</TD>
+<TD Class="Num">242</TD>
 <TD>TILSKAKTIV</TD>
 <TD nowrap>INTEGER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddskjøring startet</TD>
 </TR>
 <TR>
-<TD Class="Num">248</TD>
+<TD Class="Num">243</TD>
 <TD>TILSKSTART</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddskjøring startet tidspunkt</TD>
 </TR>
 <TR>
-<TD Class="Num">249</TD>
+<TD Class="Num">244</TD>
 <TD>TILSKSLUTT</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilskuddskjøring sluttet tidspunkt</TD>
 </TR>
 <TR>
-<TD Class="Num">250</TD>
+<TD Class="Num">245</TD>
 <TD>TILSKBRUKER</TD>
 <TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Bruker som har startet tilskuddskjøring</TD>
 </TR>
 <TR>
-<TD Class="Num">251</TD>
+<TD Class="Num">246</TD>
 <TD>OTVARSEL</TD>
 <TD nowrap>VARCHAR2(140)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Generell tekst for SMS varsling for OT</TD>
 </TR>
 <TR>
-<TD Class="Num">252</TD>
+<TD Class="Num">247</TD>
 <TD>LPLASSPROG_AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Læreplassprognose aktivert</TD>
+</TR>
+<TR>
+<TD Class="Num">248</TD>
+<TD>KLASORDNOK</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Klasseordning OK til vilbli.no</TD>
+</TR>
+<TR>
+<TD Class="Num">249</TD>
+<TD>DSPKUNDE</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">250</TD>
+<TD>DSPPASS</TD>
+<TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table FYLKE</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0FYLKE</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKFYLKE</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -1936,9 +2212,599 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table FYLKE</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C00120982</TD>
+<TD>Check</TD>
+<TD>"TERMIN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TERMIN</TD>
+</TR>
+<TR>
+<TD>SYS_C00137249</TD>
+<TD>Check</TD>
+<TD>"NEMND_PA_WEB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NEMND_PA_WEB</TD>
+</TR>
+<TR>
+<TD>SYS_C0014631</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0014632</TD>
+<TD>Check</TD>
+<TD>"BEDRSOK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BEDRSOK</TD>
+</TR>
+<TR>
+<TD>SYS_C0014633</TD>
+<TD>Check</TD>
+<TD>"ENHET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ENHET</TD>
+</TR>
+<TR>
+<TD>SYS_C0014634</TD>
+<TD>Check</TD>
+<TD>"FREINNT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FREINNT</TD>
+</TR>
+<TR>
+<TD>SYS_C0014635</TD>
+<TD>Check</TD>
+<TD>"SAMISK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SAMISK</TD>
+</TR>
+<TR>
+<TD>SYS_C0014638</TD>
+<TD>Check</TD>
+<TD>"SKYSS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKYSS</TD>
+</TR>
+<TR>
+<TD>SYS_C0014641</TD>
+<TD>Check</TD>
+<TD>"WEBAKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WEBAKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0014642</TD>
+<TD>Check</TD>
+<TD>"WVISKAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVISKAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0014643</TD>
+<TD>Check</TD>
+<TD>"WVISVENT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVISVENT</TD>
+</TR>
+<TR>
+<TD>SYS_C0014644</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0014645</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0014646</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0014647</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0014648</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0014651</TD>
+<TD>Check</TD>
+<TD>"AUTOSKOLE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AUTOSKOLE</TD>
+</TR>
+<TR>
+<TD>SYS_C0014652</TD>
+<TD>Check</TD>
+<TD>"VISAUTOSKOLE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VISAUTOSKOLE</TD>
+</TR>
+<TR>
+<TD>SYS_C0014653</TD>
+<TD>Check</TD>
+<TD>"HSKONUAKTU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>HSKONUAKTU</TD>
+</TR>
+<TR>
+<TD>SYS_C0014654</TD>
+<TD>Check</TD>
+<TD>"DSFSPERR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DSFSPERR</TD>
+</TR>
+<TR>
+<TD>SYS_C0014655</TD>
+<TD>Check</TD>
+<TD>"DSFSPERR2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DSFSPERR2</TD>
+</TR>
+<TR>
+<TD>SYS_C0014656</TD>
+<TD>Check</TD>
+<TD>"SVARMETODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SVARMETODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0014657</TD>
+<TD>Check</TD>
+<TD>"PRESLUTT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PRESLUTT</TD>
+</TR>
+<TR>
+<TD>SYS_C0014658</TD>
+<TD>Check</TD>
+<TD>"MLDTILBEDVIS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>MLDTILBEDVIS</TD>
+</TR>
+<TR>
+<TD>SYS_C0014659</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0014660</TD>
+<TD>Check</TD>
+<TD>"WVIS68" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVIS68</TD>
+</TR>
+<TR>
+<TD>SYS_C0014661</TD>
+<TD>Check</TD>
+<TD>"WVIS622" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVIS622</TD>
+</TR>
+<TR>
+<TD>SYS_C0014662</TD>
+<TD>Check</TD>
+<TD>"WVIS623" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVIS623</TD>
+</TR>
+<TR>
+<TD>SYS_C0014663</TD>
+<TD>Check</TD>
+<TD>"WVIS625" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVIS625</TD>
+</TR>
+<TR>
+<TD>SYS_C0014664</TD>
+<TD>Check</TD>
+<TD>"WVIS635" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVIS635</TD>
+</TR>
+<TR>
+<TD>SYS_C0014665</TD>
+<TD>Check</TD>
+<TD>"LOGONMODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LOGONMODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0014666</TD>
+<TD>Check</TD>
+<TD>"BEDRTILVILBLI" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BEDRTILVILBLI</TD>
+</TR>
+<TR>
+<TD>SYS_C0014667</TD>
+<TD>Check</TD>
+<TD>"WVIS68B" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVIS68B</TD>
+</TR>
+<TR>
+<TD>SYS_C00169156</TD>
+<TD>Check</TD>
+<TD>"SASKTR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASKTR</TD>
+</TR>
+<TR>
+<TD>SYS_C00169157</TD>
+<TD>Check</TD>
+<TD>"SASIMP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASIMP</TD>
+</TR>
+<TR>
+<TD>SYS_C00169158</TD>
+<TD>Check</TD>
+<TD>"SASOPPDBOSTED" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASOPPDBOSTED</TD>
+</TR>
+<TR>
+<TD>SYS_C00169159</TD>
+<TD>Check</TD>
+<TD>"SASOPPDSTART1" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASOPPDSTART1</TD>
+</TR>
+<TR>
+<TD>SYS_C00169160</TD>
+<TD>Check</TD>
+<TD>"SASOPPDSTART2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASOPPDSTART2</TD>
+</TR>
+<TR>
+<TD>SYS_C00169161</TD>
+<TD>Check</TD>
+<TD>"SASKONVTILSV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASKONVTILSV</TD>
+</TR>
+<TR>
+<TD>SYS_C00169162</TD>
+<TD>Check</TD>
+<TD>"SASBLANKEARK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASBLANKEARK</TD>
+</TR>
+<TR>
+<TD>SYS_C00169163</TD>
+<TD>Check</TD>
+<TD>"SASINNTKODEU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASINNTKODEU</TD>
+</TR>
+<TR>
+<TD>SYS_C00169166</TD>
+<TD>Check</TD>
+<TD>"ARKOPPM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ARKOPPM</TD>
+</TR>
+<TR>
+<TD>SYS_C0017278</TD>
+<TD>Check</TD>
+<TD>"DIGITALSIGNATUR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DIGITALSIGNATUR</TD>
+</TR>
+<TR>
+<TD>SYS_C00183171</TD>
+<TD>Check</TD>
+<TD>"AUTORETFRANEMNDD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AUTORETFRANEMNDD</TD>
+</TR>
+<TR>
+<TD>SYS_C00205953</TD>
+<TD>Check</TD>
+<TD>"OT_OVERSTYR_KARAKTERER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OT_OVERSTYR_KARAKTERER</TD>
+</TR>
+<TR>
+<TD>SYS_C0021373</TD>
+<TD>Check</TD>
+<TD>"DEFASVAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DEFASVAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021374</TD>
+<TD>Check</TD>
+<TD>"DKGRENS2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DKGRENS2</TD>
+</TR>
+<TR>
+<TD>SYS_C0021375</TD>
+<TD>Check</TD>
+<TD>"DSPSRVC" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DSPSRVC</TD>
+</TR>
+<TR>
+<TD>SYS_C0021377</TD>
+<TD>Check</TD>
+<TD>"FRIERESK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FRIERESK</TD>
+</TR>
+<TR>
+<TD>SYS_C0021380</TD>
+<TD>Check</TD>
+<TD>"INDINNT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INDINNT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021381</TD>
+<TD>Check</TD>
+<TD>"INNSTAF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAF</TD>
+</TR>
+<TR>
+<TD>SYS_C0021382</TD>
+<TD>Check</TD>
+<TD>"INNSTAIM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAIM</TD>
+</TR>
+<TR>
+<TD>SYS_C0021383</TD>
+<TD>Check</TD>
+<TD>"INNSTAIU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAIU</TD>
+</TR>
+<TR>
+<TD>SYS_C0021384</TD>
+<TD>Check</TD>
+<TD>"INNSTAMM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAMM</TD>
+</TR>
+<TR>
+<TD>SYS_C0021385</TD>
+<TD>Check</TD>
+<TD>"INNSTAMU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAMU</TD>
+</TR>
+<TR>
+<TD>SYS_C0021386</TD>
+<TD>Check</TD>
+<TD>"INNSTAOM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAOM</TD>
+</TR>
+<TR>
+<TD>SYS_C0021387</TD>
+<TD>Check</TD>
+<TD>"INNSTAOU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAOU</TD>
+</TR>
+<TR>
+<TD>SYS_C0021388</TD>
+<TD>Check</TD>
+<TD>"INNSTASM" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTASM</TD>
+</TR>
+<TR>
+<TD>SYS_C0021389</TD>
+<TD>Check</TD>
+<TD>"INNSTASU" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTASU</TD>
+</TR>
+<TR>
+<TD>SYS_C0021390</TD>
+<TD>Check</TD>
+<TD>"INNSTAV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNSTAV</TD>
+</TR>
+<TR>
+<TD>SYS_C0021391</TD>
+<TD>Check</TD>
+<TD>"INNTKODG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>INNTKODG</TD>
+</TR>
+<TR>
+<TD>SYS_C0021393</TD>
+<TD>Check</TD>
+<TD>"NERSKOLE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NERSKOLE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021394</TD>
+<TD>Check</TD>
+<TD>"OPPDFAJO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPDFAJO</TD>
+</TR>
+<TR>
+<TD>SYS_C0021395</TD>
+<TD>Check</TD>
+<TD>"PRIOAKER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PRIOAKER</TD>
+</TR>
+<TR>
+<TD>SYS_C0021396</TD>
+<TD>Check</TD>
+<TD>"SVARFRIST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SVARFRIST</TD>
+</TR>
+<TR>
+<TD>SYS_C0021397</TD>
+<TD>Check</TD>
+<TD>"VISPASS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VISPASS</TD>
+</TR>
+<TR>
+<TD>SYS_C0021398</TD>
+<TD>Check</TD>
+<TD>"VLSTTYP1" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VLSTTYP1</TD>
+</TR>
+<TR>
+<TD>SYS_C0021399</TD>
+<TD>Check</TD>
+<TD>"VLSTTYP2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VLSTTYP2</TD>
+</TR>
+<TR>
+<TD>SYS_C0021400</TD>
+<TD>Check</TD>
+<TD>"VLSTTYP3" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VLSTTYP3</TD>
+</TR>
+<TR>
+<TD>SYS_C0021401</TD>
+<TD>Check</TD>
+<TD>"VSMETOD1" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VSMETOD1</TD>
+</TR>
+<TR>
+<TD>SYS_C00255329</TD>
+<TD>Check</TD>
+<TD>"WDATATILVIGO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WDATATILVIGO</TD>
+</TR>
+<TR>
+<TD>SYS_C00259296</TD>
+<TD>Check</TD>
+<TD>"REDIGERINTAVTALE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REDIGERINTAVTALE</TD>
+</TR>
+<TR>
+<TD>SYS_C00265408</TD>
+<TD>Check</TD>
+<TD>"ARKIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ARKIV</TD>
+</TR>
+<TR>
+<TD>SYS_C00269808</TD>
+<TD>Check</TD>
+<TD>"SASLOGGDETALJER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASLOGGDETALJER</TD>
+</TR>
+<TR>
+<TD>SYS_C00299777</TD>
+<TD>Check</TD>
+<TD>"LPLASSPROG_AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LPLASSPROG_AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0030918</TD>
+<TD>Check</TD>
+<TD>"AUTOGODK_DIGSIG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AUTOGODK_DIGSIG</TD>
+</TR>
+<TR>
+<TD>SYS_C00316463</TD>
+<TD>Check</TD>
+<TD>"KLASORDNOK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KLASORDNOK</TD>
+</TR>
+<TR>
+<TD>SYS_C0055771</TD>
+<TD>Check</TD>
+<TD>"TYPE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TYPE</TD>
+</TR>
+<TR>
+<TD>SYS_C0078553</TD>
+<TD>Check</TD>
+<TD>"WVISINNT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WVISINNT</TD>
+</TR>
+<TR>
+<TD>SYS_C0078558</TD>
+<TD>Check</TD>
+<TD>"SASINT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SASINT</TD>
+</TR>
+<TR>
+<TD>SYS_C0092912</TD>
+<TD>Check</TD>
+<TD>"BRUKERSIGNATAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BRUKERSIGNATAR</TD>
+</TR>
+<TR>
+<TD>XPKFYLKE</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table FYLKE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -1,0 +1,273 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="Generator" CONTENT="TOAD">
+<LINK REL="stylesheet" TYPE="text/css" HREF="../../../../styles.css">
+<TITLE>VIGOS Table WSPARAMS</TITLE>
+</HEAD>
+<BODY>
+<div class="mainContainer">
+<div id="headerContainer">
+<div id="header">
+<center><div class="title">Schema VIGOS</div></CENTER>
+<center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:30:57</div></CENTER>
+<div class="headerEnd"><p>&nbsp;</p></div>
+</div>
+</div>
+</div>
+<CENTER>
+<ul id="list-nav">
+<li><a href="../summary.html">Summary</a></li>
+<li><a href="../tables1.html">Tables</a></li>
+</ul>
+</CENTER>
+<BR><TABLE class="Nav"><TR>
+<TD Class="NavL"><A HREF="./WSBRUKER.html" TITLE="WSBRUKER">Prior Table</A></TD>
+<TD Class="NavC"><A HREF="../tables4.html#WSPARAMS">Table WSPARAMS</A></TD>
+<TD Class="NavRSilver"><A>Next Table</A></TD>
+</TR></TABLE>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Comment for Table WSPARAMS</CAPTION>
+<TR>
+<TH>Comment</TH>
+</TR>
+<TR>
+<TD>Web-service: Parametre</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Columns of Table WSPARAMS</CAPTION>
+<TR>
+<TH>Column ID</TH>
+<TH>Column Name</TH>
+<TH>Datatype</TH>
+<TH>Not Null</TH>
+<TH>Data Default</TH>
+<TH>Comments</TH>
+</TR>
+<TR>
+<TD Class="NumRed">1</TD>
+<TD><B>S_OBJECTID</B></TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Objectid (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">2</TD>
+<TD>TJENESTE</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Tjeneste</TD>
+</TR>
+<TR>
+<TD Class="Num">3</TD>
+<TD>APIKEY</TD>
+<TD nowrap>VARCHAR2(128)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Api-key</TD>
+</TR>
+<TR>
+<TD Class="Num">4</TD>
+<TD>IP</TD>
+<TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>IP-Adresse</TD>
+</TR>
+<TR>
+<TD Class="Num">5</TD>
+<TD>AKTIV</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Aktiv [J,N]</TD>
+</TR>
+<TR>
+<TD Class="Num">6</TD>
+<TD>NOTAT</TD>
+<TD nowrap>VARCHAR2(999)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Notat</TD>
+</TR>
+<TR>
+<TD Class="Num">7</TD>
+<TD>S_INSERTED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">8</TD>
+<TD>S_INSERTED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Opprettet når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">9</TD>
+<TD>S_UPDATED_BY</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert av (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">10</TD>
+<TD>S_UPDATED_TS</TD>
+<TD nowrap>DATE</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>Oppdatert når (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">11</TD>
+<TD>S_STATUS</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">12</TD>
+<TD>MAXROWS</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table WSPARAMS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKWSPARAMS</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table WSPARAMS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0017213</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0017214</TD>
+<TD>Check</TD>
+<TD>"TJENESTE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TJENESTE</TD>
+</TR>
+<TR>
+<TD>SYS_C0017215</TD>
+<TD>Check</TD>
+<TD>"APIKEY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>APIKEY</TD>
+</TR>
+<TR>
+<TD>SYS_C0017216</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0017217</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0017218</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0017219</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0017220</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKWSPARAMS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Table WSPARAMS does not have...</CAPTION>
+<TR>
+<TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
+</TR>
+</TABLE>
+</CENTER>
+</BODY>
+</HTML>

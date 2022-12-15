@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Læreplassregnskap - bedriftsnettverk</TD>
+<TD>L&#230;replassregnskap - bedriftsnettverk</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>SKOLENR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skolenr [ihht SKOLE]</TD>
 </TR>
 <TR>
@@ -70,6 +73,7 @@
 <TD><B>KURSKODE</B><SUB>3</SUB></TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode [ihht KURS]</TD>
 </TR>
 <TR>
@@ -77,12 +81,14 @@
 <TD><B>BNR</B><SUB>4</SUB></TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Organisasjonsnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>KONTAKTPERS_NAVN</TD>
 <TD nowrap>VARCHAR2(60)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Bedriftens kontaktperson, navn</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>KONTAKTPERS_TLF</TD>
 <TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Bedriftens kontaktperson, telefon</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>KONTAKTPERS_EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Bedriftens kontaktperson, e-post</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>DATO_SAMARBEID_YFF</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Dato for samarbeid</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>PRAKSISPLASSER</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall plasser for utplassering</TD>
 </TR>
@@ -119,6 +129,7 @@
 <TD>REGISTRERT_AV</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av [ihht VSK_BRUKER]</TD>
 </TR>
 <TR>
@@ -126,6 +137,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -133,6 +145,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -140,6 +153,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -147,6 +161,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -154,12 +169,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -168,6 +185,7 @@
 <TD>KOMMENTAR</TD>
 <TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fritekst</TD>
 </TR>
 <TR>
@@ -175,7 +193,47 @@
 <TD>HAR_ANSATTE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Sier noe om bedriften er et enkeltmannsforetak</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table BEDRIFT_NETTVERK</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0BEDRIFT_NETTVERK</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKBEDRIFT_NETTVERK</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, SKOLENR, KURSKODE, BNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -243,9 +301,95 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table BEDRIFT_NETTVERK</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C00233059</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C00233060</TD>
+<TD>Check</TD>
+<TD>"SKOLENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENR</TD>
+</TR>
+<TR>
+<TD>SYS_C00233061</TD>
+<TD>Check</TD>
+<TD>"KURSKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C00233062</TD>
+<TD>Check</TD>
+<TD>"BNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BNR</TD>
+</TR>
+<TR>
+<TD>SYS_C00233063</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C00233064</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C00233065</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C00233066</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C00233067</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKBEDRIFT_NETTVERK</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, SKOLENR, KURSKODE, BNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table BEDRIFT_NETTVERK does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

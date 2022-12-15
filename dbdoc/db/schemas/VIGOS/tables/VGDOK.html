@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD><B>VGDOKNR</B><SUB>2</SUB></TD>
 <TD nowrap>CHAR(19)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Vgdoknr</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>FNR</TD>
 <TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fnr [ihht ELEV]</TD>
 </TR>
@@ -77,6 +81,7 @@
 <TD>TEST</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Test? [J,N]</TD>
 </TR>
 <TR>
@@ -84,12 +89,14 @@
 <TD>UTSKREVET</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Utskrevet? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>UTSKRDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Utskriftsdato</TD>
 </TR>
@@ -98,12 +105,14 @@
 <TD>KONTROLLERT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Kontrollert? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>KONTRDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kontraktsdato</TD>
 </TR>
@@ -112,6 +121,7 @@
 <TD>KONTROLLID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kontroll ID</TD>
 </TR>
 <TR>
@@ -119,12 +129,14 @@
 <TD>EKSPORTNVB</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Eksport nvb? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>EKSPORTNVBDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Eksport nvb dato</TD>
 </TR>
@@ -133,12 +145,14 @@
 <TD>EKSPORTINFO</TD>
 <TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Eksportinformasjon</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>FOERSTEGANGSVM</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Førstegangsvitnemål? [J,N]</TD>
 </TR>
@@ -147,6 +161,7 @@
 <TD>REFORMKODE</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Reformkode</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>VGDOKTYPE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Vgdoktype</TD>
 </TR>
 <TR>
@@ -161,6 +177,7 @@
 <TD>AVGANGSAAR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Avgangsår</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>ORGNR</TD>
 <TD nowrap>NUMBER(9)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Organisasjonnr</TD>
 </TR>
 <TR>
@@ -175,6 +193,7 @@
 <TD>UTSTEDERSTED</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Utstedersted</TD>
 </TR>
 <TR>
@@ -182,6 +201,7 @@
 <TD>DATO_UTSTEDT</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Dato utstedt</TD>
 </TR>
 <TR>
@@ -189,6 +209,7 @@
 <TD>SKOLENAVN</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skolenavn</TD>
 </TR>
 <TR>
@@ -196,6 +217,7 @@
 <TD>REKTORNAVN</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Navn på rektor</TD>
 </TR>
 <TR>
@@ -203,6 +225,7 @@
 <TD>UNDERSKRIVERNAVN</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Underskrivernavn</TD>
 </TR>
 <TR>
@@ -210,12 +233,14 @@
 <TD>FOEDTDATO</TD>
 <TD nowrap>CHAR(6)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødtdato</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>PERSONNUMMER</TD>
 <TD nowrap>CHAR(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Personnummer</TD>
 </TR>
@@ -224,12 +249,14 @@
 <TD>PERSONNAVN</TD>
 <TD nowrap>VARCHAR2(60)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Navn på person</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>DISPENSASJONSKODE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dispensasjonskode</TD>
 </TR>
@@ -238,6 +265,7 @@
 <TD>GSK_OK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Grunnskolen ok? [J,N]</TD>
 </TR>
 <TR>
@@ -245,12 +273,14 @@
 <TD>OMFANG</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Omfang</TD>
 </TR>
 <TR>
 <TD Class="Num">29</TD>
 <TD>ORDEN</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Orden</TD>
 </TR>
@@ -259,12 +289,14 @@
 <TD>ADFERD</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Adferd</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>ANTALL_VEDLEGG</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall vedlegg</TD>
 </TR>
@@ -273,12 +305,14 @@
 <TD>FILNAVN_VEDLEGG</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Filnavn vedlegg</TD>
 </TR>
 <TR>
 <TD Class="Num">33</TD>
 <TD>SPRAAKKODE</TD>
 <TD nowrap>CHAR(3)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Språkkode</TD>
 </TR>
@@ -287,6 +321,7 @@
 <TD>MAALFORMKODE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Målformkode</TD>
 </TR>
 <TR>
@@ -294,12 +329,14 @@
 <TD>ANNULLERT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Annullert? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">36</TD>
 <TD>ANNULLERT_DATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Annullert dato</TD>
 </TR>
@@ -308,12 +345,14 @@
 <TD>ANNULLERING_SAKSB</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Annullering saksbehandler</TD>
 </TR>
 <TR>
 <TD Class="Num">38</TD>
 <TD>VGDOKNR_ERST_AV</TD>
 <TD nowrap>CHAR(19)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Vgdoknr erstattet av. [ihht VGDOK]</TD>
 </TR>
@@ -322,12 +361,14 @@
 <TD>ANNULLERINGAARSAKKODE</TD>
 <TD nowrap>CHAR(3)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Annulleringårsakkode</TD>
 </TR>
 <TR>
 <TD Class="Num">40</TD>
 <TD>ANNULLERING_MERKNAD</TD>
 <TD nowrap>VARCHAR2(255)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Annulleringsmerknad</TD>
 </TR>
@@ -336,6 +377,7 @@
 <TD>NYSIDETERSKEL</TD>
 <TD nowrap>INTEGER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Nyside terskel</TD>
 </TR>
 <TR>
@@ -343,12 +385,14 @@
 <TD>KONTROVERST</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Kontrollmotor overstyrt? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">43</TD>
 <TD>KONTROVERST_MERKNAD</TD>
 <TD nowrap>VARCHAR2(250)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kontrollmotor overstyrt merknad</TD>
 </TR>
@@ -357,6 +401,7 @@
 <TD>KONTROVERST_INFODATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kontrollmotor overstyrt informasjonsdato</TD>
 </TR>
 <TR>
@@ -364,6 +409,7 @@
 <TD>DOKBAKGRUNN</TD>
 <TD nowrap>VARCHAR2(8)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Dokumentbakgrunn</TD>
 </TR>
 <TR>
@@ -371,6 +417,7 @@
 <TD>YRK_OK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Yrk. ok? [J,N]</TD>
 </TR>
 <TR>
@@ -378,6 +425,7 @@
 <TD>TIL_NVB</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Til NVB</TD>
 </TR>
 <TR>
@@ -385,6 +433,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -392,6 +441,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -399,6 +449,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -406,6 +457,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -413,6 +465,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -420,7 +473,47 @@
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table VGDOK</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0VGDOK</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKVGDOK</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, VGDOKNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -488,9 +581,235 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table VGDOK</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0021093</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021094</TD>
+<TD>Check</TD>
+<TD>"VGDOKNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VGDOKNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021095</TD>
+<TD>Check</TD>
+<TD>"TEST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TEST</TD>
+</TR>
+<TR>
+<TD>SYS_C0021096</TD>
+<TD>Check</TD>
+<TD>"UTSKREVET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTSKREVET</TD>
+</TR>
+<TR>
+<TD>SYS_C0021097</TD>
+<TD>Check</TD>
+<TD>"KONTROLLERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTROLLERT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021098</TD>
+<TD>Check</TD>
+<TD>"EKSPORTNVB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>EKSPORTNVB</TD>
+</TR>
+<TR>
+<TD>SYS_C0021099</TD>
+<TD>Check</TD>
+<TD>"REFORMKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REFORMKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021100</TD>
+<TD>Check</TD>
+<TD>"VGDOKTYPE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VGDOKTYPE</TD>
+</TR>
+<TR>
+<TD>SYS_C0021101</TD>
+<TD>Check</TD>
+<TD>"AVGANGSAAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVGANGSAAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021102</TD>
+<TD>Check</TD>
+<TD>"ORGNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ORGNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021103</TD>
+<TD>Check</TD>
+<TD>"UTSTEDERSTED" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTSTEDERSTED</TD>
+</TR>
+<TR>
+<TD>SYS_C0021104</TD>
+<TD>Check</TD>
+<TD>"DATO_UTSTEDT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DATO_UTSTEDT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021105</TD>
+<TD>Check</TD>
+<TD>"SKOLENAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021106</TD>
+<TD>Check</TD>
+<TD>"REKTORNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REKTORNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021107</TD>
+<TD>Check</TD>
+<TD>"UNDERSKRIVERNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UNDERSKRIVERNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021108</TD>
+<TD>Check</TD>
+<TD>"FOEDTDATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FOEDTDATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0021109</TD>
+<TD>Check</TD>
+<TD>"PERSONNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PERSONNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021110</TD>
+<TD>Check</TD>
+<TD>"OMFANG" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OMFANG</TD>
+</TR>
+<TR>
+<TD>SYS_C0021111</TD>
+<TD>Check</TD>
+<TD>"ANNULLERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ANNULLERT</TD>
+</TR>
+<TR>
+<TD>SYS_C0021112</TD>
+<TD>Check</TD>
+<TD>"NYSIDETERSKEL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>NYSIDETERSKEL</TD>
+</TR>
+<TR>
+<TD>SYS_C0021113</TD>
+<TD>Check</TD>
+<TD>"KONTROVERST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KONTROVERST</TD>
+</TR>
+<TR>
+<TD>SYS_C0021114</TD>
+<TD>Check</TD>
+<TD>"DOKBAKGRUNN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DOKBAKGRUNN</TD>
+</TR>
+<TR>
+<TD>SYS_C0021115</TD>
+<TD>Check</TD>
+<TD>"YRK_OK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>YRK_OK</TD>
+</TR>
+<TR>
+<TD>SYS_C0021116</TD>
+<TD>Check</TD>
+<TD>"TIL_NVB" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TIL_NVB</TD>
+</TR>
+<TR>
+<TD>SYS_C0021117</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0021118</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0021119</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0021120</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0021121</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKVGDOK</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, VGDOKNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table VGDOK does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

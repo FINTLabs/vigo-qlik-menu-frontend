@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -24,9 +24,9 @@
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
-<TD Class="NavL"><A HREF="./OT_DG_SUBJECT.html" TITLE="OT_DG_SUBJECT">Prior Table</A></TD>
+<TD Class="NavL"><A HREF="./OT_DELT_UNGDOM.html" TITLE="OT_DELT_UNGDOM">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables2.html#OTENHET">Table OTENHET</A></TD>
-<TD Class="NavR"><A HREF="./OT_FEEDBACK.html" TITLE="OT_FEEDBACK">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./OTGRUPPE.html" TITLE="OTGRUPPE">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>OTENHET</B></TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>OT-enhet nr</TD>
 </TR>
 <TR>
@@ -63,12 +65,14 @@
 <TD>AKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Aktiv kode [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">3</TD>
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>E-post</TD>
 </TR>
@@ -77,12 +81,14 @@
 <TD>FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [Ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>GATE</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>KOMMNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kommunenr [Ihht KOMMUNE]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>NAVN</TD>
 <TD nowrap>VARCHAR2(42)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn på enhet</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>ORGNR</TD>
 <TD nowrap>VARCHAR2(9)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Organisasjonsnr</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>POSTADR</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postadresse</TD>
 </TR>
@@ -119,12 +129,14 @@
 <TD>POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postnr [Ihht POSTSTED]</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>TELEFAX</TD>
 <TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefaks</TD>
 </TR>
@@ -133,12 +145,14 @@
 <TD>TELEFON</TD>
 <TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Telefon</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>WWW</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Hjemmeside</TD>
 </TR>
@@ -147,6 +161,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,6 +177,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -175,12 +193,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -189,12 +209,14 @@
 <TD>GYLDIGFOM</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Gyldig fra dato</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>GYLDIGTOM</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gyldig til dato</TD>
 </TR>
@@ -203,12 +225,14 @@
 <TD>DISTR_FAKTISK</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Da koden faktisk ble distribuert</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>REGIONNR</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Regionsnr [Ihht REGION]</TD>
 </TR>
@@ -217,7 +241,47 @@
 <TD>NYKODE</TD>
 <TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Konverteres til [ihht OTENHET]</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table OTENHET</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0OTENHET</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKOTENHET</TD>
+<TD>NORMAL</TD>
+<TD>OTENHET</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -285,9 +349,88 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table OTENHET</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013166</TD>
+<TD>Check</TD>
+<TD>"OTENHET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OTENHET</TD>
+</TR>
+<TR>
+<TD>SYS_C0013167</TD>
+<TD>Check</TD>
+<TD>"AKTIV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AKTIV</TD>
+</TR>
+<TR>
+<TD>SYS_C0013168</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013169</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013170</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013171</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013172</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013173</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKOTENHET</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>OTENHET</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table OTENHET does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

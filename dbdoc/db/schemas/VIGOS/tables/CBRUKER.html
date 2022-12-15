@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>FNR</B><SUB>2</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødselsnummer/organisasjonsnummer</TD>
 </TR>
 <TR>
@@ -70,6 +73,7 @@
 <TD>FORNAVN</TD>
 <TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fornavn</TD>
 </TR>
 <TR>
@@ -77,6 +81,7 @@
 <TD>ETTERNAVN</TD>
 <TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Etternavn</TD>
 </TR>
 <TR>
@@ -84,6 +89,7 @@
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>E-postadresse</TD>
 </TR>
 <TR>
@@ -91,6 +97,7 @@
 <TD>MOBIL</TD>
 <TD nowrap>VARCHAR2(99)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Mobilnummer</TD>
 </TR>
 <TR>
@@ -98,6 +105,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -105,6 +113,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -112,6 +121,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -119,6 +129,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -126,12 +137,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -140,6 +153,7 @@
 <TD>ACCVIGO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang VIGO Opplæring</TD>
 </TR>
 <TR>
@@ -147,6 +161,7 @@
 <TD>ACCQVV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang Qlik</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>ACCQVD</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang Qlik designer</TD>
 </TR>
 <TR>
@@ -161,6 +177,7 @@
 <TD>ACCQSD</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang Qlik Sens designer</TD>
 </TR>
 <TR>
@@ -168,12 +185,14 @@
 <TD>ACCQSV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang Qlik Sens</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>FYLKESNR_OLD</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gammelt fylkesnr</TD>
 </TR>
@@ -182,6 +201,7 @@
 <TD>ACCNPD</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang NPrinting designer</TD>
 </TR>
 <TR>
@@ -189,12 +209,14 @@
 <TD>ACCNPV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilgang NPrinting</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>TJENSTED</TD>
 <TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Arbeidssted</TD>
 </TR>
@@ -203,12 +225,14 @@
 <TD>FNRORGNR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>O=org.nr, F=fnr</TD>
 </TR>
 <TR>
 <TD Class="Num">23</TD>
 <TD>OSUSER</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Internt systemfelt</TD>
 </TR>
@@ -217,12 +241,14 @@
 <TD>EPOST2</TD>
 <TD nowrap>VARCHAR2(99)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>E-post-adresse 2 (Qlik)</TD>
 </TR>
 <TR>
 <TD Class="Num">25</TD>
 <TD>MOBIL2</TD>
 <TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Mobiltelefonnr 2 (Qlik)</TD>
 </TR>
@@ -231,7 +257,211 @@
 <TD>TJENSTED2</TD>
 <TD nowrap>VARCHAR2(30)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tjenestested 2 (Qlik)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table CBRUKER</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0CBRUKER</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK1CBRUKER</TD>
+<TD>NORMAL</TD>
+<TD>FNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKCBRUKER</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table CBRUKER</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C00192026</TD>
+<TD>Check</TD>
+<TD>"ACCNPD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ACCNPD</TD>
+</TR>
+<TR>
+<TD>SYS_C00192027</TD>
+<TD>Check</TD>
+<TD>"ACCNPV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ACCNPV</TD>
+</TR>
+<TR>
+<TD>SYS_C00245756</TD>
+<TD>Check</TD>
+<TD>"FNRORGNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNRORGNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0032365</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0032366</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0032367</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0032368</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0032369</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0032370</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0032371</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0032373</TD>
+<TD>Check</TD>
+<TD>"FORNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FORNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0032374</TD>
+<TD>Check</TD>
+<TD>"ETTERNAVN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ETTERNAVN</TD>
+</TR>
+<TR>
+<TD>SYS_C0032375</TD>
+<TD>Check</TD>
+<TD>"EPOST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>EPOST</TD>
+</TR>
+<TR>
+<TD>SYS_C0032376</TD>
+<TD>Check</TD>
+<TD>"MOBIL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>MOBIL</TD>
+</TR>
+<TR>
+<TD>SYS_C0051791</TD>
+<TD>Check</TD>
+<TD>"ACCVIGO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ACCVIGO</TD>
+</TR>
+<TR>
+<TD>SYS_C0051792</TD>
+<TD>Check</TD>
+<TD>"ACCQVV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ACCQVV</TD>
+</TR>
+<TR>
+<TD>SYS_C0051793</TD>
+<TD>Check</TD>
+<TD>"ACCQVD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ACCQVD</TD>
+</TR>
+<TR>
+<TD>SYS_C0071912</TD>
+<TD>Check</TD>
+<TD>"ACCQSD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ACCQSD</TD>
+</TR>
+<TR>
+<TD>SYS_C0071913</TD>
+<TD>Check</TD>
+<TD>"ACCQSV" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ACCQSV</TD>
+</TR>
+<TR>
+<TD>XPKCBRUKER</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, FNR</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -244,6 +474,9 @@
 </TR>
 <TR>
 <TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

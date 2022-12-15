@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>BNR</B><SUB>2</SUB></TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Bedriftsnummer</TD>
 </TR>
 <TR>
@@ -70,12 +73,14 @@
 <TD>BEDRTYPE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Bedriftstype [P=privat,K=kommunal,F=fylkeskommunal,S=statlig]</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>e-postadresse</TD>
 </TR>
@@ -84,12 +89,14 @@
 <TD>GATE1K</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Gateadresse kontor</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>GATE1P</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse post</TD>
 </TR>
@@ -98,12 +105,14 @@
 <TD>GATE2K</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Gateadresse kontor</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>GATE2P</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Gateadresse post</TD>
 </TR>
@@ -112,12 +121,14 @@
 <TD>KOMMNRK</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kommunenr kontor [Ihht KOMMUNE]</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>KOMMNRP</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kommunenr post [Ihht KOMMUNE]</TD>
 </TR>
@@ -126,6 +137,7 @@
 <TD>KONTONR</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kontonr</TD>
 </TR>
 <TR>
@@ -133,12 +145,14 @@
 <TD>KUNMEDL</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Kun godkjent som medlemsbedrift [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>LANDKODE</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Landkode [Ihht LAND]</TD>
 </TR>
@@ -147,12 +161,14 @@
 <TD>LOKALTNAVN</TD>
 <TD nowrap>VARCHAR2(180)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Lokalt navn</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>NAVN</TD>
 <TD nowrap>VARCHAR2(180)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Bedriftsnavn</TD>
 </TR>
@@ -161,12 +177,14 @@
 <TD>OPPLKONTOR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opplæringskontor? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>PASSIVARSAK</TD>
 <TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Passiv årsak [BO=bedrift opphørt,FG=fratatt godkjenning,IL=ønsker ikke lærlinger]</TD>
 </TR>
@@ -175,12 +193,14 @@
 <TD>PASSIVDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Passiv dato</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>POSTNRK</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postnr kontor [Ihht POSTSTED]</TD>
 </TR>
@@ -189,6 +209,7 @@
 <TD>POSTNRP</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postnr post [Ihht POSTSTED]</TD>
 </TR>
 <TR>
@@ -196,12 +217,14 @@
 <TD>PROVESTASJON</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Er prøvestasjon [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>REGION</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Region</TD>
 </TR>
@@ -210,12 +233,14 @@
 <TD>TELEFAX</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Telefax</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>TELEFON1</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefon 1</TD>
 </TR>
@@ -224,12 +249,14 @@
 <TD>TELEFON2</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Telefon 2</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>TILHORIGHET</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fylkestilhørighet [ihht FYLKE]</TD>
 </TR>
@@ -238,6 +265,7 @@
 <TD>WWW</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Web-adresse</TD>
 </TR>
 <TR>
@@ -245,6 +273,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -252,6 +281,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -259,12 +289,14 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">31</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -273,6 +305,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -280,6 +313,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -287,6 +321,7 @@
 <TD>MOLBRESERVERT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Reservert: Merkeordning for læreberdrifter [J,N]</TD>
 </TR>
 <TR>
@@ -294,6 +329,7 @@
 <TD>DIGITALSIGNATUR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Digital signatur [J,N]</TD>
 </TR>
 <TR>
@@ -301,6 +337,7 @@
 <TD>SOKLISTP</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ønsker lister på papir [J,N]</TD>
 </TR>
 <TR>
@@ -308,7 +345,47 @@
 <TD>BETALREF</TD>
 <TD nowrap>VARCHAR2(60)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Bedriftens referanse</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table BEDRIFT2</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0BEDRIFT2</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKBEDRIFT2</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, BNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -398,9 +475,130 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table BEDRIFT2</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013514</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013515</TD>
+<TD>Check</TD>
+<TD>"BNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013516</TD>
+<TD>Check</TD>
+<TD>"BEDRTYPE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BEDRTYPE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013517</TD>
+<TD>Check</TD>
+<TD>"KUNMEDL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KUNMEDL</TD>
+</TR>
+<TR>
+<TD>SYS_C0013518</TD>
+<TD>Check</TD>
+<TD>"OPPLKONTOR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>OPPLKONTOR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013519</TD>
+<TD>Check</TD>
+<TD>"PROVESTASJON" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PROVESTASJON</TD>
+</TR>
+<TR>
+<TD>SYS_C0013520</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013521</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013522</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013523</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013524</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013525</TD>
+<TD>Check</TD>
+<TD>"MOLBRESERVERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>MOLBRESERVERT</TD>
+</TR>
+<TR>
+<TD>SYS_C0017279</TD>
+<TD>Check</TD>
+<TD>"DIGITALSIGNATUR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DIGITALSIGNATUR</TD>
+</TR>
+<TR>
+<TD>SYS_C0021340</TD>
+<TD>Check</TD>
+<TD>"SOKLISTP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SOKLISTP</TD>
+</TR>
+<TR>
+<TD>XPKBEDRIFT2</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, BNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table BEDRIFT2 does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Læreplassregnskap - elever</TD>
+<TD>L&#230;replassregnskap - elever</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>SKOLENR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skolenr [ihht SKOLE]</TD>
 </TR>
 <TR>
@@ -70,6 +73,7 @@
 <TD><B>SKOLEAR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skoleår [ihht SKOLEAR]</TD>
 </TR>
 <TR>
@@ -77,12 +81,14 @@
 <TD><B>FNR</B><SUB>4</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødselsnr [ihht VSK_BRUKER]</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>DATO_AVTALT_LAEREPLASS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato for avtalt læreplass</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>ONSKER_LAEREPLASS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ønsker læreplass [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>OPPRINNELIG_ONSKE</TD>
 <TD nowrap>VARCHAR2(10)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Opprinnelig ønske for utdanning [ihht KURS]</TD>
 </TR>
@@ -105,6 +113,7 @@
 <TD>NAVERENDE_ONSKE</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Nåværende ønske for utdanning [ihht KURS]</TD>
 </TR>
 <TR>
@@ -112,6 +121,7 @@
 <TD>SOKT_LAEREPLASS_EGEN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Søkt læreplass [J,N]</TD>
 </TR>
 <TR>
@@ -119,12 +129,14 @@
 <TD>UTFORDRINGER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Har utfordringer [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>KOMMENTAR</TD>
 <TD nowrap>CLOB</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kommentarer</TD>
 </TR>
@@ -133,6 +145,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -140,6 +153,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -147,6 +161,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -154,6 +169,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,12 +177,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">17</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -175,6 +193,7 @@
 <TD>SOKT_LAEREPLASS_VIGO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Søkt i VIGO [J,N]</TD>
 </TR>
 <TR>
@@ -182,12 +201,14 @@
 <TD>LAEREPLASS_YFFBEDRIFT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fått læreplass i YFF-bedrift</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>STUDKODE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Utdanningsprogram eleven hører til</TD>
 </TR>
@@ -196,12 +217,14 @@
 <TD>BNR</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Organisasjonsnummer til bedrift hvor læreplass er avtalt</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>GRUPPE</TD>
 <TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fritekstfelt for gruppering</TD>
 </TR>
@@ -210,12 +233,14 @@
 <TD>KURSKATK</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>L=lærling, LK=lærekandidat,PK=praksisbrevkandidat</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>NIVA</TD>
 <TD nowrap>NUMBER(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Nivå, feks Vg1</TD>
 </TR>
@@ -224,7 +249,47 @@
 <TD>NEI_ARSAK</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Årsak til at det ikke ønskes læreplass</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table ELEV_LAEREPLASS</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0ELEV_LAEREPLASS</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKELEV_LAEREPLASS</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, SKOLENR, SKOLEAR, FNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -325,9 +390,137 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table ELEV_LAEREPLASS</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C00233069</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C00233070</TD>
+<TD>Check</TD>
+<TD>"SKOLENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENR</TD>
+</TR>
+<TR>
+<TD>SYS_C00233071</TD>
+<TD>Check</TD>
+<TD>"SKOLEAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLEAR</TD>
+</TR>
+<TR>
+<TD>SYS_C00233072</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C00233073</TD>
+<TD>Check</TD>
+<TD>"ONSKER_LAEREPLASS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ONSKER_LAEREPLASS</TD>
+</TR>
+<TR>
+<TD>SYS_C00233074</TD>
+<TD>Check</TD>
+<TD>"SOKT_LAEREPLASS_EGEN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SOKT_LAEREPLASS_EGEN</TD>
+</TR>
+<TR>
+<TD>SYS_C00233075</TD>
+<TD>Check</TD>
+<TD>"UTFORDRINGER" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>UTFORDRINGER</TD>
+</TR>
+<TR>
+<TD>SYS_C00233076</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C00233077</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C00233078</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C00233079</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C00233080</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C00259293</TD>
+<TD>Check</TD>
+<TD>"SOKT_LAEREPLASS_VIGO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SOKT_LAEREPLASS_VIGO</TD>
+</TR>
+<TR>
+<TD>SYS_C00259294</TD>
+<TD>Check</TD>
+<TD>"LAEREPLASS_YFFBEDRIFT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>LAEREPLASS_YFFBEDRIFT</TD>
+</TR>
+<TR>
+<TD>SYS_C00281688</TD>
+<TD>Check</TD>
+<TD>"KURSKATK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSKATK</TD>
+</TR>
+<TR>
+<TD>XPKELEV_LAEREPLASS</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, SKOLENR, SKOLEAR, FNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table ELEV_LAEREPLASS does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

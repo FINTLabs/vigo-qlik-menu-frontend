@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Ønske</TD>
+<TD>&#216;nske</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FNR</B><SUB>1</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fødselsnr [Ihht ELEV2]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>SKOLEAR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skoleår [ihht SKOLEAR]</TD>
 </TR>
 <TR>
@@ -70,6 +73,7 @@
 <TD><B>FYLKESNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -77,12 +81,14 @@
 <TD><B>ONSKENR</B><SUB>4</SUB></TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ønskenr</TD>
 </TR>
 <TR>
 <TD Class="Num">5</TD>
 <TD>AVGAR</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Årstall for fullføring av kompetansegivende skolegang</TD>
 </TR>
@@ -91,12 +97,14 @@
 <TD>AVGIKURS</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Oppgitt avgiverkurskode web [Ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>AVSTAND</TD>
 <TD nowrap>NUMBER(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Avstand</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>AVTBEDR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Avtalt bedrift? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>AVTBNAVN</TD>
 <TD nowrap>VARCHAR2(50)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Navn på avtalt bedrift</TD>
 </TR>
@@ -119,12 +129,14 @@
 <TD>AVTBORG</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Orgnr på avtalt bedrift</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>AVTBTLF</TD>
 <TD nowrap>VARCHAR2(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnr på avtalt bedrift</TD>
 </TR>
@@ -133,6 +145,7 @@
 <TD>ENVENTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Enhetsventenr</TD>
 </TR>
 <TR>
@@ -140,12 +153,14 @@
 <TD>FORTRINN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fortrinnsrett utløst? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>FSTATUS</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Forrige statuskode (systemfelt) [Ihht STATUS]</TD>
 </TR>
@@ -154,12 +169,14 @@
 <TD>JUSPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Justeringspoeng</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>KARPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Karakterpoeng</TD>
 </TR>
@@ -168,6 +185,7 @@
 <TD>KOMMNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Ønsket kommunenr ved formidling [Ihht KOMMUNE]</TD>
 </TR>
 <TR>
@@ -175,12 +193,14 @@
 <TD>KURSKODE</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode [Ihht KURS]</TD>
 </TR>
 <TR>
 <TD Class="Num">19</TD>
 <TD>ORDVENTE</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Ventenr ordinært</TD>
 </TR>
@@ -189,6 +209,7 @@
 <TD>SKOLENR</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Skolenr [Ihht SKOLE]</TD>
 </TR>
 <TR>
@@ -196,12 +217,14 @@
 <TD>STATUSNR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Statusnr [Ihht STATUS]</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>SYSPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Systempoeng</TD>
 </TR>
@@ -210,12 +233,14 @@
 <TD>TILBDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tilbudsdato</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>TILPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tilleggspoeng</TD>
 </TR>
@@ -224,6 +249,7 @@
 <TD>TOTPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Sum poeng</TD>
 </TR>
 <TR>
@@ -231,12 +257,14 @@
 <TD>VEDTKODE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Vedtakskode [T=Tilbud om spes/minspr plass, O=Overført ordinært, A=Avvist, U= Uaktuelt]</TD>
 </TR>
 <TR>
 <TD Class="Num">27</TD>
 <TD>VENTENR</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Ventenr (beregnet)</TD>
 </TR>
@@ -245,6 +273,7 @@
 <TD>VSOKJN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Videresøkes? [J,N]</TD>
 </TR>
 <TR>
@@ -252,6 +281,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -259,6 +289,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -266,6 +297,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -273,6 +305,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -280,12 +313,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -294,12 +329,14 @@
 <TD>FYLPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkespoeng (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">36</TD>
 <TD>FSTATUSF</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Forrige statuskode fagopplæring (systemfelt) [Ihht STATUS]</TD>
 </TR>
@@ -308,6 +345,7 @@
 <TD>SVAR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Svar [J,N,I]</TD>
 </TR>
 <TR>
@@ -315,12 +353,14 @@
 <TD>SVARF</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Svar (forrige) [J,N,I]</TD>
 </TR>
 <TR>
 <TD Class="Num">39</TD>
 <TD>SKOLEFTR</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolenr foretrukket [Ihht SKOLE]</TD>
 </TR>
@@ -329,12 +369,14 @@
 <TD>POBSKOAR</TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Skoleår på kb utvalgt av poengberegningen</TD>
 </TR>
 <TR>
 <TD Class="Num">41</TD>
 <TD>POBSKOLE</TD>
 <TD nowrap>NUMBER(5)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Skolenr på kb utvalgt av poengberegningen</TD>
 </TR>
@@ -343,12 +385,14 @@
 <TD>POBKURS</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Programområdekode på kompetansebevis utvalgt av poengberegningen</TD>
 </TR>
 <TR>
 <TD Class="Num">43</TD>
 <TD>POBINNTK</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Inntakskode på kb utvalgt av poengberegningen</TD>
 </TR>
@@ -357,12 +401,14 @@
 <TD>POBDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Dato for poengberegning</TD>
 </TR>
 <TR>
 <TD Class="Num">45</TD>
 <TD>MERKNAD</TD>
 <TD nowrap>VARCHAR2(250)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Merknad (fagskolen vigoskole)</TD>
 </TR>
@@ -371,12 +417,14 @@
 <TD>DELK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ønsket tatt inn som deltid</TD>
 </TR>
 <TR>
 <TD Class="Num">47</TD>
 <TD>FVENTENR</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Forrige ventenr (systemfelt)</TD>
 </TR>
@@ -385,12 +433,14 @@
 <TD>INTERN</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Internt nummer</TD>
 </TR>
 <TR>
 <TD Class="Num">49</TD>
 <TD>POBRADNR</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Radnr på kb utvalgt av poengberegningen</TD>
 </TR>
@@ -399,12 +449,14 @@
 <TD>RANGNR</TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Rangeringsnr</TD>
 </TR>
 <TR>
 <TD Class="Num">51</TD>
 <TD>SKRUKK</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Trøndelagsfelt (skjult ventenr)</TD>
 </TR>
@@ -413,6 +465,7 @@
 <TD>VSOKANT</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Maks antall videresøk</TD>
 </TR>
 <TR>
@@ -420,6 +473,7 @@
 <TD>ONSKENR2</TD>
 <TD nowrap>NUMBER</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Ønskenr ifm endring av rekkefølge</TD>
 </TR>
 <TR>
@@ -427,12 +481,14 @@
 <TD>PRIOPLAS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prioritert plass (Akershus-modulen)? [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">55</TD>
 <TD>FAGOTYPE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fagopplæring: Type [L=Lærekontrakt,E=Elev i skole,O=Opplæringskontrakt,G=Gjesteelevkontrakt,I=Ingen (i Inntak)]</TD>
 </TR>
@@ -441,6 +497,7 @@
 <TD>INNTAKNR</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Inntaksnr (systemfelt)</TD>
 </TR>
 <TR>
@@ -448,7 +505,80 @@
 <TD>AVSTPOENG</TD>
 <TD nowrap>NUMBER(8,2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Avstandspoeng (Trøndelag)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table ONSKE</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0ONSKE</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK1ONSKE</TD>
+<TD>NORMAL</TD>
+<TD>FNR, SKOLEAR, FYLKESNR, SKOLENR, KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1ONSKE</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR, ONSKENR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE2ONSKE</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, SKOLENR, KURSKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKONSKE</TD>
+<TD>NORMAL</TD>
+<TD>FNR, SKOLEAR, FYLKESNR, ONSKENR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -593,9 +723,179 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table ONSKE</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013139</TD>
+<TD>Check</TD>
+<TD>"FNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013140</TD>
+<TD>Check</TD>
+<TD>"SKOLEAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLEAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013141</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013142</TD>
+<TD>Check</TD>
+<TD>"ONSKENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ONSKENR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013143</TD>
+<TD>Check</TD>
+<TD>"AVTBEDR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AVTBEDR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013145</TD>
+<TD>Check</TD>
+<TD>"FORTRINN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FORTRINN</TD>
+</TR>
+<TR>
+<TD>SYS_C0013146</TD>
+<TD>Check</TD>
+<TD>"KURSKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>KURSKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013148</TD>
+<TD>Check</TD>
+<TD>"SKOLENR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKOLENR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013151</TD>
+<TD>Check</TD>
+<TD>"STATUSNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>STATUSNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013154</TD>
+<TD>Check</TD>
+<TD>"VEDTKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VEDTKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C0013155</TD>
+<TD>Check</TD>
+<TD>"VSOKJN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>VSOKJN</TD>
+</TR>
+<TR>
+<TD>SYS_C0013156</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013157</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013158</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013159</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013160</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013161</TD>
+<TD>Check</TD>
+<TD>"SVAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SVAR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013162</TD>
+<TD>Check</TD>
+<TD>"SVARF" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SVARF</TD>
+</TR>
+<TR>
+<TD>SYS_C0013165</TD>
+<TD>Check</TD>
+<TD>"DELK" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>DELK</TD>
+</TR>
+<TR>
+<TD>SYS_C0023434</TD>
+<TD>Check</TD>
+<TD>"PRIOPLAS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PRIOPLAS</TD>
+</TR>
+<TR>
+<TD>SYS_C0023435</TD>
+<TD>Check</TD>
+<TD>"ONSKENR2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ONSKENR2</TD>
+</TR>
+<TR>
+<TD>XPKONSKE</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FNR, SKOLEAR, FYLKESNR, ONSKENR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table ONSKE does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

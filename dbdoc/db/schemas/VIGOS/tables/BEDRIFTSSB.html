@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,12 +57,14 @@
 <TD><B>BNR</B></TD>
 <TD nowrap>VARCHAR2(9)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Organisasjonsnummer bedrift</TD>
 </TR>
 <TR>
 <TD Class="Num">2</TD>
 <TD>FORETAKNR</TD>
 <TD nowrap>VARCHAR2(9)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Organisasjonsnummer foretak</TD>
 </TR>
@@ -70,12 +73,14 @@
 <TD>OVERBNR</TD>
 <TD nowrap>VARCHAR2(9)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Organisasjonsnummer overliggende enhet</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>SPISSBNR</TD>
 <TD nowrap>VARCHAR2(9)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Organisasjonsnummer konsern spiss</TD>
 </TR>
@@ -84,12 +89,14 @@
 <TD>NAVN</TD>
 <TD nowrap>VARCHAR2(180)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Redigert navn</TD>
 </TR>
 <TR>
 <TD Class="Num">6</TD>
 <TD>KARAKTERISTIKK</TD>
 <TD nowrap>VARCHAR2(30)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Karakteristikk</TD>
 </TR>
@@ -98,12 +105,14 @@
 <TD>GATE1P</TD>
 <TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postadresse del 1</TD>
 </TR>
 <TR>
 <TD Class="Num">8</TD>
 <TD>GATE2P</TD>
 <TD nowrap>VARCHAR2(35)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postadresse del 2</TD>
 </TR>
@@ -112,12 +121,14 @@
 <TD>GATE3P</TD>
 <TD nowrap>VARCHAR2(35)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postadresse del 3</TD>
 </TR>
 <TR>
 <TD Class="Num">10</TD>
 <TD>POSTNRP</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postadresse, postnummer</TD>
 </TR>
@@ -126,12 +137,14 @@
 <TD>KOMMNRP</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postadresse, kommunekode</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>GATE1K</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Beliggenhetsadresse</TD>
 </TR>
@@ -140,12 +153,14 @@
 <TD>GATE2K</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Beliggenhetsadresse 2</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>GATE3K</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Beliggenhetsadresse 3</TD>
 </TR>
@@ -154,12 +169,14 @@
 <TD>POSTNRK</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Beliggenhetsadresse, postnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">16</TD>
 <TD>KOMMNRK</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Beliggenhetsadresse, kommunekode</TD>
 </TR>
@@ -168,12 +185,14 @@
 <TD>TELEFON1</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Telefonnummer</TD>
 </TR>
 <TR>
 <TD Class="Num">18</TD>
 <TD>TELEFAKS</TD>
 <TD nowrap>VARCHAR2(13)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefaksnummer</TD>
 </TR>
@@ -182,12 +201,14 @@
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Epost-adresse</TD>
 </TR>
 <TR>
 <TD Class="Num">20</TD>
 <TD>WWW</TD>
 <TD nowrap>VARCHAR2(150)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Internett adresse</TD>
 </TR>
@@ -196,12 +217,14 @@
 <TD>BEDRTYPE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Recordtype 1=foretak 2=bedrift</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>REGTYPEB</TD>
 <TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Regtypeb</TD>
 </TR>
@@ -210,12 +233,14 @@
 <TD>REGTYPEF</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Registerenhetstype</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>ORGFORMB</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Organisasjonsformkode</TD>
 </TR>
@@ -224,12 +249,14 @@
 <TD>ORGFORMF</TD>
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Foretakets organisasjonsform</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>PRIMNARING</TD>
 <TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Næring (primær)</TD>
 </TR>
@@ -238,12 +265,14 @@
 <TD>SEKNARING</TD>
 <TD nowrap>VARCHAR2(6)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Sekundær næring</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
 <TD>TERTNARING</TD>
 <TD nowrap>VARCHAR2(6)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tertiær næring</TD>
 </TR>
@@ -252,12 +281,14 @@
 <TD>SEKTORKODE</TD>
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Institusjonell sektorkode</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>ANTANSATT</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Antall ansatte</TD>
 </TR>
@@ -266,12 +297,14 @@
 <TD>DATOSENDTSKIFT</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Dato oversendt skifteretten fra foretaksregisteret</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>DATOMELDTOPPLOST</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato tvangsoppløst etter konkursloven</TD>
 </TR>
@@ -280,12 +313,14 @@
 <TD>DATOOPPLOST</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Dato oppløst</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>DATOKONKURS</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato meldt konkurs</TD>
 </TR>
@@ -294,12 +329,14 @@
 <TD>DATOOPPLOSTFUSJON</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Dato oppløst for fusjon</TD>
 </TR>
 <TR>
 <TD Class="Num">36</TD>
 <TD>STATUSKODE</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Statuskode</TD>
 </TR>
@@ -308,12 +345,14 @@
 <TD>FUSJONSPLAN</TD>
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fusjonsplan</TD>
 </TR>
 <TR>
 <TD Class="Num">38</TD>
 <TD>OVERTSELSKFUSJ</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Overtakende selskap ved fusjon</TD>
 </TR>
@@ -322,6 +361,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -329,6 +369,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -336,6 +377,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -343,6 +385,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -350,12 +393,14 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">44</TD>
 <TD>DATOENDRET</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato endret</TD>
 </TR>
@@ -364,12 +409,14 @@
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">46</TD>
 <TD>SEKTOR2014</TD>
 <TD nowrap>VARCHAR2(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Sektor 2014</TD>
 </TR>
@@ -378,12 +425,14 @@
 <TD>KONK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>J hvis statuskode = KONK</TD>
 </TR>
 <TR>
 <TD Class="Num">48</TD>
 <TD>KONKDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Registreringsdato knyttet til statuskode KONK</TD>
 </TR>
@@ -392,12 +441,14 @@
 <TD>KONKTEKST</TD>
 <TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tekstlinjer knyttet til statuskode KONK</TD>
 </TR>
 <TR>
 <TD Class="Num">50</TD>
 <TD>TVOP</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis statuskode = TVOP</TD>
 </TR>
@@ -406,12 +457,14 @@
 <TD>TVOPDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Registreringsdato knyttet til statuskode TVOP</TD>
 </TR>
 <TR>
 <TD Class="Num">52</TD>
 <TD>TVOPTEKST</TD>
 <TD nowrap>VARCHAR2(1000)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tekstlinjer knyttet til statuskode TVOP</TD>
 </TR>
@@ -420,12 +473,14 @@
 <TD>TVUK</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>J hvis statuskode = TVUK</TD>
 </TR>
 <TR>
 <TD Class="Num">54</TD>
 <TD>TVUKDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Registreringsdato knyttet til statuskode TVUK</TD>
 </TR>
@@ -434,12 +489,14 @@
 <TD>TVUKTEKST</TD>
 <TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tekstlinjer knyttet til statuskode TVUK</TD>
 </TR>
 <TR>
 <TD Class="Num">56</TD>
 <TD>OPPL</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis statuskode = OPPL</TD>
 </TR>
@@ -448,12 +505,14 @@
 <TD>OPPLDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Registreringsdato knyttet til statuskode OPPL</TD>
 </TR>
 <TR>
 <TD Class="Num">58</TD>
 <TD>OPPLTEKST</TD>
 <TD nowrap>VARCHAR2(1000)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tekstlinjer knyttet til statuskode OPPL</TD>
 </TR>
@@ -462,12 +521,14 @@
 <TD>USL</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>J hvis statuskode = USL</TD>
 </TR>
 <TR>
 <TD Class="Num">60</TD>
 <TD>USLDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Registreringsdato knyttet til statuskode USL</TD>
 </TR>
@@ -476,12 +537,14 @@
 <TD>USLTEKST</TD>
 <TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tekstlinjer knyttet til statuskode USL</TD>
 </TR>
 <TR>
 <TD Class="Num">62</TD>
 <TD>FUSJ</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>J hvis statuskode = FUSJ</TD>
 </TR>
@@ -490,12 +553,14 @@
 <TD>FUSJDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Registreringsdato knyttet til statuskode FUSJ</TD>
 </TR>
 <TR>
 <TD Class="Num">64</TD>
 <TD>FUSJTEKST</TD>
 <TD nowrap>VARCHAR2(1000)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tekstlinjer knyttet til statuskode FUSJ</TD>
 </TR>
@@ -504,12 +569,14 @@
 <TD>FISJ</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>J hvis statuskode = FISJ</TD>
 </TR>
 <TR>
 <TD Class="Num">66</TD>
 <TD>FISJDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Registreringsdato knyttet til statuskode FISJ</TD>
 </TR>
@@ -518,12 +585,14 @@
 <TD>FISJTEKST</TD>
 <TD nowrap>VARCHAR2(1000)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tekstlinjer knyttet til statuskode FISJ</TD>
 </TR>
 <TR>
 <TD Class="Num">68</TD>
 <TD>STATUS</TD>
 <TD nowrap>VARCHAR2(8)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kodefelt for spesiell status</TD>
 </TR>
@@ -532,12 +601,14 @@
 <TD>STATUSTEKST</TD>
 <TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Beskrivelse knyttet til kodefelt for spesiell status</TD>
 </TR>
 <TR>
 <TD Class="Num">70</TD>
 <TD>STIFTELSESDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Enhetens stiftelsesdato</TD>
 </TR>
@@ -546,12 +617,14 @@
 <TD>ANTANSFRADATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Registreringsdato for antall ansatte</TD>
 </TR>
 <TR>
 <TD Class="Num">72</TD>
 <TD>TELEFON2</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Telefonnummer - vanligvis mobil</TD>
 </TR>
@@ -560,12 +633,14 @@
 <TD>LANDKODEP</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Postadressens landkode</TD>
 </TR>
 <TR>
 <TD Class="Num">74</TD>
 <TD>LANDP</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Postadressens landnavn</TD>
 </TR>
@@ -574,12 +649,14 @@
 <TD>LANDKODEK</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Kontoradressens landkode</TD>
 </TR>
 <TR>
 <TD Class="Num">76</TD>
 <TD>LANDK</TD>
 <TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kontoradressens landnavn</TD>
 </TR>
@@ -588,7 +665,124 @@
 <TD>ORGFORMBBESKRIVELSE</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Organisasjonsform</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table BEDRIFTSSB</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0BEDRIFTSSB</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XAK1BEDRIFTSSB</TD>
+<TD>NORMAL</TD>
+<TD>NAVN</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XAK2BEDRIFTSSB</TD>
+<TD>NORMAL</TD>
+<TD>TELEFON1</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKBEDRIFTSSB</TD>
+<TD>NORMAL</TD>
+<TD>BNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table BEDRIFTSSB</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0012711</TD>
+<TD>Check</TD>
+<TD>"BNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0012712</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0012713</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0012714</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0012715</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKBEDRIFTSSB</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>BNR</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -601,6 +795,9 @@
 </TR>
 <TR>
 <TD>Foreign Key Constraints</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

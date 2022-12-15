@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -26,7 +26,7 @@
 <BR><TABLE class="Nav"><TR>
 <TD Class="NavL"><A HREF="./TS_SATS.html" TITLE="TS_SATS">Prior Table</A></TD>
 <TD Class="NavC"><A HREF="../tables3.html#TS_TRANSAKSJONER">Table TS_TRANSAKSJONER</A></TD>
-<TD Class="NavR"><A HREF="./TS_TRANSAKSJONER_KONTRAKT.html" TITLE="TS_TRANSAKSJONER_KONTRAKT">Next Table</A></TD>
+<TD Class="NavR"><A HREF="./TS_TYPE.html" TITLE="TS_TYPE">Next Table</A></TD>
 </TR></TABLE>
 <BR>
 <CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylke nr [Ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -63,6 +65,7 @@
 <TD><B>TELLEDATO</B><SUB>2</SUB></TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Telledato [Ihht TS_BEREGNING]</TD>
 </TR>
 <TR>
@@ -70,12 +73,14 @@
 <TD><B>RADNR</B><SUB>3</SUB></TD>
 <TD nowrap>NUMBER(10)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Rad nr</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
 <TD>BNR</TD>
 <TD nowrap>VARCHAR2(16)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Bedrift nr [Ihht BEDRIFT2]</TD>
 </TR>
@@ -84,12 +89,14 @@
 <TD>FNR</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fødsels nr [Ihht PLASS]</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">6</TD>
 <TD>KONTRNR</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Kontrakt nr [Ihht PLASS]</TD>
 </TR>
@@ -98,6 +105,7 @@
 <TD>PERIODEFRA</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Periodedato fra</TD>
 </TR>
 <TR>
@@ -105,12 +113,14 @@
 <TD>PERIODETIL</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Periodedato til</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>TYPEID</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Type id [Ihht TS_TYPE]</TD>
 </TR>
@@ -119,6 +129,7 @@
 <TD>BESKRIVELSE</TD>
 <TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Beskrivelse</TD>
 </TR>
 <TR>
@@ -126,12 +137,14 @@
 <TD>BELOP</TD>
 <TD nowrap>NUMBER(12,4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Beløp</TD>
 </TR>
 <TR>
 <TD Class="Num">12</TD>
 <TD>MANTILSK_ORDNINGID</TD>
 <TD nowrap>NUMBER(3)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Manuellt tilskudd id [Ihht TS_MANUELLETILSKUDD]</TD>
 </TR>
@@ -140,12 +153,14 @@
 <TD>MANTILSK_RADNR</TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Manuellt tilskudd radnr [Ihht TS_MANUELLETILSKUDD]</TD>
 </TR>
 <TR>
 <TD Class="Num">14</TD>
 <TD>TRANSTYPE</TD>
 <TD nowrap>VARCHAR2(20)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Transaksjonstype [***Annullering, ***Avregning, ***Etterbetaling, ***SKYLDIG eller blank]</TD>
 </TR>
@@ -154,6 +169,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>CHAR(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -161,6 +177,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
@@ -175,6 +193,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>CHAR(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -182,6 +201,7 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
@@ -189,12 +209,14 @@
 <TD>ANTALL</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Antall tidsenheter pr beløp</TD>
 </TR>
 <TR>
 <TD Class="Num">21</TD>
 <TD>ENHET</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Tidsenhet</TD>
 </TR>
@@ -203,6 +225,7 @@
 <TD>SPESIFIKASJON</TD>
 <TD nowrap>VARCHAR2(255)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Spesifikasjon</TD>
 </TR>
 <TR>
@@ -210,12 +233,14 @@
 <TD>SKJULT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>'N'</TD>
 <TD>Skjult, alltid J i VIGOopplæring [J,N]</TD>
 </TR>
 <TR>
 <TD Class="Num">24</TD>
 <TD>TS_FYLKESNR</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Fylkesnr</TD>
 </TR>
@@ -224,12 +249,14 @@
 <TD>REFUSJONSINSTANS</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Refusjonsinstans (fylke) [Ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">26</TD>
 <TD>AVBRUDD</TD>
 <TD nowrap>NUMBER(2)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Avbrudd, antall mnd avbrudd i perioden</TD>
 </TR>
@@ -238,12 +265,14 @@
 <TD>TILSTEDE</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Tilstede, antall mnd tilstede i perioden</TD>
 </TR>
 <TR>
 <TD Class="NumRed">28</TD>
 <TD>ANNULLERING_AV</TD>
 <TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Annullering av [Ihht til S_OBJECTID på annullert transaksjon i TS_TRANSAKSJON]</TD>
 </TR>
@@ -252,12 +281,14 @@
 <TD>PROVE_FNR</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Fødselsnummer på prøve [Ihht PROVE]</TD>
 </TR>
 <TR>
 <TD Class="Num">30</TD>
 <TD>PROVE_PROVENR</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prøvenummer [Ihht PROVE]</TD>
 </TR>
@@ -266,12 +297,14 @@
 <TD>TILHORIGHET</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Tilhørighet [Ihht FYLKE]</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -280,12 +313,14 @@
 <TD>TS_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>Status</TD>
 </TR>
 <TR>
 <TD Class="Num">34</TD>
 <TD>OPPRINNELIG_TELLEDATO</TD>
 <TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Opprinnelig telledato</TD>
 </TR>
@@ -295,11 +330,13 @@
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">36</TD>
 <TD>TS_FYLKESNR_OLD</TD>
 <TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -309,11 +346,74 @@
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD Class="Num">38</TD>
 <TD>MANTILSK_ID</TD>
 <TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table TS_TRANSAKSJONER</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0TS_TRANSAKSJONER</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XAK1TS_TRANSAKSJONER</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, FNR, KONTRNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XAK2TS_TRANSAKSJONER</TD>
+<TD>NORMAL</TD>
+<TD>ANNULLERING_AV</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKTS_TRANSAKSJONER</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, TELLEDATO, RADNR</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 </TR>
@@ -427,9 +527,130 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table TS_TRANSAKSJONER</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C0013592</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013593</TD>
+<TD>Check</TD>
+<TD>"TELLEDATO" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TELLEDATO</TD>
+</TR>
+<TR>
+<TD>SYS_C0013594</TD>
+<TD>Check</TD>
+<TD>"RADNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>RADNR</TD>
+</TR>
+<TR>
+<TD>SYS_C0013595</TD>
+<TD>Check</TD>
+<TD>"PERIODEFRA" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PERIODEFRA</TD>
+</TR>
+<TR>
+<TD>SYS_C0013596</TD>
+<TD>Check</TD>
+<TD>"PERIODETIL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>PERIODETIL</TD>
+</TR>
+<TR>
+<TD>SYS_C0013597</TD>
+<TD>Check</TD>
+<TD>"BELOP" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BELOP</TD>
+</TR>
+<TR>
+<TD>SYS_C0013598</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013599</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013600</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C0013601</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C0013602</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C0013603</TD>
+<TD>Check</TD>
+<TD>"ANTALL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>ANTALL</TD>
+</TR>
+<TR>
+<TD>SYS_C0013604</TD>
+<TD>Check</TD>
+<TD>"SKJULT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SKJULT</TD>
+</TR>
+<TR>
+<TD>SYS_C0013605</TD>
+<TD>Check</TD>
+<TD>"TILHORIGHET" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>TILHORIGHET</TD>
+</TR>
+<TR>
+<TD>XPKTS_TRANSAKSJONER</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, TELLEDATO, RADNR</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table TS_TRANSAKSJONER does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>

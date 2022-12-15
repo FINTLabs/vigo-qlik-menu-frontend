@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 13/07/2022 14:27:33</div></CENTER>
+<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <TH>Comment</TH>
 </TR>
 <TR>
-<TD>Læreplassprognoserad</TD>
+<TD>L&#230;replassprognoserad</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -49,6 +49,7 @@
 <TH>Column Name</TH>
 <TH>Datatype</TH>
 <TH>Not Null</TH>
+<TH>Data Default</TH>
 <TH>Comments</TH>
 </TR>
 <TR>
@@ -56,6 +57,7 @@
 <TD><B>FYLKESNR</B><SUB>1</SUB></TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Fylkesnr [ihht FYLKE]</TD>
 </TR>
 <TR>
@@ -64,12 +66,14 @@
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
+<TD>Registreringsår</TD>
 </TR>
 <TR>
 <TD Class="NumBlue">3</TD>
 <TD><B>BNR</B><SUB>3</SUB></TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Bedriftsnummer kontraktpart [ihht BEDRIFT2]</TD>
 </TR>
 <TR>
@@ -77,6 +81,7 @@
 <TD><B>BNRMEDL</B><SUB>4</SUB></TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Bedriftsnummer opplæringssted [ihht BEDRIFT2]</TD>
 </TR>
 <TR>
@@ -84,6 +89,7 @@
 <TD><B>GRUNNKODE</B><SUB>5</SUB></TD>
 <TD nowrap>VARCHAR2(6)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Grunnkode [ihht KURS.grunkode]</TD>
 </TR>
 <TR>
@@ -91,12 +97,14 @@
 <TD>AR1</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prognoseår 1</TD>
 </TR>
 <TR>
 <TD Class="Num">7</TD>
 <TD>ANT1</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prognose antall inntatt år 1</TD>
 </TR>
@@ -105,12 +113,14 @@
 <TD>AR2</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prognoseår 2</TD>
 </TR>
 <TR>
 <TD Class="Num">9</TD>
 <TD>ANT2</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prognose antall inntatt år 2</TD>
 </TR>
@@ -119,12 +129,14 @@
 <TD>AR3</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prognoseår 3</TD>
 </TR>
 <TR>
 <TD Class="Num">11</TD>
 <TD>ANT3</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prognose antall inntatt år 3</TD>
 </TR>
@@ -133,12 +145,14 @@
 <TD>AR4</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prognoseår 4</TD>
 </TR>
 <TR>
 <TD Class="Num">13</TD>
 <TD>ANT4</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prognose antall inntatt år 4</TD>
 </TR>
@@ -147,12 +161,14 @@
 <TD>AR5</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Prognoseår 5</TD>
 </TR>
 <TR>
 <TD Class="Num">15</TD>
 <TD>ANT5</TD>
 <TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Prognose antall inntatt år 5</TD>
 </TR>
@@ -161,6 +177,7 @@
 <TD>GENERERT</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Grunnlagsdata generert dato</TD>
 </TR>
 <TR>
@@ -168,6 +185,7 @@
 <TD>SYSGEN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Systemgenererte data [J/N]</TD>
 </TR>
 <TR>
@@ -175,6 +193,7 @@
 <TD>MEDLEMSBEDRIFT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Gjelder for medlemsbedrift [J/N]</TD>
 </TR>
 <TR>
@@ -182,6 +201,7 @@
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
@@ -189,6 +209,7 @@
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
@@ -196,12 +217,14 @@
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
 <TD Class="Num">22</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
+<TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
@@ -210,6 +233,7 @@
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
@@ -217,7 +241,47 @@
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
+<TD>&nbsp;</TD>
 <TD>Oppdatert når (systemfelt)</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
+<CAPTION class="Ttl">Indexes on Table LPLASSPROGRAD</CAPTION>
+<TR>
+<TH>Uniqueness</TH>
+<TH>Index Name</TH>
+<TH>Type</TH>
+<TH>Columns</TH>
+<TH>Partitions</TH>
+<TH>Partition Type</TH>
+<TH>Partition Columns</TH>
+<TH>Subpartition Type</TH>
+<TH>Subpartition Columns</TH>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XAK0LPLASSPROGRAD</TD>
+<TD>NORMAL</TD>
+<TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>UNIQUE</TD>
+<TD>XPKLPLASSPROGRAD</TD>
+<TD>NORMAL</TD>
+<TD>FYLKESNR, REGAR, BNR, BNRMEDL, GRUNNKODE</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -274,9 +338,158 @@
 <BR>
 <CENTER>
 <TABLE>
+<CAPTION class="Ttl">PK, UK, &amp; Check Constraints on Table LPLASSPROGRAD</CAPTION>
+<TR>
+<TH>Constraint Name</TH>
+<TH>Type</TH>
+<TH>Condition</TH>
+<TH>Status</TH>
+<TH>Columns</TH>
+</TR>
+<TR>
+<TD>SYS_C00299755</TD>
+<TD>Check</TD>
+<TD>"FYLKESNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR</TD>
+</TR>
+<TR>
+<TD>SYS_C00299756</TD>
+<TD>Check</TD>
+<TD>"REGAR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>REGAR</TD>
+</TR>
+<TR>
+<TD>SYS_C00299757</TD>
+<TD>Check</TD>
+<TD>"BNR" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BNR</TD>
+</TR>
+<TR>
+<TD>SYS_C00299758</TD>
+<TD>Check</TD>
+<TD>"BNRMEDL" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>BNRMEDL</TD>
+</TR>
+<TR>
+<TD>SYS_C00299759</TD>
+<TD>Check</TD>
+<TD>"GRUNNKODE" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>GRUNNKODE</TD>
+</TR>
+<TR>
+<TD>SYS_C00299760</TD>
+<TD>Check</TD>
+<TD>"AR1" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AR1</TD>
+</TR>
+<TR>
+<TD>SYS_C00299761</TD>
+<TD>Check</TD>
+<TD>"AR2" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AR2</TD>
+</TR>
+<TR>
+<TD>SYS_C00299762</TD>
+<TD>Check</TD>
+<TD>"AR3" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AR3</TD>
+</TR>
+<TR>
+<TD>SYS_C00299763</TD>
+<TD>Check</TD>
+<TD>"AR4" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AR4</TD>
+</TR>
+<TR>
+<TD>SYS_C00299764</TD>
+<TD>Check</TD>
+<TD>"AR5" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>AR5</TD>
+</TR>
+<TR>
+<TD>SYS_C00299765</TD>
+<TD>Check</TD>
+<TD>"GENERERT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>GENERERT</TD>
+</TR>
+<TR>
+<TD>SYS_C00299766</TD>
+<TD>Check</TD>
+<TD>"SYSGEN" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>SYSGEN</TD>
+</TR>
+<TR>
+<TD>SYS_C00299767</TD>
+<TD>Check</TD>
+<TD>"MEDLEMSBEDRIFT" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>MEDLEMSBEDRIFT</TD>
+</TR>
+<TR>
+<TD>SYS_C00299768</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C00299769</TD>
+<TD>Check</TD>
+<TD>"S_INSERTED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_INSERTED_TS</TD>
+</TR>
+<TR>
+<TD>SYS_C00299770</TD>
+<TD>Check</TD>
+<TD>"S_OBJECTID" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_OBJECTID</TD>
+</TR>
+<TR>
+<TD>SYS_C00299771</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_BY" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_BY</TD>
+</TR>
+<TR>
+<TD>SYS_C00299772</TD>
+<TD>Check</TD>
+<TD>"S_UPDATED_TS" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>S_UPDATED_TS</TD>
+</TR>
+<TR>
+<TD>XPKLPLASSPROGRAD</TD>
+<TD>Primary Key</TD>
+<TD>&nbsp;</TD>
+<TD>ENABLED</TD>
+<TD>FYLKESNR, REGAR, BNR, BNRMEDL, GRUNNKODE</TD>
+</TR>
+</TABLE>
+</CENTER>
+<BR>
+<CENTER>
+<TABLE>
 <CAPTION class="Ttl">Table LPLASSPROGRAD does not have...</CAPTION>
 <TR>
 <TD>Partitions</TD>
+</TR>
+<TR>
+<TD>Redaction Policies</TD>
 </TR>
 </TABLE>
 </CENTER>
