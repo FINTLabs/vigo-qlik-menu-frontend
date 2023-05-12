@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -214,14 +215,6 @@
 </TR>
 <TR>
 <TD Class="Num">21</TD>
-<TD>DELTINNT</TD>
-<TD nowrap>CHAR(1)</TD>
-<TD>Y</TD>
-<TD>&nbsp;</TD>
-<TD>Deltar søkeren i inntaket? [J,N]</TD>
-</TR>
-<TR>
-<TD Class="Num">22</TD>
 <TD>EGETSKJE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -229,7 +222,7 @@
 <TD>Eget skjema? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">23</TD>
+<TD Class="Num">22</TD>
 <TD>ENGOPL</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -237,7 +230,7 @@
 <TD>Har hatt opplæring i engelsk? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">24</TD>
+<TD Class="Num">23</TD>
 <TD>FINNTONS</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
@@ -245,7 +238,7 @@
 <TD>Forrige ¿inntatt ønskenr¿</TD>
 </TR>
 <TR>
-<TD Class="Num">25</TD>
+<TD Class="Num">24</TD>
 <TD>FKTILBEF</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -253,7 +246,7 @@
 <TD>Fått fylkeskommunalt tilbud i eget fylke? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">26</TD>
+<TD Class="Num">25</TD>
 <TD>FREAKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -261,7 +254,7 @@
 <TD>Aktiv minoritetsspråklig søker? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">27</TD>
+<TD Class="Num">26</TD>
 <TD>FSVARPLA</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -269,7 +262,7 @@
 <TD>Forrige svar på tilbud om plass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)]</TD>
 </TR>
 <TR>
-<TD Class="Num">28</TD>
+<TD Class="Num">27</TD>
 <TD>FSVARVEN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -277,7 +270,7 @@
 <TD>Forrige svar på tilbud om venteplass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)]</TD>
 </TR>
 <TR>
-<TD Class="Num">29</TD>
+<TD Class="Num">28</TD>
 <TD>FULFGHJ</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -285,7 +278,7 @@
 <TD>Fullført 9-årig grunnskole i utlandet? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">30</TD>
+<TD Class="Num">29</TD>
 <TD>FULFGMAN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -293,7 +286,7 @@
 <TD>Fullført grunnskolen? Manuelt satt. [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">31</TD>
+<TD Class="Num">30</TD>
 <TD>FULFGNO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -301,7 +294,7 @@
 <TD>Fullført 10. trinn i norsk grunnskole? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">32</TD>
+<TD Class="Num">31</TD>
 <TD>FULFVMAN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -309,7 +302,7 @@
 <TD>Fullført vidg. skole? Manuelt satt. [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">33</TD>
+<TD Class="Num">32</TD>
 <TD>GJESTAVT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -317,7 +310,7 @@
 <TD>Har søkeren gjesteelevsavtale? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">34</TD>
+<TD Class="Num">33</TD>
 <TD>HELSEOPL</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -325,7 +318,7 @@
 <TD>Foreligger det helseopplysninger? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">35</TD>
+<TD Class="Num">34</TD>
 <TD>HPL</TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>&nbsp;</TD>
@@ -333,7 +326,7 @@
 <TD>Holdeplassnr [ihht HPL]</TD>
 </TR>
 <TR>
-<TD Class="Num">36</TD>
+<TD Class="Num">35</TD>
 <TD>HVILTEXT</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
@@ -341,7 +334,7 @@
 <TD>Hviletekst (OT forklaring)</TD>
 </TR>
 <TR>
-<TD Class="Num">37</TD>
+<TD Class="Num">36</TD>
 <TD>IKKESOKT</TD>
 <TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
@@ -349,7 +342,7 @@
 <TD>Årsak for ikke søkt [ihht ARSAK]</TD>
 </TR>
 <TR>
-<TD Class="Num">38</TD>
+<TD Class="Num">37</TD>
 <TD>INNSKODE</TD>
 <TD nowrap>VARCHAR2(6)</TD>
 <TD>&nbsp;</TD>
@@ -357,7 +350,7 @@
 <TD>Inns. instans - kode [Ihht INSTANS]</TD>
 </TR>
 <TR>
-<TD Class="Num">39</TD>
+<TD Class="Num">38</TD>
 <TD>INNSNAVN</TD>
 <TD nowrap>VARCHAR2(60)</TD>
 <TD>&nbsp;</TD>
@@ -365,7 +358,7 @@
 <TD>Inns. instans - kontaktperson</TD>
 </TR>
 <TR>
-<TD Class="Num">40</TD>
+<TD Class="Num">39</TD>
 <TD>INNSTITT</TD>
 <TD nowrap>VARCHAR2(16)</TD>
 <TD>&nbsp;</TD>
@@ -373,7 +366,7 @@
 <TD>Inns. instans - kontaktpersonens tittel</TD>
 </TR>
 <TR>
-<TD Class="Num">41</TD>
+<TD Class="Num">40</TD>
 <TD>INNSTLF</TD>
 <TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
@@ -381,7 +374,7 @@
 <TD>Inns. instans - telefon</TD>
 </TR>
 <TR>
-<TD Class="Num">42</TD>
+<TD Class="Num">41</TD>
 <TD>KORTOPPL</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -389,7 +382,7 @@
 <TD>Avkortet opplæring [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">43</TD>
+<TD Class="Num">42</TD>
 <TD>LERL1112</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -397,7 +390,7 @@
 <TD>Lærling ihht. pgr 11-12 første ledd? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">44</TD>
+<TD Class="Num">43</TD>
 <TD>MANAVREG</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
@@ -405,7 +398,7 @@
 <TD>Avgiver-region (manuell)</TD>
 </TR>
 <TR>
-<TD Class="Num">45</TD>
+<TD Class="Num">44</TD>
 <TD>MERKNAD</TD>
 <TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
@@ -413,7 +406,7 @@
 <TD>Merknad</TD>
 </TR>
 <TR>
-<TD Class="Num">46</TD>
+<TD Class="Num">45</TD>
 <TD>NOROPL2</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -421,7 +414,7 @@
 <TD>Har fått opplæring etter Læreplan i grunnleggende norsk for språklige minoriteter? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">47</TD>
+<TD Class="Num">46</TD>
 <TD>NOROPLN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -429,7 +422,7 @@
 <TD>Har fått opplæring etter Læreplan i norsk (ordinær)? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">48</TD>
+<TD Class="Num">47</TD>
 <TD>NOROPLX</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -437,7 +430,7 @@
 <TD>Har fått annen norsk-opplæring? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">49</TD>
+<TD Class="Num">48</TD>
 <TD>NORPROV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -445,7 +438,7 @@
 <TD>Har bestått Norskprøve 3 både skriftlig og muntlig? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">50</TD>
+<TD Class="Num">49</TD>
 <TD>NORSKKAM</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
@@ -453,7 +446,7 @@
 <TD>Norskkarakter muntlig (minspr)</TD>
 </TR>
 <TR>
-<TD Class="Num">51</TD>
+<TD Class="Num">50</TD>
 <TD>NORSKKAS</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
@@ -461,7 +454,7 @@
 <TD>Norskkarakter skriftlig (minspr)</TD>
 </TR>
 <TR>
-<TD Class="Num">52</TD>
+<TD Class="Num">51</TD>
 <TD>NORSKKAT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -469,7 +462,7 @@
 <TD>Norskkarakter type (minspr)</TD>
 </TR>
 <TR>
-<TD Class="Num">53</TD>
+<TD Class="Num">52</TD>
 <TD>NORSKPRM</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
@@ -477,7 +470,7 @@
 <TD>Norskprøveresultat muntlig (minspr)</TD>
 </TR>
 <TR>
-<TD Class="Num">54</TD>
+<TD Class="Num">53</TD>
 <TD>NORSKPRS</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
@@ -485,7 +478,7 @@
 <TD>Norskprøveresultat skriftlig (minspr)</TD>
 </TR>
 <TR>
-<TD Class="Num">55</TD>
+<TD Class="Num">54</TD>
 <TD>NORSKPRT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -493,7 +486,7 @@
 <TD>Norskprøveresultat-type (minspr) [I=Ikke satt,K=Karakter,P=Poeng]</TD>
 </TR>
 <TR>
-<TD Class="Num">56</TD>
+<TD Class="Num">55</TD>
 <TD>ONSLKOMP</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -501,7 +494,7 @@
 <TD>Ønsker lavere kompetanse? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">57</TD>
+<TD Class="Num">56</TD>
 <TD>ONSSKOMP</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
@@ -509,7 +502,7 @@
 <TD>Ønsket sluttkompetanse [ihht KURS]</TD>
 </TR>
 <TR>
-<TD Class="Num">58</TD>
+<TD Class="Num">57</TD>
 <TD>OPPTPROV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -517,7 +510,7 @@
 <TD>Opptaksprøve? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">59</TD>
+<TD Class="Num">58</TD>
 <TD>OTMERK</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
@@ -525,7 +518,7 @@
 <TD>OT-merknad</TD>
 </TR>
 <TR>
-<TD Class="Num">60</TD>
+<TD Class="Num">59</TD>
 <TD>OTSTATUS</TD>
 <TD nowrap>VARCHAR2(4)</TD>
 <TD>&nbsp;</TD>
@@ -533,7 +526,7 @@
 <TD>OT-status - manuelt satt [ihht OTSTATUS]</TD>
 </TR>
 <TR>
-<TD Class="Num">61</TD>
+<TD Class="Num">60</TD>
 <TD>PASSIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -541,7 +534,7 @@
 <TD>Passiv søknad? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">62</TD>
+<TD Class="Num">61</TD>
 <TD>PASSORD</TD>
 <TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
@@ -549,7 +542,7 @@
 <TD>Passord</TD>
 </TR>
 <TR>
-<TD Class="Num">63</TD>
+<TD Class="Num">62</TD>
 <TD>PRAKAND1</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -557,7 +550,7 @@
 <TD>Får teorioppl. for praksiskandidater? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">64</TD>
+<TD Class="Num">63</TD>
 <TD>PRAKAND2</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -565,7 +558,7 @@
 <TD>Fullført teorioppl. for praksiskandidater? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">65</TD>
+<TD Class="Num">64</TD>
 <TD>PRAKPRIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -573,7 +566,7 @@
 <TD>Praksiskandidat/privatist? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="NumBlue">66</TD>
+<TD Class="NumBlue">65</TD>
 <TD>REFNR</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
@@ -581,7 +574,7 @@
 <TD>Referansenr</TD>
 </TR>
 <TR>
-<TD Class="Num">67</TD>
+<TD Class="Num">66</TD>
 <TD>REFUSJON</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -589,7 +582,7 @@
 <TD>Refusjon? [I=Ikke satt,N=Nei,J=Ja]</TD>
 </TR>
 <TR>
-<TD Class="Num">68</TD>
+<TD Class="Num">67</TD>
 <TD>RESARSAK</TD>
 <TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
@@ -597,7 +590,7 @@
 <TD>Reservasjonsårsak [Ihht ARSAK]</TD>
 </TR>
 <TR>
-<TD Class="NumBlue">69</TD>
+<TD Class="NumBlue">68</TD>
 <TD>RETT1</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -605,7 +598,7 @@
 <TD>Rettstype i år [U=Ungdomsrett,V=Voksenrett,F= Fullføringsrett,I=Ikke rett]</TD>
 </TR>
 <TR>
-<TD Class="Num">70</TD>
+<TD Class="Num">69</TD>
 <TD>RETT3</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -613,7 +606,7 @@
 <TD>Rettstype (opprinnelig) [U=Ungdomsrett,V=Voksenrett,F= Fullføringsrett,I=Ikke rett]</TD>
 </TR>
 <TR>
-<TD Class="Num">71</TD>
+<TD Class="Num">70</TD>
 <TD>SAM123</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -621,7 +614,7 @@
 <TD>Ønsker samisk som [1, 2, 3, 4]</TD>
 </TR>
 <TR>
-<TD Class="Num">72</TD>
+<TD Class="Num">71</TD>
 <TD>SAMDKODE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -629,7 +622,7 @@
 <TD>Ønsker opplæring i [NS, LS, SS]</TD>
 </TR>
 <TR>
-<TD Class="Num">73</TD>
+<TD Class="Num">72</TD>
 <TD>SAMGAAR</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
@@ -637,7 +630,7 @@
 <TD>Antall år samisk i grunnskolen</TD>
 </TR>
 <TR>
-<TD Class="Num">74</TD>
+<TD Class="Num">73</TD>
 <TD>SAMVAAR</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>&nbsp;</TD>
@@ -645,7 +638,7 @@
 <TD>Antall år samisk i videregående skole</TD>
 </TR>
 <TR>
-<TD Class="Num">75</TD>
+<TD Class="Num">74</TD>
 <TD>SAMVTIM</TD>
 <TD nowrap>NUMBER(3)</TD>
 <TD>&nbsp;</TD>
@@ -653,7 +646,7 @@
 <TD>Antall timer samisk i videregående skole</TD>
 </TR>
 <TR>
-<TD Class="Num">76</TD>
+<TD Class="Num">75</TD>
 <TD>SERAKTIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -661,7 +654,7 @@
 <TD>Aktiv fortrinnssøker [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">77</TD>
+<TD Class="Num">76</TD>
 <TD>SFORSENT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -669,7 +662,7 @@
 <TD>Søknad levert for seint? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">78</TD>
+<TD Class="Num">77</TD>
 <TD>SKYSS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -677,7 +670,7 @@
 <TD>WEB Har bedt om skoleskyss? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">79</TD>
+<TD Class="Num">78</TD>
 <TD>SOKNKAT</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -685,7 +678,7 @@
 <TD>Behandlingskategori Søknad [ihht BEHANKAT]</TD>
 </TR>
 <TR>
-<TD Class="Num">80</TD>
+<TD Class="Num">79</TD>
 <TD>SREDSOK</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -693,7 +686,7 @@
 <TD>Siste redigering av søker på web</TD>
 </TR>
 <TR>
-<TD Class="Num">81</TD>
+<TD Class="Num">80</TD>
 <TD>STUDKODE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -701,7 +694,7 @@
 <TD>Studieretning [ihht STUDRETN]</TD>
 </TR>
 <TR>
-<TD Class="Num">82</TD>
+<TD Class="Num">81</TD>
 <TD>SVARPLAS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -709,7 +702,7 @@
 <TD>Svar på tilbud om plass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)]</TD>
 </TR>
 <TR>
-<TD Class="Num">83</TD>
+<TD Class="Num">82</TD>
 <TD>SVARVENT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -717,7 +710,7 @@
 <TD>Svar på tilbud om venteplass [I=Har ikke svart,N=Har svart nei,J=Har svart ja,F=Forhåndssvar (Ja)</TD>
 </TR>
 <TR>
-<TD Class="Num">84</TD>
+<TD Class="Num">83</TD>
 <TD>VEDTKAT</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -725,7 +718,7 @@
 <TD>Behandlingskategori Vedtak [ihht BEHANKAT]</TD>
 </TR>
 <TR>
-<TD Class="Num">85</TD>
+<TD Class="Num">84</TD>
 <TD>WFRSOKN</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -733,7 +726,7 @@
 <TD>Web-frist søknad</TD>
 </TR>
 <TR>
-<TD Class="Num">86</TD>
+<TD Class="Num">85</TD>
 <TD>WTSFASTE</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -741,7 +734,7 @@
 <TD>Web-dato siste red. av faste opplysninger</TD>
 </TR>
 <TR>
-<TD Class="Num">87</TD>
+<TD Class="Num">86</TD>
 <TD>WTSSVAR</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -749,7 +742,7 @@
 <TD>Web-dato siste redigert av svar</TD>
 </TR>
 <TR>
-<TD Class="Num">88</TD>
+<TD Class="Num">87</TD>
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
@@ -757,7 +750,7 @@
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">89</TD>
+<TD Class="Num">88</TD>
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
@@ -765,7 +758,7 @@
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="NumRed">90</TD>
+<TD Class="NumRed">89</TD>
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
@@ -773,7 +766,7 @@
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">91</TD>
+<TD Class="Num">90</TD>
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
@@ -781,7 +774,7 @@
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">92</TD>
+<TD Class="Num">91</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
@@ -789,7 +782,7 @@
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">93</TD>
+<TD Class="Num">92</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -797,7 +790,7 @@
 <TD>Status (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">94</TD>
+<TD Class="Num">93</TD>
 <TD>SKOMPKOD</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
@@ -805,7 +798,7 @@
 <TD>Bestått sluttkompetanse - kode [ihht KURS]</TD>
 </TR>
 <TR>
-<TD Class="Num">95</TD>
+<TD Class="Num">94</TD>
 <TD>BTEORKOD</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
@@ -813,7 +806,7 @@
 <TD>Bestått teoriopplæring - kode [ihht KURS]</TD>
 </TR>
 <TR>
-<TD Class="Num">96</TD>
+<TD Class="Num">95</TD>
 <TD>KOMMNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
@@ -821,7 +814,7 @@
 <TD>Kommunenr [Ihht KOMMUNE]</TD>
 </TR>
 <TR>
-<TD Class="Num">97</TD>
+<TD Class="Num">96</TD>
 <TD>POSTNR</TD>
 <TD nowrap>NUMBER(4)</TD>
 <TD>Y</TD>
@@ -829,7 +822,7 @@
 <TD>Postnr (inntak) [Ihht POSTSTED]</TD>
 </TR>
 <TR>
-<TD Class="Num">98</TD>
+<TD Class="Num">97</TD>
 <TD>GATE</TD>
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
@@ -837,7 +830,7 @@
 <TD>Gateadresse</TD>
 </TR>
 <TR>
-<TD Class="Num">99</TD>
+<TD Class="Num">98</TD>
 <TD>DSFSPERR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -845,7 +838,7 @@
 <TD>Fylket eier gate og postnr [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">100</TD>
+<TD Class="Num">99</TD>
 <TD>DSFSPERR2</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -853,7 +846,7 @@
 <TD>Fylket eier kommnr [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">101</TD>
+<TD Class="Num">100</TD>
 <TD>MLDTILBED</TD>
 <TD nowrap>VARCHAR2(250)</TD>
 <TD>&nbsp;</TD>
@@ -861,7 +854,7 @@
 <TD>Melding til bedrift fra søker</TD>
 </TR>
 <TR>
-<TD Class="Num">102</TD>
+<TD Class="Num">101</TD>
 <TD>LKAND</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -869,7 +862,7 @@
 <TD>Lærekandidat? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">103</TD>
+<TD Class="Num">102</TD>
 <TD>REFUKODE</TD>
 <TD nowrap>NUMBER(2)</TD>
 <TD>&nbsp;</TD>
@@ -877,7 +870,7 @@
 <TD>Refusjonskode barnevern</TD>
 </TR>
 <TR>
-<TD Class="Num">104</TD>
+<TD Class="Num">103</TD>
 <TD>DATFORMVGO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -885,7 +878,7 @@
 <TD>Dato formidlet vgo (voksen)</TD>
 </TR>
 <TR>
-<TD Class="Num">105</TD>
+<TD Class="Num">104</TD>
 <TD>RETTMAN</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>Y</TD>
@@ -893,7 +886,7 @@
 <TD>Rettstype (manuelt satt) [U=Ungdomsrett,V=Voksenrett,F=Fullføringsrett,I=Ikke rett]</TD>
 </TR>
 <TR>
-<TD Class="Num">106</TD>
+<TD Class="Num">105</TD>
 <TD>NYGIV</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -901,7 +894,7 @@
 <TD>Med i ny giv [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">107</TD>
+<TD Class="Num">106</TD>
 <TD>WFRSVAR</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -909,7 +902,7 @@
 <TD>Web-frisr svar</TD>
 </TR>
 <TR>
-<TD Class="Num">108</TD>
+<TD Class="Num">107</TD>
 <TD>SENDT_ARKIV</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -917,7 +910,7 @@
 <TD>Dato for sendt til arkiv</TD>
 </TR>
 <TR>
-<TD Class="Num">109</TD>
+<TD Class="Num">108</TD>
 <TD>DATSOKTV</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -925,7 +918,7 @@
 <TD>Dato søkt voksenopplæring</TD>
 </TR>
 <TR>
-<TD Class="Num">110</TD>
+<TD Class="Num">109</TD>
 <TD>GODKJUTD</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -933,7 +926,7 @@
 <TD>Godkjent registrert utdannelse [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">111</TD>
+<TD Class="Num">110</TD>
 <TD>GODKJFAGB</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -941,7 +934,7 @@
 <TD>Godkjent registrerte fagbrev [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">112</TD>
+<TD Class="Num">111</TD>
 <TD>FULFGVO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -949,7 +942,7 @@
 <TD>Fullført grunnskoleopplæring for voksne? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">113</TD>
+<TD Class="Num">112</TD>
 <TD>OPPLNSVO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -957,7 +950,7 @@
 <TD>Har fått opplæring etter Læreplan i norsk og samfunnsfag for voksne innvandrere? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">114</TD>
+<TD Class="Num">113</TD>
 <TD>ORDSOKER</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -965,7 +958,7 @@
 <TD>Ordinær søker [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">115</TD>
+<TD Class="Num">114</TD>
 <TD>INDISOKB</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -973,7 +966,7 @@
 <TD>Individuell søknadsbehandling [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">116</TD>
+<TD Class="Num">115</TD>
 <TD>BUNKENR</TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>&nbsp;</TD>
@@ -981,7 +974,7 @@
 <TD>Bunkenr</TD>
 </TR>
 <TR>
-<TD Class="Num">117</TD>
+<TD Class="Num">116</TD>
 <TD>FGRUPPE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -989,7 +982,7 @@
 <TD>Oppholdsstatus (f-gruppe) [ihht FGRUPPE]</TD>
 </TR>
 <TR>
-<TD Class="Num">118</TD>
+<TD Class="Num">117</TD>
 <TD>BEGRENS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -997,7 +990,7 @@
 <TD>Begrens? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">119</TD>
+<TD Class="Num">118</TD>
 <TD>GENAVST</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1005,7 +998,7 @@
 <TD>Dato for generering av avstander</TD>
 </TR>
 <TR>
-<TD Class="Num">120</TD>
+<TD Class="Num">119</TD>
 <TD>INSPLASSERT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1013,7 +1006,7 @@
 <TD>Institusjonsplassert</TD>
 </TR>
 <TR>
-<TD Class="Num">121</TD>
+<TD Class="Num">120</TD>
 <TD>KAROVERS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1021,7 +1014,7 @@
 <TD>Oversettbare karakterer? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">122</TD>
+<TD Class="Num">121</TD>
 <TD>KLAGKART</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1029,7 +1022,7 @@
 <TD>Klagekarakter type (minspr) [I=Ikke satt,K=Karakter,P=Poeng]</TD>
 </TR>
 <TR>
-<TD Class="Num">123</TD>
+<TD Class="Num">122</TD>
 <TD>KLAGKARM</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
@@ -1037,7 +1030,7 @@
 <TD>Klagekarakter muntlig (minspr)</TD>
 </TR>
 <TR>
-<TD Class="Num">124</TD>
+<TD Class="Num">123</TD>
 <TD>KLAGKARS</TD>
 <TD nowrap>VARCHAR2(3)</TD>
 <TD>&nbsp;</TD>
@@ -1045,7 +1038,7 @@
 <TD>Klagekarakter skriftlig (minspr)</TD>
 </TR>
 <TR>
-<TD Class="Num">125</TD>
+<TD Class="Num">124</TD>
 <TD>KLIKODE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -1053,7 +1046,7 @@
 <TD>Klageinstanskode</TD>
 </TR>
 <TR>
-<TD Class="Num">126</TD>
+<TD Class="Num">125</TD>
 <TD>ONSKE2DT</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1061,7 +1054,7 @@
 <TD>Dato for arkivering av ønsker</TD>
 </TR>
 <TR>
-<TD Class="Num">127</TD>
+<TD Class="Num">126</TD>
 <TD>OPPHEV24</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1069,7 +1062,7 @@
 <TD>Opphev 24-årsgrensen [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">128</TD>
+<TD Class="Num">127</TD>
 <TD>PASSDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1077,7 +1070,7 @@
 <TD>Dato for brev om passord</TD>
 </TR>
 <TR>
-<TD Class="NumRed">129</TD>
+<TD Class="NumRed">128</TD>
 <TD>SASID</TD>
 <TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
@@ -1085,7 +1078,7 @@
 <TD>Id SAS</TD>
 </TR>
 <TR>
-<TD Class="Num">130</TD>
+<TD Class="Num">129</TD>
 <TD>SYSID</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>Y</TD>
@@ -1093,7 +1086,7 @@
 <TD>ID</TD>
 </TR>
 <TR>
-<TD Class="Num">131</TD>
+<TD Class="Num">130</TD>
 <TD>VGDOKNR3</TD>
 <TD nowrap>VARCHAR2(19)</TD>
 <TD>&nbsp;</TD>
@@ -1101,7 +1094,7 @@
 <TD>Vitnemålsdokument nummer</TD>
 </TR>
 <TR>
-<TD Class="Num">132</TD>
+<TD Class="Num">131</TD>
 <TD>AKSEPT</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -1109,7 +1102,7 @@
 <TD>Aksept av søknad</TD>
 </TR>
 <TR>
-<TD Class="Num">133</TD>
+<TD Class="Num">132</TD>
 <TD>RETTPB</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1117,7 +1110,7 @@
 <TD>Rett til påbygging [0=blank,1=Har påbyggingsrett etter §3-1,2=Har påbyggingsrett etter §4A-3,3=Har ikke påbyggingsrett,4=Uavklart]</TD>
 </TR>
 <TR>
-<TD Class="Num">134</TD>
+<TD Class="Num">133</TD>
 <TD>AVSLKOMP</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1125,7 +1118,7 @@
 <TD>Avsluttende kompetanse? [J,N,X]</TD>
 </TR>
 <TR>
-<TD Class="Num">135</TD>
+<TD Class="Num">134</TD>
 <TD>ELEVID</TD>
 <TD nowrap>VARCHAR2(19)</TD>
 <TD>&nbsp;</TD>
@@ -1133,7 +1126,7 @@
 <TD>ID Elev</TD>
 </TR>
 <TR>
-<TD Class="Num">136</TD>
+<TD Class="Num">135</TD>
 <TD>FSPRKOD2</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -1141,7 +1134,7 @@
 <TD>Ønsket fremmedspråk Stud.forbr [Ihht FREMSPR]</TD>
 </TR>
 <TR>
-<TD Class="Num">137</TD>
+<TD Class="Num">136</TD>
 <TD>OTMERK2</TD>
 <TD nowrap>VARCHAR2(130)</TD>
 <TD>&nbsp;</TD>
@@ -1149,7 +1142,7 @@
 <TD>OT-merknad 2 benyttes i OTTO</TD>
 </TR>
 <TR>
-<TD Class="Num">138</TD>
+<TD Class="Num">137</TD>
 <TD>PREINFO</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
@@ -1157,7 +1150,7 @@
 <TD>Preutfyllingsgrunnlag</TD>
 </TR>
 <TR>
-<TD Class="Num">139</TD>
+<TD Class="Num">138</TD>
 <TD>PREINFO2</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
@@ -1165,7 +1158,7 @@
 <TD>Preutfyllingsgrunnlag 2</TD>
 </TR>
 <TR>
-<TD Class="Num">140</TD>
+<TD Class="Num">139</TD>
 <TD>REFNR2</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
@@ -1173,7 +1166,7 @@
 <TD>Referansenr 2</TD>
 </TR>
 <TR>
-<TD Class="Num">141</TD>
+<TD Class="Num">140</TD>
 <TD>RESTRETT</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>&nbsp;</TD>
@@ -1181,7 +1174,7 @@
 <TD>Rest ungdomsrett</TD>
 </TR>
 <TR>
-<TD Class="Num">142</TD>
+<TD Class="Num">141</TD>
 <TD>RETT2</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -1189,7 +1182,7 @@
 <TD>Rettstype neste år (beregnet) [U=Ungdomsrett,V=Voksenrett,F= Fullføringsrett,I=Ikke rett]</TD>
 </TR>
 <TR>
-<TD Class="Num">143</TD>
+<TD Class="Num">142</TD>
 <TD>RETTBRAR</TD>
 <TD nowrap>VARCHAR2(200)</TD>
 <TD>&nbsp;</TD>
@@ -1197,7 +1190,7 @@
 <TD>Skoleår det forbrukes rett</TD>
 </TR>
 <TR>
-<TD Class="Num">144</TD>
+<TD Class="Num">143</TD>
 <TD>RETTBRUK</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>&nbsp;</TD>
@@ -1205,7 +1198,7 @@
 <TD>Forbruk av ungdomsrett</TD>
 </TR>
 <TR>
-<TD Class="Num">145</TD>
+<TD Class="Num">144</TD>
 <TD>RETTDATO</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1213,7 +1206,7 @@
 <TD>Dato for beregning av rett</TD>
 </TR>
 <TR>
-<TD Class="Num">146</TD>
+<TD Class="Num">145</TD>
 <TD>RETTKVOT</TD>
 <TD nowrap>NUMBER(1)</TD>
 <TD>Y</TD>
@@ -1221,7 +1214,7 @@
 <TD>Antall år rett</TD>
 </TR>
 <TR>
-<TD Class="Num">147</TD>
+<TD Class="Num">146</TD>
 <TD>SLUTBREV</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1229,7 +1222,7 @@
 <TD>Dato for sluttbrev (rett)</TD>
 </TR>
 <TR>
-<TD Class="Num">148</TD>
+<TD Class="Num">147</TD>
 <TD>UTVIDARS</TD>
 <TD nowrap>VARCHAR2(8)</TD>
 <TD>&nbsp;</TD>
@@ -1237,7 +1230,7 @@
 <TD>Årsak for utvidelse av rett [ihht ARSAK]</TD>
 </TR>
 <TR>
-<TD Class="Num">149</TD>
+<TD Class="Num">148</TD>
 <TD>UTVRETTA</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1245,7 +1238,7 @@
 <TD>Utvidet rett pga "avviksfag"?</TD>
 </TR>
 <TR>
-<TD Class="Num">150</TD>
+<TD Class="Num">149</TD>
 <TD>UTVRETTO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1253,7 +1246,7 @@
 <TD>Utvidet rett pga "omvalg"?</TD>
 </TR>
 <TR>
-<TD Class="Num">151</TD>
+<TD Class="Num">150</TD>
 <TD>OTGKJOVF</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1261,7 +1254,7 @@
 <TD>Godkjent at OT-Data skal vises for andre fylker [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">152</TD>
+<TD Class="Num">151</TD>
 <TD>OTENHET</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
@@ -1269,7 +1262,7 @@
 <TD>OT-enhet [ihht OTENHET]</TD>
 </TR>
 <TR>
-<TD Class="Num">153</TD>
+<TD Class="Num">152</TD>
 <TD>JOURNALNR</TD>
 <TD nowrap>VARCHAR2(20)</TD>
 <TD>&nbsp;</TD>
@@ -1277,7 +1270,7 @@
 <TD>Journalnr</TD>
 </TR>
 <TR>
-<TD Class="Num">154</TD>
+<TD Class="Num">153</TD>
 <TD>SAKSBID</TD>
 <TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
@@ -1285,7 +1278,7 @@
 <TD>ID Saksbehandler</TD>
 </TR>
 <TR>
-<TD Class="Num">155</TD>
+<TD Class="Num">154</TD>
 <TD>DATO_FRA_INNTAK</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1293,7 +1286,7 @@
 <TD>Dato fra inntak</TD>
 </TR>
 <TR>
-<TD Class="Num">156</TD>
+<TD Class="Num">155</TD>
 <TD>DATO_REG_OT</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1301,7 +1294,7 @@
 <TD>Registrert OT</TD>
 </TR>
 <TR>
-<TD Class="Num">157</TD>
+<TD Class="Num">156</TD>
 <TD>DATO_TIL_INNTAK</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1309,7 +1302,7 @@
 <TD>Dato til inntak</TD>
 </TR>
 <TR>
-<TD Class="Num">158</TD>
+<TD Class="Num">157</TD>
 <TD>OTGKJOVFDAT</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1317,7 +1310,7 @@
 <TD>Godkjent dato (at OT-Data skal vises for andre fylker)</TD>
 </TR>
 <TR>
-<TD Class="Num">159</TD>
+<TD Class="Num">158</TD>
 <TD>OTGKJOVFAV</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
@@ -1325,7 +1318,7 @@
 <TD>Hvem har godkjent at OT-Data skal vises for andre fylker.</TD>
 </TR>
 <TR>
-<TD Class="Num">160</TD>
+<TD Class="Num">159</TD>
 <TD>FULFKMAN</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1333,7 +1326,7 @@
 <TD>Fullføringsrettskrav innfridd? Manuelt satt. [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">161</TD>
+<TD Class="Num">160</TD>
 <TD>NOROPLKB</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1341,7 +1334,7 @@
 <TD>Har fått opplæring etter læreplan i norsk for språklige minoriteter med kort botid? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">162</TD>
+<TD Class="Num">161</TD>
 <TD>AVGISKNR</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
@@ -1349,7 +1342,7 @@
 <TD>Avgiver-skolenr [Ihht SKOLE]</TD>
 </TR>
 <TR>
-<TD Class="Num">163</TD>
+<TD Class="Num">162</TD>
 <TD>AVGIKURS</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
@@ -1357,7 +1350,7 @@
 <TD>Avgiver-programområde [Ihht KURS]</TD>
 </TR>
 <TR>
-<TD Class="Num">164</TD>
+<TD Class="Num">163</TD>
 <TD>AVGISKAR</TD>
 <TD nowrap>NUMBER(8)</TD>
 <TD>&nbsp;</TD>
@@ -1365,7 +1358,7 @@
 <TD>Avgiver skole skoleår [Ihht SKOLEAR]</TD>
 </TR>
 <TR>
-<TD Class="Num">165</TD>
+<TD Class="Num">164</TD>
 <TD>OTINFO</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1373,7 +1366,7 @@
 <TD>Fins det OT-informasjon om eleven [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">166</TD>
+<TD Class="Num">165</TD>
 <TD>EPOST</TD>
 <TD nowrap>VARCHAR2(80)</TD>
 <TD>&nbsp;</TD>
@@ -1381,7 +1374,7 @@
 <TD>Epostadresse</TD>
 </TR>
 <TR>
-<TD Class="Num">167</TD>
+<TD Class="Num">166</TD>
 <TD>TELEFON</TD>
 <TD nowrap>VARCHAR2(12)</TD>
 <TD>&nbsp;</TD>
@@ -1389,7 +1382,7 @@
 <TD>Telefonnr</TD>
 </TR>
 <TR>
-<TD Class="Num">168</TD>
+<TD Class="Num">167</TD>
 <TD>MATTETYP</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -1397,7 +1390,7 @@
 <TD>Matematikk-type [P=Praktisk, T=Teoretisk]</TD>
 </TR>
 <TR>
-<TD Class="Num">169</TD>
+<TD Class="Num">168</TD>
 <TD>INNTSKOL</TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>&nbsp;</TD>
@@ -1405,7 +1398,7 @@
 <TD>Inntatt skolenr [ihht SKOLE]</TD>
 </TR>
 <TR>
-<TD Class="Num">170</TD>
+<TD Class="Num">169</TD>
 <TD>INNTKURS</TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>&nbsp;</TD>
@@ -1413,7 +1406,7 @@
 <TD>Inntatt programområde [ihht KURS]</TD>
 </TR>
 <TR>
-<TD Class="Num">171</TD>
+<TD Class="Num">170</TD>
 <TD>INNTONSK</TD>
 <TD nowrap>NUMBER</TD>
 <TD>&nbsp;</TD>
@@ -1421,7 +1414,7 @@
 <TD>Inntatt ønskenr</TD>
 </TR>
 <TR>
-<TD Class="Num">172</TD>
+<TD Class="Num">171</TD>
 <TD>OPPHGDAT</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1429,7 +1422,7 @@
 <TD>Oppholdstillatelse gyldig til</TD>
 </TR>
 <TR>
-<TD Class="Num">173</TD>
+<TD Class="Num">172</TD>
 <TD>RETTKNTR</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1437,7 +1430,7 @@
 <TD>Rett kontrollert dato</TD>
 </TR>
 <TR>
-<TD Class="Num">174</TD>
+<TD Class="Num">173</TD>
 <TD>DSFSPERR3</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1445,7 +1438,7 @@
 <TD>Lås eierskap til inntaksadresse? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">175</TD>
+<TD Class="Num">174</TD>
 <TD>OTVARSLET</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1453,7 +1446,7 @@
 <TD>Tidspunkt sendt ungdom for møte med OT</TD>
 </TR>
 <TR>
-<TD Class="Num">176</TD>
+<TD Class="Num">175</TD>
 <TD>OTMOTETID</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -1461,7 +1454,7 @@
 <TD>Møtetidspunkt mellom ungdom og OT</TD>
 </TR>
 <TR>
-<TD Class="Num">177</TD>
+<TD Class="Num">176</TD>
 <TD>LPR</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -1469,12 +1462,20 @@
 <TD>Unntas fra LPR? [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">178</TD>
+<TD Class="Num">177</TD>
 <TD>UPDADR3</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Dato sist redigert inntaksadresseadresse</TD>
+</TR>
+<TR>
+<TD Class="Num">178</TD>
+<TD>WSOKLIST</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -1876,13 +1877,6 @@
 <TD>"BREVFLAG" IS NOT NULL</TD>
 <TD>ENABLED</TD>
 <TD>BREVFLAG</TD>
-</TR>
-<TR>
-<TD>SYS_C0012798</TD>
-<TD>Check</TD>
-<TD>"DELTINNT" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>DELTINNT</TD>
 </TR>
 <TR>
 <TD>SYS_C0012799</TD>
@@ -2324,6 +2318,13 @@
 <TD>"FULFKMAN" IS NOT NULL</TD>
 <TD>ENABLED</TD>
 <TD>FULFKMAN</TD>
+</TR>
+<TR>
+<TD>SYS_C00324340</TD>
+<TD>Check</TD>
+<TD>"WSOKLIST" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>WSOKLIST</TD>
 </TR>
 <TR>
 <TD>SYS_C0048610</TD>

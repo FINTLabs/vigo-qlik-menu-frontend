@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -87,7 +88,7 @@
 <TR>
 <TD Class="Num">5</TD>
 <TD>AVGIKLAS</TD>
-<TD nowrap>VARCHAR2(16)</TD>
+<TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Avgiver-klassekode</TD>
@@ -157,7 +158,7 @@
 <TD>FREG adressestatus navn</TD>
 </TR>
 <TR>
-<TD Class="Num">14</TD>
+<TD Class="NumRed">14</TD>
 <TD>ELEVNAVN</TD>
 <TD nowrap>VARCHAR2(100)</TD>
 <TD>&nbsp;</TD>
@@ -605,12 +606,12 @@
 <TD>LKTS</TD>
 </TR>
 <TR>
-<TD Class="NumRed">70</TD>
+<TD Class="Num">70</TD>
 <TD>FNRTIDL</TD>
-<TD nowrap>VARCHAR2(100)</TD>
+<TD nowrap>VARCHAR2(999)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>Tidligere fnr ved konvertering</TD>
+<TD>Tidligere fnr fra FREG</TD>
 </TR>
 <TR>
 <TD Class="Num">71</TD>
@@ -618,7 +619,7 @@
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>Nytt fnr ved konvertering</TD>
+<TD>Nytt fnr fra FREG</TD>
 </TR>
 <TR>
 <TD Class="Num">72</TD>
@@ -626,7 +627,7 @@
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>Dato for nytt fnr ved konvertering</TD>
+<TD>Dato for nytt fnr fra FREG</TD>
 </TR>
 <TR>
 <TD Class="Num">73</TD>
@@ -826,7 +827,7 @@
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>Forrige kommnr FREG dato</TD>
+<TD>FREG Registreringsdato flytting</TD>
 </TR>
 <TR>
 <TD Class="Num">98</TD>
@@ -876,6 +877,102 @@
 <TD>&nbsp;</TD>
 <TD>Antall treff i FREG</TD>
 </TR>
+<TR>
+<TD Class="Num">104</TD>
+<TD>FNRNYTT2</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Nytt fnr fra 5A003</TD>
+</TR>
+<TR>
+<TD Class="Num">105</TD>
+<TD>FNRNYTT2DATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for nytt fnr fra 5A003</TD>
+</TR>
+<TR>
+<TD Class="Num">106</TD>
+<TD>FNRTIDL2</TD>
+<TD nowrap>VARCHAR2(11)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Tidligere fnr fra 5A003</TD>
+</TR>
+<TR>
+<TD Class="Num">107</TD>
+<TD>FNRTIDL2DATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato for tidligere fnr fra 5A003</TD>
+</TR>
+<TR>
+<TD Class="Num">108</TD>
+<TD>DSFFPOS</TD>
+<TD nowrap>NUMBER(4)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige postnr FREG</TD>
+</TR>
+<TR>
+<TD Class="Num">109</TD>
+<TD>DSFFPOSD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Forrige postnr FREG dato</TD>
+</TR>
+<TR>
+<TD Class="Num">110</TD>
+<TD>DSFAJOURD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>FREG Ajourholdsdato flytting</TD>
+</TR>
+<TR>
+<TD Class="Num">111</TD>
+<TD>DSFFLYTTD</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>FREG Flyttedato</TD>
+</TR>
+<TR>
+<TD Class="Num">112</TD>
+<TD>DSPPRKF</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">113</TD>
+<TD>DSPSRSKF</TD>
+<TD nowrap>NUMBER</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">114</TD>
+<TD>DSPPRTEKSF</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">115</TD>
+<TD>DSPSRSTF</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
 </TABLE>
 </CENTER>
 <BR>
@@ -906,9 +1003,9 @@
 </TR>
 <TR>
 <TD>NON-UNIQUE</TD>
-<TD>XIE1FNRTIDL</TD>
+<TD>XIE1ELEV</TD>
 <TD>NORMAL</TD>
-<TD>FNRTIDL</TD>
+<TD>ELEVNAVN</TD>
 <TD>&lt;none&gt;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>

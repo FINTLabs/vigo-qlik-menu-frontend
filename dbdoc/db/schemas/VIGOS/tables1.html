@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -20,15 +20,14 @@
 <CENTER>
 <ul id="list-nav">
 <li><a href="./summary.html">Summary</a></li>
-<li><a href="./views1.html">Views</a></li>
 <li class="selected"><a>Tables</a></li>
+<li><a href="./views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><CENTER><TABLE class="NavSum"><CAPTION>Tables</CAPTION><TR>
-<TD Class="NavCSilver"><A TITLE="AJOURHOL ... KURSFAG">1</A></TD>
-<TD Class="NavC"><A HREF="./tables2.html" TITLE="KURSKAT ... TS_GJELD">2</A></TD>
-<TD Class="NavC"><A HREF="./tables3.html" TITLE="TS_LOGG ... VURDERING">3</A></TD>
-<TD Class="NavC"><A HREF="./tables4.html" TITLE="VGDOKFAG ... WSPARAMS">4</A></TD>
+<TD Class="NavCSilver"><A TITLE="AJOURHOL ... KURSKAT">1</A></TD>
+<TD Class="NavC"><A HREF="./tables2.html" TITLE="KURSOPPLRING ... TS_MANUELLETILSKUDD">2</A></TD>
+<TD Class="NavC"><A HREF="./tables3.html" TITLE="TS_MANUELLETRANSAKSJONER ... WSPARAMS">3</A></TD>
 </TR></TABLE></CENTER>
 <BR>
 <CENTER>
@@ -40,47 +39,41 @@
 <TH># of Indexes</TH>
 <TH>Size</TH>
 <TH>Tablespace</TH>
-<TH>Comment</TH>
 </TR>
 <TR>
 <TD><A NAME="AJOURHOL" HREF="./tables/AJOURHOL.html">AJOURHOL</A></TD>
-<TD Class="Num">14</TD>
+<TD Class="Num">12</TD>
 <TD Class="Num">2</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
-<TD>Ajourholdt søker</TD>
 </TR>
 <TR>
 <TD><A NAME="ANSATT" HREF="./tables/ANSATT.html">ANSATT</A></TD>
 <TD Class="Num">29</TD>
 <TD Class="Num">2</TD>
-<TD>24M</TD>
+<TD>32M</TD>
 <TD>DP_DATA</TD>
-<TD>Ansatt</TD>
 </TR>
 <TR>
 <TD><A NAME="ANSATT2" HREF="./tables/ANSATT2.html">ANSATT2</A></TD>
 <TD Class="Num">13</TD>
 <TD Class="Num">2</TD>
-<TD>15M</TD>
+<TD>16M</TD>
 <TD>DP_DATA</TD>
-<TD>Ansatt i fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="ANSIROLL" HREF="./tables/ANSIROLL.html">ANSIROLL</A></TD>
 <TD Class="Num">15</TD>
 <TD Class="Num">3</TD>
-<TD>109M</TD>
+<TD>117M</TD>
 <TD>DP_DATA</TD>
-<TD>Ansatt i rolle</TD>
 </TR>
 <TR>
 <TD><A NAME="ANSKOMP" HREF="./tables/ANSKOMP.html">ANSKOMP</A></TD>
 <TD Class="Num">14</TD>
 <TD Class="Num">2</TD>
-<TD>6M</TD>
+<TD>7M</TD>
 <TD>DP_DATA</TD>
-<TD>Ansatt kompetanse</TD>
 </TR>
 <TR>
 <TD><A NAME="ARKIVQ" HREF="./tables/ARKIVQ.html">ARKIVQ</A></TD>
@@ -88,7 +81,6 @@
 <TD Class="Num">2</TD>
 <TD>93M</TD>
 <TD>DP_DATA</TD>
-<TD>Arkivering</TD>
 </TR>
 <TR>
 <TD><A NAME="AROLLE" HREF="./tables/AROLLE.html">AROLLE</A></TD>
@@ -96,7 +88,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Ansattrolle</TD>
 </TR>
 <TR>
 <TD><A NAME="ARSAK" HREF="./tables/ARSAK.html">ARSAK</A></TD>
@@ -104,7 +95,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Årsakskode</TD>
 </TR>
 <TR>
 <TD><A NAME="ARSKOLE" HREF="./tables/ARSKOLE.html">ARSKOLE</A></TD>
@@ -112,15 +102,13 @@
 <TD Class="Num">2</TD>
 <TD>5M</TD>
 <TD>DP_DATA</TD>
-<TD>Skoleårsavhengig skoleopplysning</TD>
 </TR>
 <TR>
 <TD><A NAME="AVBRUDD" HREF="./tables/AVBRUDD.html">AVBRUDD</A></TD>
 <TD Class="Num">15</TD>
 <TD Class="Num">2</TD>
-<TD>13M</TD>
+<TD>14M</TD>
 <TD>DP_DATA</TD>
-<TD>Avbrudd i læretid</TD>
 </TR>
 <TR>
 <TD><A NAME="AVGAELEV" HREF="./tables/AVGAELEV.html">AVGAELEV</A></TD>
@@ -128,7 +116,6 @@
 <TD Class="Num">3</TD>
 <TD>8M</TD>
 <TD>DP_DATA</TD>
-<TD>Avgangselev</TD>
 </TR>
 <TR>
 <TD><A NAME="AVGIKLAS" HREF="./tables/AVGIKLAS.html">AVGIKLAS</A></TD>
@@ -136,7 +123,6 @@
 <TD Class="Num">2</TD>
 <TD>320K</TD>
 <TD>DP_DATA</TD>
-<TD>Avgiverklasse</TD>
 </TR>
 <TR>
 <TD><A NAME="AVSTSOK" HREF="./tables/AVSTSOK.html">AVSTSOK</A></TD>
@@ -144,7 +130,6 @@
 <TD Class="Num">2</TD>
 <TD>80M</TD>
 <TD>DP_DATA</TD>
-<TD>Avstander for søkere (Trøndelag)</TD>
 </TR>
 <TR>
 <TD><A NAME="AVTALE" HREF="./tables/AVTALE.html">AVTALE</A></TD>
@@ -152,7 +137,6 @@
 <TD Class="Num">2</TD>
 <TD>384K</TD>
 <TD>DP_DATA</TD>
-<TD>Gjesteavtaler med annet fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="BCKONSKE" HREF="./tables/BCKONSKE.html">BCKONSKE</A></TD>
@@ -160,7 +144,6 @@
 <TD Class="Num">3</TD>
 <TD>2123M</TD>
 <TD>DP_DATA</TD>
-<TD>Kopi av ønsker tidligere skoleår</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDKONTROLL" HREF="./tables/BEDKONTROLL.html">BEDKONTROLL</A></TD>
@@ -168,39 +151,34 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Kodeverk med kontroller for bedriftskontroll</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDKONTROLLRES" HREF="./tables/BEDKONTROLLRES.html">BEDKONTROLLRES</A></TD>
 <TD Class="Num">16</TD>
 <TD Class="Num">2</TD>
-<TD>43M</TD>
+<TD>78M</TD>
 <TD>DP_DATA</TD>
-<TD>Resultater etter bedriftskontroll</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDKONTROLLRESBK" HREF="./tables/BEDKONTROLLRESBK.html">BEDKONTROLLRESBK</A></TD>
 <TD Class="Num">19</TD>
 <TD Class="Num">2</TD>
-<TD>26M</TD>
+<TD>52M</TD>
 <TD>DP_DATA</TD>
-<TD>Resultater etter bedriftskurskontroll</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDRIFTBRREG" HREF="./tables/BEDRIFTBRREG.html">BEDRIFTBRREG</A></TD>
 <TD Class="Num">81</TD>
 <TD Class="Num">2</TD>
-<TD>38M</TD>
+<TD>39M</TD>
 <TD>DP_DATA</TD>
-<TD>Data fra enhetsregisteret bbreg</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDRIFTKURS" HREF="./tables/BEDRIFTKURS.html">BEDRIFTKURS</A></TD>
 <TD Class="Num">15</TD>
 <TD Class="Num">3</TD>
-<TD>164M</TD>
+<TD>172M</TD>
 <TD>DP_DATA</TD>
-<TD>Bedriftskurs</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDRIFT_NETTVERK" HREF="./tables/BEDRIFT_NETTVERK.html">BEDRIFT_NETTVERK</A></TD>
@@ -208,7 +186,6 @@
 <TD Class="Num">2</TD>
 <TD>6M</TD>
 <TD>DP_DATA</TD>
-<TD>Læreplassregnskap - bedriftsnettverk</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDRIFTSSB" HREF="./tables/BEDRIFTSSB.html">BEDRIFTSSB</A></TD>
@@ -216,15 +193,13 @@
 <TD Class="Num">4</TD>
 <TD>304M</TD>
 <TD>DP_DATA</TD>
-<TD>Bedrifter fra SSB</TD>
 </TR>
 <TR>
 <TD><A NAME="BEDRIFT2" HREF="./tables/BEDRIFT2.html">BEDRIFT2</A></TD>
-<TD Class="Num">37</TD>
+<TD Class="Num">39</TD>
 <TD Class="Num">2</TD>
-<TD>19M</TD>
+<TD>20M</TD>
 <TD>DP_DATA</TD>
-<TD>Bedrifter</TD>
 </TR>
 <TR>
 <TD><A NAME="BEGRENS" HREF="./tables/BEGRENS.html">BEGRENS</A></TD>
@@ -232,7 +207,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Begrensninger av videresøk</TD>
 </TR>
 <TR>
 <TD><A NAME="BEHANKAT" HREF="./tables/BEHANKAT.html">BEHANKAT</A></TD>
@@ -240,7 +214,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Behandlingskategori fortrinn</TD>
 </TR>
 <TR>
 <TD><A NAME="BEHANKAT2" HREF="./tables/BEHANKAT2.html">BEHANKAT2</A></TD>
@@ -248,7 +221,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Behandlingskategori fortrinn per fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="BYDEL" HREF="./tables/BYDEL.html">BYDEL</A></TD>
@@ -256,15 +228,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Bydel</TD>
 </TR>
 <TR>
 <TD><A NAME="CBRUKER" HREF="./tables/CBRUKER.html">CBRUKER</A></TD>
-<TD Class="Num">26</TD>
+<TD Class="Num">27</TD>
 <TD Class="Num">3</TD>
 <TD>384K</TD>
 <TD>DP_DATA</TD>
-<TD>Citrix brukere (systemtabell)</TD>
 </TR>
 <TR>
 <TD><A NAME="DOKUMENT" HREF="./tables/DOKUMENT.html">DOKUMENT</A></TD>
@@ -272,15 +242,13 @@
 <TD Class="Num">2</TD>
 <TD>1666M</TD>
 <TD>DP_DATA</TD>
-<TD>Dokument</TD>
 </TR>
 <TR>
 <TD><A NAME="DOKUMENT_DS" HREF="./tables/DOKUMENT_DS.html">DOKUMENT_DS</A></TD>
 <TD Class="Num">21</TD>
 <TD Class="Num">3</TD>
-<TD>80M</TD>
+<TD>88M</TD>
 <TD>DP_DATA</TD>
-<TD>Dokument_ds</TD>
 </TR>
 <TR>
 <TD><A NAME="EKSTYPE" HREF="./tables/EKSTYPE.html">EKSTYPE</A></TD>
@@ -288,31 +256,27 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Eksamenstype</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEV" HREF="./tables/ELEV.html">ELEV</A></TD>
-<TD Class="Num">103</TD>
+<TD Class="Num">115</TD>
 <TD Class="Num">4</TD>
 <TD>1232M</TD>
 <TD>DP_DATA</TD>
-<TD>Elever</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEVKURS" HREF="./tables/ELEVKURS.html">ELEVKURS</A></TD>
-<TD Class="Num">109</TD>
+<TD Class="Num">110</TD>
 <TD Class="Num">7</TD>
 <TD>2517M</TD>
 <TD>DP_DATA</TD>
-<TD>Elevkurs</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEVKURSF" HREF="./tables/ELEVKURSF.html">ELEVKURSF</A></TD>
 <TD Class="Num">38</TD>
 <TD Class="Num">3</TD>
-<TD>1793M</TD>
+<TD>1857M</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEVKURS2" HREF="./tables/ELEVKURS2.html">ELEVKURS2</A></TD>
@@ -320,7 +284,6 @@
 <TD Class="Num">2</TD>
 <TD>1284M</TD>
 <TD>DP_DATA</TD>
-<TD>Elevkurs per fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEV_LAEREPLASS" HREF="./tables/ELEV_LAEREPLASS.html">ELEV_LAEREPLASS</A></TD>
@@ -328,7 +291,6 @@
 <TD Class="Num">3</TD>
 <TD>7M</TD>
 <TD>DP_DATA</TD>
-<TD>Læreplassregnskap - elever</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEV_LAEREPLASS_UTEN" HREF="./tables/ELEV_LAEREPLASS_UTEN.html">ELEV_LAEREPLASS_UTEN</A></TD>
@@ -336,7 +298,6 @@
 <TD Class="Num">3</TD>
 <TD>320K</TD>
 <TD>DP_DATA</TD>
-<TD>Læreplassregnskap - elever som ikke er formidlet</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEV_UTPLASSERING" HREF="./tables/ELEV_UTPLASSERING.html">ELEV_UTPLASSERING</A></TD>
@@ -344,7 +305,6 @@
 <TD Class="Num">3</TD>
 <TD>2M</TD>
 <TD>DP_DATA</TD>
-<TD>Læreplassregnskap - utplasseringer</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEVVMM" HREF="./tables/ELEVVMM.html">ELEVVMM</A></TD>
@@ -352,7 +312,6 @@
 <TD Class="Num">2</TD>
 <TD>120M</TD>
 <TD>DP_DATA</TD>
-<TD>Vitnemålsmerknad per elev</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEV2" HREF="./tables/ELEV2.html">ELEV2</A></TD>
@@ -360,23 +319,13 @@
 <TD Class="Num">5</TD>
 <TD>1464M</TD>
 <TD>DP_DATA</TD>
-<TD>Elever per fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="ELEV2UMS" HREF="./tables/ELEV2UMS.html">ELEV2UMS</A></TD>
 <TD Class="Num">15</TD>
 <TD Class="Num">3</TD>
-<TD>9M</TD>
+<TD>12M</TD>
 <TD>DP_DATA</TD>
-<TD>EPOST/SMS/APPMELDING per elev2</TD>
-</TR>
-<TR>
-<TD><A NAME="ENDRET" HREF="./tables/ENDRET.html">ENDRET</A></TD>
-<TD Class="Num">16</TD>
-<TD Class="Num">2</TD>
-<TD>9M</TD>
-<TD>DP_DATA</TD>
-<TD>Endret (systemtabell)</TD>
 </TR>
 <TR>
 <TD><A NAME="ETTERDOK" HREF="./tables/ETTERDOK.html">ETTERDOK</A></TD>
@@ -384,7 +333,6 @@
 <TD Class="Num">2</TD>
 <TD>2M</TD>
 <TD>DP_DATA</TD>
-<TD>Dokument som kan etterlyses</TD>
 </TR>
 <TR>
 <TD><A NAME="ETTERLYS" HREF="./tables/ETTERLYS.html">ETTERLYS</A></TD>
@@ -392,7 +340,6 @@
 <TD Class="Num">2</TD>
 <TD>256K</TD>
 <TD>DP_DATA</TD>
-<TD>Etterlyst dokument</TD>
 </TR>
 <TR>
 <TD><A NAME="FAG" HREF="./tables/FAG.html">FAG</A></TD>
@@ -400,7 +347,6 @@
 <TD Class="Num">2</TD>
 <TD>8M</TD>
 <TD>DP_DATA</TD>
-<TD>Fag</TD>
 </TR>
 <TR>
 <TD><A NAME="FAGLIK" HREF="./tables/FAGLIK.html">FAGLIK</A></TD>
@@ -408,7 +354,6 @@
 <TD Class="Num">2</TD>
 <TD>192K</TD>
 <TD>DP_DATA</TD>
-<TD>Tilsvarende fag</TD>
 </TR>
 <TR>
 <TD><A NAME="FAGTYPE" HREF="./tables/FAGTYPE.html">FAGTYPE</A></TD>
@@ -416,7 +361,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Eksamenstyper</TD>
 </TR>
 <TR>
 <TD><A NAME="FAM" HREF="./tables/FAM.html">FAM</A></TD>
@@ -424,7 +368,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Fagmerknad</TD>
 </TR>
 <TR>
 <TD><A NAME="FGRUPPE" HREF="./tables/FGRUPPE.html">FGRUPPE</A></TD>
@@ -432,7 +375,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Oppholdsstatus</TD>
 </TR>
 <TR>
 <TD><A NAME="FREMSPR" HREF="./tables/FREMSPR.html">FREMSPR</A></TD>
@@ -440,15 +382,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Fremmedspråk</TD>
 </TR>
 <TR>
 <TD><A NAME="FRITEKST" HREF="./tables/FRITEKST.html">FRITEKST</A></TD>
 <TD Class="Num">19</TD>
 <TD Class="Num">3</TD>
-<TD>378M</TD>
+<TD>384M</TD>
 <TD>DP_DATA</TD>
-<TD>Fritekst</TD>
 </TR>
 <TR>
 <TD><A NAME="FRITEKSTTYPE" HREF="./tables/FRITEKSTTYPE.html">FRITEKSTTYPE</A></TD>
@@ -456,15 +396,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Friteksttype</TD>
 </TR>
 <TR>
 <TD><A NAME="FYLKE" HREF="./tables/FYLKE.html">FYLKE</A></TD>
-<TD Class="Num">250</TD>
+<TD Class="Num">252</TD>
 <TD Class="Num">3</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Fylke (systemparametre)</TD>
 </TR>
 <TR>
 <TD><A NAME="GODKJNEMND_GR" HREF="./tables/GODKJNEMND_GR.html">GODKJNEMND_GR</A></TD>
@@ -472,7 +410,6 @@
 <TD Class="Num">2</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
-<TD>Godkjenning av nemnd for programområde</TD>
 </TR>
 <TR>
 <TD><A NAME="GRLELEV" HREF="./tables/GRLELEV.html">GRLELEV</A></TD>
@@ -480,15 +417,13 @@
 <TD Class="Num">2</TD>
 <TD>722M</TD>
 <TD>DP_DATA</TD>
-<TD>Statistikkgrunnlag elever (linje)</TD>
 </TR>
 <TR>
 <TD><A NAME="GRLHODE" HREF="./tables/GRLHODE.html">GRLHODE</A></TD>
 <TD Class="Num">22</TD>
 <TD Class="Num">3</TD>
-<TD>256K</TD>
+<TD>320K</TD>
 <TD>DP_DATA</TD>
-<TD>Statistikkgrunnlag (hode)</TD>
 </TR>
 <TR>
 <TD><A NAME="GRLLTID" HREF="./tables/GRLLTID.html">GRLLTID</A></TD>
@@ -496,15 +431,13 @@
 <TD Class="Num">2</TD>
 <TD>214M</TD>
 <TD>DP_DATA</TD>
-<TD>Grunnlag læretid</TD>
 </TR>
 <TR>
 <TD><A NAME="GRLSOKER" HREF="./tables/GRLSOKER.html">GRLSOKER</A></TD>
 <TD Class="Num">55</TD>
 <TD Class="Num">2</TD>
-<TD>16147M</TD>
+<TD>17187M</TD>
 <TD>DP_DATA</TD>
-<TD>Statistikkgrunnlag søker (linje)</TD>
 </TR>
 <TR>
 <TD><A NAME="GRUNNKR" HREF="./tables/GRUNNKR.html">GRUNNKR</A></TD>
@@ -512,7 +445,6 @@
 <TD Class="Num">1</TD>
 <TD>192K</TD>
 <TD>DP_DATA</TD>
-<TD>Grunnkrets</TD>
 </TR>
 <TR>
 <TD><A NAME="GRUNNLEGGENDE_FERDIGHET_LK20" HREF="./tables/GRUNNLEGGENDE_FERDIGHET_LK20.html">GRUNNLEGGENDE_FERDIGHET_LK20</A></TD>
@@ -520,7 +452,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="HENDELSE" HREF="./tables/HENDELSE.html">HENDELSE</A></TD>
@@ -528,7 +459,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Hendelse (arkiv)</TD>
 </TR>
 <TR>
 <TD><A NAME="HENDELSE2" HREF="./tables/HENDELSE2.html">HENDELSE2</A></TD>
@@ -536,7 +466,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Hendelse - fylkesvis (arkiv)</TD>
 </TR>
 <TR>
 <TD><A NAME="HJELPETEKST" HREF="./tables/HJELPETEKST.html">HJELPETEKST</A></TD>
@@ -544,7 +473,6 @@
 <TD Class="Num">3</TD>
 <TD>384K</TD>
 <TD>DP_DATA</TD>
-<TD>Hjelpetekst</TD>
 </TR>
 <TR>
 <TD><A NAME="HJELPETEKSTKODER" HREF="./tables/HJELPETEKSTKODER.html">HJELPETEKSTKODER</A></TD>
@@ -552,7 +480,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Hjelpetekstkoder</TD>
 </TR>
 <TR>
 <TD><A NAME="HOVEDOMRAADE" HREF="./tables/HOVEDOMRAADE.html">HOVEDOMRAADE</A></TD>
@@ -560,7 +487,6 @@
 <TD Class="Num">1</TD>
 <TD>320K</TD>
 <TD>DP_DATA</TD>
-<TD>Hovedområde</TD>
 </TR>
 <TR>
 <TD><A NAME="HPL" HREF="./tables/HPL.html">HPL</A></TD>
@@ -568,23 +494,20 @@
 <TD Class="Num">2</TD>
 <TD>960K</TD>
 <TD>DP_DATA</TD>
-<TD>Holdeplass</TD>
 </TR>
 <TR>
 <TD><A NAME="ILKP" HREF="./tables/ILKP.html">ILKP</A></TD>
 <TD Class="Num">16</TD>
 <TD Class="Num">2</TD>
-<TD>2M</TD>
+<TD>3M</TD>
 <TD>DP_DATA</TD>
-<TD>Individuell lærekandidatplan</TD>
 </TR>
 <TR>
 <TD><A NAME="ILKPMAAL" HREF="./tables/ILKPMAAL.html">ILKPMAAL</A></TD>
 <TD Class="Num">13</TD>
 <TD Class="Num">2</TD>
-<TD>36M</TD>
+<TD>37M</TD>
 <TD>DP_DATA</TD>
-<TD>Mål for individuell lærekandidatplan</TD>
 </TR>
 <TR>
 <TD><A NAME="INNENHET" HREF="./tables/INNENHET.html">INNENHET</A></TD>
@@ -592,7 +515,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Inntaks-enheter / programområde</TD>
 </TR>
 <TR>
 <TD><A NAME="INNSKOLE" HREF="./tables/INNSKOLE.html">INNSKOLE</A></TD>
@@ -600,7 +522,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Inntaks-enheter / skole</TD>
 </TR>
 <TR>
 <TD><A NAME="INNTKRAV" HREF="./tables/INNTKRAV.html">INNTKRAV</A></TD>
@@ -608,7 +529,6 @@
 <TD Class="Num">2</TD>
 <TD>10M</TD>
 <TD>DP_DATA</TD>
-<TD>Inntakskrav</TD>
 </TR>
 <TR>
 <TD><A NAME="INNTNAERPOENG" HREF="./tables/INNTNAERPOENG.html">INNTNAERPOENG</A></TD>
@@ -616,15 +536,13 @@
 <TD Class="Num">2</TD>
 <TD>256K</TD>
 <TD>DP_DATA</TD>
-<TD>Søkere som ikke har søkt nærskolen på noen av sine ønsker</TD>
 </TR>
 <TR>
 <TD><A NAME="INSTANS" HREF="./tables/INSTANS.html">INSTANS</A></TD>
-<TD Class="Num">19</TD>
+<TD Class="Num">20</TD>
 <TD Class="Num">2</TD>
 <TD>512K</TD>
 <TD>DP_DATA</TD>
-<TD>Hjelpe-instans</TD>
 </TR>
 <TR>
 <TD><A NAME="INTAVTALE" HREF="./tables/INTAVTALE.html">INTAVTALE</A></TD>
@@ -632,7 +550,6 @@
 <TD Class="Num">2</TD>
 <TD>24M</TD>
 <TD>DP_DATA</TD>
-<TD>Intensjonsavtale</TD>
 </TR>
 <TR>
 <TD><A NAME="INTERN" HREF="./tables/INTERN.html">INTERN</A></TD>
@@ -640,7 +557,6 @@
 <TD Class="Num">3</TD>
 <TD>14M</TD>
 <TD>DP_DATA</TD>
-<TD>Internkoder for elev</TD>
 </TR>
 <TR>
 <TD><A NAME="INTERNF" HREF="./tables/INTERNF.html">INTERNF</A></TD>
@@ -648,7 +564,6 @@
 <TD Class="Num">3</TD>
 <TD>12M</TD>
 <TD>DP_DATA</TD>
-<TD>Internkoder for fagopplæring</TD>
 </TR>
 <TR>
 <TD><A NAME="INTKODE" HREF="./tables/INTKODE.html">INTKODE</A></TD>
@@ -656,7 +571,6 @@
 <TD Class="Num">2</TD>
 <TD>256K</TD>
 <TD>DP_DATA</TD>
-<TD>Internkode</TD>
 </TR>
 <TR>
 <TD><A NAME="INTNR" HREF="./tables/INTNR.html">INTNR</A></TD>
@@ -664,7 +578,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Internkodenr</TD>
 </TR>
 <TR>
 <TD><A NAME="KARAKTER" HREF="./tables/KARAKTER.html">KARAKTER</A></TD>
@@ -672,7 +585,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Karakter per type</TD>
 </TR>
 <TR>
 <TD><A NAME="KARAKTER2" HREF="./tables/KARAKTER2.html">KARAKTER2</A></TD>
@@ -680,15 +592,13 @@
 <TD Class="Num">2</TD>
 <TD>192K</TD>
 <TD>DP_DATA</TD>
-<TD>Karakter per type og fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="KARLINJE" HREF="./tables/KARLINJE.html">KARLINJE</A></TD>
-<TD Class="Num">43</TD>
+<TD Class="Num">54</TD>
 <TD Class="Num">6</TD>
-<TD>10040M</TD>
+<TD>10232M</TD>
 <TD>DP_DATA</TD>
-<TD>Linje på karakterdokument</TD>
 </TR>
 <TR>
 <TD><A NAME="KJERNEELEMENT_LK20" HREF="./tables/KJERNEELEMENT_LK20.html">KJERNEELEMENT_LK20</A></TD>
@@ -696,7 +606,6 @@
 <TD Class="Num">2</TD>
 <TD>320K</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="KLAGE" HREF="./tables/KLAGE.html">KLAGE</A></TD>
@@ -704,15 +613,13 @@
 <TD Class="Num">2</TD>
 <TD>320K</TD>
 <TD>DP_DATA</TD>
-<TD>Klage på prøve</TD>
 </TR>
 <TR>
 <TD><A NAME="KLASORDN" HREF="./tables/KLASORDN.html">KLASORDN</A></TD>
-<TD Class="Num">66</TD>
+<TD Class="Num">67</TD>
 <TD Class="Num">3</TD>
 <TD>522M</TD>
 <TD>DP_DATA</TD>
-<TD>Klasseordning</TD>
 </TR>
 <TR>
 <TD><A NAME="KLREGH" HREF="./tables/KLREGH.html">KLREGH</A></TD>
@@ -720,7 +627,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>VIGO Skole - Data til VIGO</TD>
 </TR>
 <TR>
 <TD><A NAME="KLREGL" HREF="./tables/KLREGL.html">KLREGL</A></TD>
@@ -728,7 +634,6 @@
 <TD Class="Num">2</TD>
 <TD>2M</TD>
 <TD>DP_DATA</TD>
-<TD>VIGO Skole - Data til VIGO</TD>
 </TR>
 <TR>
 <TD><A NAME="KLREGV" HREF="./tables/KLREGV.html">KLREGV</A></TD>
@@ -736,7 +641,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>VIGO Skole - Data til VIGO</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMMUNE" HREF="./tables/KOMMUNE.html">KOMMUNE</A></TD>
@@ -744,7 +648,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Kommune</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMMUNERANG" HREF="./tables/KOMMUNERANG.html">KOMMUNERANG</A></TD>
@@ -752,7 +655,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Kommunerangering (Kommune nærhet)</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMPDELMAAL" HREF="./tables/KOMPDELMAAL.html">KOMPDELMAAL</A></TD>
@@ -760,7 +662,6 @@
 <TD Class="Num">1</TD>
 <TD>1M</TD>
 <TD>DP_DATA</TD>
-<TD>Kompetansedelmål</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMPDELMAAL_LK20" HREF="./tables/KOMPDELMAAL_LK20.html">KOMPDELMAAL_LK20</A></TD>
@@ -768,7 +669,6 @@
 <TD Class="Num">1</TD>
 <TD>2M</TD>
 <TD>DP_DATA</TD>
-<TD>Kompetansedelmål</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMPETANSEMAAL" HREF="./tables/KOMPETANSEMAAL.html">KOMPETANSEMAAL</A></TD>
@@ -776,7 +676,6 @@
 <TD Class="Num">1</TD>
 <TD>5M</TD>
 <TD>DP_DATA</TD>
-<TD>Kompetansemål</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMPETANSEMAAL_LK20" HREF="./tables/KOMPETANSEMAAL_LK20.html">KOMPETANSEMAAL_LK20</A></TD>
@@ -784,7 +683,6 @@
 <TD Class="Num">2</TD>
 <TD>3M</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMPETANSEMAALSETT_LK20" HREF="./tables/KOMPETANSEMAALSETT_LK20.html">KOMPETANSEMAALSETT_LK20</A></TD>
@@ -792,7 +690,6 @@
 <TD Class="Num">2</TD>
 <TD>832K</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="KOMPKODE" HREF="./tables/KOMPKODE.html">KOMPKODE</A></TD>
@@ -800,7 +697,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Kompetansekoder</TD>
 </TR>
 <TR>
 <TD><A NAME="KONTRAKTSTATUS" HREF="./tables/KONTRAKTSTATUS.html">KONTRAKTSTATUS</A></TD>
@@ -808,15 +704,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Kontraktstatus</TD>
 </TR>
 <TR>
 <TD><A NAME="KONTRENDRING" HREF="./tables/KONTRENDRING.html">KONTRENDRING</A></TD>
 <TD Class="Num">18</TD>
 <TD Class="Num">2</TD>
-<TD>0</TD>
+<TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Søknad om endring av kontraktdetaljer</TD>
 </TR>
 <TR>
 <TD><A NAME="KONTRTYPE" HREF="./tables/KONTRTYPE.html">KONTRTYPE</A></TD>
@@ -824,15 +718,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Kontraktstype</TD>
 </TR>
 <TR>
 <TD><A NAME="KURS" HREF="./tables/KURS.html">KURS</A></TD>
-<TD Class="Num">54</TD>
-<TD Class="Num">2</TD>
+<TD Class="Num">55</TD>
+<TD Class="Num">3</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
-<TD>Programområde (kurs)</TD>
 </TR>
 <TR>
 <TD><A NAME="KURSFAG" HREF="./tables/KURSFAG.html">KURSFAG</A></TD>
@@ -840,7 +732,13 @@
 <TD Class="Num">2</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
-<TD>Fag som inngår i et programområde</TD>
+</TR>
+<TR>
+<TD><A NAME="KURSKAT" HREF="./tables/KURSKAT.html">KURSKAT</A></TD>
+<TD Class="Num">13</TD>
+<TD Class="Num">2</TD>
+<TD>64K</TD>
+<TD>DP_DATA</TD>
 </TR>
 </TABLE>
 </CENTER>

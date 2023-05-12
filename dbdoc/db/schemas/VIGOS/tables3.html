@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -20,15 +20,14 @@
 <CENTER>
 <ul id="list-nav">
 <li><a href="./summary.html">Summary</a></li>
-<li><a href="./views1.html">Views</a></li>
 <li class="selected"><a>Tables</a></li>
+<li><a href="./views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><CENTER><TABLE class="NavSum"><CAPTION>Tables</CAPTION><TR>
-<TD Class="NavC"><A HREF="./tables1.html" TITLE="AJOURHOL ... KURSFAG">1</A></TD>
-<TD Class="NavC"><A HREF="./tables2.html" TITLE="KURSKAT ... TS_GJELD">2</A></TD>
-<TD Class="NavCSilver"><A TITLE="TS_LOGG ... WSPARAMS">3</A></TD>
-<TD Class="NavC"><A HREF="./tables4.html" TITLE="VGDOKFAG ... WSPARAMS">4</A></TD>
+<TD Class="NavC"><A HREF="./tables1.html" TITLE="AJOURHOL ... KURSKAT">1</A></TD>
+<TD Class="NavC"><A HREF="./tables2.html" TITLE="KURSOPPLRING ... TS_MANUELLETILSKUDD">2</A></TD>
+<TD Class="NavCSilver"><A TITLE="TS_MANUELLETRANSAKSJONER ... WSPARAMS">3</A></TD>
 </TR></TABLE></CENTER>
 <BR>
 <CENTER>
@@ -40,23 +39,6 @@
 <TH># of Indexes</TH>
 <TH>Size</TH>
 <TH>Tablespace</TH>
-<TH>Comment</TH>
-</TR>
-<TR>
-<TD><A NAME="TS_LOGG" HREF="./tables/TS_LOGG.html">TS_LOGG</A></TD>
-<TD Class="Num">15</TD>
-<TD Class="Num">3</TD>
-<TD>1984M</TD>
-<TD>DP_DATA</TD>
-<TD>Logg for tilskuddsberegning</TD>
-</TR>
-<TR>
-<TD><A NAME="TS_MANUELLETILSKUDD" HREF="./tables/TS_MANUELLETILSKUDD.html">TS_MANUELLETILSKUDD</A></TD>
-<TD Class="Num">18</TD>
-<TD Class="Num">2</TD>
-<TD>16M</TD>
-<TD>DP_DATA</TD>
-<TD>Manuelle tilskudd for kontrakt</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_MANUELLETRANSAKSJONER" HREF="./tables/TS_MANUELLETRANSAKSJONER.html">TS_MANUELLETRANSAKSJONER</A></TD>
@@ -64,7 +46,6 @@
 <TD Class="Num">3</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
-<TD>Manuelle transaksjoner for bedrift</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_OPPGJORSOPPGAVE" HREF="./tables/TS_OPPGJORSOPPGAVE.html">TS_OPPGJORSOPPGAVE</A></TD>
@@ -72,7 +53,6 @@
 <TD Class="Num">2</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
-<TD>Tilskudd, oppgjørsoppgave (o4R015)</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_ORDNING" HREF="./tables/TS_ORDNING.html">TS_ORDNING</A></TD>
@@ -80,7 +60,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Tilskuddsordning</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_PERIODE" HREF="./tables/TS_PERIODE.html">TS_PERIODE</A></TD>
@@ -88,23 +67,20 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Periode for tilskuddsberegning</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_PLASS_BEREGNET" HREF="./tables/TS_PLASS_BEREGNET.html">TS_PLASS_BEREGNET</A></TD>
 <TD Class="Num">19</TD>
 <TD Class="Num">2</TD>
-<TD>405M</TD>
+<TD>413M</TD>
 <TD>DP_DATA</TD>
-<TD>Beregnet kontrakt</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_PLASS_DETALJER" HREF="./tables/TS_PLASS_DETALJER.html">TS_PLASS_DETALJER</A></TD>
 <TD Class="Num">29</TD>
 <TD Class="Num">2</TD>
-<TD>1348M</TD>
+<TD>1412M</TD>
 <TD>DP_DATA</TD>
-<TD>Kontraktsdetaljer</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_SATS" HREF="./tables/TS_SATS.html">TS_SATS</A></TD>
@@ -112,15 +88,13 @@
 <TD Class="Num">2</TD>
 <TD>512K</TD>
 <TD>DP_DATA</TD>
-<TD>Sats for tilskuddstype</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_TRANSAKSJONER" HREF="./tables/TS_TRANSAKSJONER.html">TS_TRANSAKSJONER</A></TD>
 <TD Class="Num">38</TD>
 <TD Class="Num">4</TD>
-<TD>804M</TD>
+<TD>820M</TD>
 <TD>DP_DATA</TD>
-<TD>Transaksjoner for Elev/Bedrift/Fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_TYPE" HREF="./tables/TS_TYPE.html">TS_TYPE</A></TD>
@@ -128,7 +102,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Type for tilskuddsberegning</TD>
 </TR>
 <TR>
 <TD><A NAME="TS_TYPEIORDNING" HREF="./tables/TS_TYPEIORDNING.html">TS_TYPEIORDNING</A></TD>
@@ -136,7 +109,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Tilskuddstype tilknyttet ordning</TD>
 </TR>
 <TR>
 <TD><A NAME="TVERRFAGLIG_TEMA_LK20" HREF="./tables/TVERRFAGLIG_TEMA_LK20.html">TVERRFAGLIG_TEMA_LK20</A></TD>
@@ -144,7 +116,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="UNGDOMOTGRUPPE2" HREF="./tables/UNGDOMOTGRUPPE2.html">UNGDOMOTGRUPPE2</A></TD>
@@ -152,31 +123,27 @@
 <TD Class="Num">2</TD>
 <TD>30M</TD>
 <TD>DP_DATA</TD>
-<TD>OT: Otgruppe 2, ungdom</TD>
 </TR>
 <TR>
 <TD><A NAME="UNGDOMOTJOURNAL" HREF="./tables/UNGDOMOTJOURNAL.html">UNGDOMOTJOURNAL</A></TD>
 <TD Class="Num">24</TD>
 <TD Class="Num">3</TD>
-<TD>482M</TD>
+<TD>538M</TD>
 <TD>DP_DATA</TD>
-<TD>OT: Ungdom OT-jounal</TD>
 </TR>
 <TR>
 <TD><A NAME="VARSEL" HREF="./tables/VARSEL.html">VARSEL</A></TD>
 <TD Class="Num">22</TD>
 <TD Class="Num">3</TD>
-<TD>20M</TD>
+<TD>30M</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="VBRUKER" HREF="./tables/VBRUKER.html">VBRUKER</A></TD>
 <TD Class="Num">12</TD>
 <TD Class="Num">2</TD>
-<TD>256K</TD>
+<TD>320K</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="VEDLEGG" HREF="./tables/VEDLEGG.html">VEDLEGG</A></TD>
@@ -184,7 +151,6 @@
 <TD Class="Num">2</TD>
 <TD>744M</TD>
 <TD>DP_DATA</TD>
-<TD>Vedlegg til vitnemål</TD>
 </TR>
 <TR>
 <TD><A NAME="VEILEDNING" HREF="./tables/VEILEDNING.html">VEILEDNING</A></TD>
@@ -192,7 +158,6 @@
 <TD Class="Num">2</TD>
 <TD>4M</TD>
 <TD>DP_DATA</TD>
-<TD>Veiledning av bedrift</TD>
 </TR>
 <TR>
 <TD><A NAME="VERB_LK20" HREF="./tables/VERB_LK20.html">VERB_LK20</A></TD>
@@ -200,63 +165,55 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOK" HREF="./tables/VGDOK.html">VGDOK</A></TD>
-<TD Class="Num">53</TD>
+<TD Class="Num">56</TD>
 <TD Class="Num">2</TD>
 <TD>135M</TD>
 <TD>DP_DATA</TD>
-<TD>Dokumentasjon</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKFAG" HREF="./tables/VGDOKFAG.html">VGDOKFAG</A></TD>
 <TD Class="Num">26</TD>
 <TD Class="Num">2</TD>
-<TD>778M</TD>
+<TD>794M</TD>
 <TD>DP_DATA</TD>
-<TD>Fag (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKFAGGRL" HREF="./tables/VGDOKFAGGRL.html">VGDOKFAGGRL</A></TD>
 <TD Class="Num">31</TD>
 <TD Class="Num">2</TD>
-<TD>873M</TD>
+<TD>923M</TD>
 <TD>DP_DATA</TD>
-<TD>Faggrunnlag (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKGRL" HREF="./tables/VGDOKGRL.html">VGDOKGRL</A></TD>
-<TD Class="Num">46</TD>
+<TD Class="Num">48</TD>
 <TD Class="Num">2</TD>
 <TD>80M</TD>
 <TD>DP_DATA</TD>
-<TD>Grunnlag (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKMERKNAD" HREF="./tables/VGDOKMERKNAD.html">VGDOKMERKNAD</A></TD>
 <TD Class="Num">17</TD>
 <TD Class="Num">2</TD>
-<TD>64M</TD>
+<TD>73M</TD>
 <TD>DP_DATA</TD>
-<TD>Merknad (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKMERKNADGRL" HREF="./tables/VGDOKMERKNADGRL.html">VGDOKMERKNADGRL</A></TD>
 <TD Class="Num">21</TD>
 <TD Class="Num">2</TD>
-<TD>72M</TD>
+<TD>80M</TD>
 <TD>DP_DATA</TD>
-<TD>Merknadsgrunnlag (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKPROMR" HREF="./tables/VGDOKPROMR.html">VGDOKPROMR</A></TD>
 <TD Class="Num">20</TD>
 <TD Class="Num">2</TD>
-<TD>156M</TD>
+<TD>164M</TD>
 <TD>DP_DATA</TD>
-<TD>Programområde (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKPROMRGRL" HREF="./tables/VGDOKPROMRGRL.html">VGDOKPROMRGRL</A></TD>
@@ -264,7 +221,6 @@
 <TD Class="Num">2</TD>
 <TD>192M</TD>
 <TD>DP_DATA</TD>
-<TD>Programområdegrunnlag (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKTEKSTER" HREF="./tables/VGDOKTEKSTER.html">VGDOKTEKSTER</A></TD>
@@ -272,15 +228,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Tekster (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKVEDLEGG" HREF="./tables/VGDOKVEDLEGG.html">VGDOKVEDLEGG</A></TD>
 <TD Class="Num">11</TD>
 <TD Class="Num">3</TD>
-<TD>41M</TD>
+<TD>42M</TD>
 <TD>DP_DATA</TD>
-<TD>Vedlegg (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VGDOKVEDLEGGGRL" HREF="./tables/VGDOKVEDLEGGGRL.html">VGDOKVEDLEGGGRL</A></TD>
@@ -288,7 +242,6 @@
 <TD Class="Num">3</TD>
 <TD>270M</TD>
 <TD>DP_DATA</TD>
-<TD>Vedleggsgrunnlag (dokumentasjon)</TD>
 </TR>
 <TR>
 <TD><A NAME="VMM" HREF="./tables/VMM.html">VMM</A></TD>
@@ -296,7 +249,6 @@
 <TD Class="Num">2</TD>
 <TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Vitnemålsmerknad</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER" HREF="./tables/VSK_BRUKER.html">VSK_BRUKER</A></TD>
@@ -304,7 +256,6 @@
 <TD Class="Num">2</TD>
 <TD>2M</TD>
 <TD>DP_DATA</TD>
-<TD>Vigo skole: Bruker</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER_FOS" HREF="./tables/VSK_BRUKER_FOS.html">VSK_BRUKER_FOS</A></TD>
@@ -312,7 +263,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>&nbsp;</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER_FYLKE" HREF="./tables/VSK_BRUKER_FYLKE.html">VSK_BRUKER_FYLKE</A></TD>
@@ -320,7 +270,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Vigo skole: Bruker fylke</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER_KOMMUNE" HREF="./tables/VSK_BRUKER_KOMMUNE.html">VSK_BRUKER_KOMMUNE</A></TD>
@@ -328,15 +277,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Vigo skole: Bruker kommune</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER_LAERER" HREF="./tables/VSK_BRUKER_LAERER.html">VSK_BRUKER_LAERER</A></TD>
 <TD Class="Num">13</TD>
 <TD Class="Num">2</TD>
-<TD>192K</TD>
+<TD>256K</TD>
 <TD>DP_DATA</TD>
-<TD>Vigo skole: Bruker læreplassregnskap</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER_OTENHET" HREF="./tables/VSK_BRUKER_OTENHET.html">VSK_BRUKER_OTENHET</A></TD>
@@ -344,7 +291,6 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Vigo skole: Bruker OT-enhet</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER_SKOLE" HREF="./tables/VSK_BRUKER_SKOLE.html">VSK_BRUKER_SKOLE</A></TD>
@@ -352,7 +298,6 @@
 <TD Class="Num">2</TD>
 <TD>832K</TD>
 <TD>DP_DATA</TD>
-<TD>Vigo skole: Bruker skole</TD>
 </TR>
 <TR>
 <TD><A NAME="VSK_BRUKER_VIGOVOKSEN" HREF="./tables/VSK_BRUKER_VIGOVOKSEN.html">VSK_BRUKER_VIGOVOKSEN</A></TD>
@@ -360,15 +305,13 @@
 <TD Class="Num">2</TD>
 <TD>64K</TD>
 <TD>DP_DATA</TD>
-<TD>Vigo skole: Bruker vigovoksen</TD>
 </TR>
 <TR>
 <TD><A NAME="VURDERING" HREF="./tables/VURDERING.html">VURDERING</A></TD>
 <TD Class="Num">14</TD>
 <TD Class="Num">2</TD>
-<TD>64K</TD>
+<TD>128K</TD>
 <TD>DP_DATA</TD>
-<TD>Vurdering underveis i læretiden (halvårsvurdering)</TD>
 </TR>
 </TABLE>
 </CENTER>

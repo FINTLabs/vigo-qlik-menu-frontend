@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -298,7 +299,7 @@
 <TD nowrap>VARCHAR2(40)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>Fagmerknad - tekst</TD>
+<TD>Fagmerknad - variabel tekst</TD>
 </TR>
 <TR>
 <TD Class="Num">32</TD>
@@ -334,14 +335,6 @@
 </TR>
 <TR>
 <TD Class="Num">36</TD>
-<TD>FYLKESNR2</TD>
-<TD nowrap>NUMBER(2)</TD>
-<TD>&nbsp;</TD>
-<TD>&nbsp;</TD>
-<TD>Fylkesnr 2 [ihht FYLKE]</TD>
-</TR>
-<TR>
-<TD Class="Num">37</TD>
 <TD>KARTYPEF</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -349,7 +342,7 @@
 <TD>Forrige karaktertype</TD>
 </TR>
 <TR>
-<TD Class="Num">38</TD>
+<TD Class="Num">37</TD>
 <TD>KART1F</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -357,7 +350,7 @@
 <TD>Forrige termin 1 karakter</TD>
 </TR>
 <TR>
-<TD Class="Num">39</TD>
+<TD Class="Num">38</TD>
 <TD>KART2F</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -365,7 +358,7 @@
 <TD>Forrige termin 2 karakter</TD>
 </TR>
 <TR>
-<TD Class="Num">40</TD>
+<TD Class="Num">39</TD>
 <TD>KARSTPF</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -373,7 +366,7 @@
 <TD>Forrige standpunkt  karakter</TD>
 </TR>
 <TR>
-<TD Class="Num">41</TD>
+<TD Class="Num">40</TD>
 <TD>KARSKRF</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -381,7 +374,7 @@
 <TD>Forrige skriftlig eksamens karakter</TD>
 </TR>
 <TR>
-<TD Class="Num">42</TD>
+<TD Class="Num">41</TD>
 <TD>KARMUNF</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -389,12 +382,108 @@
 <TD>Forrige muntlig eksamens karakter</TD>
 </TR>
 <TR>
-<TD Class="Num">43</TD>
+<TD Class="Num">42</TD>
 <TD>KARANNF</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Forrige annen eksamens karakter</TD>
+</TR>
+<TR>
+<TD Class="Num">43</TD>
+<TD>MAGNER</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">44</TD>
+<TD>KARSKRH</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skriftlig eksamenskarakter (høst)</TD>
+</TR>
+<TR>
+<TD Class="Num">45</TD>
+<TD>KARSKRV</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Skriftlig eksamenskarakter (vår)</TD>
+</TR>
+<TR>
+<TD Class="Num">46</TD>
+<TD>KARMUNH</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Muntlig eksamenskarakter (høst)</TD>
+</TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>KARMUNV</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Muntlig eksamenskarakter (vår)</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>KARANNH</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Annen eksamenskarakter (høst)</TD>
+</TR>
+<TR>
+<TD Class="Num">49</TD>
+<TD>KARANNV</TD>
+<TD nowrap>VARCHAR2(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Annen eksamenskarakter (vår)</TD>
+</TR>
+<TR>
+<TD Class="Num">50</TD>
+<TD>FAMKODEH</TD>
+<TD nowrap>VARCHAR2(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fagmerknad (høst)</TD>
+</TR>
+<TR>
+<TD Class="Num">51</TD>
+<TD>FAMKODEV</TD>
+<TD nowrap>VARCHAR2(5)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fagmerknad (vår)</TD>
+</TR>
+<TR>
+<TD Class="Num">52</TD>
+<TD>FAMVARH</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fagmerknad - variabel tekst (høst)</TD>
+</TR>
+<TR>
+<TD Class="Num">53</TD>
+<TD>FAMVARV</TD>
+<TD nowrap>VARCHAR2(40)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Fagmerknad - variabel tekst (vår)</TD>
+</TR>
+<TR>
+<TD Class="Num">54</TD>
+<TD>RKVDATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Realkompetansevurdert dato</TD>
 </TR>
 </TABLE>
 </CENTER>
@@ -557,17 +646,6 @@
 <TD>VIGOS</TD>
 <TD><A NAME="FAM" HREF="../tables/FAM.html">FAM</A></TD>
 <TD>FAMKODE</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>FYLKE_FOR_KARLINJE_2</TD>
-<TD>FYLKESNR2</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="FYLKE" HREF="../tables/FYLKE.html">FYLKE</A></TD>
-<TD>FYLKESNR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>

@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -348,6 +349,22 @@
 <TD>&nbsp;</TD>
 <TD>Bedriftens referanse</TD>
 </TR>
+<TR>
+<TD Class="Num">38</TD>
+<TD>FYLKESNR_NY</TD>
+<TD nowrap>VARCHAR2(99)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD Class="Num">39</TD>
+<TD>MB_PROGNOSEOPPD</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
 </TABLE>
 </CENTER>
 <BR>
@@ -580,6 +597,13 @@
 <TD>"SOKLISTP" IS NOT NULL</TD>
 <TD>ENABLED</TD>
 <TD>SOKLISTP</TD>
+</TR>
+<TR>
+<TD>SYS_C00327573</TD>
+<TD>Check</TD>
+<TD>"MB_PROGNOSEOPPD" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>MB_PROGNOSEOPPD</TD>
 </TR>
 <TR>
 <TD>XPKBEDRIFT2</TD>

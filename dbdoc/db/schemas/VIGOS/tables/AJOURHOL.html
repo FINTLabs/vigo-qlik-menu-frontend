@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -62,46 +63,30 @@
 </TR>
 <TR>
 <TD Class="NumBlue">2</TD>
-<TD><B>SKOLEAR</B><SUB>2</SUB></TD>
-<TD nowrap>NUMBER(8)</TD>
-<TD>Y</TD>
-<TD>&nbsp;</TD>
-<TD>Skoleår [ihht KLASORDN,SKOLEAR]</TD>
-</TR>
-<TR>
-<TD Class="NumBlue">3</TD>
-<TD><B>SKOLENR</B><SUB>3</SUB></TD>
+<TD><B>SKOLENR</B><SUB>2</SUB></TD>
 <TD nowrap>NUMBER(5)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 <TD>Skolenr [ihht KLASORDN,SKOLE]</TD>
 </TR>
 <TR>
-<TD Class="NumBlue">4</TD>
-<TD><B>INNTAKNR</B><SUB>4</SUB></TD>
-<TD nowrap>NUMBER(3)</TD>
-<TD>Y</TD>
-<TD>&nbsp;</TD>
-<TD>Inntaksnr [ihht KLASORDN]</TD>
-</TR>
-<TR>
-<TD Class="NumBlue">5</TD>
-<TD><B>KURSKODE</B><SUB>5</SUB></TD>
+<TD Class="NumBlue">3</TD>
+<TD><B>KURSKODE</B><SUB>3</SUB></TD>
 <TD nowrap>VARCHAR2(10)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 <TD>Programområdekode [ihht KLASORDN,KURS]</TD>
 </TR>
 <TR>
-<TD Class="NumBlue">6</TD>
-<TD><B>FNR</B><SUB>6</SUB></TD>
+<TD Class="NumBlue">4</TD>
+<TD><B>FNR</B><SUB>4</SUB></TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
 <TD>Fødselsnr [ihht ELEV2,ELEV]</TD>
 </TR>
 <TR>
-<TD Class="Num">7</TD>
+<TD Class="Num">5</TD>
 <TD>BEHANDLET</TD>
 <TD nowrap>DATE</TD>
 <TD>&nbsp;</TD>
@@ -109,7 +94,7 @@
 <TD>Behandlet dato i ajourholdet (8A011)</TD>
 </TR>
 <TR>
-<TD Class="Num">8</TD>
+<TD Class="Num">6</TD>
 <TD>ISNKODE</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
@@ -117,7 +102,7 @@
 <TD>Ajourholds-kode [I=Inntatt,S=Sluttet,N=Svart nei,E=Byttet programområde på samme skole,V=Svart nei til plass fra venteliste,X=Sluttet]</TD>
 </TR>
 <TR>
-<TD Class="Num">9</TD>
+<TD Class="Num">7</TD>
 <TD>S_INSERTED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
@@ -125,7 +110,7 @@
 <TD>Opprettet av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">10</TD>
+<TD Class="Num">8</TD>
 <TD>S_INSERTED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
@@ -133,7 +118,7 @@
 <TD>Opprettet når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="NumRed">11</TD>
+<TD Class="NumRed">9</TD>
 <TD>S_OBJECTID</TD>
 <TD nowrap>CHAR(12)</TD>
 <TD>Y</TD>
@@ -141,7 +126,7 @@
 <TD>Objectid (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">12</TD>
+<TD Class="Num">10</TD>
 <TD>S_UPDATED_BY</TD>
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>Y</TD>
@@ -149,7 +134,7 @@
 <TD>Oppdatert av (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">13</TD>
+<TD Class="Num">11</TD>
 <TD>S_UPDATED_TS</TD>
 <TD nowrap>DATE</TD>
 <TD>Y</TD>
@@ -157,7 +142,7 @@
 <TD>Oppdatert når (systemfelt)</TD>
 </TR>
 <TR>
-<TD Class="Num">14</TD>
+<TD Class="Num">12</TD>
 <TD>S_STATUS</TD>
 <TD nowrap>CHAR(1)</TD>
 <TD>&nbsp;</TD>
@@ -196,8 +181,7 @@
 <TD>UNIQUE</TD>
 <TD>XPKAJOURHOL</TD>
 <TD>NORMAL</TD>
-<TD>FYLKESNR, SKOLEAR, SKOLENR, INNTAKNR, KURSKODE, 
-FNR</TD>
+<TD>FYLKESNR, SKOLENR, KURSKODE, FNR</TD>
 <TD>&lt;none&gt;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
@@ -244,33 +228,11 @@ FNR</TD>
 <TD>No</TD>
 </TR>
 <TR>
-<TD>KLASORDN_FOR_AJOURHOL</TD>
-<TD>FYLKESNR, SKOLEAR, SKOLENR, INNTAKNR, KURSKODE</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="KLASORDN" HREF="../tables/KLASORDN.html">KLASORDN</A></TD>
-<TD>FYLKESNR, SKOLEAR, SKOLENR, INNTAKNR, KURSKODE</TD>
-<TD>CASCADE</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
 <TD>KURS_FOR_AJOURHOL</TD>
 <TD>KURSKODE</TD>
 <TD>VIGOS</TD>
 <TD><A NAME="KURS" HREF="../tables/KURS.html">KURS</A></TD>
 <TD>KURSKODE</TD>
-<TD>NO ACTION</TD>
-<TD>ENABLED</TD>
-<TD>No</TD>
-<TD>No</TD>
-</TR>
-<TR>
-<TD>SKOLEAR_FOR_AJOURHOL</TD>
-<TD>SKOLEAR</TD>
-<TD>VIGOS</TD>
-<TD><A NAME="SKOLEAR" HREF="../tables/SKOLEAR.html">SKOLEAR</A></TD>
-<TD>SKOLEAR</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>
@@ -308,25 +270,11 @@ FNR</TD>
 <TD>FYLKESNR</TD>
 </TR>
 <TR>
-<TD>SYS_C0020075</TD>
-<TD>Check</TD>
-<TD>"SKOLEAR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>SKOLEAR</TD>
-</TR>
-<TR>
 <TD>SYS_C0020076</TD>
 <TD>Check</TD>
 <TD>"SKOLENR" IS NOT NULL</TD>
 <TD>ENABLED</TD>
 <TD>SKOLENR</TD>
-</TR>
-<TR>
-<TD>SYS_C0020077</TD>
-<TD>Check</TD>
-<TD>"INNTAKNR" IS NOT NULL</TD>
-<TD>ENABLED</TD>
-<TD>INNTAKNR</TD>
 </TR>
 <TR>
 <TD>SYS_C0020078</TD>
@@ -389,7 +337,7 @@ FNR</TD>
 <TD>Primary Key</TD>
 <TD>&nbsp;</TD>
 <TD>ENABLED</TD>
-<TD>FYLKESNR, SKOLEAR, SKOLENR, INNTAKNR, KURSKODE, FNR</TD>
+<TD>FYLKESNR, SKOLENR, KURSKODE, FNR</TD>
 </TR>
 </TABLE>
 </CENTER>

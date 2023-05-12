@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -74,7 +75,7 @@
 <TD nowrap>VARCHAR2(11)</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
-<TD>Fnr [ihht ELEV]</TD>
+<TD>Fnr [ihht ELEV2]</TD>
 </TR>
 <TR>
 <TD Class="Num">4</TD>
@@ -475,6 +476,30 @@
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
+</TR>
+<TR>
+<TD Class="Num">54</TD>
+<TD>SENDT_ARKIV_DATO</TD>
+<TD nowrap>DATE</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Dato sist sendt arkivkø [dd.mm.yyyy]</TD>
+</TR>
+<TR>
+<TD Class="Num">55</TD>
+<TD>KONTROLLID_VT</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontroll ID (dokgrunnlag) for valideringstjenesten</TD>
+</TR>
+<TR>
+<TD Class="Num">56</TD>
+<TD>KONTROLLTYPE</TD>
+<TD nowrap>CHAR(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Informasjon om hvilken kontroll/validering som er utført på dokgrunnlaget [KM (Kontroll.exe), VT (Valideringstjenesten), blank]</TD>
 </TR>
 </TABLE>
 </CENTER>

@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -266,7 +267,7 @@
 <TD nowrap>CHAR(1)</TD>
 <TD>Y</TD>
 <TD>&nbsp;</TD>
-<TD>Type [L=Lærekontrakt,E= Fagopplæring i skole,O=Opplæringskontrakt,A=Annet fylke]</TD>
+<TD>Type [L=Lærekontrakt,E= Fagopplæring i skole,O=Opplæringskontrakt,A=Annet fylke,B=Fagbrev på jobb]</TD>
 </TR>
 <TR>
 <TD Class="Num">28</TD>
@@ -620,6 +621,14 @@
 <TD>&nbsp;</TD>
 <TD>LK06/LK20</TD>
 </TR>
+<TR>
+<TD Class="Num">72</TD>
+<TD>PROVEFAG</TD>
+<TD nowrap>VARCHAR2(7)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
 </TABLE>
 </CENTER>
 <BR>
@@ -770,6 +779,17 @@
 <TD>VIGOS</TD>
 <TD><A NAME="ELEV" HREF="../tables/ELEV.html">ELEV</A></TD>
 <TD>FNR</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>FAG_FOR_PLASS_PROVEFAG</TD>
+<TD>PROVEFAG</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="FAG" HREF="../tables/FAG.html">FAG</A></TD>
+<TD>FAGKODE</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
 <TD>No</TD>

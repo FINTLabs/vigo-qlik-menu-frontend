@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -181,7 +182,7 @@
 <TD>Poengberegnes [J,N]</TD>
 </TR>
 <TR>
-<TD Class="Num">17</TD>
+<TD Class="NumRed">17</TD>
 <TD>STUDKODE</TD>
 <TD nowrap>VARCHAR2(2)</TD>
 <TD>&nbsp;</TD>
@@ -484,6 +485,14 @@
 <TD>&nbsp;</TD>
 <TD>Om programområdet tilhører LK20</TD>
 </TR>
+<TR>
+<TD Class="Num">55</TD>
+<TD>FORDYPNING</TD>
+<TD nowrap>CHAR(1)</TD>
+<TD>Y</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
 </TABLE>
 </CENTER>
 <BR>
@@ -506,6 +515,17 @@
 <TD>XAK0KURS</TD>
 <TD>NORMAL</TD>
 <TD>S_OBJECTID</TD>
+<TD>&lt;none&gt;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+</TR>
+<TR>
+<TD>NON-UNIQUE</TD>
+<TD>XIE1KURS</TD>
+<TD>NORMAL</TD>
+<TD>STUDKODE</TD>
 <TD>&lt;none&gt;</TD>
 <TD>&nbsp;</TD>
 <TD>&nbsp;</TD>
@@ -754,6 +774,13 @@
 <TD>"LK20" IS NOT NULL</TD>
 <TD>ENABLED</TD>
 <TD>LK20</TD>
+</TR>
+<TR>
+<TD>SYS_C00329837</TD>
+<TD>Check</TD>
+<TD>"FORDYPNING" IS NOT NULL</TD>
+<TD>ENABLED</TD>
+<TD>FORDYPNING</TD>
 </TR>
 <TR>
 <TD>XPKKURS</TD>

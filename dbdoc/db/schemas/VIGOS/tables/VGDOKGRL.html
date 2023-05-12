@@ -12,7 +12,7 @@
 <div id="header">
 <center><div class="title">Schema VIGOS</div></CENTER>
 <center><div class="subtitle1">Oracle Version 12.2.0.1.0</div></CENTER>
-<center><div class="subtitle2">As Of 14/12/2022 15:37:27</div></CENTER>
+<center><div class="subtitle2">As Of 12/05/2023 12:46:42</div></CENTER>
 <div class="headerEnd"><p>&nbsp;</p></div>
 </div>
 </div>
@@ -21,6 +21,7 @@
 <ul id="list-nav">
 <li><a href="../summary.html">Summary</a></li>
 <li><a href="../tables1.html">Tables</a></li>
+<li><a href="../views1.html">Views</a></li>
 </ul>
 </CENTER>
 <BR><TABLE class="Nav"><TR>
@@ -420,6 +421,22 @@
 <TD>&nbsp;</TD>
 <TD>Status (systemfelt)</TD>
 </TR>
+<TR>
+<TD Class="Num">47</TD>
+<TD>KONTROLLID_VT</TD>
+<TD nowrap>CHAR(12)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Kontroll ID for valideringstjenesten</TD>
+</TR>
+<TR>
+<TD Class="Num">48</TD>
+<TD>KONTROLLTYPE</TD>
+<TD nowrap>CHAR(2)</TD>
+<TD>&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD>Informasjon om hvilken kontroll/validering som er utført [KM (Kontroll.exe), VT (Valideringstjenesten), blank]</TD>
+</TR>
 </TABLE>
 </CENTER>
 <BR>
@@ -514,6 +531,17 @@
 <TD>FYLKESNR, KONTROLLID</TD>
 <TD>VIGOS</TD>
 <TD><A NAME="KMRES" HREF="../tables/KMRES.html">KMRES</A></TD>
+<TD>FYLKESNR, S_OBJECTID</TD>
+<TD>NO ACTION</TD>
+<TD>ENABLED</TD>
+<TD>No</TD>
+<TD>No</TD>
+</TR>
+<TR>
+<TD>VTRES_FOR_VGDOKGRL</TD>
+<TD>FYLKESNR, KONTROLLID_VT</TD>
+<TD>VIGOS</TD>
+<TD><A NAME="VTRES" HREF="../tables/VTRES.html">VTRES</A></TD>
 <TD>FYLKESNR, S_OBJECTID</TD>
 <TD>NO ACTION</TD>
 <TD>ENABLED</TD>
