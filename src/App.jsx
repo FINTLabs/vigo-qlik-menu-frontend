@@ -25,7 +25,7 @@ function App() {
                     <MenuCard title="NPrinting" body="Utviklingsmiljø"
                               href="https://np-admin.vigoiks.no/login/saml/sso/np-admin_vigoiks_no"/>
                     <MenuCard title="Dokumentasjon" body="Dokumentasjon av VIGO Sentraldatabase"
-                              href="/dbdoc/db/schemas/VIGOS/summary.html"/>
+                              href="https://vigoiks.sharepoint.com/sites/VigoIKSAnalyse/Delte%20dokumenter/Forms/AllItems.aspx"/>
                 </MenuContainer>
 
             </MainContainer>
