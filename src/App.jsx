@@ -30,11 +30,10 @@ function App() {
 
             </MainContainer>
             <footer>
-                <p>Vigo IKS har samlet Qlik Sense og NPrinting tilgangene i denne portalen for å gi
+                <p>Novari IKS har samlet Qlik Sense og NPrinting tilgangene i denne portalen for å gi
                     brukerne en bedre oversikt.
-                Tilganger styres via VIGO i egen fylkeskommune, ta kontakt med systemansvarlig               
+                Tilganger styres via VIGO i egen fylkeskommune og med roller i Entra ID, ta kontakt med systemansvarlig               
                 </p>
-                <p>Opplæringsvideoer og annen nyttig informasjon ligger i Qlikteam for fylkeskommunene i Teams</p>
                 <p>Trykk på Support oppe i høyre hjørne på denne siden dersom du har spørsmål, vil melde fra om en hendelse eller har tekniske problemer</p>
             </footer>
         </>
