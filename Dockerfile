@@ -1,10 +1,12 @@
-FROM node:10-alpine as build
-COPY . /src
+FROM node:25-alpine AS build
 WORKDIR /src
-RUN yarn && yarn build
-RUN ls -lag
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+RUN npm run build
 
 FROM nginx:stable-alpine
 COPY --from=build /src/build/ /usr/share/nginx/html
-#COPY --from=build /src/dbdoc/ /usr/share/nginx/html/dbdoc
 CMD ["nginx", "-g", "daemon off;"]
