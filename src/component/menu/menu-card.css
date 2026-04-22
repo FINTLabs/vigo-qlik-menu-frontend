@@ -1,5 +1,5 @@
 .nav {
-    border: 2px solid #ffffff;
+    border: 2px solid #000000;
     -webkit-border-radius: 7px;
     -moz-border-radius: 7px;
     border-radius: 7px;
@@ -9,10 +9,16 @@
     text-decoration: none;
     text-align: center;
     min-width: 250px;
+    min-height: 150px;
+    transition: all 0.2s ease;
 }
 
 .nav:hover {
-    border-color: #8EC044;
+    background-color: #e8e1d8;
+    border-bottom-color: #6B133D;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .navTitle {
@@ -24,7 +30,7 @@
     content: " ";
     display: block;
     text-align: center;
-    border-bottom: 2px solid #8EC044;
+    border-bottom: 2px solid #6B133D;
     width: 33%;
     left: 33%;
     top: 0.25em;
@@ -34,4 +40,5 @@
 .navText {
     line-height: 1.35;
     font-size: 1.7em;
+    border-color: #6B133D;
 }

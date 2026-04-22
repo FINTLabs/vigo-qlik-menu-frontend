@@ -2,6 +2,12 @@
     padding: 0 2em;
 }
 
+.inline-link {
+    font-size: inherit;
+    font-weight: inherit;
+    color: #6B133D;
+}
+
 @media only screen and (min-width: 940px) {
     .container {
         padding: 0 4em;

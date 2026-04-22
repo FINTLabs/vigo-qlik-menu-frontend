@@ -9,11 +9,11 @@ const Header = () => {
                     <span className="d-none">Vigo portalen</span>
                 </h1>
             </div>
-            <div className="menuContainer">
-                <a href="https://support.novari.no" target="_blank"
-                   rel="noopener noreferrer" className="menuLinks"
-                   title="Support">Support</a>
-            </div>
+            {/*<div className="menuContainer">*/}
+            {/*    <a href="https://support.novari.no" target="_blank"*/}
+            {/*       rel="noopener noreferrer" className="menuLinks"*/}
+            {/*       title="Support">Support</a>*/}
+            {/*</div>*/}
         </header>
     );
 };
