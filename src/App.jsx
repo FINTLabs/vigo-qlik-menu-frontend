@@ -10,11 +10,15 @@ function App() {
         <>
             <MainContainer>
                 <Header/>
-                <h3 className="welcome-text align-center">Velkommen til Qlik-portalen</h3>
+                <h3 className="welcome-text align-center">Velkommen til analyse-portalen</h3>
+                <p className="intro-text">
+                    Novari IKS har samlet Qlik Cloud, Qlik Sense og NPrinting i denne
+                    portalen for å gi deg som bruker av tjenestene en bedre og enklere oversikt.
+                </p>
                 <MenuContainer>
-                    <MenuCard title="Qlik Sense" body="Lesetilgang lokale Apper"
+                    <MenuCard title="Qlik Sense" body="Lesetilgang lokale fylkesapper"
                               href="https://qs.vigoiks.no/prod"/>
-                    <MenuCard title="Qlik Sense" body="Utviklingsmiljø lokale Apper"
+                    <MenuCard title="Qlik Sense" body="Utviklingsmiljø lokale fylkesapper"
                               href="https://qs.vigoiks.no/dev"/>
                     <MenuCard title="Qlik Cloud" body="Sentrale Apper"
                               href="https://novariiks.eu.qlikcloud.com/" />
@@ -30,11 +34,6 @@ function App() {
 
             </MainContainer>
             <footer className="footer">
-                <p>
-                    Novari IKS har samlet Qlik Cloud, Qlik Sense og NPrinting i denne
-                    portalen for å gi deg som bruker av tjenestene en bedre og enklere oversikt.
-                </p>
-
                 <p>
                     Tilganger styres via fylkene gjennom VIGO (lokale apper) og roller i
                     Entra ID (sentrale apper). Ta kontakt med systemansvarlig i eget fylke
