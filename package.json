@@ -1,6 +1,6 @@
 {
-  "name": "vigo-qlik-menu-frontend",
-  "version": "0.1.0",
+  "name": "novari-analyse-menu-frontend",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^6.9.1",

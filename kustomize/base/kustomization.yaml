@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+labels:
+  - includeSelectors: true
+    pairs:
+      app.kubernetes.io/name: novari-analyse-menu-frontend
+      app.kubernetes.io/instance: novari-analyse-menu-frontend
+      app.kubernetes.io/version: latest
+      app.kubernetes.io/component: frontend
+      app.kubernetes.io/part-of: novari-analyse
+      fintlabs.no/team: analyse
+      fintlabs.no/org-id: fintlabs.no
+
+resources:
+  - flais.yaml
