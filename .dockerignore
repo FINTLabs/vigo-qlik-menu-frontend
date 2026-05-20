@@ -1,7 +1,7 @@
 node_modules
 build
 .git
-.github
+#.github
 .gitignore
 Dockerfile
 npm-debug.log
