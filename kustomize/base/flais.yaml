@@ -11,10 +11,6 @@ spec:
   replicas: 1
   orgId: fintlabs.no
   image: ghcr.io/fintlabs/novari-analyse-menu-frontend
-  observability:
-    metrics:
-      path: /metrics
-      port: 8080
   env: []
   ingress:
     routes:
