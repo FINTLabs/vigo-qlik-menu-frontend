@@ -6,6 +6,9 @@ metadata:
 spec:
   port: 8080
   imagePullPolicy: Always
+  imagePullSecrets:
+    - ghcr
+  replicas: 1
   orgId: fintlabs.no
   image: ghcr.io/fintlabs/novari-analyse-menu-frontend:latest
   env: []
