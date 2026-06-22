@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import VigoTriangle from "./component/vigo-triangle/vigo-triangle";
 import Header from "./component/header/header";
 import MenuCard from "./component/menu/menu-card";
 import MainContainer from "./component/main-container/main-container";
@@ -9,14 +8,17 @@ import MenuContainer from "./component/menu/menu-container";
 function App() {
     return (
         <>
-            <VigoTriangle/>
             <MainContainer>
                 <Header/>
-                <h3 className="welcome-text align-center">Velkommen til Qlik-portalen</h3>
+                <h3 className="welcome-text align-center">Velkommen til analyse-portalen</h3>
+                <p className="intro-text">
+                    Novari IKS har samlet Qlik Cloud, Qlik Sense og NPrinting i denne
+                    portalen for å gi deg som bruker av tjenestene en bedre og enklere oversikt.
+                </p>
                 <MenuContainer>
-                    <MenuCard title="Qlik Sense" body="Lesetilgang lokale Apper"
+                    <MenuCard title="Qlik Sense" body="Lesetilgang lokale fylkesapper"
                               href="https://qs.vigoiks.no/prod"/>
-                    <MenuCard title="Qlik Sense" body="Utviklingsmiljø lokale Apper"
+                    <MenuCard title="Qlik Sense" body="Utviklingsmiljø lokale fylkesapper"
                               href="https://qs.vigoiks.no/dev"/>
                     <MenuCard title="Qlik Cloud" body="Sentrale Apper"
                               href="https://novariiks.eu.qlikcloud.com/" />
@@ -25,16 +27,28 @@ function App() {
                     <MenuCard title="NPrinting" body="Utviklingsmiljø"
                               href="https://np-admin.vigoiks.no/login/saml/sso/np-admin_vigoiks_no"/>
                     <MenuCard title="Dokumentasjon" body="Dokumentasjon av VIGO Sentraldatabase"
-                              href="https://novariiks.sharepoint.com/sites/VigoIKSAnalyse/SitePages/VIGOS-Databasedoc.aspx"/>
+                              href="https://novariiks.eu.qlikcloud.com/sense/app/97508809-c561-4497-9649-4bcae5307063"/>
+                    <MenuCard title="SharePoint Informasjon" body="Informasjonsside Novari Dataanalyse"
+                              href="https://novariiks.sharepoint.com/sites/NovariDataanalyse"/>
                 </MenuContainer>
 
             </MainContainer>
-            <footer>
-                <p>Novari IKS har samlet Qlik Sense og NPrinting tilgangene i denne portalen for å gi
-                    brukerne en bedre oversikt.
-                Tilganger styres via VIGO i egen fylkeskommune og med roller i Entra ID, ta kontakt med systemansvarlig               
+            <footer className="footer">
+                <p>
+                    Tilganger styres via fylkene gjennom VIGO (lokale apper) og roller i
+                    Entra ID (sentrale apper). Ta kontakt med systemansvarlig i eget fylke
+                    for tilgang.
                 </p>
-                <p>Trykk på Support oppe i høyre hjørne på denne siden dersom du har spørsmål, vil melde fra om en hendelse eller har tekniske problemer</p>
+
+                <p>
+                    Gå til{" "}
+                    <a
+                        href="https://support.novari.no"
+                        className="inline-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >support</a>{" "}dersom du har spørsmål, vil melde fra om en hendelse eller har tekniske problemer.
+                </p>
             </footer>
         </>
     );

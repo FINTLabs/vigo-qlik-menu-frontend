@@ -3,17 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     position: relative;
-    /*Vigo IKS webpage uses Europa as font,
-     however since we dont have Adobe Fonts access we use a similar font*/
     font-family: "Muli", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    color: #ffffff;
+    color: #000000;
 }
 
 body {
-    background: #1F4F59;
+    background: #fefcfa;
 }
 
 h1, h2, h3, h4, h5, h6 {
