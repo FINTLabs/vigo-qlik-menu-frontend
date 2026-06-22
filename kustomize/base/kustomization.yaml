@@ -5,7 +5,7 @@ labels:
   - includeSelectors: true
     pairs:
       app.kubernetes.io/name: novari-analyse-menu-frontend
-      app.kubernetes.io/instance: novari-analyse-menu-frontend
+      app.kubernetes.io/instance: novari-analyse-menu-frontend_fintlabs-no
       app.kubernetes.io/version: latest
       app.kubernetes.io/component: frontend
       app.kubernetes.io/part-of: novari-analyse
