@@ -9,7 +9,7 @@ patches:
         value: "analyse.test.fintlabs.no"
       - op: replace
         path: "/spec/ingress/routes/0/path"
-        value: "/alpha"
+        value: "/"
     target:
       kind: Application
       name: novari-analyse-menu-frontend

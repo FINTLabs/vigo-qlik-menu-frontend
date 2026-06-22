@@ -9,7 +9,7 @@ patches:
         value: "analyse.novari.no"
       - op: replace
         path: "/spec/ingress/routes/0/path"
-        value: "/beta"
+        value: "/"
     target:
       kind: Application
       name: novari-analyse-menu-frontend
