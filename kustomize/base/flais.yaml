@@ -11,10 +11,10 @@ spec:
   replicas: 1
   orgId: fintlabs.no
   image: ghcr.io/fintlabs/novari-analyse-menu-frontend
-  prometheus:
-    enabled: true
-    port: 8080
-    path: "/metrics"
+  observability:
+    metrics:
+      path: /metrics
+      port: 8080
   env: []
   ingress:
     routes:
